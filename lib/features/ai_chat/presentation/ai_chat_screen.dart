@@ -117,7 +117,6 @@ class _AiChatScreenState extends ConsumerState<AiChatScreen> {
       ),
       body: Column(
         children: [
-          // Character Switcher Bar
           Container(
             padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md, vertical: 10),
             color: AppColors.surfaceLight,
@@ -128,17 +127,26 @@ class _AiChatScreenState extends ConsumerState<AiChatScreen> {
                     onTap: () => _switchCharacter('Lucia'),
                     child: AnimatedContainer(
                       duration: const Duration(milliseconds: 200),
-                      padding: const EdgeInsets.symmetric(vertical: 10),
+                      padding: const EdgeInsets.symmetric(vertical: 8),
                       decoration: BoxDecoration(
                         color: isLucia ? AppColors.primary : Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
+                        border: isLucia ? null : Border.all(color: AppColors.surfaceBorder),
                       ),
-                      child: const Row(
+                      child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(Icons.person_rounded, color: Colors.white, size: 18),
-                          SizedBox(width: 8),
-                          Text('LUCIA (Estratégia)', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 13)),
+                          ClipOval(
+                            child: Image.asset(
+                              'assets/images/lucia_portrait.png',
+                              width: 24,
+                              height: 24,
+                              fit: BoxFit.cover,
+                              errorBuilder: (_, _, _) => const Icon(Icons.person_rounded, color: Colors.white, size: 18),
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                          const Text('LUCIA', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 13)),
                         ],
                       ),
                     ),
@@ -150,17 +158,26 @@ class _AiChatScreenState extends ConsumerState<AiChatScreen> {
                     onTap: () => _switchCharacter('Jason'),
                     child: AnimatedContainer(
                       duration: const Duration(milliseconds: 200),
-                      padding: const EdgeInsets.symmetric(vertical: 10),
+                      padding: const EdgeInsets.symmetric(vertical: 8),
                       decoration: BoxDecoration(
                         color: !isLucia ? AppColors.secondary : Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
+                        border: !isLucia ? null : Border.all(color: AppColors.surfaceBorder),
                       ),
-                      child: const Row(
+                      child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(Icons.directions_car_rounded, color: Colors.white, size: 18),
-                          SizedBox(width: 8),
-                          Text('JASON (Tático)', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 13)),
+                          ClipOval(
+                            child: Image.asset(
+                              'assets/images/jason_portrait.png',
+                              width: 24,
+                              height: 24,
+                              fit: BoxFit.cover,
+                              errorBuilder: (_, _, _) => const Icon(Icons.directions_car_rounded, color: Colors.white, size: 18),
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                          const Text('JASON', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 13)),
                         ],
                       ),
                     ),

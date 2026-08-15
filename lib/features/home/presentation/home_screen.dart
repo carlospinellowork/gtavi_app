@@ -379,6 +379,69 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
 
+            const SliverToBoxAdapter(child: SizedBox(height: AppSpacing.lg)),
+
+            // Personagens Section
+            SliverToBoxAdapter(
+              child: _buildSectionHeader(
+                title: 'Personagens Principais',
+                onSeeAll: () => context.push('/ai-chat'),
+              ),
+            ),
+            SliverToBoxAdapter(
+              child: SizedBox(
+                height: 220,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  physics: const BouncingScrollPhysics(),
+                  padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md),
+                  children: [
+                    _buildCharacterCard(
+                      context,
+                      name: 'LUCIA',
+                      role: 'Protagonista • Estrategista',
+                      imageAsset: 'assets/images/lucia_portrait.png',
+                      color: AppColors.primary,
+                    ),
+                    _buildCharacterCard(
+                      context,
+                      name: 'JASON',
+                      role: 'Protagonista • Motorista de Fuga',
+                      imageAsset: 'assets/images/jason_portrait.png',
+                      color: AppColors.secondary,
+                    ),
+                  ],
+                ),
+              ),
+            ),
+
+            const SliverToBoxAdapter(child: SizedBox(height: AppSpacing.lg)),
+
+            // Galeria Vice City
+            SliverToBoxAdapter(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md),
+                child: Text('Galeria de Vice City', style: AppTypography.titleLarge),
+              ),
+            ),
+            const SliverToBoxAdapter(child: SizedBox(height: AppSpacing.sm)),
+            SliverToBoxAdapter(
+              child: SizedBox(
+                height: 140,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  physics: const BouncingScrollPhysics(),
+                  padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md),
+                  children: [
+                    _buildGalleryCard('assets/images/vice_city_beach.png', 'Vice Beach'),
+                    _buildGalleryCard('assets/images/vice_city_downtown.png', 'Downtown'),
+                    _buildGalleryCard('assets/images/vice_city_cars.png', 'Supercarros'),
+                    _buildGalleryCard('assets/images/splash_vice_city.png', 'Skyline'),
+                  ],
+                ),
+              ),
+            ),
+
             const SliverToBoxAdapter(child: SizedBox(height: AppSpacing.xxl)),
           ],
         ),
@@ -524,6 +587,117 @@ class HomeScreen extends StatelessWidget {
           ),
           const Icon(Icons.chevron_right_rounded, color: AppColors.textMuted),
         ],
+      ),
+    );
+  }
+
+  Widget _buildCharacterCard(
+    BuildContext context, {
+    required String name,
+    required String role,
+    required String imageAsset,
+    required Color color,
+  }) {
+    return Container(
+      width: 160,
+      margin: const EdgeInsets.only(right: 14),
+      child: GlassCard(
+        onTap: () => context.push('/ai-chat'),
+        padding: EdgeInsets.zero,
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+          child: Stack(
+            children: [
+              Positioned.fill(
+                child: Image.asset(
+                  imageAsset,
+                  fit: BoxFit.cover,
+                  errorBuilder: (_, _, _) => Container(
+                    color: AppColors.surfaceLight,
+                    child: const Icon(Icons.person_rounded, color: AppColors.textMuted, size: 48),
+                  ),
+                ),
+              ),
+              Positioned.fill(
+                child: Container(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [
+                        Colors.transparent,
+                        Colors.black.withAlpha(220),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                bottom: 12,
+                left: 12,
+                right: 12,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      name,
+                      style: AppTypography.titleMedium.copyWith(
+                        color: Colors.white,
+                        fontSize: 18,
+                        fontWeight: FontWeight.w900,
+                      ),
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      role,
+                      style: TextStyle(color: color, fontSize: 10, fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildGalleryCard(String imageAsset, String label) {
+    return Container(
+      width: 200,
+      margin: const EdgeInsets.only(right: 12),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+        child: Stack(
+          children: [
+            Positioned.fill(
+              child: Image.asset(
+                imageAsset,
+                fit: BoxFit.cover,
+                errorBuilder: (_, _, _) => Container(color: AppColors.surfaceLight),
+              ),
+            ),
+            Positioned(
+              bottom: 0,
+              left: 0,
+              right: 0,
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.bottomCenter,
+                    end: Alignment.topCenter,
+                    colors: [Colors.black.withAlpha(200), Colors.transparent],
+                  ),
+                ),
+                child: Text(
+                  label,
+                  style: const TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

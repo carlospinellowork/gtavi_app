@@ -21,6 +21,12 @@ final filteredVideosProvider = FutureProvider<List<VideoModel>>((ref) async {
   return await repo.getVideos(category: cat, query: query);
 });
 
+String _formatViews(int views) {
+  if (views >= 1000000) return '${(views / 1000000).toStringAsFixed(1)}M';
+  if (views >= 1000) return '${(views / 1000).toStringAsFixed(0)}K';
+  return views.toString();
+}
+
 class VideosHubScreen extends ConsumerWidget {
   const VideosHubScreen({super.key});
 
@@ -111,7 +117,7 @@ class VideosHubScreen extends ConsumerWidget {
                             Stack(
                               children: [
                                 Container(
-                                  height: 170,
+                                  height: 180,
                                   width: double.infinity,
                                   decoration: BoxDecoration(
                                     color: AppColors.surfaceLight,
@@ -119,16 +125,25 @@ class VideosHubScreen extends ConsumerWidget {
                                   ),
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
-                                    child: Image.asset(
-                                      'assets/images/gtavi_lucia_jason.png',
-                                      fit: BoxFit.cover,
-                                      errorBuilder: (_, __, ___) => Container(color: AppColors.surfaceLight),
-                                    ),
+                                    child: video.localThumbnailAsset != null
+                                        ? Image.asset(
+                                            video.localThumbnailAsset!,
+                                            fit: BoxFit.cover,
+                                            errorBuilder: (_, _, _) => Container(color: AppColors.surfaceLight),
+                                          )
+                                        : Image.asset(
+                                            'assets/images/gtavi_lucia_jason.png',
+                                            fit: BoxFit.cover,
+                                            errorBuilder: (_, _, _) => Container(color: AppColors.surfaceLight),
+                                          ),
                                   ),
                                 ),
                                 Positioned.fill(
                                   child: Container(
-                                    color: Colors.black.withAlpha(100),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+                                      color: Colors.black.withAlpha(80),
+                                    ),
                                   ),
                                 ),
                                 const Positioned.fill(
@@ -172,6 +187,11 @@ class VideosHubScreen extends ConsumerWidget {
                                 Text(video.channelName, style: AppTypography.bodySmall.copyWith(color: AppColors.textPrimary, fontWeight: FontWeight.bold)),
                                 const SizedBox(width: 4),
                                 const Icon(Icons.verified_rounded, color: AppColors.secondary, size: 14),
+                                const Spacer(),
+                                Text(
+                                  '${_formatViews(video.viewsCount)} views',
+                                  style: AppTypography.bodySmall.copyWith(color: AppColors.textMuted, fontSize: 11),
+                                ),
                               ],
                             ),
                           ],

@@ -10,6 +10,7 @@ import '../../../core/widgets/app_badge.dart';
 import '../../../core/widgets/app_loading_state.dart';
 import '../../../core/widgets/app_empty_state.dart';
 import '../domain/news_model.dart';
+import 'news_detail_screen.dart';
 
 final newsCategoryFilterProvider = StateProvider<String>((ref) => 'Todas');
 final newsSearchQueryProvider = StateProvider<String>((ref) => '');
@@ -54,7 +55,7 @@ class NewsScreen extends ConsumerWidget {
               ),
             ),
 
-            // Striking GTA VI Neon Vice Hero Header (Lucia & Jason Vibe)
+            // Hero Banner with Vice City image
             SliverToBoxAdapter(
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md),
@@ -63,11 +64,6 @@ class NewsScreen extends ConsumerWidget {
                   width: double.infinity,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(AppSpacing.radiusLg),
-                    gradient: const LinearGradient(
-                      colors: [AppColors.primary, Color(0xFF7928CA), AppColors.secondary],
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                    ),
                     boxShadow: [
                       BoxShadow(
                         color: AppColors.primary.withAlpha(120),
@@ -76,70 +72,86 @@ class NewsScreen extends ConsumerWidget {
                       ),
                     ],
                   ),
-                  child: Stack(
-                    children: [
-                      Positioned(
-                        right: -20,
-                        bottom: -20,
-                        child: Icon(
-                          Icons.sports_esports_rounded,
-                          size: 180,
-                          color: Colors.white.withAlpha(25),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(AppSpacing.radiusLg),
+                    child: Stack(
+                      children: [
+                        Positioned.fill(
+                          child: Image.asset(
+                            'assets/images/vice_city_downtown.png',
+                            fit: BoxFit.cover,
+                            errorBuilder: (_, _, _) => Container(color: AppColors.surfaceLight),
+                          ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(AppSpacing.lg),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                              decoration: BoxDecoration(
-                                color: Colors.black.withAlpha(120),
-                                borderRadius: BorderRadius.circular(20),
-                              ),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  Container(
-                                    width: 8,
-                                    height: 8,
-                                    decoration: const BoxDecoration(
-                                      color: AppColors.success,
-                                      shape: BoxShape.circle,
-                                    ),
-                                  ),
-                                  const SizedBox(width: 6),
-                                  Text(
-                                    'LUCIA & JASON • VICE CITY',
-                                    style: AppTypography.labelSmall.copyWith(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
-                                      letterSpacing: 1.5,
-                                    ),
-                                  ),
+                        Positioned.fill(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              gradient: LinearGradient(
+                                colors: [
+                                  Colors.black.withAlpha(200),
+                                  Colors.transparent,
+                                  Colors.black.withAlpha(160),
                                 ],
+                                begin: Alignment.bottomLeft,
+                                end: Alignment.topRight,
                               ),
                             ),
-                            const SizedBox(height: 10),
-                            Text(
-                              'GTA VI CENTRAL',
-                              style: AppTypography.displayLarge.copyWith(
-                                color: Colors.white,
-                                fontSize: 26,
-                                height: 1.1,
-                              ),
-                            ),
-                            const SizedBox(height: 4),
-                            Text(
-                              'Feed Oficial de Anúncios, Trailers e Rumores',
-                              style: AppTypography.bodySmall.copyWith(color: Colors.white.withAlpha(220)),
-                            ),
-                          ],
+                          ),
                         ),
-                      ),
-                    ],
+                        Padding(
+                          padding: const EdgeInsets.all(AppSpacing.lg),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                                decoration: BoxDecoration(
+                                  color: Colors.black.withAlpha(120),
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Container(
+                                      width: 8,
+                                      height: 8,
+                                      decoration: const BoxDecoration(
+                                        color: AppColors.success,
+                                        shape: BoxShape.circle,
+                                      ),
+                                    ),
+                                    const SizedBox(width: 6),
+                                    Text(
+                                      'LUCIA & JASON • VICE CITY',
+                                      style: AppTypography.labelSmall.copyWith(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                        letterSpacing: 1.5,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              const SizedBox(height: 10),
+                              Text(
+                                'GTA VI CENTRAL',
+                                style: AppTypography.displayLarge.copyWith(
+                                  color: Colors.white,
+                                  fontSize: 26,
+                                  height: 1.1,
+                                ),
+                              ),
+                              const SizedBox(height: 4),
+                              Text(
+                                'Feed Oficial de Anúncios, Trailers e Rumores',
+                                style: AppTypography.bodySmall.copyWith(color: Colors.white.withAlpha(220)),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ).animate().fadeIn(duration: 500.ms).slideY(begin: 0.2, end: 0),
               ),
@@ -163,7 +175,7 @@ class NewsScreen extends ConsumerWidget {
 
             const SliverToBoxAdapter(child: SizedBox(height: AppSpacing.sm)),
 
-            // Category Chips Horizontal Bar
+            // Category Chips
             SliverToBoxAdapter(
               child: SizedBox(
                 height: 42,
@@ -231,31 +243,52 @@ class NewsScreen extends ConsumerWidget {
                         return Padding(
                           padding: const EdgeInsets.only(bottom: 14),
                           child: GlassCard(
-                            onTap: () => _showNewsDetailsModal(context, news),
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (_) => NewsDetailScreen(news: news)),
+                              );
+                            },
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
+                                // Image thumbnail
                                 Stack(
                                   children: [
                                     Container(
-                                      height: 150,
+                                      height: 160,
                                       width: double.infinity,
                                       decoration: BoxDecoration(
                                         color: AppColors.surfaceLight,
                                         borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
-                                        gradient: LinearGradient(
-                                          colors: [
-                                            AppColors.primary.withAlpha(40),
-                                            AppColors.secondary.withAlpha(40),
-                                          ],
-                                        ),
                                       ),
-                                      child: Center(
-                                        child: Icon(
-                                          isTrailer ? Icons.play_circle_fill_rounded : Icons.article_rounded,
-                                          size: 56,
-                                          color: isTrailer ? AppColors.primary : AppColors.secondary,
-                                        ),
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+                                        child: news.localImageAsset != null
+                                            ? Image.asset(
+                                                news.localImageAsset!,
+                                                fit: BoxFit.cover,
+                                                errorBuilder: (_, _, _) => Container(
+                                                  color: AppColors.surfaceLight,
+                                                  child: Center(
+                                                    child: Icon(
+                                                      isTrailer ? Icons.play_circle_fill_rounded : Icons.article_rounded,
+                                                      size: 56,
+                                                      color: isTrailer ? AppColors.primary : AppColors.secondary,
+                                                    ),
+                                                  ),
+                                                ),
+                                              )
+                                            : Container(
+                                                color: AppColors.surfaceLight,
+                                                child: Center(
+                                                  child: Icon(
+                                                    isTrailer ? Icons.play_circle_fill_rounded : Icons.article_rounded,
+                                                    size: 56,
+                                                    color: isTrailer ? AppColors.primary : AppColors.secondary,
+                                                  ),
+                                                ),
+                                              ),
                                       ),
                                     ),
                                     Positioned(
@@ -266,6 +299,15 @@ class NewsScreen extends ConsumerWidget {
                                         color: isTrailer ? AppColors.primary : AppColors.secondary,
                                       ),
                                     ),
+                                    if (isTrailer)
+                                      Positioned.fill(
+                                        child: Container(
+                                          color: Colors.black.withAlpha(80),
+                                          child: const Center(
+                                            child: Icon(Icons.play_circle_fill_rounded, color: Colors.white, size: 48),
+                                          ),
+                                        ),
+                                      ),
                                   ],
                                 ),
                                 const SizedBox(height: 12),
@@ -291,7 +333,7 @@ class NewsScreen extends ConsumerWidget {
                                     Row(
                                       children: [
                                         Text(
-                                          isTrailer ? 'Assistir' : 'Ler mais',
+                                          'Ler completa',
                                           style: AppTypography.labelLarge.copyWith(
                                             color: AppColors.primary,
                                             fontSize: 12,
@@ -319,76 +361,6 @@ class NewsScreen extends ConsumerWidget {
           ],
         ),
       ),
-    );
-  }
-
-  void _showNewsDetailsModal(BuildContext context, NewsModel news) {
-    showModalBottomSheet(
-      context: context,
-      isScrollControlled: true,
-      backgroundColor: AppColors.surface,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
-      ),
-      builder: (context) {
-        final isTrailer = news.videoUrl != null;
-
-        return Padding(
-          padding: const EdgeInsets.all(AppSpacing.lg),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  AppBadge(
-                    label: news.category,
-                    color: isTrailer ? AppColors.primary : AppColors.secondary,
-                  ),
-                  IconButton(
-                    icon: const Icon(Icons.close_rounded, color: AppColors.textMuted),
-                    onPressed: () => Navigator.pop(context),
-                  ),
-                ],
-              ),
-              const SizedBox(height: AppSpacing.sm),
-              Text(news.title, style: AppTypography.titleLarge),
-              const SizedBox(height: 8),
-              Text('Fonte: ${news.source}', style: AppTypography.bodySmall.copyWith(color: AppColors.textMuted)),
-              const SizedBox(height: AppSpacing.md),
-              Text(news.summary, style: AppTypography.bodyMedium),
-              const SizedBox(height: AppSpacing.lg),
-              SizedBox(
-                width: double.infinity,
-                child: ElevatedButton.icon(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: isTrailer ? AppColors.primary : AppColors.secondary,
-                    padding: const EdgeInsets.symmetric(vertical: 14),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
-                    ),
-                  ),
-                  onPressed: () {
-                    Navigator.pop(context);
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
-                        content: Text('Abrindo ${isTrailer ? "Trailer" : "Notícia"}: ${news.url}'),
-                      ),
-                    );
-                  },
-                  icon: Icon(isTrailer ? Icons.play_arrow_rounded : Icons.open_in_new_rounded, color: Colors.white),
-                  label: Text(
-                    isTrailer ? 'Assistir Trailer no YouTube' : 'Ler Matéria Completa',
-                    style: AppTypography.labelLarge.copyWith(color: Colors.white),
-                  ),
-                ),
-              ),
-              const SizedBox(height: AppSpacing.md),
-            ],
-          ),
-        );
-      },
     );
   }
 }
