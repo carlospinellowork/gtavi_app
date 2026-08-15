@@ -15,6 +15,8 @@ import '../../features/profile/presentation/profile_screen.dart';
 import '../../features/guides/presentation/guides_screen.dart';
 import '../../features/guides/presentation/guide_detail_screen.dart';
 import '../../features/news/presentation/news_screen.dart';
+import '../../features/videos/presentation/videos_hub_screen.dart';
+import '../../features/videos/presentation/video_player_screen.dart';
 
 final GlobalKey<NavigatorState> _rootNavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'root');
 
@@ -113,6 +115,17 @@ final appRouter = GoRouter(
     GoRoute(
       path: '/news',
       builder: (context, state) => const NewsScreen(),
+    ),
+    GoRoute(
+      path: '/videos',
+      builder: (context, state) => const VideosHubScreen(),
+    ),
+    GoRoute(
+      path: '/videos/:id',
+      builder: (context, state) {
+        final id = state.pathParameters['id'] ?? 'v_trailer1';
+        return VideoPlayerScreen(videoId: id);
+      },
     ),
   ],
 );

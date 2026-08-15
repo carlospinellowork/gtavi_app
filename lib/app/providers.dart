@@ -11,6 +11,8 @@ import '../features/guides/data/guides_repository.dart';
 import '../features/news/data/news_repository.dart';
 import '../features/favorites/data/favorites_repository.dart';
 
+import '../features/videos/data/videos_repository.dart';
+
 final sharedPreferencesProvider = Provider<SharedPreferences>((ref) {
   throw UnimplementedError('SharedPreferences deve ser inicializado no main');
 });
@@ -49,6 +51,10 @@ final guidesRepositoryProvider = Provider<GuidesRepository>((ref) {
 final newsRepositoryProvider = Provider<NewsRepository>((ref) {
   final apiClient = ref.watch(apiClientProvider);
   return MockNewsRepository(apiClient: apiClient);
+});
+
+final videosRepositoryProvider = Provider<VideosRepository>((ref) {
+  return MockVideosRepository();
 });
 
 final favoritesRepositoryProvider = Provider<FavoritesRepository>((ref) {
