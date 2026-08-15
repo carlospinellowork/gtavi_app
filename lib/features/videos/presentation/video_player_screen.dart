@@ -80,13 +80,24 @@ class _VideoPlayerScreenState extends ConsumerState<VideoPlayerScreen> {
 
   Future<void> _openExternalStream(String youtubeVideoId) async {
     final url = Uri.parse('https://www.youtube.com/watch?v=$youtubeVideoId');
-    if (await canLaunchUrl(url)) {
-      await launchUrl(url, mode: LaunchMode.externalApplication);
-    } else {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Não foi possível abrir o stream no YouTube.')),
-        );
+    try {
+      if (await canLaunchUrl(url)) {
+        final launched = await launchUrl(url, mode: LaunchMode.externalApplication);
+        if (!launched) {
+          await launchUrl(url, mode: LaunchMode.platformDefault);
+        }
+      } else {
+        await launchUrl(url, mode: LaunchMode.inAppBrowserView);
+      }
+    } catch (_) {
+      try {
+        await launchUrl(url, mode: LaunchMode.platformDefault);
+      } catch (e) {
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('Abrindo link no navegador: $url')),
+          );
+        }
       }
     }
   }

@@ -12,6 +12,9 @@ import '../features/news/data/news_repository.dart';
 import '../features/favorites/data/favorites_repository.dart';
 
 import '../features/videos/data/videos_repository.dart';
+import '../features/radio/data/radio_repository.dart';
+import '../features/cheats/data/cheats_repository.dart';
+import '../features/economy/data/economy_repository.dart';
 
 final sharedPreferencesProvider = Provider<SharedPreferences>((ref) {
   throw UnimplementedError('SharedPreferences deve ser inicializado no main');
@@ -55,6 +58,18 @@ final newsRepositoryProvider = Provider<NewsRepository>((ref) {
 
 final videosRepositoryProvider = Provider<VideosRepository>((ref) {
   return MockVideosRepository();
+});
+
+final radioRepositoryProvider = Provider<RadioRepository>((ref) {
+  return MockRadioRepository();
+});
+
+final cheatsRepositoryProvider = Provider<CheatsRepository>((ref) {
+  return MockCheatsRepository();
+});
+
+final economyRepositoryProvider = Provider<EconomyRepository>((ref) {
+  return MockEconomyRepository();
 });
 
 final favoritesRepositoryProvider = Provider<FavoritesRepository>((ref) {

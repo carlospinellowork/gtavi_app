@@ -9,17 +9,21 @@ abstract class Failure {
 }
 
 class ServerFailure extends Failure {
-  const ServerFailure([super.message = 'Erro no servidor. Tente novamente mais tarde.', super.code]);
+  const ServerFailure([String message = 'Erro no servidor. Tente novamente mais tarde.', int? code])
+      : super(message, code: code);
 }
 
 class NetworkFailure extends Failure {
-  const NetworkFailure([super.message = 'Sem conexão com a internet.', super.code]);
+  const NetworkFailure([String message = 'Sem conexão com a internet.', int? code])
+      : super(message, code: code);
 }
 
 class CacheFailure extends Failure {
-  const CacheFailure([super.message = 'Falha ao acessar armazenamento local.', super.code]);
+  const CacheFailure([String message = 'Falha ao acessar armazenamento local.', int? code])
+      : super(message, code: code);
 }
 
 class NotFoundFailure extends Failure {
-  const NotFoundFailure([super.message = 'Recurso não encontrado.', super.code]);
+  const NotFoundFailure([String message = 'Recurso não encontrado.', int? code])
+      : super(message, code: code);
 }

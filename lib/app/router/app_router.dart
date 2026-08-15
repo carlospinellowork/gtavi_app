@@ -17,6 +17,10 @@ import '../../features/guides/presentation/guide_detail_screen.dart';
 import '../../features/news/presentation/news_screen.dart';
 import '../../features/videos/presentation/videos_hub_screen.dart';
 import '../../features/videos/presentation/video_player_screen.dart';
+import '../../features/radio/presentation/radio_screen.dart';
+import '../../features/cheats/presentation/cheats_screen.dart';
+import '../../features/economy/presentation/economy_screen.dart';
+import '../../features/ai_chat/presentation/ai_chat_screen.dart';
 
 final GlobalKey<NavigatorState> _rootNavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'root');
 
@@ -126,6 +130,22 @@ final appRouter = GoRouter(
         final id = state.pathParameters['id'] ?? 'v_trailer1';
         return VideoPlayerScreen(videoId: id);
       },
+    ),
+    GoRoute(
+      path: '/radio',
+      builder: (context, state) => const RadioScreen(),
+    ),
+    GoRoute(
+      path: '/cheats',
+      builder: (context, state) => const CheatsScreen(),
+    ),
+    GoRoute(
+      path: '/economy',
+      builder: (context, state) => const EconomyScreen(),
+    ),
+    GoRoute(
+      path: '/ai-chat',
+      builder: (context, state) => const AiChatScreen(),
     ),
   ],
 );

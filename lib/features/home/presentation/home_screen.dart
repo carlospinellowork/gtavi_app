@@ -230,10 +230,31 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     _buildShortcutCard(
                       context,
-                      icon: Icons.newspaper_rounded,
-                      title: 'Notícias & IA',
+                      icon: Icons.radio_rounded,
+                      title: 'Rádio Vice',
                       color: AppColors.primary,
-                      onTap: () => context.push('/news'),
+                      onTap: () => context.push('/radio'),
+                    ),
+                    _buildShortcutCard(
+                      context,
+                      icon: Icons.games_rounded,
+                      title: 'Macetes/Cheats',
+                      color: AppColors.secondary,
+                      onTap: () => context.push('/cheats'),
+                    ),
+                    _buildShortcutCard(
+                      context,
+                      icon: Icons.attach_money_rounded,
+                      title: 'Economia',
+                      color: AppColors.gold,
+                      onTap: () => context.push('/economy'),
+                    ),
+                    _buildShortcutCard(
+                      context,
+                      icon: Icons.chat_bubble_rounded,
+                      title: 'IA Lucia/Jason',
+                      color: Colors.cyanAccent,
+                      onTap: () => context.push('/ai-chat'),
                     ),
                     _buildShortcutCard(
                       context,
