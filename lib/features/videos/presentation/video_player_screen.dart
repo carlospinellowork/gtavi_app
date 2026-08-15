@@ -1,6 +1,8 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../../../app/theme/app_colors.dart';
 import '../../../app/theme/app_spacing.dart';
 import '../../../app/theme/app_typography.dart';
@@ -25,6 +27,11 @@ class VideoPlayerScreen extends ConsumerStatefulWidget {
 
 class _VideoPlayerScreenState extends ConsumerState<VideoPlayerScreen> {
   bool isExpandedFullscreen = false;
+  bool isPlaying = false;
+  double progress = 0.0;
+  Timer? _playbackTimer;
+  int currentSeconds = 0;
+  int totalSeconds = 91;
 
   void _toggleFullscreen() {
     setState(() {
@@ -45,8 +52,54 @@ class _VideoPlayerScreenState extends ConsumerState<VideoPlayerScreen> {
     }
   }
 
+  void _togglePlayPause() {
+    setState(() {
+      isPlaying = !isPlaying;
+    });
+
+    if (isPlaying) {
+      _playbackTimer?.cancel();
+      _playbackTimer = Timer.periodic(const Duration(seconds: 1), (timer) {
+        if (!mounted) return;
+        setState(() {
+          if (currentSeconds < totalSeconds) {
+            currentSeconds++;
+            progress = currentSeconds / totalSeconds;
+          } else {
+            isPlaying = false;
+            currentSeconds = 0;
+            progress = 0.0;
+            timer.cancel();
+          }
+        });
+      });
+    } else {
+      _playbackTimer?.cancel();
+    }
+  }
+
+  Future<void> _openExternalStream(String youtubeVideoId) async {
+    final url = Uri.parse('https://www.youtube.com/watch?v=$youtubeVideoId');
+    if (await canLaunchUrl(url)) {
+      await launchUrl(url, mode: LaunchMode.externalApplication);
+    } else {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Não foi possível abrir o stream no YouTube.')),
+        );
+      }
+    }
+  }
+
+  String _formatDuration(int seconds) {
+    final mins = (seconds ~/ 60).toString().padLeft(2, '0');
+    final secs = (seconds % 60).toString().padLeft(2, '0');
+    return '$mins:$secs';
+  }
+
   @override
   void dispose() {
+    _playbackTimer?.cancel();
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitUp,
@@ -87,62 +140,166 @@ class _VideoPlayerScreenState extends ConsumerState<VideoPlayerScreen> {
                 ),
               ],
             ),
-            child: Stack(
-              alignment: Alignment.center,
-              children: [
-                // Thumbnail Background
-                Positioned.fill(
-                  child: Image.asset(
-                    'assets/images/gtavi_lucia_jason.png',
-                    fit: BoxFit.cover,
-                    errorBuilder: (_, __, ___) => Container(color: AppColors.surfaceLight),
+            child: ClipRRect(
+              borderRadius: isExpandedFullscreen ? BorderRadius.zero : BorderRadius.circular(AppSpacing.radiusMd),
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  // Thumbnail Background
+                  Positioned.fill(
+                    child: Image.asset(
+                      'assets/images/gtavi_lucia_jason.png',
+                      fit: BoxFit.cover,
+                      errorBuilder: (_, _, _) => Container(color: AppColors.surfaceLight),
+                    ),
                   ),
-                ),
-                // Dark Gradient
-                Positioned.fill(
-                  child: Container(
-                    color: Colors.black.withAlpha(140),
+                  // Dark Gradient Overlay
+                  Positioned.fill(
+                    child: Container(
+                      color: isPlaying ? Colors.black.withAlpha(80) : Colors.black.withAlpha(160),
+                    ),
                   ),
-                ),
-                // Play Icon & Video Title Overlay
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.all(16),
-                      decoration: const BoxDecoration(
-                        color: AppColors.primary,
-                        shape: BoxShape.circle,
+                  // Play / Stream Toggle Layer
+                  Positioned.fill(
+                    child: GestureDetector(
+                      behavior: HitTestBehavior.opaque,
+                      onTap: _togglePlayPause,
+                      child: Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          if (!isPlaying)
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Container(
+                                  padding: const EdgeInsets.all(18),
+                                  decoration: BoxDecoration(
+                                    color: AppColors.primary,
+                                    shape: BoxShape.circle,
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: AppColors.primary.withAlpha(180),
+                                        blurRadius: 20,
+                                        spreadRadius: 4,
+                                      ),
+                                    ],
+                                  ),
+                                  child: const Icon(Icons.play_arrow_rounded, color: Colors.white, size: 48),
+                                ),
+                                const SizedBox(height: 12),
+                                Container(
+                                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
+                                  decoration: BoxDecoration(
+                                    color: Colors.black.withAlpha(180),
+                                    borderRadius: BorderRadius.circular(20),
+                                    border: Border.all(color: AppColors.primary.withAlpha(100)),
+                                  ),
+                                  child: const Text(
+                                    'Toque para iniciar o stream',
+                                    style: TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
+                                  ),
+                                ),
+                              ],
+                            )
+                          else
+                            Positioned(
+                              top: 12,
+                              left: 12,
+                              child: Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                                decoration: BoxDecoration(
+                                  color: Colors.redAccent,
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                                child: const Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Icon(Icons.fiber_manual_record, color: Colors.white, size: 10),
+                                    SizedBox(width: 6),
+                                    Text(
+                                      'REPRODUZINDO STREAM',
+                                      style: TextStyle(color: Colors.white, fontSize: 10, fontWeight: FontWeight.bold),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                        ],
                       ),
-                      child: const Icon(Icons.play_arrow_rounded, color: Colors.white, size: 42),
                     ),
-                    const SizedBox(height: 12),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
-                      child: Text(
-                        video.title,
-                        style: AppTypography.titleMedium.copyWith(color: Colors.white),
-                        textAlign: TextAlign.center,
-                        maxLines: 2,
+                  ),
+
+                  // Controls overlay at the bottom
+                  Positioned(
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.bottomCenter,
+                          end: Alignment.topCenter,
+                          colors: [Colors.black.withAlpha(220), Colors.transparent],
+                        ),
+                      ),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          SliderTheme(
+                            data: SliderTheme.of(context).copyWith(
+                              trackHeight: 3,
+                              thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 6),
+                              activeTrackColor: AppColors.primary,
+                              inactiveTrackColor: Colors.white24,
+                              thumbColor: AppColors.secondary,
+                            ),
+                            child: Slider(
+                              value: progress.clamp(0.0, 1.0),
+                              onChanged: (val) {
+                                setState(() {
+                                  progress = val;
+                                  currentSeconds = (val * totalSeconds).round();
+                                });
+                              },
+                            ),
+                          ),
+                          Row(
+                            children: [
+                              IconButton(
+                                icon: Icon(
+                                  isPlaying ? Icons.pause_rounded : Icons.play_arrow_rounded,
+                                  color: Colors.white,
+                                  size: 24,
+                                ),
+                                onPressed: _togglePlayPause,
+                              ),
+                              Text(
+                                '${_formatDuration(currentSeconds)} / ${_formatDuration(totalSeconds)}',
+                                style: const TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.bold),
+                              ),
+                              const Spacer(),
+                              IconButton(
+                                icon: const Icon(Icons.open_in_new_rounded, color: Colors.white, size: 20),
+                                tooltip: 'Abrir no YouTube',
+                                onPressed: () => _openExternalStream(video.youtubeVideoId),
+                              ),
+                              IconButton(
+                                icon: Icon(
+                                  isExpandedFullscreen ? Icons.fullscreen_exit_rounded : Icons.fullscreen_rounded,
+                                  color: Colors.white,
+                                  size: 24,
+                                ),
+                                onPressed: _toggleFullscreen,
+                              ),
+                            ],
+                          ),
+                        ],
                       ),
                     ),
-                  ],
-                ),
-                // Expand / Fullscreen Toggle Button
-                Positioned(
-                  bottom: 12,
-                  right: 12,
-                  child: IconButton(
-                    style: IconButton.styleFrom(backgroundColor: Colors.black.withAlpha(160)),
-                    icon: Icon(
-                      isExpandedFullscreen ? Icons.fullscreen_exit_rounded : Icons.fullscreen_rounded,
-                      color: Colors.white,
-                      size: 26,
-                    ),
-                    onPressed: _toggleFullscreen,
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           );
 
@@ -159,6 +316,23 @@ class _VideoPlayerScreenState extends ConsumerState<VideoPlayerScreen> {
                   padding: const EdgeInsets.all(AppSpacing.md),
                   child: playerWidget,
                 ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md),
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton.icon(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.redAccent,
+                        padding: const EdgeInsets.symmetric(vertical: 12),
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                      ),
+                      icon: const Icon(Icons.play_circle_fill_rounded, color: Colors.white),
+                      label: const Text('Abrir Stream no YouTube', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                      onPressed: () => _openExternalStream(video.youtubeVideoId),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: AppSpacing.md),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md),
                   child: Column(
@@ -274,3 +448,4 @@ class _VideoPlayerScreenState extends ConsumerState<VideoPlayerScreen> {
     );
   }
 }
+
