@@ -8,6 +8,7 @@ import '../features/missions/data/missions_repository.dart';
 import '../features/progress/data/progress_repository.dart';
 import '../features/progress/domain/progress_model.dart';
 import '../features/guides/data/guides_repository.dart';
+import '../features/news/data/news_repository.dart';
 import '../features/favorites/data/favorites_repository.dart';
 
 final sharedPreferencesProvider = Provider<SharedPreferences>((ref) {
@@ -43,6 +44,11 @@ final progressRepositoryProvider = Provider<ProgressRepository>((ref) {
 
 final guidesRepositoryProvider = Provider<GuidesRepository>((ref) {
   return MockGuidesRepository();
+});
+
+final newsRepositoryProvider = Provider<NewsRepository>((ref) {
+  final apiClient = ref.watch(apiClientProvider);
+  return MockNewsRepository(apiClient: apiClient);
 });
 
 final favoritesRepositoryProvider = Provider<FavoritesRepository>((ref) {

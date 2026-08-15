@@ -14,6 +14,7 @@ import '../../features/search/presentation/search_screen.dart';
 import '../../features/profile/presentation/profile_screen.dart';
 import '../../features/guides/presentation/guides_screen.dart';
 import '../../features/guides/presentation/guide_detail_screen.dart';
+import '../../features/news/presentation/news_screen.dart';
 
 final GlobalKey<NavigatorState> _rootNavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'root');
 
@@ -108,6 +109,10 @@ final appRouter = GoRouter(
         final id = state.pathParameters['id'] ?? 'g1';
         return GuideDetailScreen(guideId: id);
       },
+    ),
+    GoRoute(
+      path: '/news',
+      builder: (context, state) => const NewsScreen(),
     ),
   ],
 );
