@@ -1,38 +1,39 @@
 import 'package:flutter/material.dart';
 
 abstract class AppColors {
-  // Backgrounds
-  static const Color background = Color(0xFF0B0E14);
-  static const Color surface = Color(0xFF141923);
-  static const Color surfaceLight = Color(0xFF1C2333);
-  static const Color surfaceBorder = Color(0xFF263045);
+  // Backgrounds (Deep Vice Night Sunset)
+  static const Color background = Color(0xFF0C0714);
+  static const Color surface = Color(0xFF180E28);
+  static const Color surfaceLight = Color(0xFF25163D);
+  static const Color surfaceBorder = Color(0xFF45226E);
 
-  // Brand / Accents (GTA VI Vice City Dark Neon Aesthetic)
-  static const Color primary = Color(0xFFFF2A7A); // Neon Pink
-  static const Color primaryGradientEnd = Color(0xFFFF7A00); // Neon Coral/Orange
-  static const Color secondary = Color(0xFF00F0FF); // Cyber Cyan
-  static const Color accent = Color(0xFFFFB800); // Neon Gold
+  // Brand / Accents (GTA VI Ultra Neon Sunset Palette)
+  static const Color primary = Color(0xFFFF007A); // Vice Magenta Neon
+  static const Color primaryGradientEnd = Color(0xFFFF6B00); // Sunset Orange
+  static const Color secondary = Color(0xFF00F0FF); // Ocean Cyan Neon
+  static const Color accent = Color(0xFF9D00FF); // Vice Purple Neon
+  static const Color gold = Color(0xFFFFC700); // Sun Gold
 
   // Category Colors
-  static const Color missions = Color(0xFFFF5252);
-  static const Color vehicles = Color(0xFF00E676);
-  static const Color locations = Color(0xFF40C4FF);
-  static const Color collectibles = Color(0xFFE040FB);
-  static const Color guides = Color(0xFFFFD700);
+  static const Color missions = Color(0xFFFF007A);
+  static const Color vehicles = Color(0xFF00F0FF);
+  static const Color locations = Color(0xFFFF6B00);
+  static const Color collectibles = Color(0xFF9D00FF);
+  static const Color guides = Color(0xFFFFC700);
 
   // Status & Feedback
   static const Color success = Color(0xFF00E676);
   static const Color warning = Color(0xFFFFAB00);
   static const Color error = Color(0xFFFF1744);
-  static const Color info = Color(0xFF29B6F6);
+  static const Color info = Color(0xFF00F0FF);
 
   // Typography
-  static const Color textPrimary = Color(0xFFF8FAFC);
-  static const Color textSecondary = Color(0xFF94A3B8);
-  static const Color textMuted = Color(0xFF64748B);
+  static const Color textPrimary = Color(0xFFFFFFFF);
+  static const Color textSecondary = Color(0xFFD4C7EC);
+  static const Color textMuted = Color(0xFF8B7AA8);
   static const Color textOnPrimary = Color(0xFFFFFFFF);
 
   // Overlays & Glassmorphism
-  static const Color glassBackground = Color(0x99141923);
-  static const Color glassBorder = Color(0x33FFFFFF);
+  static const Color glassBackground = Color(0xAA180E28);
+  static const Color glassBorder = Color(0x40FF007A);
 }

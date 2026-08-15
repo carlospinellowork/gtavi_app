@@ -37,7 +37,7 @@ class HomeScreen extends StatelessWidget {
                         Text(
                           'COMPANION',
                           style: AppTypography.labelSmall.copyWith(
-                            color: AppColors.textSecondary,
+                            color: AppColors.secondary,
                             letterSpacing: 3.0,
                           ),
                         ),
@@ -64,7 +64,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
 
-            // Striking GTA VI Lucia & Jason Vice Neon Banner Header
+            // High-Impact GTA VI Lucia & Jason Vice Neon Banner Header
             SliverToBoxAdapter(
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md),
@@ -72,87 +72,101 @@ class HomeScreen extends StatelessWidget {
                   onTap: () => context.push('/news'),
                   borderRadius: BorderRadius.circular(AppSpacing.radiusLg),
                   child: Container(
-                    padding: const EdgeInsets.all(AppSpacing.md),
+                    height: 200,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(AppSpacing.radiusLg),
-                      gradient: const LinearGradient(
-                        colors: [AppColors.primary, Color(0xFF7928CA), AppColors.secondary],
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                      ),
                       boxShadow: [
                         BoxShadow(
-                          color: AppColors.primary.withAlpha(120),
-                          blurRadius: 18,
+                          color: AppColors.primary.withAlpha(140),
+                          blurRadius: 22,
                           spreadRadius: 2,
                         ),
                       ],
                     ),
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                children: [
-                                  Container(
-                                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-                                    decoration: BoxDecoration(
-                                      color: Colors.black.withAlpha(120),
-                                      borderRadius: BorderRadius.circular(12),
-                                    ),
-                                    child: Row(
-                                      children: [
-                                        Container(
-                                          width: 6,
-                                          height: 6,
-                                          decoration: const BoxDecoration(
-                                            color: AppColors.success,
-                                            shape: BoxShape.circle,
-                                          ),
-                                        ),
-                                        const SizedBox(width: 6),
-                                        Text(
-                                          'AGENTE IA ATIVO',
-                                          style: AppTypography.labelSmall.copyWith(
-                                            color: Colors.white,
-                                            fontSize: 10,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(height: 8),
-                              Text(
-                                'LUCIA & JASON IN VICE CITY',
-                                style: AppTypography.displayMedium.copyWith(
-                                  color: Colors.white,
-                                  fontSize: 18,
-                                  height: 1.1,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(AppSpacing.radiusLg),
+                      child: Stack(
+                        children: [
+                          // Background Character Art
+                          Positioned.fill(
+                            child: Image.asset(
+                              'assets/images/gtavi_lucia_jason.png',
+                              fit: BoxFit.cover,
+                              alignment: Alignment.topCenter,
+                              errorBuilder: (_, __, ___) => Container(color: AppColors.surface),
+                            ),
+                          ),
+                          // Vice Gradient Overlay
+                          Positioned.fill(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                  colors: [
+                                    Colors.black.withAlpha(220),
+                                    Colors.transparent,
+                                    AppColors.background.withAlpha(240),
+                                  ],
+                                  begin: Alignment.bottomLeft,
+                                  end: Alignment.topRight,
                                 ),
                               ),
-                              const SizedBox(height: 4),
-                              Text(
-                                'Novas notícias, vazamentos e trailers atualizados em tempo real',
-                                style: AppTypography.bodySmall.copyWith(color: Colors.white.withAlpha(220)),
-                              ),
-                            ],
+                            ),
                           ),
-                        ),
-                        const SizedBox(width: 8),
-                        Container(
-                          padding: const EdgeInsets.all(12),
-                          decoration: BoxDecoration(
-                            color: Colors.white.withAlpha(40),
-                            shape: BoxShape.circle,
+                          // Banner Content
+                          Padding(
+                            padding: const EdgeInsets.all(AppSpacing.md),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                Container(
+                                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                                  decoration: BoxDecoration(
+                                    color: AppColors.primary,
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      Container(
+                                        width: 6,
+                                        height: 6,
+                                        decoration: const BoxDecoration(
+                                          color: Colors.white,
+                                          shape: BoxShape.circle,
+                                        ),
+                                      ),
+                                      const SizedBox(width: 6),
+                                      Text(
+                                        'AGENTE IA ATIVO • VICE CITY',
+                                        style: AppTypography.labelSmall.copyWith(
+                                          color: Colors.white,
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                const SizedBox(height: 6),
+                                Text(
+                                  'LUCIA & JASON',
+                                  style: AppTypography.displayMedium.copyWith(
+                                    color: Colors.white,
+                                    fontSize: 22,
+                                    height: 1.0,
+                                  ),
+                                ),
+                                const SizedBox(height: 4),
+                                Text(
+                                  'Confira as últimas notícias, vazamentos e trailers do GTA VI',
+                                  style: AppTypography.bodySmall.copyWith(color: Colors.white.withAlpha(230)),
+                                ),
+                              ],
+                            ),
                           ),
-                          child: const Icon(Icons.play_arrow_rounded, color: Colors.white, size: 30),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ),
@@ -173,11 +187,11 @@ class HomeScreen extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: AppColors.surfaceLight,
                       borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
-                      border: Border.all(color: AppColors.surfaceBorder),
+                      border: Border.all(color: AppColors.primary.withAlpha(80)),
                     ),
                     child: Row(
                       children: [
-                        const Icon(Icons.search_rounded, color: AppColors.textMuted),
+                        const Icon(Icons.search_rounded, color: AppColors.secondary),
                         const SizedBox(width: 12),
                         Text(
                           'O que você está procurando em Vice City?',
@@ -223,9 +237,9 @@ class HomeScreen extends StatelessWidget {
                     ),
                     _buildShortcutCard(
                       context,
-                      icon: Icons.map_rounded,
-                      title: 'Mapa',
-                      color: AppColors.locations,
+                      icon: Icons.explore_rounded,
+                      title: 'Mapa 3D',
+                      color: AppColors.secondary,
                       onTap: () => context.go('/map'),
                     ),
                     _buildShortcutCard(
@@ -246,14 +260,14 @@ class HomeScreen extends StatelessWidget {
                       context,
                       icon: Icons.emoji_events_rounded,
                       title: 'Progresso',
-                      color: AppColors.accent,
+                      color: AppColors.gold,
                       onTap: () => context.go('/progress'),
                     ),
                     _buildShortcutCard(
                       context,
                       icon: Icons.menu_book_rounded,
                       title: 'Guias',
-                      color: AppColors.collectibles,
+                      color: AppColors.accent,
                       onTap: () => context.push('/guides'),
                     ),
                   ],
@@ -367,7 +381,7 @@ class HomeScreen extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(
-              color: color.withAlpha(30),
+              color: color.withAlpha(40),
               shape: BoxShape.circle,
             ),
             child: Icon(icon, size: 24, color: color),
@@ -465,7 +479,7 @@ class HomeScreen extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(
-              color: AppColors.primary.withAlpha(30),
+              color: AppColors.primary.withAlpha(40),
               borderRadius: BorderRadius.circular(10),
             ),
             child: const Icon(Icons.menu_book_rounded, color: AppColors.primary, size: 22),
@@ -479,7 +493,7 @@ class HomeScreen extends StatelessWidget {
                 const SizedBox(height: 4),
                 Row(
                   children: [
-                    AppBadge(label: category, color: AppColors.accent),
+                    AppBadge(label: category, color: AppColors.gold),
                     const SizedBox(width: 8),
                     Text('• $time de leitura', style: AppTypography.bodySmall),
                   ],

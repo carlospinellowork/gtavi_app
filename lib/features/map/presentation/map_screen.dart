@@ -1,17 +1,22 @@
+import 'dart:math' as math;
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import '../../../app/theme/app_colors.dart';
 import '../../../app/theme/app_spacing.dart';
 import '../../../app/theme/app_typography.dart';
 import '../../../core/widgets/glass_card.dart';
 import '../../../core/widgets/app_badge.dart';
 
+final mapCategoryFilterProvider = StateProvider<String>((ref) => 'Todos');
+final is3dMapModeProvider = StateProvider<bool>((ref) => true);
+
 class MapMarkerData {
   final String id;
   final String title;
   final String category;
-  final Offset position;
-  final IconData icon;
+  final Offset position; // 0.0 to 1.0 relative
+  final String description;
   final Color color;
 
   const MapMarkerData({
@@ -19,86 +24,356 @@ class MapMarkerData {
     required this.title,
     required this.category,
     required this.position,
-    required this.icon,
+    required this.description,
     required this.color,
   });
 }
 
-class MapScreen extends StatefulWidget {
+class MapScreen extends ConsumerStatefulWidget {
   const MapScreen({super.key});
 
   @override
-  State<MapScreen> createState() => _MapScreenState();
+  ConsumerState<MapScreen> createState() => _MapScreenState();
 }
 
-class _MapScreenState extends State<MapScreen> {
-  final TransformationController _transformationController = TransformationController();
-  String _selectedCategory = 'Todas';
-
-  final List<String> _categories = const [
-    'Todas',
-    'Missões',
-    'Veículos',
-    'Lojas',
-    'Armas',
-    'Atividades',
-    'Colecionáveis',
-    'Locais Secretos',
-  ];
+class _MapScreenState extends ConsumerState<MapScreen> with SingleTickerProviderStateMixin {
+  late AnimationController _radarController;
 
   final List<MapMarkerData> _markers = const [
     MapMarkerData(
       id: 'm1',
-      title: 'Boas-Vindas a Vice City',
-      category: 'Missões',
-      position: Offset(0.35, 0.45),
-      icon: Icons.flag_rounded,
-      color: AppColors.missions,
+      title: 'Ocean Drive Beach Club',
+      category: 'Locais',
+      position: Offset(0.68, 0.48),
+      description: 'Clube icônico de Vice Beach em frente ao mar, ponto focal de festas e missões de Lucia.',
+      color: AppColors.primary,
     ),
     MapMarkerData(
-      id: 'v1',
-      title: 'Showroom Pegassi',
-      category: 'Veículos',
-      position: Offset(0.60, 0.30),
-      icon: Icons.directions_car_rounded,
-      color: AppColors.vehicles,
+      id: 'm2',
+      title: 'Star Island Mansion',
+      category: 'Propriedades',
+      position: Offset(0.58, 0.38),
+      description: 'Mansão de luxo em Star Island com heliponto privado e iate ancorado.',
+      color: AppColors.gold,
     ),
     MapMarkerData(
-      id: 'l1',
-      title: 'Ammu-Nation Downtown',
-      category: 'Armas',
-      position: Offset(0.48, 0.52),
-      icon: Icons.shield_rounded,
-      color: AppColors.error,
-    ),
-    MapMarkerData(
-      id: 'c1',
-      title: 'Pacote Escondido #12',
-      category: 'Colecionáveis',
-      position: Offset(0.72, 0.65),
-      icon: Icons.stars_rounded,
-      color: AppColors.collectibles,
-    ),
-    MapMarkerData(
-      id: 's1',
-      title: 'Entrada da Caverna Submersa',
-      category: 'Locais Secretos',
-      position: Offset(0.20, 0.75),
-      icon: Icons.visibility_off_rounded,
+      id: 'm3',
+      title: 'Downtown Skyscraper Heist',
+      category: 'Golpes',
+      position: Offset(0.42, 0.32),
+      description: 'Edifício comercial de alta segurança para a missão de assalto ao cofre central.',
       color: AppColors.secondary,
+    ),
+    MapMarkerData(
+      id: 'm4',
+      title: 'Escobar International Airport',
+      category: 'Atividades',
+      position: Offset(0.28, 0.82),
+      description: 'Aeroporto internacional com pistas para aviões de carga, jatos e helicópteros.',
+      color: AppColors.accent,
+    ),
+    MapMarkerData(
+      id: 'm5',
+      title: 'Vice Beach Marina',
+      category: 'Veículos',
+      position: Offset(0.40, 0.65),
+      description: 'Marina com lanchas de alta velocidade, jet skis e compras de iates.',
+      color: AppColors.secondary,
+    ),
+    MapMarkerData(
+      id: 'm6',
+      title: 'Pacote Secreto Colecionável #01',
+      category: 'Colecionáveis',
+      position: Offset(0.72, 0.58),
+      description: 'Estátua tiki dourada escondida nas rochas costeiras de Ocean Beach.',
+      color: AppColors.gold,
     ),
   ];
 
-  void _resetZoom() {
-    _transformationController.value = Matrix4.identity();
+  @override
+  void initState() {
+    super.initState();
+    _radarController = AnimationController(
+      vsync: this,
+      duration: const Duration(seconds: 4),
+    )..repeat();
   }
 
-  void _showMarkerDetails(MapMarkerData marker) {
+  @override
+  void dispose() {
+    _radarController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final selectedCategory = ref.watch(mapCategoryFilterProvider);
+    final is3d = ref.watch(is3dMapModeProvider);
+
+    final categories = ['Todos', 'Locais', 'Golpes', 'Propriedades', 'Veículos', 'Colecionáveis'];
+
+    final filteredMarkers = selectedCategory == 'Todos'
+        ? _markers
+        : _markers.where((m) => m.category == selectedCategory).toList();
+
+    return Scaffold(
+      backgroundColor: AppColors.background,
+      body: SafeArea(
+        child: Stack(
+          children: [
+            // 3D Interactive Map Canvas Layer
+            InteractiveViewer(
+              minScale: 0.8,
+              maxScale: 3.5,
+              boundaryMargin: const EdgeInsets.all(300),
+              child: Center(
+                child: AnimatedContainer(
+                  duration: const Duration(milliseconds: 500),
+                  curve: Curves.easeInOut,
+                  transform: is3d
+                      ? (Matrix4.identity()
+                        ..setEntry(3, 2, 0.0012)
+                        ..rotateX(0.48)
+                        ..rotateZ(-0.08))
+                      : Matrix4.identity(),
+                  transformAlignment: Alignment.center,
+                  child: Container(
+                    width: 700,
+                    height: 700,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(24),
+                      boxShadow: [
+                        BoxShadow(
+                          color: AppColors.primary.withAlpha(is3d ? 150 : 60),
+                          blurRadius: is3d ? 40 : 15,
+                          spreadRadius: is3d ? 10 : 2,
+                        ),
+                        BoxShadow(
+                          color: AppColors.secondary.withAlpha(is3d ? 120 : 40),
+                          blurRadius: 30,
+                        ),
+                      ],
+                    ),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(24),
+                      child: Stack(
+                        children: [
+                          // 3D Map Image Texture
+                          Image.asset(
+                            'assets/images/gtavi_map_3d.png',
+                            width: 700,
+                            height: 700,
+                            fit: BoxFit.cover,
+                            errorBuilder: (_, __, ___) {
+                              return Container(
+                                color: AppColors.surface,
+                                child: const Center(
+                                  child: Icon(Icons.map_rounded, size: 80, color: AppColors.primary),
+                                ),
+                              );
+                            },
+                          ),
+
+                          // Rotating Radar Sonar Overlay
+                          AnimatedBuilder(
+                            animation: _radarController,
+                            builder: (context, child) {
+                              return Transform.rotate(
+                                angle: _radarController.value * 2 * math.pi,
+                                alignment: Alignment.center,
+                                child: Container(
+                                  width: 700,
+                                  height: 700,
+                                  decoration: BoxDecoration(
+                                    gradient: SweepGradient(
+                                      colors: [
+                                        Colors.transparent,
+                                        AppColors.secondary.withAlpha(40),
+                                        AppColors.primary.withAlpha(80),
+                                        Colors.transparent,
+                                      ],
+                                      stops: const [0.0, 0.7, 0.95, 1.0],
+                                    ),
+                                  ),
+                                ),
+                              );
+                            },
+                          ),
+
+                          // Interactive Map Markers
+                          ...filteredMarkers.map((marker) {
+                            return Positioned(
+                              left: marker.position.dx * 700 - 20,
+                              top: marker.position.dy * 700 - 20,
+                              child: GestureDetector(
+                                onTap: () => _showMarkerDetails(context, marker),
+                                child: Column(
+                                  children: [
+                                    Container(
+                                      padding: const EdgeInsets.all(8),
+                                      decoration: BoxDecoration(
+                                        color: marker.color,
+                                        shape: BoxShape.circle,
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: marker.color.withAlpha(200),
+                                            blurRadius: 14,
+                                            spreadRadius: 4,
+                                          ),
+                                        ],
+                                      ),
+                                      child: const Icon(
+                                        Icons.location_on_rounded,
+                                        color: Colors.white,
+                                        size: 20,
+                                      ),
+                                    ).animate(onPlay: (c) => c.repeat(reverse: true)).scale(
+                                          begin: const Offset(1.0, 1.0),
+                                          end: const Offset(1.2, 1.2),
+                                          duration: 1000.ms,
+                                        ),
+                                    const SizedBox(height: 4),
+                                    Container(
+                                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                                      decoration: BoxDecoration(
+                                        color: Colors.black.withAlpha(200),
+                                        borderRadius: BorderRadius.circular(6),
+                                        border: Border.all(color: marker.color, width: 1),
+                                      ),
+                                      child: Text(
+                                        marker.title,
+                                        style: const TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            );
+                          }),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+
+            // Top HUD Overlay Controls
+            Positioned(
+              top: AppSpacing.md,
+              left: AppSpacing.md,
+              right: AppSpacing.md,
+              child: Column(
+                children: [
+                  // HUD Title Bar
+                  GlassCard(
+                    padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md, vertical: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              padding: const EdgeInsets.all(6),
+                              decoration: const BoxDecoration(
+                                color: AppColors.primary,
+                                shape: BoxShape.circle,
+                              ),
+                              child: const Icon(Icons.explore_rounded, color: Colors.white, size: 18),
+                            ),
+                            const SizedBox(width: 10),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'VICE CITY MAPA 3D',
+                                  style: AppTypography.titleLarge.copyWith(fontSize: 16),
+                                ),
+                                Text(
+                                  is3d ? 'Modo Tático Perspectiva 3D' : 'Modo Satélite 2D Plano',
+                                  style: AppTypography.labelSmall.copyWith(color: AppColors.secondary),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+
+                        // Toggle 2D / 3D Button
+                        ElevatedButton.icon(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: is3d ? AppColors.primary : AppColors.surfaceLight,
+                            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                          ),
+                          onPressed: () {
+                            ref.read(is3dMapModeProvider.notifier).state = !is3d;
+                          },
+                          icon: Icon(
+                            is3d ? Icons.view_in_ar_rounded : Icons.map_rounded,
+                            size: 16,
+                            color: Colors.white,
+                          ),
+                          label: Text(
+                            is3d ? '3D ATIVO' : 'VISÃO 2D',
+                            style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 11),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  const SizedBox(height: 10),
+
+                  // Category Chips Bar
+                  SizedBox(
+                    height: 38,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: categories.length,
+                      itemBuilder: (context, index) {
+                        final cat = categories[index];
+                        final isSelected = cat == selectedCategory;
+                        return Padding(
+                          padding: const EdgeInsets.only(right: 8),
+                          child: ChoiceChip(
+                            label: Text(cat),
+                            selected: isSelected,
+                            onSelected: (_) {
+                              ref.read(mapCategoryFilterProvider.notifier).state = cat;
+                            },
+                            selectedColor: AppColors.primary,
+                            backgroundColor: AppColors.surface.withAlpha(220),
+                            labelStyle: TextStyle(
+                              color: isSelected ? Colors.white : AppColors.textSecondary,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _showMarkerDetails(BuildContext context, MapMarkerData marker) {
     showModalBottomSheet(
       context: context,
       backgroundColor: AppColors.surface,
       shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+        borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
       ),
       builder: (context) {
         return Padding(
@@ -117,230 +392,39 @@ class _MapScreenState extends State<MapScreen> {
                   ),
                 ],
               ),
-              const SizedBox(height: AppSpacing.sm),
+              const SizedBox(height: 8),
               Text(marker.title, style: AppTypography.titleLarge),
-              const SizedBox(height: AppSpacing.xs),
-              Text(
-                'Marcador verificado no mapa de Vice City. Toque abaixo para abrir a página detalhada.',
-                style: AppTypography.bodyMedium,
-              ),
+              const SizedBox(height: 8),
+              Text(marker.description, style: AppTypography.bodyMedium),
               const SizedBox(height: AppSpacing.lg),
-              SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.primary,
-                    padding: const EdgeInsets.symmetric(vertical: 14),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+              Row(
+                children: [
+                  Expanded(
+                    child: ElevatedButton.icon(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: marker.color,
+                        padding: const EdgeInsets.symmetric(vertical: 12),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.pop(context);
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(content: Text('Rota traçada para ${marker.title}')),
+                        );
+                      },
+                      icon: const Icon(Icons.navigation_rounded, color: Colors.white),
+                      label: const Text('Traçar Rota', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
                     ),
                   ),
-                  onPressed: () {
-                    Navigator.pop(context);
-                    if (marker.category == 'Veículos') {
-                      context.push('/vehicles/v1');
-                    } else if (marker.category == 'Missões') {
-                      context.push('/missions/m1');
-                    }
-                  },
-                  child: Text(
-                    'Ver Detalhes do Ponto',
-                    style: AppTypography.labelLarge.copyWith(color: Colors.white),
-                  ),
-                ),
+                ],
               ),
+              const SizedBox(height: AppSpacing.md),
             ],
           ),
         );
       },
     );
   }
-
-  @override
-  Widget build(BuildContext context) {
-    final filteredMarkers = _selectedCategory == 'Todas'
-        ? _markers
-        : _markers.where((m) => m.category == _selectedCategory).toList();
-
-    return Scaffold(
-      backgroundColor: AppColors.background,
-      body: SafeArea(
-        child: Stack(
-          children: [
-            Positioned.fill(
-              child: InteractiveViewer(
-                transformationController: _transformationController,
-                minScale: 0.8,
-                maxScale: 4.0,
-                child: LayoutBuilder(
-                  builder: (context, constraints) {
-                    final width = constraints.maxWidth;
-                    final height = constraints.maxHeight;
-
-                    return Container(
-                      width: width,
-                      height: height,
-                      decoration: const BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [Color(0xFF0F172A), Color(0xFF020617)],
-                          begin: Alignment.topLeft,
-                          end: Alignment.bottomRight,
-                        ),
-                      ),
-                      child: Stack(
-                        children: [
-                          CustomPaint(
-                            size: Size(width, height),
-                            painter: MapGridPainter(),
-                          ),
-                          Positioned(
-                            top: height * 0.2,
-                            left: width * 0.1,
-                            child: Container(
-                              width: width * 0.8,
-                              height: height * 0.6,
-                              decoration: BoxDecoration(
-                                color: AppColors.surface.withAlpha(180),
-                                borderRadius: BorderRadius.circular(40),
-                                border: Border.all(color: AppColors.surfaceBorder, width: 2),
-                              ),
-                            ),
-                          ),
-                          ...filteredMarkers.map((marker) {
-                            return Positioned(
-                              left: marker.position.dx * width,
-                              top: marker.position.dy * height,
-                              child: GestureDetector(
-                                onTap: () => _showMarkerDetails(marker),
-                                child: Container(
-                                  padding: const EdgeInsets.all(8),
-                                  decoration: BoxDecoration(
-                                    color: marker.color,
-                                    shape: BoxShape.circle,
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: marker.color.withAlpha(150),
-                                        blurRadius: 10,
-                                        spreadRadius: 2,
-                                      ),
-                                    ],
-                                  ),
-                                  child: Icon(marker.icon, size: 18, color: Colors.white),
-                                ),
-                              ),
-                            );
-                          }),
-                        ],
-                      ),
-                    );
-                  },
-                ),
-              ),
-            ),
-            Positioned(
-              top: AppSpacing.md,
-              left: AppSpacing.md,
-              right: AppSpacing.md,
-              child: Column(
-                children: [
-                  GlassCard(
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text('Mapa de Vice City', style: AppTypography.titleLarge),
-                        Text(
-                          '${filteredMarkers.length} pontos',
-                          style: AppTypography.bodySmall.copyWith(color: AppColors.primary),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(height: 10),
-                  SizedBox(
-                    height: 38,
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: _categories.length,
-                      itemBuilder: (context, index) {
-                        final cat = _categories[index];
-                        final isSelected = cat == _selectedCategory;
-                        return Padding(
-                          padding: const EdgeInsets.only(right: 8),
-                          child: ChoiceChip(
-                            label: Text(cat),
-                            selected: isSelected,
-                            onSelected: (_) {
-                              setState(() {
-                                _selectedCategory = cat;
-                              });
-                            },
-                            selectedColor: AppColors.primary,
-                            backgroundColor: AppColors.surface,
-                            labelStyle: TextStyle(
-                              color: isSelected ? Colors.white : AppColors.textSecondary,
-                              fontSize: 12,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                        );
-                      },
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Positioned(
-              bottom: AppSpacing.md,
-              right: AppSpacing.md,
-              child: Column(
-                children: [
-                  FloatingActionButton.small(
-                    heroTag: 'zoom_reset',
-                    onPressed: _resetZoom,
-                    backgroundColor: AppColors.surface,
-                    child: const Icon(Icons.center_focus_strong_rounded, color: AppColors.textPrimary),
-                  ),
-                  const SizedBox(height: 8),
-                  FloatingActionButton.small(
-                    heroTag: 'my_location',
-                    onPressed: () {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(
-                          content: Text('GPS conectado a Vice City Downtown'),
-                          duration: Duration(seconds: 1),
-                        ),
-                      );
-                    },
-                    backgroundColor: AppColors.primary,
-                    child: const Icon(Icons.my_location_rounded, color: Colors.white),
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class MapGridPainter extends CustomPainter {
-  @override
-  void paint(Canvas canvas, Size size) {
-    final paint = Paint()
-      ..color = const Color(0x1F334155)
-      ..strokeWidth = 1.0;
-
-    const step = 40.0;
-    for (double x = 0; x < size.width; x += step) {
-      canvas.drawLine(Offset(x, 0), Offset(x, size.height), paint);
-    }
-    for (double y = 0; y < size.height; y += step) {
-      canvas.drawLine(Offset(0, y), Offset(size.width, y), paint);
-    }
-  }
-
-  @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }
