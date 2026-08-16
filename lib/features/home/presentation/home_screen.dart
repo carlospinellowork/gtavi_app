@@ -1,16 +1,47 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../../app/theme/app_colors.dart';
 import '../../../app/theme/app_spacing.dart';
 import '../../../app/theme/app_typography.dart';
+import '../../../app/providers.dart';
 import '../../../core/widgets/glass_card.dart';
 import '../../../core/widgets/app_badge.dart';
+import '../../characters/domain/character_model.dart';
+import '../../vehicles/domain/vehicle_model.dart';
+import '../../guides/domain/guide_model.dart';
+import '../../gallery/domain/media_item_model.dart';
 
-class HomeScreen extends StatelessWidget {
+final homeCharactersProvider = FutureProvider<List<CharacterModel>>((ref) async {
+  final repo = ref.watch(charactersRepositoryProvider);
+  return await repo.getCharacters();
+});
+
+final homeVehiclesProvider = FutureProvider<List<VehicleModel>>((ref) async {
+  final repo = ref.watch(vehiclesRepositoryProvider);
+  return await repo.getVehicles();
+});
+
+final homeGuidesProvider = FutureProvider<List<GuideModel>>((ref) async {
+  final repo = ref.watch(guidesRepositoryProvider);
+  return await repo.getGuides();
+});
+
+final homeGalleryProvider = FutureProvider<List<MediaItemModel>>((ref) async {
+  final repo = ref.watch(galleryRepositoryProvider);
+  return await repo.getMediaItems();
+});
+
+class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final charsAsync = ref.watch(homeCharactersProvider);
+    final vehsAsync = ref.watch(homeVehiclesProvider);
+    final guidesAsync = ref.watch(homeGuidesProvider);
+    final galleryAsync = ref.watch(homeGalleryProvider);
+
     return Scaffold(
       backgroundColor: AppColors.background,
       body: SafeArea(
@@ -35,7 +66,7 @@ class HomeScreen extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          'COMPANION',
+                          'CENTRAL HUB',
                           style: AppTypography.labelSmall.copyWith(
                             color: AppColors.secondary,
                             letterSpacing: 3.0,
@@ -64,7 +95,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
 
-            // High-Impact GTA VI Lucia & Jason Vice Neon Banner Header
+            // High-Impact GTA VI Banner Header
             SliverToBoxAdapter(
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md),
@@ -87,16 +118,14 @@ class HomeScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(AppSpacing.radiusLg),
                       child: Stack(
                         children: [
-                          // Background Character Art
                           Positioned.fill(
                             child: Image.asset(
                               'assets/images/gtavi_lucia_jason.png',
                               fit: BoxFit.cover,
                               alignment: Alignment.topCenter,
-                              errorBuilder: (_, __, ___) => Container(color: AppColors.surface),
+                              errorBuilder: (ctx, err, stack) => Container(color: AppColors.surface),
                             ),
                           ),
-                          // Vice Gradient Overlay
                           Positioned.fill(
                             child: Container(
                               decoration: BoxDecoration(
@@ -112,7 +141,6 @@ class HomeScreen extends StatelessWidget {
                               ),
                             ),
                           ),
-                          // Banner Content
                           Padding(
                             padding: const EdgeInsets.all(AppSpacing.md),
                             child: Column(
@@ -129,8 +157,7 @@ class HomeScreen extends StatelessWidget {
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Container(
-                                        width: 6,
-                                        height: 6,
+                                        width: 6, height: 6,
                                         decoration: const BoxDecoration(
                                           color: Colors.white,
                                           shape: BoxShape.circle,
@@ -140,9 +167,7 @@ class HomeScreen extends StatelessWidget {
                                       Text(
                                         'AGENTE IA ATIVO • VICE CITY',
                                         style: AppTypography.labelSmall.copyWith(
-                                          color: Colors.white,
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold,
+                                          color: Colors.white, fontSize: 10, fontWeight: FontWeight.bold,
                                         ),
                                       ),
                                     ],
@@ -152,14 +177,12 @@ class HomeScreen extends StatelessWidget {
                                 Text(
                                   'LUCIA & JASON',
                                   style: AppTypography.displayMedium.copyWith(
-                                    color: Colors.white,
-                                    fontSize: 22,
-                                    height: 1.0,
+                                    color: Colors.white, fontSize: 22, height: 1.0,
                                   ),
                                 ),
                                 const SizedBox(height: 4),
                                 Text(
-                                  'Confira as últimas notícias, vazamentos e trailers do GTA VI',
+                                  'Confira as últimas notícias, vazamentos e trailers de GTA VI',
                                   style: AppTypography.bodySmall.copyWith(color: Colors.white.withAlpha(230)),
                                 ),
                               ],
@@ -194,7 +217,7 @@ class HomeScreen extends StatelessWidget {
                         const Icon(Icons.search_rounded, color: AppColors.secondary),
                         const SizedBox(width: 12),
                         Text(
-                          'O que você está procurando em Vice City?',
+                          'O que você quer saber sobre GTA VI?',
                           style: AppTypography.bodyMedium.copyWith(color: AppColors.textMuted),
                         ),
                       ],
@@ -230,24 +253,38 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     _buildShortcutCard(
                       context,
-                      icon: Icons.radio_rounded,
-                      title: 'Rádio Vice',
+                      icon: Icons.people_rounded,
+                      title: 'Personagens',
                       color: AppColors.primary,
-                      onTap: () => context.push('/radio'),
+                      onTap: () => context.push('/characters'),
                     ),
                     _buildShortcutCard(
                       context,
-                      icon: Icons.games_rounded,
-                      title: 'Macetes/Cheats',
+                      icon: Icons.photo_library_rounded,
+                      title: 'Galeria',
                       color: AppColors.secondary,
-                      onTap: () => context.push('/cheats'),
+                      onTap: () => context.push('/gallery'),
                     ),
                     _buildShortcutCard(
                       context,
-                      icon: Icons.attach_money_rounded,
-                      title: 'Economia',
-                      color: AppColors.gold,
-                      onTap: () => context.push('/economy'),
+                      icon: Icons.place_rounded,
+                      title: 'Locais',
+                      color: AppColors.locations,
+                      onTap: () => context.push('/locations'),
+                    ),
+                    _buildShortcutCard(
+                      context,
+                      icon: Icons.gps_fixed_rounded,
+                      title: 'Arsenal',
+                      color: AppColors.secondary,
+                      onTap: () => context.push('/weapons'),
+                    ),
+                    _buildShortcutCard(
+                      context,
+                      icon: Icons.visibility_rounded,
+                      title: 'Easter Eggs',
+                      color: AppColors.accent,
+                      onTap: () => context.push('/easter-eggs'),
                     ),
                     _buildShortcutCard(
                       context,
@@ -258,38 +295,24 @@ class HomeScreen extends StatelessWidget {
                     ),
                     _buildShortcutCard(
                       context,
-                      icon: Icons.play_circle_fill_rounded,
-                      title: 'Vídeos & Flow',
+                      icon: Icons.radio_rounded,
+                      title: 'Rádio Vice',
+                      color: AppColors.primary,
+                      onTap: () => context.push('/radio'),
+                    ),
+                    _buildShortcutCard(
+                      context,
+                      icon: Icons.games_rounded,
+                      title: 'Macetes',
                       color: AppColors.secondary,
-                      onTap: () => context.push('/videos'),
+                      onTap: () => context.push('/cheats'),
                     ),
                     _buildShortcutCard(
                       context,
-                      icon: Icons.explore_rounded,
-                      title: 'Mapa HD',
+                      icon: Icons.attach_money_rounded,
+                      title: 'Economia',
                       color: AppColors.gold,
-                      onTap: () => context.go('/map'),
-                    ),
-                    _buildShortcutCard(
-                      context,
-                      icon: Icons.directions_car_rounded,
-                      title: 'Veículos',
-                      color: AppColors.vehicles,
-                      onTap: () => context.go('/vehicles'),
-                    ),
-                    _buildShortcutCard(
-                      context,
-                      icon: Icons.flag_rounded,
-                      title: 'Missões',
-                      color: AppColors.missions,
-                      onTap: () => context.go('/missions'),
-                    ),
-                    _buildShortcutCard(
-                      context,
-                      icon: Icons.emoji_events_rounded,
-                      title: 'Progresso',
-                      color: AppColors.accent,
-                      onTap: () => context.go('/progress'),
+                      onTap: () => context.push('/economy'),
                     ),
                   ],
                 ),
@@ -298,49 +321,73 @@ class HomeScreen extends StatelessWidget {
 
             const SliverToBoxAdapter(child: SizedBox(height: AppSpacing.xl)),
 
-            // Mais Procurados Section
+            // Mais Procurados (Veículos) Section
             SliverToBoxAdapter(
               child: _buildSectionHeader(
-                title: 'Mais Procurados',
-                onSeeAll: () => context.go('/vehicles'),
+                title: 'Veículos em Destaque',
+                onSeeAll: () => context.push('/vehicles'),
               ),
             ),
             SliverToBoxAdapter(
               child: SizedBox(
                 height: 170,
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  physics: const BouncingScrollPhysics(),
-                  padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md),
-                  children: [
-                    _buildPopularCard(
-                      context,
-                      id: 'v1',
-                      title: 'Pegassi Ignus X',
-                      subtitle: '\$2.450.000 • Super',
-                      badge: 'População Alta',
-                      badgeColor: AppColors.vehicles,
-                      onTap: () => context.push('/vehicles/v1'),
-                    ),
-                    _buildPopularCard(
-                      context,
-                      id: 'v2',
-                      title: 'Grotti Cheetah Classic',
-                      subtitle: '\$1.850.000 • Sports',
-                      badge: 'Ícone 80s',
-                      badgeColor: AppColors.primary,
-                      onTap: () => context.push('/vehicles/v2'),
-                    ),
-                    _buildPopularCard(
-                      context,
-                      id: 'v3',
-                      title: 'Maverick Helicopter',
-                      subtitle: '\$3.200.000 • Aéreo',
-                      badge: 'Executivo',
-                      badgeColor: AppColors.secondary,
-                      onTap: () => context.push('/vehicles/v5'),
-                    ),
-                  ],
+                child: vehsAsync.when(
+                  loading: () => const Center(child: CircularProgressIndicator(color: AppColors.primary)),
+                  error: (e, st) => const SizedBox(),
+                  data: (vehicles) => ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    physics: const BouncingScrollPhysics(),
+                    padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md),
+                    itemCount: vehicles.length,
+                    itemBuilder: (context, index) {
+                      final v = vehicles[index];
+                      return _buildPopularCard(
+                        context,
+                        id: v.id,
+                        title: v.name,
+                        subtitle: '\$${v.price.toStringAsFixed(0)} • ${v.category}',
+                        badge: v.category,
+                        badgeColor: AppColors.vehicles,
+                        onTap: () => context.push('/vehicles/${v.id}'),
+                      );
+                    },
+                  ),
+                ),
+              ),
+            ),
+
+            const SliverToBoxAdapter(child: SizedBox(height: AppSpacing.lg)),
+
+            // Personagens Section
+            SliverToBoxAdapter(
+              child: _buildSectionHeader(
+                title: 'Personagens Principais',
+                onSeeAll: () => context.push('/characters'),
+              ),
+            ),
+            SliverToBoxAdapter(
+              child: SizedBox(
+                height: 220,
+                child: charsAsync.when(
+                  loading: () => const Center(child: CircularProgressIndicator(color: AppColors.primary)),
+                  error: (e, st) => const SizedBox(),
+                  data: (characters) => ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    physics: const BouncingScrollPhysics(),
+                    padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md),
+                    itemCount: characters.length,
+                    itemBuilder: (context, index) {
+                      final c = characters[index];
+                      return _buildCharacterCard(
+                        context,
+                        id: c.id,
+                        name: c.name.toUpperCase(),
+                        role: c.role,
+                        imageAsset: c.localImageAsset,
+                        color: index.isEven ? AppColors.primary : AppColors.secondary,
+                      );
+                    },
+                  ),
                 ),
               ),
             ),
@@ -357,87 +404,54 @@ class HomeScreen extends StatelessWidget {
             SliverToBoxAdapter(
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md),
-                child: Column(
-                  children: [
-                    _buildGuideTile(
-                      context,
-                      title: 'Como conseguir \$10.000.000 rapidamente',
-                      category: 'Dinheiro',
-                      time: '6 min',
-                      onTap: () => context.push('/guides/g1'),
-                    ),
-                    const SizedBox(height: 10),
-                    _buildGuideTile(
-                      context,
-                      title: 'Guia Completo para os 100% de Conclusão',
-                      category: '100%',
-                      time: '12 min',
-                      onTap: () => context.push('/guides/g2'),
-                    ),
-                  ],
+                child: guidesAsync.when(
+                  loading: () => const Center(child: CircularProgressIndicator(color: AppColors.primary)),
+                  error: (e, st) => const SizedBox(),
+                  data: (guides) => Column(
+                    children: guides.take(3).map((g) => Padding(
+                      padding: const EdgeInsets.only(bottom: 10),
+                      child: _buildGuideTile(
+                        context,
+                        title: g.title,
+                        category: g.category,
+                        time: g.readTime,
+                        onTap: () => context.push('/guides/${g.id}'),
+                      ),
+                    )).toList(),
+                  ),
                 ),
               ),
             ),
 
             const SliverToBoxAdapter(child: SizedBox(height: AppSpacing.lg)),
 
-            // Personagens Section
+            // Galeria Vice City Section
             SliverToBoxAdapter(
               child: _buildSectionHeader(
-                title: 'Personagens Principais',
-                onSeeAll: () => context.push('/ai-chat'),
+                title: 'Galeria de Vice City',
+                onSeeAll: () => context.push('/gallery'),
               ),
             ),
-            SliverToBoxAdapter(
-              child: SizedBox(
-                height: 220,
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  physics: const BouncingScrollPhysics(),
-                  padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md),
-                  children: [
-                    _buildCharacterCard(
-                      context,
-                      name: 'LUCIA',
-                      role: 'Protagonista • Estrategista',
-                      imageAsset: 'assets/images/lucia_portrait.png',
-                      color: AppColors.primary,
-                    ),
-                    _buildCharacterCard(
-                      context,
-                      name: 'JASON',
-                      role: 'Protagonista • Motorista de Fuga',
-                      imageAsset: 'assets/images/jason_portrait.png',
-                      color: AppColors.secondary,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-
-            const SliverToBoxAdapter(child: SizedBox(height: AppSpacing.lg)),
-
-            // Galeria Vice City
-            SliverToBoxAdapter(
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md),
-                child: Text('Galeria de Vice City', style: AppTypography.titleLarge),
-              ),
-            ),
-            const SliverToBoxAdapter(child: SizedBox(height: AppSpacing.sm)),
             SliverToBoxAdapter(
               child: SizedBox(
                 height: 140,
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  physics: const BouncingScrollPhysics(),
-                  padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md),
-                  children: [
-                    _buildGalleryCard('assets/images/vice_city_beach.png', 'Vice Beach'),
-                    _buildGalleryCard('assets/images/vice_city_downtown.png', 'Downtown'),
-                    _buildGalleryCard('assets/images/vice_city_cars.png', 'Supercarros'),
-                    _buildGalleryCard('assets/images/splash_vice_city.png', 'Skyline'),
-                  ],
+                child: galleryAsync.when(
+                  loading: () => const Center(child: CircularProgressIndicator(color: AppColors.primary)),
+                  error: (e, st) => const SizedBox(),
+                  data: (mediaItems) => ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    physics: const BouncingScrollPhysics(),
+                    padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md),
+                    itemCount: mediaItems.length,
+                    itemBuilder: (context, index) {
+                      final item = mediaItems[index];
+                      return _buildGalleryCard(
+                        item.localImageAsset,
+                        item.title,
+                        onTap: () => context.push('/gallery'),
+                      );
+                    },
+                  ),
                 ),
               ),
             ),
@@ -473,8 +487,10 @@ class HomeScreen extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             title,
-            style: AppTypography.labelLarge.copyWith(fontSize: 12),
+            style: AppTypography.labelLarge.copyWith(fontSize: 11),
             textAlign: TextAlign.center,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
           ),
         ],
       ),
@@ -593,30 +609,36 @@ class HomeScreen extends StatelessWidget {
 
   Widget _buildCharacterCard(
     BuildContext context, {
+    required String id,
     required String name,
     required String role,
-    required String imageAsset,
+    required String? imageAsset,
     required Color color,
   }) {
     return Container(
       width: 160,
       margin: const EdgeInsets.only(right: 14),
       child: GlassCard(
-        onTap: () => context.push('/ai-chat'),
+        onTap: () => context.push('/characters/$id'),
         padding: EdgeInsets.zero,
         child: ClipRRect(
           borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
           child: Stack(
             children: [
               Positioned.fill(
-                child: Image.asset(
-                  imageAsset,
-                  fit: BoxFit.cover,
-                  errorBuilder: (_, _, _) => Container(
-                    color: AppColors.surfaceLight,
-                    child: const Icon(Icons.person_rounded, color: AppColors.textMuted, size: 48),
-                  ),
-                ),
+                child: imageAsset != null
+                    ? Image.asset(
+                        imageAsset,
+                        fit: BoxFit.cover,
+                        errorBuilder: (ctx, err, stack) => Container(
+                          color: AppColors.surfaceLight,
+                          child: const Icon(Icons.person_rounded, color: AppColors.textMuted, size: 48),
+                        ),
+                      )
+                    : Container(
+                        color: AppColors.surfaceLight,
+                        child: Center(child: Text(name.substring(0, 1), style: const TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: AppColors.textMuted))),
+                      ),
               ),
               Positioned.fill(
                 child: Container(
@@ -643,14 +665,18 @@ class HomeScreen extends StatelessWidget {
                       name,
                       style: AppTypography.titleMedium.copyWith(
                         color: Colors.white,
-                        fontSize: 18,
+                        fontSize: 16,
                         fontWeight: FontWeight.w900,
                       ),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                     ),
                     const SizedBox(height: 2),
                     Text(
                       role,
                       style: TextStyle(color: color, fontSize: 10, fontWeight: FontWeight.bold),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                     ),
                   ],
                 ),
@@ -662,41 +688,49 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildGalleryCard(String imageAsset, String label) {
+  Widget _buildGalleryCard(String? imageAsset, String label, {required VoidCallback onTap}) {
     return Container(
       width: 200,
       margin: const EdgeInsets.only(right: 12),
-      child: ClipRRect(
+      child: InkWell(
+        onTap: onTap,
         borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
-        child: Stack(
-          children: [
-            Positioned.fill(
-              child: Image.asset(
-                imageAsset,
-                fit: BoxFit.cover,
-                errorBuilder: (_, _, _) => Container(color: AppColors.surfaceLight),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+          child: Stack(
+            children: [
+              Positioned.fill(
+                child: imageAsset != null
+                    ? Image.asset(
+                        imageAsset,
+                        fit: BoxFit.cover,
+                        errorBuilder: (ctx, err, stack) => Container(color: AppColors.surfaceLight),
+                      )
+                    : Container(color: AppColors.surfaceLight),
               ),
-            ),
-            Positioned(
-              bottom: 0,
-              left: 0,
-              right: 0,
-              child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment.bottomCenter,
-                    end: Alignment.topCenter,
-                    colors: [Colors.black.withAlpha(200), Colors.transparent],
+              Positioned(
+                bottom: 0,
+                left: 0,
+                right: 0,
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.bottomCenter,
+                      end: Alignment.topCenter,
+                      colors: [Colors.black.withAlpha(200), Colors.transparent],
+                    ),
+                  ),
+                  child: Text(
+                    label,
+                    style: const TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
                   ),
                 ),
-                child: Text(
-                  label,
-                  style: const TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
-                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

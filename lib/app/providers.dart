@@ -3,6 +3,7 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../core/storage/storage_service.dart';
 import '../core/network/api_client.dart';
+import '../core/services/analytics_service.dart';
 import '../features/vehicles/data/vehicles_repository.dart';
 import '../features/missions/data/missions_repository.dart';
 import '../features/progress/data/progress_repository.dart';
@@ -10,12 +11,18 @@ import '../features/progress/domain/progress_model.dart';
 import '../features/guides/data/guides_repository.dart';
 import '../features/news/data/news_repository.dart';
 import '../features/favorites/data/favorites_repository.dart';
-
 import '../features/videos/data/videos_repository.dart';
 import '../features/radio/data/radio_repository.dart';
 import '../features/cheats/data/cheats_repository.dart';
 import '../features/economy/data/economy_repository.dart';
+import '../features/characters/data/characters_repository.dart';
+import '../features/locations/data/locations_repository.dart';
+import '../features/weapons/data/weapons_repository.dart';
+import '../features/gallery/data/gallery_repository.dart';
+import '../features/easter_eggs/data/easter_eggs_repository.dart';
+import '../features/search/data/search_repository.dart';
 
+// ─── Core ───────────────────────────────────────────────────────────────
 final sharedPreferencesProvider = Provider<SharedPreferences>((ref) {
   throw UnimplementedError('SharedPreferences deve ser inicializado no main');
 });
@@ -34,6 +41,11 @@ final apiClientProvider = Provider<ApiClient>((ref) {
   return ApiClient();
 });
 
+final analyticsServiceProvider = Provider<AnalyticsService>((ref) {
+  return NoOpAnalyticsService();
+});
+
+// ─── Repositories ───────────────────────────────────────────────────────
 final vehiclesRepositoryProvider = Provider<VehiclesRepository>((ref) {
   return MockVehiclesRepository();
 });
@@ -77,6 +89,41 @@ final favoritesRepositoryProvider = Provider<FavoritesRepository>((ref) {
   return MockFavoritesRepository(storage);
 });
 
+// ─── NEW: Repositories adicionais ───────────────────────────────────────
+final charactersRepositoryProvider = Provider<CharactersRepository>((ref) {
+  return MockCharactersRepository();
+});
+
+final locationsRepositoryProvider = Provider<LocationsRepository>((ref) {
+  return MockLocationsRepository();
+});
+
+final weaponsRepositoryProvider = Provider<WeaponsRepository>((ref) {
+  return MockWeaponsRepository();
+});
+
+final galleryRepositoryProvider = Provider<GalleryRepository>((ref) {
+  return MockGalleryRepository();
+});
+
+final easterEggsRepositoryProvider = Provider<EasterEggsRepository>((ref) {
+  return MockEasterEggsRepository();
+});
+
+final searchRepositoryProvider = Provider<SearchRepository>((ref) {
+  return SearchRepository(
+    characters: ref.watch(charactersRepositoryProvider),
+    vehicles: ref.watch(vehiclesRepositoryProvider),
+    missions: ref.watch(missionsRepositoryProvider),
+    locations: ref.watch(locationsRepositoryProvider),
+    weapons: ref.watch(weaponsRepositoryProvider),
+    guides: ref.watch(guidesRepositoryProvider),
+    easterEggs: ref.watch(easterEggsRepositoryProvider),
+    gallery: ref.watch(galleryRepositoryProvider),
+  );
+});
+
+// ─── State Notifiers ────────────────────────────────────────────────────
 class FavoritesNotifier extends StateNotifier<AsyncValue<List<String>>> {
   final FavoritesRepository _repository;
 

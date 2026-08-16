@@ -33,10 +33,10 @@ class FavoritesScreen extends ConsumerWidget {
           if (favIds.isEmpty) {
             return AppEmptyState(
               title: 'Sua lista de favoritos está vazia',
-              message: 'Navegue pelo catálogo de veículos, missões e guias para favoritar seus itens de interesse.',
+              message: 'Navegue pelo aplicativo para favoritar veículos, missões, personagens, armas e guias.',
               icon: Icons.bookmark_outline_rounded,
-              actionText: 'Explorar Veículos',
-              onAction: () => context.go('/vehicles'),
+              actionText: 'Explorar GTA VI',
+              onAction: () => context.go('/explore'),
             );
           }
 
@@ -45,33 +45,57 @@ class FavoritesScreen extends ConsumerWidget {
             itemCount: favIds.length,
             itemBuilder: (context, index) {
               final id = favIds[index];
-              final isVehicle = id.startsWith('v');
-              final isMission = id.startsWith('m');
-              final isGuide = id.startsWith('g');
 
               String title = 'Item Favorito #$id';
               String category = 'Geral';
               Color catColor = AppColors.primary;
               IconData icon = Icons.bookmark_rounded;
-              String routePath = '/home';
+              String routePath = '/explore';
 
-              if (isVehicle) {
+              if (id.startsWith('char_')) {
+                category = 'Personagem';
+                catColor = AppColors.primary;
+                icon = Icons.person_rounded;
+                if (id == 'char_lucia') title = 'Lucia Caminos';
+                if (id == 'char_jason') title = 'Jason Duval';
+                if (id == 'char_marco') title = 'Marco "El Tigre"';
+                routePath = '/characters/$id';
+              } else if (id.startsWith('loc_')) {
+                category = 'Local';
+                catColor = AppColors.locations;
+                icon = Icons.place_rounded;
+                if (id == 'loc_ocean_drive') title = 'Ocean Drive';
+                if (id == 'loc_downtown') title = 'Downtown Vice City';
+                routePath = '/locations';
+              } else if (id.startsWith('w')) {
+                category = 'Arma';
+                catColor = AppColors.secondary;
+                icon = Icons.gps_fixed_rounded;
+                if (id == 'w1') title = 'Pistol 9mm';
+                if (id == 'w2') title = 'Combat Shotgun';
+                routePath = '/weapons';
+              } else if (id.startsWith('ee')) {
+                category = 'Easter Egg';
+                catColor = AppColors.accent;
+                icon = Icons.visibility_rounded;
+                routePath = '/easter-eggs';
+              } else if (id.startsWith('v')) {
                 category = 'Veículo';
                 catColor = AppColors.vehicles;
                 icon = Icons.directions_car_rounded;
                 if (id == 'v1') title = 'Pegassi Ignus X';
                 if (id == 'v2') title = 'Grotti Cheetah Classic';
                 routePath = '/vehicles/$id';
-              } else if (isMission) {
+              } else if (id.startsWith('m')) {
                 category = 'Missão';
                 catColor = AppColors.missions;
                 icon = Icons.flag_rounded;
                 if (id == 'm1') title = 'Boas-Vindas a Vice City';
                 if (id == 'm2') title = 'O Grande Heist do Cassino Key';
                 routePath = '/missions/$id';
-              } else if (isGuide) {
+              } else if (id.startsWith('g')) {
                 category = 'Guia';
-                catColor = AppColors.accent;
+                catColor = AppColors.gold;
                 icon = Icons.menu_book_rounded;
                 if (id == 'g1') title = 'Como conseguir \$10.000.000 rapidamente';
                 routePath = '/guides/$id';
