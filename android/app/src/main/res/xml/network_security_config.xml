@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Duas das estações de rádio reais (ver lib/features/radio/data/radio_repository.dart)
+  só oferecem stream via HTTP puro. O Android bloqueia tráfego cleartext por padrão
+  desde a API 28 — em vez de liberar tudo (usesCleartextTraffic="true"), liberamos
+  só esses dois hosts específicos.
+-->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">mp3channels.webradio.rockantenne.de</domain>
+        <domain includeSubdomains="false">icecast.skyrock.net</domain>
+    </domain-config>
+</network-security-config>

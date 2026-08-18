@@ -10,6 +10,7 @@ import '../../../core/widgets/app_badge.dart';
 import '../../../core/widgets/app_loading_state.dart';
 import '../../../core/widgets/app_empty_state.dart';
 import '../../../core/domain/content_metadata.dart';
+import '../../../core/widgets/app_network_image.dart';
 import '../domain/character_model.dart';
 
 final charactersListProvider = FutureProvider<List<CharacterModel>>((ref) async {
@@ -54,10 +55,7 @@ class CharactersScreen extends ConsumerWidget {
                         ),
                         child: SizedBox(
                           width: 100, height: 120,
-                          child: c.localImageAsset != null
-                              ? Image.asset(c.localImageAsset!, fit: BoxFit.cover,
-                                  errorBuilder: (ctx, err, stack) => _placeholder(c))
-                              : _placeholder(c),
+                          child: AppNetworkImage(url: c.imageUrl, placeholderIcon: Icons.person_rounded),
                         ),
                       ),
                       // Info
@@ -96,11 +94,6 @@ class CharactersScreen extends ConsumerWidget {
       ),
     );
   }
-
-  Widget _placeholder(CharacterModel c) => Container(
-    color: AppColors.surfaceLight,
-    child: Center(child: Text(c.name.substring(0, 1), style: const TextStyle(color: AppColors.textMuted, fontSize: 32, fontWeight: FontWeight.bold))),
-  );
 
   Color _statusColor(ContentStatus s) {
     switch (s) {

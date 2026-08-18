@@ -44,6 +44,9 @@ dependencies:
   intl: ^0.20.3
   uuid: ^4.6.0
   url_launcher: ^6.3.1
+  cached_network_image: ^3.4.1
+  youtube_player_iframe: ^5.2.1
+  just_audio: ^0.9.42
 
 dev_dependencies:
   flutter_test:
@@ -64,8 +67,10 @@ flutter:
 
   uses-material-design: true
 
-  assets:
-    - assets/images/
+  # Este app não empacota mais imagens geradas por IA como conteúdo "oficial" —
+  # todo conteúdo visual real (screenshots, personagens, thumbnails de vídeo) é
+  # carregado via rede a partir de fontes reais (Rockstar/YouTube) e cacheado
+  # localmente com cached_network_image. Ver lib/core/widgets/app_network_image.dart.
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

@@ -1,5 +1,6 @@
 import '../domain/character_model.dart';
 import '../../../core/domain/content_metadata.dart';
+import '../../../core/constants/gtavi_real_media.dart';
 
 abstract class CharactersRepository {
   Future<List<CharacterModel>> getCharacters({String? query});
@@ -14,7 +15,7 @@ class MockCharactersRepository implements CharactersRepository {
       description: 'Lucia é uma jovem latina criada em Leonida que se envolveu no submundo do crime de Vice City. '
           'Estrategista brilhante, ela planeja cada detalhe dos golpes com precisão cirúrgica. '
           'Especialista em hacking, persuasão e disfarces.',
-      imageUrl: '', localImageAsset: 'assets/images/lucia_portrait.png',
+      imageUrl: GtaViRealMedia.luciaGym,
       nationality: 'Americana-Latina', age: '28 anos',
       skills: ['Hacking', 'Persuasão', 'Disfarces', 'Planejamento', 'Direção defensiva'],
       relatedMissionIds: ['m1', 'm2', 'm3'], relatedLocationIds: ['loc_ocean_drive', 'loc_downtown'],
@@ -27,7 +28,7 @@ class MockCharactersRepository implements CharactersRepository {
       description: 'Jason é um nativo da Flórida, criado em uma família desestruturada. '
           'Impulsivo e carismático, é o motorista de fuga e o homem de ação da dupla. '
           'Mestre em combate corpo a corpo, mecânica de veículos e pilotagem.',
-      imageUrl: '', localImageAsset: 'assets/images/jason_portrait.png',
+      imageUrl: GtaViRealMedia.jasonMotorcycle,
       nationality: 'Americano', age: '32 anos',
       skills: ['Combate corpo a corpo', 'Mecânica de veículos', 'Pilotagem', 'Armas de fogo', 'Intimidação'],
       relatedMissionIds: ['m1', 'm2', 'm4'], relatedLocationIds: ['loc_little_haiti', 'loc_everglades'],

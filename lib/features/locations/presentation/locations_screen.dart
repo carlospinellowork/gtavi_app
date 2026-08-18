@@ -6,6 +6,7 @@ import '../../../app/theme/app_typography.dart';
 import '../../../app/providers.dart';
 import '../../../core/widgets/glass_card.dart';
 import '../../../core/widgets/app_badge.dart';
+import '../../../core/widgets/app_network_image.dart';
 import '../../../core/widgets/app_loading_state.dart';
 import '../../../core/widgets/app_empty_state.dart';
 import '../../../core/domain/content_metadata.dart';
@@ -63,16 +64,14 @@ class LocationsScreen extends ConsumerWidget {
                 return Padding(padding: const EdgeInsets.only(bottom: 14), child: GlassCard(
                   padding: EdgeInsets.zero,
                   child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                    if (l.localImageAsset != null)
-                      ClipRRect(
-                        borderRadius: const BorderRadius.only(
-                          topLeft: Radius.circular(AppSpacing.radiusLg),
-                          topRight: Radius.circular(AppSpacing.radiusLg),
-                        ),
-                        child: SizedBox(height: 140, width: double.infinity,
-                          child: Image.asset(l.localImageAsset!, fit: BoxFit.cover,
-                              errorBuilder: (_, _, _) => Container(color: AppColors.surfaceLight))),
+                    ClipRRect(
+                      borderRadius: const BorderRadius.only(
+                        topLeft: Radius.circular(AppSpacing.radiusLg),
+                        topRight: Radius.circular(AppSpacing.radiusLg),
                       ),
+                      child: SizedBox(height: 140, width: double.infinity,
+                        child: AppNetworkImage(url: l.imageUrl, placeholderIcon: Icons.place_rounded)),
+                    ),
                     Padding(padding: const EdgeInsets.all(14), child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [

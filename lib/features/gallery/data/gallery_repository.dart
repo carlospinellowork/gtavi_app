@@ -1,5 +1,6 @@
 import '../domain/media_item_model.dart';
 import '../../../core/domain/content_metadata.dart';
+import '../../../core/constants/gtavi_real_media.dart';
 
 abstract class GalleryRepository {
   Future<List<MediaItemModel>> getMediaItems({String? category, MediaType? type, String? query});
@@ -9,37 +10,33 @@ abstract class GalleryRepository {
 class MockGalleryRepository implements GalleryRepository {
   final List<MediaItemModel> _items = const [
     MediaItemModel(id: 'media_1', title: 'Vice Beach Sunrise', type: MediaType.screenshot,
-      category: 'Locais', imageUrl: '', localImageAsset: 'assets/images/vice_city_beach.png',
+      category: 'Locais', imageUrl: GtaViRealMedia.viceCityBeach,
       sourceName: 'Rockstar Games', tags: ['vice beach', 'praia', 'sunrise'],
       meta: ContentMeta(status: ContentStatus.confirmed)),
     MediaItemModel(id: 'media_2', title: 'Downtown Skyline', type: MediaType.screenshot,
-      category: 'Locais', imageUrl: '', localImageAsset: 'assets/images/vice_city_downtown.png',
+      category: 'Locais', imageUrl: GtaViRealMedia.viceCityAerial,
       sourceName: 'Rockstar Games', tags: ['downtown', 'skyline', 'noite'],
       meta: ContentMeta(status: ContentStatus.confirmed)),
     MediaItemModel(id: 'media_3', title: 'Lucia & Jason — Key Art', type: MediaType.artwork,
-      category: 'Personagens', imageUrl: '', localImageAsset: 'assets/images/gtavi_lucia_jason.png',
+      category: 'Personagens', imageUrl: GtaViRealMedia.trailer2Thumbnail,
       sourceName: 'Rockstar Games', tags: ['lucia', 'jason', 'artwork'],
       meta: ContentMeta(status: ContentStatus.confirmed)),
     MediaItemModel(id: 'media_4', title: 'Lucia Portrait', type: MediaType.artwork,
-      category: 'Personagens', imageUrl: '', localImageAsset: 'assets/images/lucia_portrait.png',
+      category: 'Personagens', imageUrl: GtaViRealMedia.luciaGym,
       sourceName: 'Rockstar Games', tags: ['lucia', 'retrato'],
       meta: ContentMeta(status: ContentStatus.confirmed)),
     MediaItemModel(id: 'media_5', title: 'Jason Portrait', type: MediaType.artwork,
-      category: 'Personagens', imageUrl: '', localImageAsset: 'assets/images/jason_portrait.png',
+      category: 'Personagens', imageUrl: GtaViRealMedia.jasonMotorcycle,
       sourceName: 'Rockstar Games', tags: ['jason', 'retrato'],
       meta: ContentMeta(status: ContentStatus.confirmed)),
-    MediaItemModel(id: 'media_6', title: 'Vice City Supercars', type: MediaType.screenshot,
-      category: 'Veículos', imageUrl: '', localImageAsset: 'assets/images/vice_city_cars.png',
-      sourceName: 'Rockstar Games', tags: ['carros', 'superesportivos'],
-      meta: ContentMeta(status: ContentStatus.confirmed)),
     MediaItemModel(id: 'media_7', title: 'Vice City Skyline Wallpaper', type: MediaType.wallpaper,
-      category: 'Locais', imageUrl: '', localImageAsset: 'assets/images/splash_vice_city.png',
+      category: 'Locais', imageUrl: GtaViRealMedia.viceCitySign,
       sourceName: 'Rockstar Games', tags: ['wallpaper', 'skyline'],
       meta: ContentMeta(status: ContentStatus.confirmed)),
-    MediaItemModel(id: 'media_8', title: 'Mapa 3D de Vice City', type: MediaType.artwork,
-      category: 'Mapa', imageUrl: '', localImageAsset: 'assets/images/gtavi_map_3d.png',
-      sourceName: 'Comunidade GTA', tags: ['mapa', '3d', 'vice city'],
-      meta: ContentMeta(status: ContentStatus.community)),
+    MediaItemModel(id: 'media_9', title: 'Lucia na Piscina — Vice City', type: MediaType.screenshot,
+      category: 'Personagens', imageUrl: GtaViRealMedia.luciaPool,
+      sourceName: 'Rockstar Games', tags: ['lucia', 'piscina', 'hotel'],
+      meta: ContentMeta(status: ContentStatus.confirmed)),
   ];
 
   @override

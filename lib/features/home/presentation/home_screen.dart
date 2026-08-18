@@ -7,6 +7,8 @@ import '../../../app/theme/app_typography.dart';
 import '../../../app/providers.dart';
 import '../../../core/widgets/glass_card.dart';
 import '../../../core/widgets/app_badge.dart';
+import '../../../core/widgets/app_network_image.dart';
+import '../../../core/constants/gtavi_real_media.dart';
 import '../../characters/domain/character_model.dart';
 import '../../vehicles/domain/vehicle_model.dart';
 import '../../guides/domain/guide_model.dart';
@@ -119,12 +121,7 @@ class HomeScreen extends ConsumerWidget {
                       child: Stack(
                         children: [
                           Positioned.fill(
-                            child: Image.asset(
-                              'assets/images/gtavi_lucia_jason.png',
-                              fit: BoxFit.cover,
-                              alignment: Alignment.topCenter,
-                              errorBuilder: (ctx, err, stack) => Container(color: AppColors.surface),
-                            ),
+                            child: AppNetworkImage(url: GtaViRealMedia.trailer2Thumbnail),
                           ),
                           Positioned.fill(
                             child: Container(
@@ -383,7 +380,7 @@ class HomeScreen extends ConsumerWidget {
                         id: c.id,
                         name: c.name.toUpperCase(),
                         role: c.role,
-                        imageAsset: c.localImageAsset,
+                        imageUrl: c.imageUrl,
                         color: index.isEven ? AppColors.primary : AppColors.secondary,
                       );
                     },
@@ -446,7 +443,7 @@ class HomeScreen extends ConsumerWidget {
                     itemBuilder: (context, index) {
                       final item = mediaItems[index];
                       return _buildGalleryCard(
-                        item.localImageAsset,
+                        item.imageUrl,
                         item.title,
                         onTap: () => context.push('/gallery'),
                       );
@@ -612,7 +609,7 @@ class HomeScreen extends ConsumerWidget {
     required String id,
     required String name,
     required String role,
-    required String? imageAsset,
+    required String? imageUrl,
     required Color color,
   }) {
     return Container(
@@ -626,19 +623,7 @@ class HomeScreen extends ConsumerWidget {
           child: Stack(
             children: [
               Positioned.fill(
-                child: imageAsset != null
-                    ? Image.asset(
-                        imageAsset,
-                        fit: BoxFit.cover,
-                        errorBuilder: (ctx, err, stack) => Container(
-                          color: AppColors.surfaceLight,
-                          child: const Icon(Icons.person_rounded, color: AppColors.textMuted, size: 48),
-                        ),
-                      )
-                    : Container(
-                        color: AppColors.surfaceLight,
-                        child: Center(child: Text(name.substring(0, 1), style: const TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: AppColors.textMuted))),
-                      ),
+                child: AppNetworkImage(url: imageUrl, placeholderIcon: Icons.person_rounded),
               ),
               Positioned.fill(
                 child: Container(
@@ -688,7 +673,7 @@ class HomeScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildGalleryCard(String? imageAsset, String label, {required VoidCallback onTap}) {
+  Widget _buildGalleryCard(String? imageUrl, String label, {required VoidCallback onTap}) {
     return Container(
       width: 200,
       margin: const EdgeInsets.only(right: 12),
@@ -700,13 +685,7 @@ class HomeScreen extends ConsumerWidget {
           child: Stack(
             children: [
               Positioned.fill(
-                child: imageAsset != null
-                    ? Image.asset(
-                        imageAsset,
-                        fit: BoxFit.cover,
-                        errorBuilder: (ctx, err, stack) => Container(color: AppColors.surfaceLight),
-                      )
-                    : Container(color: AppColors.surfaceLight),
+                child: AppNetworkImage(url: imageUrl, placeholderIcon: Icons.image_rounded),
               ),
               Positioned(
                 bottom: 0,

@@ -23,6 +23,8 @@ class MockRadioRepository implements RadioRepository {
         'Self Control - Laura Branigan',
         'Dance Hall Days - Wang Chung',
       ],
+      streamUrl: 'https://media-ssl.musicradio.com/Heart80sMP3',
+      streamSourceName: 'Heart 80s',
     ),
     RadioStationModel(
       id: 'st_wave',
@@ -39,6 +41,8 @@ class MockRadioRepository implements RadioRepository {
         'Obsession - Animotion',
         'Atomic - Blondie',
       ],
+      streamUrl: 'https://stream.nightride.fm/nightride.mp3',
+      streamSourceName: 'Nightride FM',
     ),
     RadioStationModel(
       id: 'st_fever',
@@ -55,6 +59,8 @@ class MockRadioRepository implements RadioRepository {
         'Act Like You Know - Fat Larrys Band',
         'Juicy Fruit - Mtume',
       ],
+      streamUrl: 'https://listen.radioking.com/radio/467555/stream/523739',
+      streamSourceName: 'FM 80 Funky Music',
     ),
     RadioStationModel(
       id: 'st_vrock',
@@ -71,6 +77,8 @@ class MockRadioRepository implements RadioRepository {
         'Dangerous Bastard - Love Fist',
         'Cumin At Ya - Quiet Riot',
       ],
+      streamUrl: 'http://mp3channels.webradio.rockantenne.de/heavy-metal',
+      streamSourceName: 'Rock Antenne Heavy Metal',
     ),
     RadioStationModel(
       id: 'st_hiphop',
@@ -86,6 +94,8 @@ class MockRadioRepository implements RadioRepository {
         'Lucia & Jason Theme - Vice Sound',
         'Biscayne Boulevard - Florida Beats',
       ],
+      streamUrl: 'http://icecast.skyrock.net/s/natio_mp3_128k',
+      streamSourceName: 'Skyrock',
     ),
   ];
 

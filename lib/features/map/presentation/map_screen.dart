@@ -6,6 +6,8 @@ import '../../../app/theme/app_spacing.dart';
 import '../../../app/theme/app_typography.dart';
 import '../../../core/widgets/glass_card.dart';
 import '../../../core/widgets/app_badge.dart';
+import '../../../core/widgets/app_network_image.dart';
+import '../../../core/constants/gtavi_real_media.dart';
 
 final mapCategoryFilterProvider = StateProvider<String>((ref) => 'Todos');
 final mapSearchQueryProvider = StateProvider<String>((ref) => '');
@@ -163,11 +165,10 @@ class _MapScreenState extends ConsumerState<MapScreen> {
                     child: Stack(
                       children: [
                         // Map Image
-                        Image.asset(
-                          'assets/images/gtavi_map_3d.png',
+                        AppNetworkImage(
+                          url: GtaViRealMedia.viceCityAerial,
                           width: 700,
                           height: 700,
-                          fit: BoxFit.cover,
                           color: isSatellite ? null : AppColors.primary.withAlpha(50),
                           colorBlendMode: isSatellite ? null : BlendMode.color,
                         ),

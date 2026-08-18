@@ -6,6 +6,7 @@ import '../../../app/theme/app_typography.dart';
 import '../../../app/providers.dart';
 import '../../../core/widgets/app_badge.dart';
 import '../../../core/domain/content_metadata.dart';
+import '../../../core/widgets/app_network_image.dart';
 import '../domain/character_model.dart';
 
 final characterDetailProvider = FutureProvider.family<CharacterModel?, String>((ref, id) async {
@@ -36,10 +37,7 @@ class CharacterDetailScreen extends ConsumerWidget {
                 expandedHeight: 300, pinned: true, backgroundColor: AppColors.surface,
                 flexibleSpace: FlexibleSpaceBar(
                   background: Stack(fit: StackFit.expand, children: [
-                    if (c.localImageAsset != null)
-                      Image.asset(c.localImageAsset!, fit: BoxFit.cover,
-                          errorBuilder: (ctx, err, stack) => Container(color: AppColors.surfaceLight))
-                    else Container(color: AppColors.surfaceLight),
+                    AppNetworkImage(url: c.imageUrl, placeholderIcon: Icons.person_rounded),
                     Container(decoration: BoxDecoration(gradient: LinearGradient(
                       begin: Alignment.topCenter, end: Alignment.bottomCenter,
                       colors: [Colors.transparent, AppColors.background.withAlpha(220), AppColors.background],
