@@ -9,6 +9,8 @@ import '../../../core/widgets/glass_card.dart';
 import '../../../core/widgets/app_badge.dart';
 import '../../../core/widgets/app_loading_state.dart';
 import '../../../core/widgets/app_empty_state.dart';
+import '../../../core/widgets/app_network_image.dart';
+import '../../../core/constants/gtavi_real_media.dart';
 import '../domain/news_model.dart';
 import 'news_detail_screen.dart';
 
@@ -77,11 +79,7 @@ class NewsScreen extends ConsumerWidget {
                     child: Stack(
                       children: [
                         Positioned.fill(
-                          child: Image.asset(
-                            'assets/images/vice_city_downtown.png',
-                            fit: BoxFit.cover,
-                            errorBuilder: (_, _, _) => Container(color: AppColors.surfaceLight),
-                          ),
+                          child: AppNetworkImage(url: GtaViRealMedia.viceCityAerial),
                         ),
                         Positioned.fill(
                           child: Container(
@@ -264,31 +262,10 @@ class NewsScreen extends ConsumerWidget {
                                       ),
                                       child: ClipRRect(
                                         borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
-                                        child: news.localImageAsset != null
-                                            ? Image.asset(
-                                                news.localImageAsset!,
-                                                fit: BoxFit.cover,
-                                                errorBuilder: (_, _, _) => Container(
-                                                  color: AppColors.surfaceLight,
-                                                  child: Center(
-                                                    child: Icon(
-                                                      isTrailer ? Icons.play_circle_fill_rounded : Icons.article_rounded,
-                                                      size: 56,
-                                                      color: isTrailer ? AppColors.primary : AppColors.secondary,
-                                                    ),
-                                                  ),
-                                                ),
-                                              )
-                                            : Container(
-                                                color: AppColors.surfaceLight,
-                                                child: Center(
-                                                  child: Icon(
-                                                    isTrailer ? Icons.play_circle_fill_rounded : Icons.article_rounded,
-                                                    size: 56,
-                                                    color: isTrailer ? AppColors.primary : AppColors.secondary,
-                                                  ),
-                                                ),
-                                              ),
+                                        child: AppNetworkImage(
+                                          url: news.imageUrl,
+                                          placeholderIcon: isTrailer ? Icons.play_circle_fill_rounded : Icons.article_rounded,
+                                        ),
                                       ),
                                     ),
                                     Positioned(

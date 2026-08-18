@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../app/theme/app_colors.dart';
 import '../../../app/theme/app_spacing.dart';
+import '../../../core/widgets/app_network_image.dart';
+import '../../../core/constants/gtavi_real_media.dart';
 
 class ChatMessage {
   final String text;
@@ -137,12 +139,12 @@ class _AiChatScreenState extends ConsumerState<AiChatScreen> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           ClipOval(
-                            child: Image.asset(
-                              'assets/images/lucia_portrait.png',
+                            child: AppNetworkImage(
+                              url: GtaViRealMedia.luciaGym,
                               width: 24,
                               height: 24,
                               fit: BoxFit.cover,
-                              errorBuilder: (_, _, _) => const Icon(Icons.person_rounded, color: Colors.white, size: 18),
+                              placeholderIcon: Icons.person_rounded,
                             ),
                           ),
                           const SizedBox(width: 8),
@@ -168,12 +170,12 @@ class _AiChatScreenState extends ConsumerState<AiChatScreen> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           ClipOval(
-                            child: Image.asset(
-                              'assets/images/jason_portrait.png',
+                            child: AppNetworkImage(
+                              url: GtaViRealMedia.jasonMotorcycle,
                               width: 24,
                               height: 24,
                               fit: BoxFit.cover,
-                              errorBuilder: (_, _, _) => const Icon(Icons.directions_car_rounded, color: Colors.white, size: 18),
+                              placeholderIcon: Icons.directions_car_rounded,
                             ),
                           ),
                           const SizedBox(width: 8),

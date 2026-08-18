@@ -5,6 +5,7 @@ import '../../../app/theme/app_spacing.dart';
 import '../../../app/theme/app_typography.dart';
 import '../../../core/widgets/glass_card.dart';
 import '../../../core/widgets/app_badge.dart';
+import '../../../core/widgets/app_network_image.dart';
 import '../domain/news_model.dart';
 
 class NewsDetailScreen extends StatelessWidget {
@@ -42,24 +43,7 @@ class NewsDetailScreen extends StatelessWidget {
                 fit: StackFit.expand,
                 children: [
                   // Cover Image
-                  if (news.localImageAsset != null)
-                    Image.asset(
-                      news.localImageAsset!,
-                      fit: BoxFit.cover,
-                      errorBuilder: (_, _, _) => Container(
-                        color: AppColors.surfaceLight,
-                        child: const Icon(Icons.image_rounded, color: AppColors.textMuted, size: 64),
-                      ),
-                    )
-                  else
-                    Container(
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [AppColors.primary.withAlpha(60), AppColors.secondary.withAlpha(60)],
-                        ),
-                      ),
-                      child: const Icon(Icons.article_rounded, color: AppColors.textMuted, size: 64),
-                    ),
+                  AppNetworkImage(url: news.imageUrl, placeholderIcon: Icons.article_rounded),
 
                   // Gradient overlay
                   Container(

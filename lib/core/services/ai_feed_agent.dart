@@ -1,5 +1,6 @@
 import 'dart:async';
 import '../../features/news/domain/news_model.dart';
+import '../constants/gtavi_real_media.dart';
 
 class GtaViAiFeedAgent {
   final StreamController<List<NewsModel>> _newsStreamController = StreamController<List<NewsModel>>.broadcast();
@@ -31,8 +32,7 @@ A pré-venda será aberta 90 dias antes do lançamento com edições Standard, D
         category: 'Destaque',
         publishedAt: DateTime.now().subtract(const Duration(minutes: 10)),
         url: 'https://www.rockstargames.com/VI',
-        imageUrl: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800',
-        localImageAsset: 'assets/images/splash_vice_city.png',
+        imageUrl: GtaViRealMedia.viceCitySign,
         isFeatured: true,
       ),
       NewsModel(
@@ -57,8 +57,7 @@ A trilha sonora inclui artistas como Bad Bunny, Tyler The Creator e uma faixa in
         category: 'Trailer',
         publishedAt: DateTime.now().subtract(const Duration(hours: 2)),
         url: 'https://www.rockstargames.com/VI',
-        imageUrl: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800',
-        localImageAsset: 'assets/images/gtavi_lucia_jason.png',
+        imageUrl: GtaViRealMedia.trailer1Thumbnail,
         videoUrl: 'https://www.youtube.com/watch?v=QdBZY2fkU-0',
         isFeatured: true,
       ),
@@ -85,8 +84,7 @@ Os personagens compartilham dinheiro e recursos, mas têm habilidades únicas:
         category: 'Destaque',
         publishedAt: DateTime.now().subtract(const Duration(hours: 6)),
         url: 'https://ign.com',
-        imageUrl: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800',
-        localImageAsset: 'assets/images/lucia_portrait.png',
+        imageUrl: GtaViRealMedia.trailer2Thumbnail,
         isFeatured: true,
       ),
       NewsModel(
@@ -111,8 +109,7 @@ Se o jogador cometer um crime e fugir sem ser identificado, a polícia investiga
         category: 'Vazamento',
         publishedAt: DateTime.now().subtract(const Duration(days: 1)),
         url: 'https://gtaforums.com',
-        imageUrl: 'https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800',
-        localImageAsset: 'assets/images/vice_city_downtown.png',
+        imageUrl: GtaViRealMedia.viceCityAerial,
         isFeatured: false,
       ),
       NewsModel(
@@ -139,8 +136,7 @@ Jet ski, parasailing, mergulho com snorkel, pesca esportiva e até corridas de l
         category: 'Tecnologia',
         publishedAt: DateTime.now().subtract(const Duration(days: 2)),
         url: 'https://digitalfoundry.net',
-        imageUrl: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800',
-        localImageAsset: 'assets/images/vice_city_beach.png',
+        imageUrl: GtaViRealMedia.viceCityBeach,
         isFeatured: false,
       ),
       NewsModel(
@@ -183,7 +179,6 @@ Bugatti Chiron com motor W16 e 1500hp.''',
         publishedAt: DateTime.now().subtract(const Duration(days: 3)),
         url: 'https://gamesradar.com',
         imageUrl: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800',
-        localImageAsset: 'assets/images/vice_city_cars.png',
         isFeatured: true,
       ),
       NewsModel(
@@ -210,7 +205,6 @@ Pela primeira vez na série, haverá um ecossistema submarino completo com recif
         publishedAt: DateTime.now().subtract(const Duration(days: 4)),
         url: 'https://eurogamer.net',
         imageUrl: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800',
-        localImageAsset: 'assets/images/gtavi_map_3d.png',
         isFeatured: false,
       ),
       NewsModel(
@@ -233,7 +227,6 @@ A Rockstar não comentou oficialmente sobre os rumores.''',
         publishedAt: DateTime.now().subtract(const Duration(days: 5)),
         url: 'https://bloomberg.com',
         imageUrl: 'https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800',
-        localImageAsset: 'assets/images/vice_city_downtown.png',
         isFeatured: true,
       ),
     ];

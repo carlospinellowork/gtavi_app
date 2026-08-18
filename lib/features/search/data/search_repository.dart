@@ -15,7 +15,7 @@ class GlobalSearchResult {
   final String subtitle;
   final EntityType type;
   final String routePath;
-  final String? imageAsset;
+  final String? imageUrl;
 
   const GlobalSearchResult({
     required this.id,
@@ -23,7 +23,7 @@ class GlobalSearchResult {
     required this.subtitle,
     required this.type,
     required this.routePath,
-    this.imageAsset,
+    this.imageUrl,
   });
 }
 
@@ -88,7 +88,7 @@ class SearchRepository {
       results[EntityType.character] = chars.map((c) => GlobalSearchResult(
         id: c.id, title: c.name, subtitle: c.role,
         type: EntityType.character, routePath: '/characters/${c.id}',
-        imageAsset: c.localImageAsset,
+        imageUrl: c.imageUrl,
       )).toList();
     }
 
@@ -116,7 +116,7 @@ class SearchRepository {
       results[EntityType.location] = locs.map((l) => GlobalSearchResult(
         id: l.id, title: l.name, subtitle: '${l.district} • ${l.category}',
         type: EntityType.location, routePath: '/locations',
-        imageAsset: l.localImageAsset,
+        imageUrl: l.imageUrl,
       )).toList();
     }
 
@@ -153,7 +153,7 @@ class SearchRepository {
       results[EntityType.media] = media.map((m) => GlobalSearchResult(
         id: m.id, title: m.title, subtitle: m.category,
         type: EntityType.media, routePath: '/gallery',
-        imageAsset: m.localImageAsset,
+        imageUrl: m.imageUrl,
       )).toList();
     }
 

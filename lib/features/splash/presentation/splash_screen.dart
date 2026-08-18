@@ -3,6 +3,8 @@ import 'package:go_router/go_router.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../../../app/theme/app_colors.dart';
 import '../../../app/theme/app_typography.dart';
+import '../../../core/widgets/app_network_image.dart';
+import '../../../core/constants/gtavi_real_media.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -34,11 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
         children: [
           // Full-bleed Vice City Background Image
           Positioned.fill(
-            child: Image.asset(
-              'assets/images/splash_vice_city.png',
-              fit: BoxFit.cover,
-              errorBuilder: (_, _, _) => Container(color: AppColors.background),
-            ),
+            child: AppNetworkImage(url: GtaViRealMedia.viceCitySign),
           ),
 
           // Dark gradient overlay for text readability

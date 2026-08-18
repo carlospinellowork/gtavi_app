@@ -9,6 +9,7 @@ import '../../../core/widgets/glass_card.dart';
 import '../../../core/widgets/app_badge.dart';
 import '../../../core/widgets/app_loading_state.dart';
 import '../../../core/widgets/app_empty_state.dart';
+import '../../../core/widgets/app_network_image.dart';
 import '../domain/video_model.dart';
 
 final videoCategoryFilterProvider = StateProvider<String>((ref) => 'Todos');
@@ -35,7 +36,7 @@ class VideosHubScreen extends ConsumerWidget {
     final videosAsync = ref.watch(filteredVideosProvider);
     final selectedCategory = ref.watch(videoCategoryFilterProvider);
 
-    final categories = ['Todos', 'Flow Games', 'Trailers', 'Análises'];
+    final categories = ['Todos', 'Trailers', 'Reações', 'Análises', 'Notícias'];
 
     return Scaffold(
       backgroundColor: AppColors.background,
@@ -50,7 +51,7 @@ class VideosHubScreen extends ConsumerWidget {
             child: TextField(
               onChanged: (val) => ref.read(videoSearchQueryProvider.notifier).state = val,
               decoration: const InputDecoration(
-                hintText: 'Buscar vídeos do Flow Games, trailers...',
+                hintText: 'Buscar vídeos, trailers, criadores...',
                 prefixIcon: Icon(Icons.search_rounded, color: AppColors.textMuted),
               ),
             ),
@@ -125,17 +126,10 @@ class VideosHubScreen extends ConsumerWidget {
                                   ),
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
-                                    child: video.localThumbnailAsset != null
-                                        ? Image.asset(
-                                            video.localThumbnailAsset!,
-                                            fit: BoxFit.cover,
-                                            errorBuilder: (_, _, _) => Container(color: AppColors.surfaceLight),
-                                          )
-                                        : Image.asset(
-                                            'assets/images/gtavi_lucia_jason.png',
-                                            fit: BoxFit.cover,
-                                            errorBuilder: (_, _, _) => Container(color: AppColors.surfaceLight),
-                                          ),
+                                    child: AppNetworkImage(
+                                      url: video.thumbnailUrl,
+                                      placeholderIcon: Icons.smart_display_rounded,
+                                    ),
                                   ),
                                 ),
                                 Positioned.fill(
@@ -151,21 +145,22 @@ class VideosHubScreen extends ConsumerWidget {
                                     child: Icon(Icons.play_circle_fill_rounded, color: AppColors.primary, size: 56),
                                   ),
                                 ),
-                                Positioned(
-                                  bottom: 10,
-                                  right: 10,
-                                  child: Container(
-                                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                                    decoration: BoxDecoration(
-                                      color: Colors.black.withAlpha(200),
-                                      borderRadius: BorderRadius.circular(6),
-                                    ),
-                                    child: Text(
-                                      video.duration,
-                                      style: const TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
+                                if (video.duration.isNotEmpty)
+                                  Positioned(
+                                    bottom: 10,
+                                    right: 10,
+                                    child: Container(
+                                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                      decoration: BoxDecoration(
+                                        color: Colors.black.withAlpha(200),
+                                        borderRadius: BorderRadius.circular(6),
+                                      ),
+                                      child: Text(
+                                        video.duration,
+                                        style: const TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
+                                      ),
                                     ),
                                   ),
-                                ),
                                 Positioned(
                                   top: 10,
                                   left: 10,
@@ -188,10 +183,11 @@ class VideosHubScreen extends ConsumerWidget {
                                 const SizedBox(width: 4),
                                 const Icon(Icons.verified_rounded, color: AppColors.secondary, size: 14),
                                 const Spacer(),
-                                Text(
-                                  '${_formatViews(video.viewsCount)} views',
-                                  style: AppTypography.bodySmall.copyWith(color: AppColors.textMuted, fontSize: 11),
-                                ),
+                                if (video.viewsCount > 0)
+                                  Text(
+                                    '${_formatViews(video.viewsCount)} views',
+                                    style: AppTypography.bodySmall.copyWith(color: AppColors.textMuted, fontSize: 11),
+                                  ),
                               ],
                             ),
                           ],

@@ -1,5 +1,6 @@
 import '../domain/location_model.dart';
 import '../../../core/domain/content_metadata.dart';
+import '../../../core/constants/gtavi_real_media.dart';
 
 abstract class LocationsRepository {
   Future<List<LocationModel>> getLocations({String? category, String? query});
@@ -11,14 +12,14 @@ class MockLocationsRepository implements LocationsRepository {
     LocationModel(
       id: 'loc_ocean_drive', name: 'Ocean Drive', district: 'Vice Beach',
       description: 'A icônica avenida à beira-mar com hotéis art deco, bares e clubs noturnos.',
-      category: 'Praia', imageUrl: '', localImageAsset: 'assets/images/vice_city_beach.png',
+      category: 'Praia', imageUrl: GtaViRealMedia.viceCityBeach,
       mapX: 0.68, mapY: 0.48, relatedMissionIds: ['m1'], relatedCharacterIds: ['char_lucia'],
       meta: ContentMeta(status: ContentStatus.confirmed, source: 'Trailer Oficial'),
     ),
     LocationModel(
       id: 'loc_downtown', name: 'Downtown Vice City', district: 'Downtown',
       description: 'Centro financeiro com arranha-céus, bancos e escritórios corporativos.',
-      category: 'Urbano', imageUrl: '', localImageAsset: 'assets/images/vice_city_downtown.png',
+      category: 'Urbano', imageUrl: GtaViRealMedia.viceCityAerial,
       mapX: 0.42, mapY: 0.32, relatedMissionIds: ['m2', 'm3'],
       relatedCharacterIds: ['char_lucia', 'char_diana'],
       meta: ContentMeta(status: ContentStatus.confirmed, source: 'Trailer Oficial'),

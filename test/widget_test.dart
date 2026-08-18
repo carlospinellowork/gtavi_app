@@ -18,8 +18,13 @@ void main() {
       ),
     );
 
-    await tester.pump(const Duration(milliseconds: 2300));
-    await tester.pumpAndSettle();
+    // Splash/home agora carregam imagens reais via rede (AppNetworkImage);
+    // runAsync deixa esse I/O real completar durante o teste em vez de travar
+    // o pumpAndSettle esperando por um future que o clock falso não resolve.
+    await tester.runAsync(() async {
+      await tester.pump(const Duration(milliseconds: 2300));
+      await tester.pumpAndSettle();
+    });
 
     expect(find.text('GTA VI'), findsWidgets);
   });

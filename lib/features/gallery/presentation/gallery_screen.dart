@@ -6,6 +6,7 @@ import '../../../app/theme/app_typography.dart';
 import '../../../app/providers.dart';
 import '../../../core/widgets/app_loading_state.dart';
 import '../../../core/widgets/app_empty_state.dart';
+import '../../../core/widgets/app_network_image.dart';
 import '../domain/media_item_model.dart';
 
 final galleryCategoryProvider = StateProvider<String>((ref) => 'Todos');
@@ -67,10 +68,7 @@ class GalleryScreen extends ConsumerWidget {
                     borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
                     child: Stack(children: [
                       Positioned.fill(
-                        child: item.localImageAsset != null
-                            ? Image.asset(item.localImageAsset!, fit: BoxFit.cover,
-                                errorBuilder: (_, _, _) => Container(color: AppColors.surfaceLight))
-                            : Container(color: AppColors.surfaceLight, child: const Icon(Icons.image_rounded, color: AppColors.textMuted, size: 48)),
+                        child: AppNetworkImage(url: item.imageUrl, placeholderIcon: Icons.image_rounded),
                       ),
                       Positioned(bottom: 0, left: 0, right: 0, child: Container(
                         padding: const EdgeInsets.all(8),
@@ -121,9 +119,7 @@ class _FullscreenGallery extends StatelessWidget {
           return Column(mainAxisAlignment: MainAxisAlignment.center, children: [
             Expanded(child: InteractiveViewer(
               minScale: 0.5, maxScale: 4.0,
-              child: item.localImageAsset != null
-                  ? Image.asset(item.localImageAsset!, fit: BoxFit.contain)
-                  : const Icon(Icons.image_rounded, color: Colors.white38, size: 80),
+              child: AppNetworkImage(url: item.imageUrl, fit: BoxFit.contain, placeholderIcon: Icons.image_rounded),
             )),
             Padding(padding: const EdgeInsets.all(16), child: Column(children: [
               Text(item.title, style: const TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)),
