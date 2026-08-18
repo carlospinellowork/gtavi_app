@@ -18,13 +18,16 @@ void main() {
       ),
     );
 
-    // Splash/home agora carregam imagens reais via rede (AppNetworkImage);
-    // runAsync deixa esse I/O real completar durante o teste em vez de travar
-    // o pumpAndSettle esperando por um future que o clock falso não resolve.
-    await tester.runAsync(() async {
-      await tester.pump(const Duration(milliseconds: 2300));
-      await tester.pumpAndSettle();
-    });
+    // Splash/home agora carregam imagens reais via rede (AppNetworkImage).
+    // Essas chamadas HTTP não respeitam o relógio falso do teste, então
+    // NÃO usamos pumpAndSettle (ele esperaria a rede "assentar" e pode
+    // travar/expirar em CI sem rede, ou demorar demais com rede lenta).
+    // Em vez disso, avançamos o tempo falso o suficiente para a splash
+    // (Future.delayed de 2800ms) navegar para /home e a tela assentar,
+    // com pumps de duração fixa — sem esperar a imagem de rede terminar.
+    await tester.pump(const Duration(milliseconds: 2900));
+    await tester.pump(const Duration(milliseconds: 300));
+    await tester.pump(const Duration(milliseconds: 300));
 
     expect(find.text('GTA VI'), findsWidgets);
   });
