@@ -17,17 +17,15 @@ class GtaViAiFeedAgent {
     final liveNews = [
       NewsModel(
         id: 'ai_1',
-        title: 'Rockstar Confirma Data de Lançamento: Outono 2026',
-        summary: 'A Rockstar Games oficializou a janela de lançamento do GTA VI para o outono de 2026. O anúncio foi feito através do site oficial.',
-        fullContent: '''A Rockstar Games finalmente confirmou que Grand Theft Auto VI será lançado no outono de 2026 para PlayStation 5 e Xbox Series X|S.
+        title: 'GTA VI chega em 19 de novembro de 2026, confirma a Rockstar',
+        summary: 'Após dois adiamentos, a Rockstar Games oficializou a data final de lançamento, com pré-venda já aberta desde 25 de junho.',
+        fullContent: '''A Rockstar Games confirmou que Grand Theft Auto VI será lançado em 19 de novembro de 2026 para PlayStation 5 e Xbox Series X|S.
 
-O anúncio veio através de uma atualização no Rockstar Newswire, acompanhado de novas imagens conceituais do mapa de Vice City. A versão para PC será anunciada em data posterior.
+A data é resultado de dois adiamentos: o lançamento inicial, previsto para o outono de 2025, foi primeiro empurrado para 26 de maio de 2026 e, em seguida, para a data atual — mais seis meses de polimento, segundo comunicado oficial da Rockstar.
 
-Sam Houser, cofundador da Rockstar, declarou: "Este é o projeto mais ambicioso que já empreendemos. Vice City nunca foi tão viva."
+A capa oficial do jogo foi revelada em 18 de junho de 2026, e a pré-venda abriu no dia 25 de junho, com edições Standard, Deluxe e Premium.
 
-O jogo contará com um mapa que inclui a cidade de Leonida (baseada em Miami/Fort Lauderdale), os Everglades, Keys tropicais e até uma versão reimaginada de Liberty City acessível por voo.
-
-A pré-venda será aberta 90 dias antes do lançamento com edições Standard, Deluxe e Collector's Edition.''',
+O jogo se passa no estado fictício de Leonida, cujo coração é Vice City (inspirada em Miami), incluindo os Everglades, áreas costeiras e ilhas tropicais.''',
         source: 'Rockstar Newswire',
         category: 'Destaque',
         publishedAt: DateTime.now().subtract(const Duration(minutes: 10)),
@@ -209,24 +207,19 @@ Pela primeira vez na série, haverá um ecossistema submarino completo com recif
       ),
       NewsModel(
         id: 'n7',
-        title: 'Trailer #2 do GTA VI Pode Ser Revelado na Gamescom 2026',
-        summary: 'Fontes internas da Rockstar indicam que o segundo trailer será mostrado durante a feira de games na Alemanha.',
-        fullContent: '''Segundo fontes próximas à Take-Two Interactive, a Rockstar Games estaria planejando revelar o segundo trailer de Grand Theft Auto VI durante a Gamescom 2026 em Colônia, Alemanha.
+        title: '"An Extended Look": Rockstar e Netflix mostram 27 minutos de gameplay',
+        summary: 'Maior exibição de GTA VI até agora bateu recorde de audiência: quase 4 milhões de espectadores simultâneos.',
+        fullContent: '''Em 27 de agosto de 2026, a Rockstar Games fez parceria com a Netflix para exibir "Grand Theft Auto VI: An Extended Look", com 27 minutos de gameplay real capturado no PlayStation 5.
 
-O evento acontecerá entre 20 e 24 de agosto de 2026, e a apresentação seria um dos pontos altos da Opening Night Live, apresentada por Geoff Keighley.
+A transmissão simultânea (Netflix, YouTube e o site oficial do jogo) atingiu um pico de quase 3,97 milhões de espectadores simultâneos, tornando-se a maior stream de games de 2026.
 
-EXPECTATIVAS PARA O TRAILER #2:
-• Gameplay extenso mostrando mecânicas de combate e direção
-• Apresentação do sistema de missões cooperativas entre Lucia e Jason
-• Primeira demonstração do modo Online
-• Revelação de novas áreas do mapa além de Vice City central
-
-A Rockstar não comentou oficialmente sobre os rumores.''',
-        source: 'Bloomberg Gaming',
+O material mostrou pela primeira vez sequências extensas de perseguições, tiroteios e exploração livre por Vice City e arredores, reforçando a janela final de lançamento: 19 de novembro de 2026.''',
+        source: 'Rockstar Games / Netflix',
         category: 'Destaque',
-        publishedAt: DateTime.now().subtract(const Duration(days: 5)),
-        url: 'https://bloomberg.com',
-        imageUrl: 'https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800',
+        publishedAt: DateTime.now().subtract(const Duration(days: 21)),
+        url: 'https://www.rockstargames.com/newswire/article/9k2kaa1o3297k9/grand-theft-auto-vi-an-extended-look',
+        imageUrl: GtaViRealMedia.extendedLookThumbnail,
+        videoUrl: 'https://www.youtube.com/watch?v=LIfPlBFrk0o',
         isFeatured: true,
       ),
     ];
