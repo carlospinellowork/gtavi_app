@@ -10,6 +10,7 @@ import '../../../app/providers.dart';
 import '../../../core/widgets/glass_card.dart';
 import '../../../core/widgets/app_badge.dart';
 import '../../../core/widgets/app_network_image.dart';
+import '../../../core/services/share_service.dart';
 import '../domain/video_model.dart';
 
 final videoDetailProvider = FutureProvider.family<VideoModel?, String>((ref, id) async {
@@ -139,6 +140,12 @@ class _VideoPlayerScreenState extends ConsumerState<VideoPlayerScreen> {
                             Text('Duração: ${video.duration}', style: AppTypography.bodySmall),
                           ],
                           const Spacer(),
+                          IconButton(
+                            icon: const Icon(Icons.share_rounded, color: AppColors.textMuted),
+                            onPressed: () => shareText(
+                              '${video.title}\nhttps://www.youtube.com/watch?v=${video.youtubeVideoId}',
+                            ),
+                          ),
                           IconButton(
                             icon: Icon(
                               isFav ? Icons.bookmark_rounded : Icons.bookmark_border_rounded,

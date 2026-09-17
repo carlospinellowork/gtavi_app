@@ -6,6 +6,7 @@ import '../../../app/theme/app_typography.dart';
 import '../../../core/widgets/glass_card.dart';
 import '../../../core/widgets/app_badge.dart';
 import '../../../core/widgets/app_network_image.dart';
+import '../../../core/services/share_service.dart';
 import '../domain/news_model.dart';
 
 class NewsDetailScreen extends StatelessWidget {
@@ -38,6 +39,20 @@ class NewsDetailScreen extends StatelessWidget {
               ),
               onPressed: () => Navigator.pop(context),
             ),
+            actions: [
+              IconButton(
+                icon: Container(
+                  padding: const EdgeInsets.all(6),
+                  decoration: BoxDecoration(
+                    color: Colors.black.withAlpha(140),
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Icon(Icons.share_rounded, color: Colors.white),
+                ),
+                onPressed: () => shareText('${news.title}\n\n${news.summary}\n\n${news.url}'),
+              ),
+              const SizedBox(width: 8),
+            ],
             flexibleSpace: FlexibleSpaceBar(
               background: Stack(
                 fit: StackFit.expand,
