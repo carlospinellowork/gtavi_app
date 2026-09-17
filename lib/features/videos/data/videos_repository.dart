@@ -17,6 +17,18 @@ String _ytThumbnail(String videoId) => 'https://i.ytimg.com/vi/$videoId/hqdefaul
 class MockVideosRepository implements VideosRepository {
   final List<VideoModel> _videos = [
     VideoModel(
+      id: 'v_extended_look',
+      title: 'Grand Theft Auto VI: An Extended Look – Já disponível',
+      channelName: 'Netflix Brasil',
+      channelAvatarUrl: '',
+      duration: '',
+      thumbnailUrl: _ytThumbnail('LIfPlBFrk0o'),
+      youtubeVideoId: 'LIfPlBFrk0o',
+      category: 'Gameplay',
+      publishedAt: DateTime.now().subtract(const Duration(days: 21)),
+      viewsCount: 0,
+    ),
+    VideoModel(
       id: 'v_trailer1',
       title: 'Grand Theft Auto VI Trailer 1',
       channelName: 'Rockstar Games',
@@ -224,7 +236,7 @@ class MockVideosRepository implements VideosRepository {
       list = list.where((v) => v.title.toLowerCase().contains(q) || v.channelName.toLowerCase().contains(q)).toList();
     }
 
-    return list;
+    return [...list]..sort((a, b) => b.publishedAt.compareTo(a.publishedAt));
   }
 
   @override

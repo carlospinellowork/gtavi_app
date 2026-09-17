@@ -79,6 +79,11 @@ class FavoritesScreen extends ConsumerWidget {
                 catColor = AppColors.accent;
                 icon = Icons.visibility_rounded;
                 routePath = '/easter-eggs';
+              } else if (id.startsWith('v_')) {
+                category = 'Vídeo';
+                catColor = AppColors.secondary;
+                icon = Icons.smart_display_rounded;
+                routePath = '/videos/$id';
               } else if (id.startsWith('v')) {
                 category = 'Veículo';
                 catColor = AppColors.vehicles;

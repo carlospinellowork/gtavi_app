@@ -35,8 +35,9 @@ class VideosHubScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final videosAsync = ref.watch(filteredVideosProvider);
     final selectedCategory = ref.watch(videoCategoryFilterProvider);
+    final favoritesAsync = ref.watch(favoritesStateProvider);
 
-    final categories = ['Todos', 'Trailers', 'Reações', 'Análises', 'Notícias'];
+    final categories = ['Todos', 'Gameplay', 'Trailers', 'Reações', 'Análises', 'Notícias'];
 
     return Scaffold(
       backgroundColor: AppColors.background,
@@ -107,6 +108,7 @@ class VideosHubScreen extends ConsumerWidget {
                   itemCount: videos.length,
                   itemBuilder: (context, index) {
                     final video = videos[index];
+                    final isFav = favoritesAsync.value?.contains(video.id) ?? false;
 
                     return Padding(
                       padding: const EdgeInsets.only(bottom: 14),
@@ -165,6 +167,19 @@ class VideosHubScreen extends ConsumerWidget {
                                   top: 10,
                                   left: 10,
                                   child: AppBadge(label: video.category, color: AppColors.primary),
+                                ),
+                                Positioned(
+                                  top: 4,
+                                  right: 4,
+                                  child: IconButton(
+                                    icon: Icon(
+                                      isFav ? Icons.bookmark_rounded : Icons.bookmark_border_rounded,
+                                      color: isFav ? AppColors.primary : Colors.white,
+                                    ),
+                                    onPressed: () {
+                                      ref.read(favoritesStateProvider.notifier).toggleFavorite(video.id);
+                                    },
+                                  ),
                                 ),
                               ],
                             ),

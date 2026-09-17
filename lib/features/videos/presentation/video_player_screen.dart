@@ -90,6 +90,8 @@ class _VideoPlayerScreenState extends ConsumerState<VideoPlayerScreen> {
           }
 
           _ensureController(video.youtubeVideoId);
+          final favoritesAsync = ref.watch(favoritesStateProvider);
+          final isFav = favoritesAsync.value?.contains(video.id) ?? false;
 
           return SingleChildScrollView(
             physics: const BouncingScrollPhysics(),
@@ -136,6 +138,16 @@ class _VideoPlayerScreenState extends ConsumerState<VideoPlayerScreen> {
                             const SizedBox(width: 8),
                             Text('Duração: ${video.duration}', style: AppTypography.bodySmall),
                           ],
+                          const Spacer(),
+                          IconButton(
+                            icon: Icon(
+                              isFav ? Icons.bookmark_rounded : Icons.bookmark_border_rounded,
+                              color: isFav ? AppColors.primary : AppColors.textMuted,
+                            ),
+                            onPressed: () {
+                              ref.read(favoritesStateProvider.notifier).toggleFavorite(video.id);
+                            },
+                          ),
                         ],
                       ),
                       const SizedBox(height: 10),

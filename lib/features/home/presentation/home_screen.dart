@@ -121,7 +121,7 @@ class HomeScreen extends ConsumerWidget {
                       child: Stack(
                         children: [
                           Positioned.fill(
-                            child: AppNetworkImage(url: GtaViRealMedia.trailer2Thumbnail),
+                            child: AppNetworkImage(url: GtaViRealMedia.extendedLookThumbnail),
                           ),
                           Positioned.fill(
                             child: Container(
@@ -190,6 +190,16 @@ class HomeScreen extends ConsumerWidget {
                     ),
                   ),
                 ),
+              ),
+            ),
+
+            const SliverToBoxAdapter(child: SizedBox(height: AppSpacing.md)),
+
+            // Countdown para o lançamento oficial
+            SliverToBoxAdapter(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md),
+                child: _buildCountdownCard(),
               ),
             ),
 
@@ -456,6 +466,40 @@ class HomeScreen extends ConsumerWidget {
             const SliverToBoxAdapter(child: SizedBox(height: AppSpacing.xxl)),
           ],
         ),
+      ),
+    );
+  }
+
+  Widget _buildCountdownCard() {
+    final daysLeft = GtaViRealMedia.releaseDate.difference(DateTime.now()).inDays;
+
+    return GlassCard(
+      padding: const EdgeInsets.all(14),
+      child: Row(
+        children: [
+          Container(
+            padding: const EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              color: AppColors.primary.withAlpha(40),
+              shape: BoxShape.circle,
+            ),
+            child: const Icon(Icons.event_available_rounded, color: AppColors.primary),
+          ),
+          const SizedBox(width: 14),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  daysLeft > 0 ? 'Faltam $daysLeft dias para o lançamento' : 'GTA VI já foi lançado!',
+                  style: AppTypography.titleMedium,
+                ),
+                const SizedBox(height: 2),
+                Text('19 de novembro de 2026 • PS5 e Xbox Series X|S', style: AppTypography.bodySmall),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
