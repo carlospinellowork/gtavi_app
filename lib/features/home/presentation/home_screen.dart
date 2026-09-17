@@ -13,6 +13,7 @@ import '../../characters/domain/character_model.dart';
 import '../../vehicles/domain/vehicle_model.dart';
 import '../../guides/domain/guide_model.dart';
 import '../../gallery/domain/media_item_model.dart';
+import '../../../core/services/share_service.dart';
 
 final homeCharactersProvider = FutureProvider<List<CharacterModel>>((ref) async {
   final repo = ref.watch(charactersRepositoryProvider);
@@ -33,6 +34,8 @@ final homeGalleryProvider = FutureProvider<List<MediaItemModel>>((ref) async {
   final repo = ref.watch(galleryRepositoryProvider);
   return await repo.getMediaItems();
 });
+
+final _countdownCardKey = GlobalKey();
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -472,31 +475,49 @@ class HomeScreen extends ConsumerWidget {
 
   Widget _buildCountdownCard() {
     final daysLeft = GtaViRealMedia.releaseDate.difference(DateTime.now()).inDays;
+    final headline = daysLeft > 0 ? 'Faltam $daysLeft dias para o lançamento' : 'GTA VI já foi lançado!';
 
     return GlassCard(
       padding: const EdgeInsets.all(14),
       child: Row(
         children: [
-          Container(
-            padding: const EdgeInsets.all(10),
-            decoration: BoxDecoration(
-              color: AppColors.primary.withAlpha(40),
-              shape: BoxShape.circle,
-            ),
-            child: const Icon(Icons.event_available_rounded, color: AppColors.primary),
-          ),
-          const SizedBox(width: 14),
           Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  daysLeft > 0 ? 'Faltam $daysLeft dias para o lançamento' : 'GTA VI já foi lançado!',
-                  style: AppTypography.titleMedium,
+            child: RepaintBoundary(
+              key: _countdownCardKey,
+              child: Container(
+                color: AppColors.surface,
+                padding: const EdgeInsets.all(4),
+                child: Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: AppColors.primary.withAlpha(40),
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Icon(Icons.event_available_rounded, color: AppColors.primary),
+                    ),
+                    const SizedBox(width: 14),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(headline, style: AppTypography.titleMedium),
+                          const SizedBox(height: 2),
+                          Text('19 de novembro de 2026 • PS5 e Xbox Series X|S', style: AppTypography.bodySmall),
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
-                const SizedBox(height: 2),
-                Text('19 de novembro de 2026 • PS5 e Xbox Series X|S', style: AppTypography.bodySmall),
-              ],
+              ),
+            ),
+          ),
+          IconButton(
+            icon: const Icon(Icons.share_rounded, color: AppColors.textMuted),
+            onPressed: () => shareWidgetAsImage(
+              _countdownCardKey,
+              text: '$headline para GTA VI! 🎮🔥 19 de novembro de 2026, PS5 e Xbox Series X|S.',
             ),
           ),
         ],
