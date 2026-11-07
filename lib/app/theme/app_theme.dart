@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'app_colors.dart';
 import 'app_spacing.dart';
+import 'app_typography.dart';
 
 abstract class AppTheme {
   static ThemeData get darkTheme {
@@ -17,12 +18,14 @@ abstract class AppTheme {
         onSurface: AppColors.textPrimary,
         error: AppColors.error,
       ),
-      appBarTheme: const AppBarTheme(
+      tabBarTheme: const TabBarThemeData(dividerColor: AppColors.surfaceBorder),
+      appBarTheme: AppBarTheme(
+        titleTextStyle: AppTypography.titleLarge,
         backgroundColor: AppColors.background,
         elevation: 0,
         centerTitle: false,
         scrolledUnderElevation: 0,
-        iconTheme: IconThemeData(color: AppColors.textPrimary),
+        iconTheme: const IconThemeData(color: AppColors.textPrimary),
       ),
       cardTheme: CardThemeData(
         color: AppColors.surface,

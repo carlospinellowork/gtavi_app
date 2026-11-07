@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'theme/app_theme.dart';
-import 'router/app_router.dart';
-import '../core/constants/app_constants.dart';
 
-class GtaViCompanionApp extends StatelessWidget {
-  const GtaViCompanionApp({super.key});
+import '../core/constants/app_constants.dart';
+import 'router/app_router.dart';
+import 'theme/app_theme.dart';
+
+class NeonGuideApp extends StatelessWidget {
+  const NeonGuideApp({super.key});
 
   @override
   Widget build(BuildContext context) {

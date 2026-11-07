@@ -1,4 +1,4 @@
-name: GTA VI App Android Build
+name: Android Build
 
 on:
   push:
@@ -40,5 +40,5 @@ jobs:
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: gtavi_app_android_release
+          name: neon_guide_android
           path: build/app/outputs/flutter-apk/app-release.apk
