@@ -28,8 +28,7 @@ class AboutScreen extends StatelessWidget {
           GlassCard(
             child: Text(
               'As notícias trazem a fonte e o link original. Os vídeos abrem no YouTube, '
-              'no canal de quem publicou. As imagens do app são ilustrações próprias, não '
-              'imagens do jogo.',
+              'no canal de quem publicou. O app não usa imagens do jogo.',
               style: AppTypography.bodyMedium,
             ),
           ),

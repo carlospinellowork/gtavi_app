@@ -1,8 +1,11 @@
 {
-  "version": 1,
+  "version": 2,
   "updatedAt": "2026-11-07",
   "releaseDate": "2026-11-19",
-  "platforms": ["PlayStation 5", "Xbox Series X|S"],
+  "platforms": [
+    "PlayStation 5",
+    "Xbox Series X|S"
+  ],
   "news": [
     {
       "id": "n-2026-11-preload",
@@ -21,6 +24,15 @@
       "url": "https://www.france24.com/en/live-news/20261106-grand-theft-auto-vi-what-we-know",
       "date": "2026-11-06",
       "tag": "Lançamento"
+    },
+    {
+      "id": "n-2026-08-extended-look",
+      "title": "\"An Extended Look\": 27 minutos de jogo na Netflix",
+      "summary": "Rockstar e Netflix exibiram um vídeo longo com gameplay e reafirmaram a data de 19 de novembro.",
+      "source": "Netflix Brasil (YouTube)",
+      "url": "https://www.youtube.com/watch?v=LIfPlBFrk0o",
+      "date": "2026-08-27",
+      "tag": "Vídeo"
     },
     {
       "id": "n-2026-06-preorder",
@@ -52,6 +64,19 @@
   ],
   "videos": [
     {
+      "id": "extended-look",
+      "title": "An Extended Look (27 min de gameplay)",
+      "channel": "Netflix Brasil",
+      "youtubeId": "LIfPlBFrk0o",
+      "date": "2026-08-27"
+    },
+    {
+      "id": "trailer-2-br",
+      "title": "2º Trailer (Rockstar Brasil)",
+      "channel": "Rockstar Games Brasil",
+      "youtubeId": "IpSDW3Mq-7E"
+    },
+    {
       "id": "trailer-2",
       "title": "Trailer 2 (oficial)",
       "channel": "Rockstar Games",
@@ -64,33 +89,133 @@
       "channel": "Rockstar Games",
       "youtubeId": "QdBZY2fkU-0",
       "date": "2023-12-05"
+    },
+    {
+      "id": "flow-trailer-2",
+      "title": "Flow Games reage ao Trailer 2",
+      "channel": "Cortes do Flow Games",
+      "youtubeId": "NUPoKcEU-tw"
+    },
+    {
+      "id": "cellbit-trailer-2",
+      "title": "Esse novo trailer do GTA 6 tá impressionante",
+      "channel": "Cellbit Lives",
+      "youtubeId": "zUROhWGRz0c"
+    },
+    {
+      "id": "brksedu-adiamento",
+      "title": "BRKsEDU sobre o adiamento do GTA 6",
+      "channel": "Cortes do BRKsEDU",
+      "youtubeId": "EcVDW1wNxHM"
     }
   ],
   "characters": [
-    {"id": "jason", "name": "Jason Duval", "role": "Protagonista", "description": "Cresceu cercado por golpistas, passou pelo Exército e tenta deixar o passado para trás nos Keys de Leonida."},
-    {"id": "lucia", "name": "Lucia Caminos", "role": "Protagonista", "description": "Saiu da prisão decidida a construir uma vida melhor e tem em Jason seu parceiro de crime."},
-    {"id": "cal", "name": "Cal Hampton", "role": "Elenco", "description": "Amigo e parceiro de Jason, desconfiado de tudo e de todos."},
-    {"id": "boobie", "name": "Boobie Ike", "role": "Elenco", "description": "Figura conhecida de Vice City, com negócios que vão de imóveis a uma gravadora."},
-    {"id": "drequan", "name": "Dre'Quan Priest", "role": "Elenco", "description": "Quer fazer da sua gravadora o próximo grande nome do rap."},
-    {"id": "realdimez", "name": "Real Dimez", "role": "Elenco", "description": "Dupla de rap que ganhou fama nas redes sociais."},
-    {"id": "raul", "name": "Raul Bautista", "role": "Elenco", "description": "Assaltante experiente, sempre atrás de parceiros para o próximo golpe."},
-    {"id": "brian", "name": "Brian Heder", "role": "Elenco", "description": "Contrabandista das antigas que trabalha nos Keys."}
+    {
+      "id": "jason",
+      "name": "Jason Duval",
+      "role": "Protagonista",
+      "description": "Cresceu cercado por golpistas, passou pelo Exército e tenta deixar o passado para trás nos Keys de Leonida."
+    },
+    {
+      "id": "lucia",
+      "name": "Lucia Caminos",
+      "role": "Protagonista",
+      "description": "Saiu da prisão decidida a construir uma vida melhor e tem em Jason seu parceiro de crime."
+    },
+    {
+      "id": "cal",
+      "name": "Cal Hampton",
+      "role": "Elenco",
+      "description": "Amigo e parceiro de Jason, desconfiado de tudo e de todos."
+    },
+    {
+      "id": "boobie",
+      "name": "Boobie Ike",
+      "role": "Elenco",
+      "description": "Figura conhecida de Vice City, com negócios que vão de imóveis a uma gravadora."
+    },
+    {
+      "id": "drequan",
+      "name": "Dre'Quan Priest",
+      "role": "Elenco",
+      "description": "Quer fazer da sua gravadora o próximo grande nome do rap."
+    },
+    {
+      "id": "realdimez",
+      "name": "Real Dimez",
+      "role": "Elenco",
+      "description": "Dupla de rap que ganhou fama nas redes sociais."
+    },
+    {
+      "id": "raul",
+      "name": "Raul Bautista",
+      "role": "Elenco",
+      "description": "Assaltante experiente, sempre atrás de parceiros para o próximo golpe."
+    },
+    {
+      "id": "brian",
+      "name": "Brian Heder",
+      "role": "Elenco",
+      "description": "Contrabandista das antigas que trabalha nos Keys."
+    }
   ],
   "places": [
-    {"id": "vice-city", "name": "Vice City", "description": "A grande cidade de Leonida: praias, vida noturna e muito dinheiro circulando."},
-    {"id": "leonida-keys", "name": "Leonida Keys", "description": "Ilhas ligadas por pontes, com barcos, pescaria e esconderijos."},
-    {"id": "grassrivers", "name": "Grassrivers", "description": "Pântanos e áreas alagadas, lar de jacarés e de quem não quer ser encontrado."},
-    {"id": "port-gellhorn", "name": "Port Gellhorn", "description": "Cidade costeira decadente, longe do brilho de Vice City."},
-    {"id": "ambrosia", "name": "Ambrosia", "description": "Região agrícola e industrial no interior do estado."},
-    {"id": "mount-kalaga", "name": "Mount Kalaga", "description": "Parque nacional com trilhas, florestas e muita natureza."}
+    {
+      "id": "vice-city",
+      "name": "Vice City",
+      "description": "A grande cidade de Leonida: praias, vida noturna e muito dinheiro circulando."
+    },
+    {
+      "id": "leonida-keys",
+      "name": "Leonida Keys",
+      "description": "Ilhas ligadas por pontes, com barcos, pescaria e esconderijos."
+    },
+    {
+      "id": "grassrivers",
+      "name": "Grassrivers",
+      "description": "Pântanos e áreas alagadas, lar de jacarés e de quem não quer ser encontrado."
+    },
+    {
+      "id": "port-gellhorn",
+      "name": "Port Gellhorn",
+      "description": "Cidade costeira decadente, longe do brilho de Vice City."
+    },
+    {
+      "id": "ambrosia",
+      "name": "Ambrosia",
+      "description": "Região agrícola e industrial no interior do estado."
+    },
+    {
+      "id": "mount-kalaga",
+      "name": "Mount Kalaga",
+      "description": "Parque nacional com trilhas, florestas e muita natureza."
+    }
   ],
   "facts": [
-    {"q": "Quando lança?", "a": "19 de novembro de 2026."},
-    {"q": "Em quais plataformas?", "a": "PlayStation 5 e Xbox Series X|S. O PC ainda não tem data."},
-    {"q": "Quanto custa?", "a": "US$ 79,99 na edição padrão e US$ 99,99 na especial, segundo a AFP. Confira o preço em reais na loja do seu console."},
-    {"q": "Posso baixar antes?", "a": "Sim: o pré-download começa em 10 de novembro para quem já comprou."},
-    {"q": "Onde se passa?", "a": "No estado fictício de Leonida, com Vice City como cidade principal."},
-    {"q": "Quem são os protagonistas?", "a": "Lucia Caminos e Jason Duval."}
+    {
+      "q": "Quando lança?",
+      "a": "19 de novembro de 2026."
+    },
+    {
+      "q": "Em quais plataformas?",
+      "a": "PlayStation 5 e Xbox Series X|S. O PC ainda não tem data."
+    },
+    {
+      "q": "Quanto custa?",
+      "a": "US$ 79,99 na edição padrão e US$ 99,99 na especial, segundo a AFP. Confira o preço em reais na loja do seu console."
+    },
+    {
+      "q": "Posso baixar antes?",
+      "a": "Sim: o pré-download começa em 10 de novembro para quem já comprou."
+    },
+    {
+      "q": "Onde se passa?",
+      "a": "No estado fictício de Leonida, com Vice City como cidade principal."
+    },
+    {
+      "q": "Quem são os protagonistas?",
+      "a": "Lucia Caminos e Jason Duval."
+    }
   ],
   "checklist": [
     {
@@ -98,13 +223,34 @@
       "title": "Preparação para o lançamento",
       "description": "Tudo pronto para jogar no dia 19.",
       "items": [
-        {"id": "prep-trailer1", "title": "Assistir o Trailer 1"},
-        {"id": "prep-trailer2", "title": "Assistir o Trailer 2"},
-        {"id": "prep-buy", "title": "Escolher a edição e garantir o jogo"},
-        {"id": "prep-space", "title": "Liberar espaço no console"},
-        {"id": "prep-preload", "title": "Fazer o pré-download (a partir de 10/11)"},
-        {"id": "prep-update", "title": "Atualizar o console e o controle"},
-        {"id": "prep-dayoff", "title": "Reservar o dia 19 para jogar"}
+        {
+          "id": "prep-trailer1",
+          "title": "Assistir o Trailer 1"
+        },
+        {
+          "id": "prep-trailer2",
+          "title": "Assistir o Trailer 2"
+        },
+        {
+          "id": "prep-buy",
+          "title": "Escolher a edição e garantir o jogo"
+        },
+        {
+          "id": "prep-space",
+          "title": "Liberar espaço no console"
+        },
+        {
+          "id": "prep-preload",
+          "title": "Fazer o pré-download (a partir de 10/11)"
+        },
+        {
+          "id": "prep-update",
+          "title": "Atualizar o console e o controle"
+        },
+        {
+          "id": "prep-dayoff",
+          "title": "Reservar o dia 19 para jogar"
+        }
       ]
     }
   ]

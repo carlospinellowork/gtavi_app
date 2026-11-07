@@ -16,3 +16,8 @@
 
 ## 2026-11-07 Memória em docs/ no repositório
 - **Decisão:** `CLAUDE.md` + `docs/` no git, em vez de um vault no Obsidian.
+
+## 2026-11-07 Juntar o trabalho de ago–set (commits c78a4af..ccff1b3)
+- **Ficou:** vídeos verificados via oEmbed (Extended Look, trailer BR, reações de criadores) e o compartilhamento (card de contagem como imagem, notícias como texto).
+- **Saiu:** screenshots oficiais espelhados do rockstarintel.com (marca), rádios de internet com streams HTTP de terceiros (fora do foco e licença incerta), player do YouTube embutido (abrir no YouTube basta) e os agentes/skill `new-feature` que mandavam criar dados especulativos.
+- Imagens geradas por IA continuam fora, como você já tinha decidido.

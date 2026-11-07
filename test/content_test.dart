@@ -15,6 +15,7 @@ void main() {
     expect(c.releaseDate, DateTime(2026, 11, 19));
     expect(c.news, isNotEmpty);
     expect(c.videos, isNotEmpty);
+    expect(c.videos.every((v) => v.youtubeId.length == 11), isTrue);
     expect(c.characters, isNotEmpty);
     expect(c.checklistTotal, greaterThan(0));
     // notícias da mais nova para a mais antiga
@@ -34,6 +35,6 @@ void main() {
 
     SharedPreferences.setMockInitialValues({AppConstants.keyContentCache: '{quebrado'});
     repo = ContentRepository(prefs: await SharedPreferences.getInstance(), loadBundled: () async => bundledRaw);
-    expect((await repo.loadLocal()).version, 1);
+    expect((await repo.loadLocal()).version, AppContent.fromJson(jsonDecode(bundledRaw) as Map<String, dynamic>).version);
   });
 }

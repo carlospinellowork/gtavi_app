@@ -9,6 +9,7 @@ import '../../app/theme/app_colors.dart';
 import '../../app/theme/app_spacing.dart';
 import '../../app/theme/app_typography.dart';
 import '../../core/constants/app_constants.dart';
+import '../../core/services/share_service.dart';
 import '../../core/utils/dates.dart';
 import '../../core/widgets/content_builder.dart';
 import '../../core/widgets/glass_card.dart';
@@ -75,49 +76,79 @@ class HomeScreen extends ConsumerWidget {
   }
 }
 
-class _Hero extends StatelessWidget {
+class _Hero extends StatefulWidget {
   final AppContent content;
 
   const _Hero({required this.content});
 
   @override
+  State<_Hero> createState() => _HeroState();
+}
+
+class _HeroState extends State<_Hero> {
+  final _cardKey = GlobalKey();
+
+  Future<void> _share() {
+    final days = widget.content.releaseDate.difference(DateTime.now()).inDays;
+    final text = days > 0
+        ? 'Faltam $days dias para o GTA 6! Contagem no ${AppConstants.appName}.'
+        : 'O GTA 6 chegou! Guia e checklist no ${AppConstants.appName}.';
+    return shareWidgetAsImage(_cardKey, text: text);
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: AppSpacing.paddingHorizontalMd,
-      clipBehavior: Clip.antiAlias,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(AppSpacing.radiusXl),
-        border: Border.all(color: AppColors.glassBorder),
-      ),
-      child: Stack(
+    final content = widget.content;
+    return Padding(
+      padding: AppSpacing.paddingHorizontalMd,
+      child: Column(
         children: [
-          Positioned.fill(
-            child: Image.asset('assets/images/hero_night.png', fit: BoxFit.cover),
-          ),
-          Positioned.fill(
-            child: DecoratedBox(
+          // RepaintBoundary: vira a imagem compartilhada nas redes.
+          RepaintBoundary(
+            key: _cardKey,
+            child: Container(
+              width: double.infinity,
+              padding: AppSpacing.paddingLg,
               decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [AppColors.background.withAlpha(90), AppColors.background.withAlpha(230)],
+                borderRadius: BorderRadius.circular(AppSpacing.radiusXl),
+                border: Border.all(color: AppColors.glassBorder),
+                gradient: const LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [Color(0xFF3A0F4F), AppColors.surface, Color(0xFF07303A)],
                 ),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('GTA 6 CHEGA EM',
+                      style: AppTypography.labelSmall.copyWith(color: AppColors.secondary, letterSpacing: 2)),
+                  const SizedBox(height: AppSpacing.xs),
+                  Text(formatDate(content.releaseDate), style: AppTypography.displayMedium),
+                  const SizedBox(height: AppSpacing.md),
+                  Countdown(target: content.releaseDate),
+                  const SizedBox(height: AppSpacing.md),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Text(content.platforms.join(' · '),
+                            style: AppTypography.bodySmall.copyWith(color: AppColors.textSecondary)),
+                      ),
+                      Text(AppConstants.appName,
+                          style: AppTypography.labelSmall.copyWith(color: AppColors.primary)),
+                    ],
+                  ),
+                ],
               ),
             ),
           ),
-          Padding(
-            padding: AppSpacing.paddingLg,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text('GTA 6 CHEGA EM', style: AppTypography.labelSmall.copyWith(color: AppColors.secondary, letterSpacing: 2)),
-                const SizedBox(height: AppSpacing.xs),
-                Text(formatDate(content.releaseDate), style: AppTypography.displayMedium),
-                const SizedBox(height: AppSpacing.md),
-                Countdown(target: content.releaseDate),
-                const SizedBox(height: AppSpacing.md),
-                Text(content.platforms.join(' · '), style: AppTypography.bodySmall.copyWith(color: AppColors.textSecondary)),
-              ],
+          const SizedBox(height: AppSpacing.sm),
+          SizedBox(
+            width: double.infinity,
+            child: FilledButton.icon(
+              onPressed: _share,
+              icon: const Icon(Icons.share_rounded, size: 18),
+              label: const Text('Compartilhar contagem'),
             ),
           ),
         ],

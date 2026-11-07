@@ -80,7 +80,9 @@ class NewsItem {
 
 class VideoItem {
   final String id, title, channel, youtubeId;
-  final DateTime date;
+
+  /// Data de publicação, quando confirmada (vazia no JSON = não mostrar).
+  final DateTime? date;
 
   const VideoItem({
     required this.id,
@@ -95,7 +97,7 @@ class VideoItem {
         title: _str(j['title']),
         channel: _str(j['channel']),
         youtubeId: _str(j['youtubeId']),
-        date: _date(j['date']),
+        date: DateTime.tryParse(_str(j['date'])),
       );
 
   String get url => 'https://www.youtube.com/watch?v=$youtubeId';

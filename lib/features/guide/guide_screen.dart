@@ -8,8 +8,6 @@ import '../../core/widgets/content_builder.dart';
 import '../../core/widgets/glass_card.dart';
 import '../content/content_models.dart';
 
-const _placeImages = ['assets/images/downtown.png', 'assets/images/beach.png', 'assets/images/cars.png'];
-
 class GuideScreen extends StatelessWidget {
   const GuideScreen({super.key});
 
@@ -131,17 +129,12 @@ class _PlacesList extends StatelessWidget {
       itemBuilder: (_, i) {
         final p = places[i];
         return GlassCard(
-          padding: EdgeInsets.zero,
-          child: Column(
+          child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              if (i < _placeImages.length)
-                ClipRRect(
-                  borderRadius: const BorderRadius.vertical(top: Radius.circular(AppSpacing.radiusLg)),
-                  child: Image.asset(_placeImages[i], height: 120, width: double.infinity, fit: BoxFit.cover),
-                ),
-              Padding(
-                padding: AppSpacing.paddingMd,
+              const Icon(Icons.place_rounded, color: AppColors.primaryGradientEnd),
+              const SizedBox(width: AppSpacing.md),
+              Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [

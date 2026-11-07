@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import '../../app/theme/app_colors.dart';
 import '../../app/theme/app_spacing.dart';
 import '../../app/theme/app_typography.dart';
+import '../../core/constants/app_constants.dart';
+import '../../core/services/share_service.dart';
 import '../../core/utils/dates.dart';
 import '../../core/utils/links.dart';
 import '../../core/widgets/app_badge.dart';
@@ -37,8 +39,12 @@ class NewsCard extends StatelessWidget {
           Row(
             children: [
               Expanded(child: Text('Fonte: ${item.source}', style: AppTypography.bodySmall)),
-              if (item.url.isNotEmpty)
-                const Icon(Icons.open_in_new_rounded, size: 16, color: AppColors.textMuted),
+              IconButton(
+                tooltip: 'Compartilhar',
+                visualDensity: VisualDensity.compact,
+                icon: const Icon(Icons.share_rounded, size: 18, color: AppColors.textMuted),
+                onPressed: () => shareText('${item.title}\n${item.url}\n\nvia ${AppConstants.appName}'),
+              ),
             ],
           ),
         ],
@@ -93,7 +99,10 @@ class VideoCard extends StatelessWidget {
                 children: [
                   Text(video.title, style: AppTypography.titleMedium, maxLines: 2, overflow: TextOverflow.ellipsis),
                   const SizedBox(height: 2),
-                  Text('${video.channel} · ${formatDate(video.date)}', style: AppTypography.bodySmall),
+                  Text(
+                    video.date == null ? video.channel : '${video.channel} · ${formatDate(video.date!)}',
+                    style: AppTypography.bodySmall,
+                  ),
                 ],
               ),
             ),
