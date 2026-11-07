@@ -11,7 +11,7 @@
 - **Ainda dá para trocar o nome:** `AppConstants.appName`, `AndroidManifest.xml`, `ios/Runner/Info.plist`.
 
 ## 2026-11-07 Conteúdo via JSON no GitHub
-- **Decisão:** um `content.json` num repo **público** (`carlospinellowork/leonida-hub-content`); o app baixa ao abrir e guarda cópia; sem internet usa o embutido.
+- **Decisão:** um `content.json` público que o app baixa ao abrir e guarda; sem internet usa o embutido. (Hospedagem: ver a decisão "Repositório do app público" abaixo.)
 - **Por quê:** grátis, sem servidor, e permite atualizar notícias e checklist sem nova revisão das lojas.
 
 ## 2026-11-07 Memória em docs/ no repositório
@@ -33,9 +33,13 @@
 
 ## 2026-11-07 Nome final: Leonida Hub
 - **Contexto:** o Carlos sugeriu "Vice Rock Guide". Recomendei não usar: "Vice" + "Rock" lembra Vice City + Rockstar e cai na política de falsa identidade do Google Play.
-- **Decisão do Carlos:** **Leonida Hub** (Leonida é o estado do jogo). Pacote `com.leonidahub.app` (Android e iOS), repositório de conteúdo `leonida-hub-content`.
+- **Decisão do Carlos:** **Leonida Hub** (Leonida é o estado do jogo). Pacote `com.leonidahub.app` (Android e iOS).
 - **Regras:** "guia não oficial" no título da loja; nunca "GTA", "Rockstar" nem "Vice City" no nome ou no ícone.
 
 ## 2026-11-07 Monetização
 - **Decisão do Carlos ("deixar tudo pronto"):** AdMob (banner fixo + tela cheia com limite de frequência) com consentimento LGPD/GDPR (UMP); compra única "Remover anúncios"; links de afiliado da Amazon no checklist, com aviso.
 - IDs de teste do Google até ele criar as contas; os IDs reais ficam todos em `lib/core/constants/monetization.dart`.
+
+## 2026-11-07 Repositório do app público, sem repositório separado de conteúdo
+- **Decisão do Carlos:** tornou o `gtavi_app` público em vez de criar o `leonida-hub-content`.
+- **Consequências:** o app baixa o `assets/content/content.json` direto daqui; o robô roda aqui e faz commits a cada mudança (`git pull --rebase` antes de cada push); os commits do robô não disparam os builds. Código aberto = nunca commitar chaves, keystore ou senhas (usar GitHub Secrets). Histórico verificado em 07/11: sem segredos.

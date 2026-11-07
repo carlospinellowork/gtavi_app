@@ -15,7 +15,7 @@
 2. **AdMob** (grátis): criar o app "Leonida Hub" e 2 blocos de anúncio (banner adaptativo e intersticial), para Android e iOS. Trocar os IDs em `lib/core/constants/monetization.dart`, no `AndroidManifest.xml` e no `Info.plist`. Em "Privacidade e mensagens", criar a mensagem de consentimento (GDPR) — sem ela o formulário não aparece.
 3. **Produto "Remover anúncios"** no Play Console: Monetizar → Produtos → Produtos no app, ID `remover_anuncios`, compra única (sugestão R$ 9,90). Só funciona depois que um build estiver no teste fechado.
 4. **Amazon Associados** (grátis): cadastrar e colocar o ID (ex.: `leonidahub-20`) em `Monetization.amazonTag`.
-5. Criar o repo público `leonida-hub-content` (ver `CONTEUDO.md`); política de privacidade lá, citando anúncios e ID de publicidade.
+5. ~~Repo de conteúdo~~ feito: o próprio `gtavi_app` ficou público (07/11). `PRIVACY.md` na raiz.
 6. Ícone próprio, prints da loja, build `.aab` assinado no CI (a Play não aceita APK).
 7. Ficha da loja: "Leonida Hub: guia não oficial", marcar "Contém anúncios", preencher "Segurança dos dados" (ID de publicidade coletado pelo AdMob).
 8. **Apple** (US$ 99/ano) depois do Android dar sinal de vida.

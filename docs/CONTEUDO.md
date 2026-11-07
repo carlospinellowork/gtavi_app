@@ -1,6 +1,6 @@
 # Como atualizar o conteúdo
 
-O app lê `content.json` de `https://raw.githubusercontent.com/carlospinellowork/leonida-hub-content/main/content.json`.
+O app lê `assets/content/content.json` deste repositório (público) por `https://raw.githubusercontent.com/carlospinellowork/gtavi_app/main/assets/content/content.json`.
 
 ## Automático (robô)
 Notícias e vídeos se atualizam sozinhos. O robô (`content-bot/update.py`) roda no GitHub Actions a cada 30 min:
@@ -11,12 +11,11 @@ Notícias e vídeos se atualizam sozinhos. O robô (`content-bot/update.py`) rod
 
 **À mão (raro):** `content-bot/base.json` (data, personagens, lugares, perguntas, checklist, notícias e vídeos fixados) e `sources.json` (adicionar canal, bloquear fonte em `blockedSources`).
 
-## Montar uma vez (o Carlos)
-1. Criar no GitHub o repositório **público** e **vazio** `leonida-hub-content`.
-2. O Claude envia para lá o conteúdo de `content-bot/` (robô + workflow `.github/workflows/update-content.yml`) e um `PRIVACY.md`.
-3. Em Settings → Actions → General: "Read and write permissions".
-
-Enquanto isso não existe, o app usa o conteúdo embutido, que os builds do CI atualizam rodando o robô antes de compilar.
+## Onde roda
+- Workflow `.github/workflows/update-content.yml` neste repositório: a cada 30 min (e quando `base.json`, `sources.json` ou `update.py` mudam). Para rodar na hora: Actions → "Atualizar conteúdo" → Run workflow.
+- O robô só faz commit em `assets/content/content.json`; esses commits não disparam o build do Android e do iOS.
+- Por isso, **antes de dar push no repositório, sempre `git pull --rebase`**: o robô terá feito commits.
+- Política de privacidade: `PRIVACY.md` na raiz (link em Sobre).
 
 ## Campos
 - `news[]`: `id`, `title`, `summary`, `source`, `url`, `date` (AAAA-MM-DD), `tag`. **Sempre com fonte real.**

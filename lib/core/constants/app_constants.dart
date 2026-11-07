@@ -3,13 +3,13 @@ abstract class AppConstants {
   static const String appName = 'Leonida Hub';
   static const String appTagline = 'Guia de fã não oficial para o GTA 6';
 
-  /// Arquivo de conteúdo remoto. Precisa estar num repositório PÚBLICO.
-  /// Enquanto não existir, o app usa a cópia embutida em assets/content/content.json.
+  /// Arquivo de conteúdo remoto: o mesmo assets/content/content.json deste repositório
+  /// (público), atualizado pelo robô a cada 30 min. Sem internet, o app usa a cópia embutida.
   static const String contentUrl =
-      'https://raw.githubusercontent.com/carlospinellowork/leonida-hub-content/main/content.json';
+      'https://raw.githubusercontent.com/carlospinellowork/gtavi_app/main/assets/content/content.json';
 
   static const String privacyPolicyUrl =
-      'https://github.com/carlospinellowork/leonida-hub-content/blob/main/PRIVACY.md';
+      'https://github.com/carlospinellowork/gtavi_app/blob/main/PRIVACY.md';
 
   static const String disclaimer =
       'Leonida Hub é um app de fã, não oficial. Não tem ligação com a Rockstar Games '

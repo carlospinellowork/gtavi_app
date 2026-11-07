@@ -7,3 +7,5 @@ Guia de fã **não oficial** para o GTA 6 (Flutter). Contagem regressiva, notíc
 - Plano e decisões: `docs/PLANO.md`, `docs/DECISOES.md`
 
 Não tem ligação com a Rockstar Games nem com a Take-Two Interactive.
+
+Política de privacidade: [PRIVACY.md](PRIVACY.md)

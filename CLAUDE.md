@@ -4,7 +4,8 @@ App Flutter de fã, **não oficial**, para o GTA 6 (lançamento 19/11/2026). Con
 
 ## Como trabalhar aqui (mesmo jeito do Nexo)
 - **Verificar antes de dizer que terminou**: `flutter analyze` e `flutter test` limpos; olhar as telas (build web + print em 412px).
-- **Commit e push a cada parte pronta** na `main` (o GitHub Actions gera o APK e o IPA). Citar os hashes no relatório.
+- **Commit e push a cada parte pronta** na `main` (o GitHub Actions gera o APK e o IPA). Citar os hashes no relatório. **Sempre `git pull --rebase` antes do push**: o robô de conteúdo faz commits na `main`.
+- **Repositório público**: nunca commitar keystore, senhas, tokens nem `.env`. Segredos vão em GitHub Secrets.
 - **Decisões do Carlos** viram entrada em `docs/DECISOES.md` (data, decisão, por quê).
 - **Fim de sessão com trabalho feito**: atualizar `docs/PLANO.md` (feito / pendente).
 - Propor antes de alargar o escopo. O app é enxuto de propósito.
@@ -16,7 +17,7 @@ App Flutter de fã, **não oficial**, para o GTA 6 (lançamento 19/11/2026). Con
 - **Nenhuma imagem gerada por IA** e nenhum screenshot oficial espelhado (risco de marca). Visual = tema, degradês e ícones.
 
 ## Arquitetura
-- Conteúdo = `assets/content/content.json` (embutido) + mesmo arquivo remoto em `AppConstants.contentUrl` (repo público). Gerado pelo robô `content-bot/` (Python, sem dependências; testes: `python3 -m unittest` dentro da pasta). Notícias e vídeos nunca à mão. Ver `docs/CONTEUDO.md`.
+- Conteúdo = `assets/content/content.json` (embutido) + mesmo arquivo remoto em `AppConstants.contentUrl` (este repo, público). Gerado pelo robô `content-bot/` via `.github/workflows/update-content.yml` a cada 30 min (Python, sem dependências; testes: `python3 -m unittest` dentro da pasta). Notícias e vídeos nunca à mão. Ver `docs/CONTEUDO.md`.
 - `lib/features/content/` modelos e repositório (cache → embutido → remoto); `lib/app/providers.dart` (Riverpod).
 - Compartilhar (`lib/core/services/share_service.dart`, share_plus): card da contagem vira imagem; notícia vira texto com link. É o motor de divulgação grátis.
 - Monetização (`lib/features/monetization/`, IDs em `lib/core/constants/monetization.dart`): AdMob com consentimento UMP, banner acima das abas, tela cheia só ao SAIR de um vídeo e no máximo 1 a cada 3 min; compra única `remover_anuncios` (in_app_purchase); `affiliateUrl()` para links da Amazon. Tudo desligado no web e nos testes (`monetizationSupported`).

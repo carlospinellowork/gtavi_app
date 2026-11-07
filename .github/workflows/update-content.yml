@@ -1,5 +1,5 @@
-# Roda o robô a cada 30 min e publica o content.json que o app baixa.
-# Este arquivo vai na raiz do repositório PÚBLICO leonida-hub-content.
+# Robô de conteúdo: a cada 30 min busca notícias e vídeos e publica
+# assets/content/content.json, que o app baixa pelo link público do repositório.
 name: Atualizar conteúdo
 
 on:
@@ -7,7 +7,8 @@ on:
     - cron: "*/30 * * * *"
   workflow_dispatch:
   push:
-    paths: ["base.json", "sources.json", "update.py"]
+    branches: [main]
+    paths: [".github/workflows/update-content.yml", "content-bot/base.json", "content-bot/sources.json", "content-bot/update.py"]
 
 permissions:
   contents: write
@@ -25,14 +26,16 @@ jobs:
         with:
           python-version: "3.12"
       - name: Testes do robô
+        working-directory: content-bot
         run: python -m unittest -v
       - name: Buscar notícias e vídeos
-        run: python update.py --out content.json
+        run: python content-bot/update.py --out assets/content/content.json
       - name: Publicar se mudou
         run: |
-          if git diff --quiet -- content.json; then echo "sem mudanças"; exit 0; fi
+          if git diff --quiet -- assets/content/content.json; then echo "sem mudanças"; exit 0; fi
           git config user.name "leonida-hub-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add content.json
+          git add assets/content/content.json
           git commit -m "conteúdo: atualização automática"
+          git pull --rebase origin main
           git push
