@@ -13,7 +13,8 @@ Future<void> shareText(String text) async {
 /// abre o share sheet nativo com essa imagem + [text]. Usado para os "cards
 /// de hype" (ex: contagem regressiva) que o fã compartilha nas redes.
 Future<void> shareWidgetAsImage(GlobalKey key, {required String text}) async {
-  final boundary = key.currentContext?.findRenderObject() as RenderRepaintBoundary?;
+  final boundary =
+      key.currentContext?.findRenderObject() as RenderRepaintBoundary?;
   if (boundary == null) return;
 
   final image = await boundary.toImage(pixelRatio: 3.0);
@@ -21,7 +22,11 @@ Future<void> shareWidgetAsImage(GlobalKey key, {required String text}) async {
   if (byteData == null) return;
 
   final bytes = byteData.buffer.asUint8List();
-  final file = XFile.fromData(bytes, name: 'contagem-gta6.png', mimeType: 'image/png');
+  final file = XFile.fromData(
+    bytes,
+    name: 'contagem-gta6.png',
+    mimeType: 'image/png',
+  );
 
   await SharePlus.instance.share(ShareParams(text: text, files: [file]));
 }

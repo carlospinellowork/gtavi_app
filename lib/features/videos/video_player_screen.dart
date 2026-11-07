@@ -12,6 +12,7 @@ import '../../core/services/share_service.dart';
 import '../../core/utils/dates.dart';
 import '../../core/utils/links.dart';
 import '../content/content_models.dart';
+import '../monetization/monetization.dart';
 
 /// Toca o vídeo do YouTube dentro do app. Alguns vídeos bloqueiam a reprodução
 /// embutida; "Abrir no YouTube" sempre funciona como alternativa.
@@ -37,9 +38,19 @@ class _VideoPlayerScreenState extends ConsumerState<VideoPlayerScreen> {
         ),
       );
 
+  late final AdsController _ads = ref.read(adsProvider.notifier);
+
+  @override
+  void initState() {
+    super.initState();
+    _ads; // guarda a referência; no dispose o ref não deve ser usado
+  }
+
   @override
   void dispose() {
     _controller.close();
+    // Anúncio de tela cheia só depois do conteúdo, nunca antes do vídeo.
+    _ads.maybeShowInterstitial();
     super.dispose();
   }
 

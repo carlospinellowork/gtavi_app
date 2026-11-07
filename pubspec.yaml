@@ -1,5 +1,5 @@
 name: gtavi_app
-description: "Vice Guide — guia de fã não oficial para o GTA 6."
+description: "Leonida Hub — guia de fã não oficial para o GTA 6."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -42,6 +42,8 @@ dependencies:
   url_launcher: ^6.3.1
   share_plus: ^13.3.0
   youtube_player_iframe: ^6.0.2
+  google_mobile_ads: ^9.2.0
+  in_app_purchase: ^3.3.1
 
 dev_dependencies:
   flutter_test:

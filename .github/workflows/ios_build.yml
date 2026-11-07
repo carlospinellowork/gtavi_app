@@ -35,11 +35,11 @@ jobs:
         run: |
           mkdir -p Payload
           mv build/ios/iphoneos/Runner.app Payload/
-          zip -r vice_guide.ipa Payload
+          zip -r leonida_hub.ipa Payload
 
       - name: Upload IPA Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: vice_guide_ios
-          path: vice_guide.ipa
+          name: leonida_hub_ios
+          path: leonida_hub.ipa
           retention-days: 14

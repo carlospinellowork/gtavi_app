@@ -20,17 +20,24 @@ class ContentRepository {
     required this.prefs,
     Dio? dio,
     Future<String> Function()? loadBundled,
-  })  : dio = dio ??
-            Dio(BaseOptions(
-              connectTimeout: const Duration(seconds: 8),
-              receiveTimeout: const Duration(seconds: 8),
-              responseType: ResponseType.plain,
-            )),
-        loadBundled = loadBundled ?? (() => rootBundle.loadString('assets/content/content.json'));
+  }) : dio =
+           dio ??
+           Dio(
+             BaseOptions(
+               connectTimeout: const Duration(seconds: 8),
+               receiveTimeout: const Duration(seconds: 8),
+               responseType: ResponseType.plain,
+             ),
+           ),
+       loadBundled =
+           loadBundled ??
+           (() => rootBundle.loadString('assets/content/content.json'));
 
   /// Melhor conteúdo disponível sem rede: o mais novo entre cache e embutido.
   Future<AppContent> loadLocal() async {
-    final bundled = AppContent.fromJson(jsonDecode(await loadBundled()) as Map<String, dynamic>);
+    final bundled = AppContent.fromJson(
+      jsonDecode(await loadBundled()) as Map<String, dynamic>,
+    );
     final cached = _parse(prefs.getString(AppConstants.keyContentCache));
     if (cached != null && cached.version >= bundled.version) return cached;
     return bundled;

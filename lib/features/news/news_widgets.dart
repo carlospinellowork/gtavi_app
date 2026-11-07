@@ -28,7 +28,12 @@ class NewsCard extends StatelessWidget {
           Row(
             children: [
               if (item.tag.isNotEmpty && item.tag != 'Notícia')
-                AppBadge(label: item.tag, color: item.tag == 'Rumor' ? AppColors.warning : AppColors.primary),
+                AppBadge(
+                  label: item.tag,
+                  color: item.tag == 'Rumor'
+                      ? AppColors.warning
+                      : AppColors.primary,
+                ),
               const Spacer(),
               Text(formatDate(item.date), style: AppTypography.bodySmall),
             ],
@@ -42,12 +47,23 @@ class NewsCard extends StatelessWidget {
           const SizedBox(height: AppSpacing.sm),
           Row(
             children: [
-              Expanded(child: Text('Fonte: ${item.source}', style: AppTypography.bodySmall)),
+              Expanded(
+                child: Text(
+                  'Fonte: ${item.source}',
+                  style: AppTypography.bodySmall,
+                ),
+              ),
               IconButton(
                 tooltip: 'Compartilhar',
                 visualDensity: VisualDensity.compact,
-                icon: const Icon(Icons.share_rounded, size: 18, color: AppColors.textMuted),
-                onPressed: () => shareText('${item.title}\n${item.url}\n\nvia ${AppConstants.appName}'),
+                icon: const Icon(
+                  Icons.share_rounded,
+                  size: 18,
+                  color: AppColors.textMuted,
+                ),
+                onPressed: () => shareText(
+                  '${item.title}\n${item.url}\n\nvia ${AppConstants.appName}',
+                ),
               ),
             ],
           ),
@@ -74,7 +90,9 @@ class VideoCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             ClipRRect(
-              borderRadius: const BorderRadius.vertical(top: Radius.circular(AppSpacing.radiusLg)),
+              borderRadius: const BorderRadius.vertical(
+                top: Radius.circular(AppSpacing.radiusLg),
+              ),
               child: AspectRatio(
                 aspectRatio: 16 / 9,
                 child: Stack(
@@ -83,13 +101,18 @@ class VideoCard extends StatelessWidget {
                     Image.network(
                       video.thumbnailUrl,
                       fit: BoxFit.cover,
-                      errorBuilder: (_, _, _) => Container(color: AppColors.surfaceLight),
+                      errorBuilder: (_, _, _) =>
+                          Container(color: AppColors.surfaceLight),
                     ),
                     const Center(
                       child: CircleAvatar(
                         radius: 24,
                         backgroundColor: Color(0xCC000000),
-                        child: Icon(Icons.play_arrow_rounded, color: Colors.white, size: 32),
+                        child: Icon(
+                          Icons.play_arrow_rounded,
+                          color: Colors.white,
+                          size: 32,
+                        ),
                       ),
                     ),
                   ],
@@ -101,10 +124,17 @@ class VideoCard extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(video.title, style: AppTypography.titleMedium, maxLines: 2, overflow: TextOverflow.ellipsis),
+                  Text(
+                    video.title,
+                    style: AppTypography.titleMedium,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                  ),
                   const SizedBox(height: 2),
                   Text(
-                    video.date == null ? video.channel : '${video.channel} · ${formatDate(video.date!)}',
+                    video.date == null
+                        ? video.channel
+                        : '${video.channel} · ${formatDate(video.date!)}',
                     style: AppTypography.bodySmall,
                   ),
                 ],

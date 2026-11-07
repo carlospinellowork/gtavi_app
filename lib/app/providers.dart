@@ -22,10 +22,15 @@ class ContentNotifier extends AsyncNotifier<AppContent> {
   @override
   Future<AppContent> build() async {
     final repo = ref.watch(contentRepositoryProvider);
-    final listener = AppLifecycleListener(onResume: () {
-      final last = _lastFetch;
-      if (last == null || DateTime.now().difference(last) > const Duration(minutes: 10)) refresh();
-    });
+    final listener = AppLifecycleListener(
+      onResume: () {
+        final last = _lastFetch;
+        if (last == null ||
+            DateTime.now().difference(last) > const Duration(minutes: 10)) {
+          refresh();
+        }
+      },
+    );
     ref.onDispose(listener.dispose);
     final local = await repo.loadLocal();
     Future.microtask(() => refresh(current: local));
@@ -41,7 +46,9 @@ class ContentNotifier extends AsyncNotifier<AppContent> {
   }
 }
 
-final contentProvider = AsyncNotifierProvider<ContentNotifier, AppContent>(ContentNotifier.new);
+final contentProvider = AsyncNotifierProvider<ContentNotifier, AppContent>(
+  ContentNotifier.new,
+);
 
 /// Itens marcados no checklist (ids), salvos no aparelho.
 class ChecklistNotifier extends Notifier<Set<String>> {
@@ -50,7 +57,8 @@ class ChecklistNotifier extends Notifier<Set<String>> {
   @override
   Set<String> build() {
     _prefs = ref.watch(sharedPreferencesProvider);
-    return (_prefs.getStringList(AppConstants.keyChecklistDone) ?? const []).toSet();
+    return (_prefs.getStringList(AppConstants.keyChecklistDone) ?? const [])
+        .toSet();
   }
 
   void toggle(String id) {
@@ -61,4 +69,6 @@ class ChecklistNotifier extends Notifier<Set<String>> {
   }
 }
 
-final checklistProvider = NotifierProvider<ChecklistNotifier, Set<String>>(ChecklistNotifier.new);
+final checklistProvider = NotifierProvider<ChecklistNotifier, Set<String>>(
+  ChecklistNotifier.new,
+);

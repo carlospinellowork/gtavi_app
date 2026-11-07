@@ -11,7 +11,9 @@ void main() {
   final bundledRaw = File('assets/content/content.json').readAsStringSync();
 
   test('content.json embutido é válido e completo', () {
-    final c = AppContent.fromJson(jsonDecode(bundledRaw) as Map<String, dynamic>);
+    final c = AppContent.fromJson(
+      jsonDecode(bundledRaw) as Map<String, dynamic>,
+    );
     expect(c.releaseDate, DateTime(2026, 11, 19));
     expect(c.news, isNotEmpty);
     expect(c.videos, isNotEmpty);
@@ -24,19 +26,38 @@ void main() {
       expect(c.news[i - 1].date.isBefore(c.news[i].date), isFalse);
     }
     // ids do checklist únicos (progresso é salvo por id)
-    final ids = [for (final g in c.checklist) for (final i in g.items) i.id];
+    final ids = [
+      for (final g in c.checklist)
+        for (final i in g.items) i.id,
+    ];
     expect(ids.toSet().length, ids.length);
   });
 
-  test('cache mais novo vence o embutido; cache antigo ou quebrado é ignorado', () async {
-    final bundledVersion = AppContent.fromJson(jsonDecode(bundledRaw) as Map<String, dynamic>).version;
-    final newer = (jsonDecode(bundledRaw) as Map<String, dynamic>)..['version'] = bundledVersion + 1;
-    SharedPreferences.setMockInitialValues({AppConstants.keyContentCache: jsonEncode(newer)});
-    var repo = ContentRepository(prefs: await SharedPreferences.getInstance(), loadBundled: () async => bundledRaw);
-    expect((await repo.loadLocal()).version, bundledVersion + 1);
+  test(
+    'cache mais novo vence o embutido; cache antigo ou quebrado é ignorado',
+    () async {
+      final bundledVersion = AppContent.fromJson(
+        jsonDecode(bundledRaw) as Map<String, dynamic>,
+      ).version;
+      final newer = (jsonDecode(bundledRaw) as Map<String, dynamic>)
+        ..['version'] = bundledVersion + 1;
+      SharedPreferences.setMockInitialValues({
+        AppConstants.keyContentCache: jsonEncode(newer),
+      });
+      var repo = ContentRepository(
+        prefs: await SharedPreferences.getInstance(),
+        loadBundled: () async => bundledRaw,
+      );
+      expect((await repo.loadLocal()).version, bundledVersion + 1);
 
-    SharedPreferences.setMockInitialValues({AppConstants.keyContentCache: '{quebrado'});
-    repo = ContentRepository(prefs: await SharedPreferences.getInstance(), loadBundled: () async => bundledRaw);
-    expect((await repo.loadLocal()).version, bundledVersion);
-  });
+      SharedPreferences.setMockInitialValues({
+        AppConstants.keyContentCache: '{quebrado',
+      });
+      repo = ContentRepository(
+        prefs: await SharedPreferences.getInstance(),
+        loadBundled: () async => bundledRaw,
+      );
+      expect((await repo.loadLocal()).version, bundledVersion);
+    },
+  );
 }

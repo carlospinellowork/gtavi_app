@@ -63,6 +63,29 @@ class YoutubeTest(unittest.TestCase):
         self.assertEqual([v["youtubeId"] for v in merged], ["AAAAAAAAAAA"])
 
 
+PAGE = 'x<script>var ytInitialData = ' + __import__("json").dumps({"items": [
+    {"lockupViewModel": {"contentId": "CCCCCCCCCCC", "contentType": "LOCKUP_CONTENT_TYPE_VIDEO", "metadata": {"lockupMetadataViewModel": {
+        "title": {"content": "Grand Theft Auto VI Launch Trailer"},
+        "metadata": {"rows": [{"text": {"content": "há 3 semanas"}, "accessibilityLabel": "há 3 semanas"}]}}}}},
+    {"lockupViewModel": {"contentId": "DDDDDDDDDDD", "contentType": "LOCKUP_CONTENT_TYPE_VIDEO", "metadata": {"lockupMetadataViewModel": {
+        "title": {"content": "Red Dead Redemption 2 Trailer"}, "metadata": {}}}}},
+]}) + ';</script>'
+
+
+class ChannelPageTest(unittest.TestCase):
+    def test_plano_b_le_pagina_com_data_aproximada(self):
+        vids = update.parse_channel_page(PAGE, KW, "Rockstar Games", now=NOW)
+        self.assertEqual([v["youtubeId"] for v in vids], ["CCCCCCCCCCC"])
+        self.assertEqual(vids[0]["date"], "2026-10-17T00:00:00Z")
+        self.assertTrue(vids[0]["approx"])
+
+    def test_data_exata_do_feed_nao_e_trocada_pela_aproximada(self):
+        exact = {"id": "yt-C", "youtubeId": "CCCCCCCCCCC", "title": "T", "channel": "R", "date": "2026-10-15T15:00:00Z"}
+        approx = {**exact, "date": "2026-10-17T00:00:00Z", "approx": True}
+        merged = update.merge_videos([], [approx], [exact], max_items=40)
+        self.assertEqual(merged[0]["date"], "2026-10-15T15:00:00Z")
+
+
 class MergeTest(unittest.TestCase):
     def test_historico_fixados_e_validade(self):
         pinned = [{"id": "p1", "title": "Fixada antiga", "date": "2025-01-01", "source": "", "url": "", "summary": "", "tag": ""}]

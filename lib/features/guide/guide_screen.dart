@@ -22,7 +22,11 @@ class GuideScreen extends StatelessWidget {
             indicatorColor: AppColors.primary,
             labelColor: AppColors.primary,
             unselectedLabelColor: AppColors.textMuted,
-            tabs: [Tab(text: 'Essencial'), Tab(text: 'Personagens'), Tab(text: 'Lugares')],
+            tabs: [
+              Tab(text: 'Essencial'),
+              Tab(text: 'Personagens'),
+              Tab(text: 'Lugares'),
+            ],
           ),
         ),
         body: ContentBuilder(
@@ -55,7 +59,12 @@ class _FactsList extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(f.question, style: AppTypography.titleMedium.copyWith(color: AppColors.secondary)),
+                Text(
+                  f.question,
+                  style: AppTypography.titleMedium.copyWith(
+                    color: AppColors.secondary,
+                  ),
+                ),
                 const SizedBox(height: AppSpacing.xs),
                 Text(f.answer, style: AppTypography.bodyMedium),
               ],
@@ -85,7 +94,12 @@ class _CharactersList extends StatelessWidget {
                 CircleAvatar(
                   radius: 24,
                   backgroundColor: AppColors.primary.withAlpha(40),
-                  child: Text(ch.initials, style: AppTypography.labelLarge.copyWith(color: AppColors.primary)),
+                  child: Text(
+                    ch.initials,
+                    style: AppTypography.labelLarge.copyWith(
+                      color: AppColors.primary,
+                    ),
+                  ),
                 ),
                 const SizedBox(width: AppSpacing.md),
                 Expanded(
@@ -94,11 +108,18 @@ class _CharactersList extends StatelessWidget {
                     children: [
                       Row(
                         children: [
-                          Flexible(child: Text(ch.name, style: AppTypography.titleMedium)),
+                          Flexible(
+                            child: Text(
+                              ch.name,
+                              style: AppTypography.titleMedium,
+                            ),
+                          ),
                           const SizedBox(width: AppSpacing.sm),
                           AppBadge(
                             label: ch.role,
-                            color: ch.role == 'Protagonista' ? AppColors.gold : AppColors.secondary,
+                            color: ch.role == 'Protagonista'
+                                ? AppColors.gold
+                                : AppColors.secondary,
                           ),
                         ],
                       ),
@@ -132,7 +153,10 @@ class _PlacesList extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Icon(Icons.place_rounded, color: AppColors.primaryGradientEnd),
+              const Icon(
+                Icons.place_rounded,
+                color: AppColors.primaryGradientEnd,
+              ),
               const SizedBox(width: AppSpacing.md),
               Expanded(
                 child: Column(

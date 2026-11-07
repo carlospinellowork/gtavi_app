@@ -42,10 +42,17 @@ class HomeScreen extends ConsumerWidget {
               _Hero(content: content),
               const SizedBox(height: AppSpacing.md),
               _ChecklistCard(content: content),
-              _SectionTitle('Últimas notícias', onSeeAll: () => context.go('/noticias')),
+              _SectionTitle(
+                'Últimas notícias',
+                onSeeAll: () => context.go('/noticias'),
+              ),
               Padding(
                 padding: AppSpacing.paddingHorizontalMd,
-                child: Column(children: [for (final n in content.news.take(3)) NewsCard(item: n)]),
+                child: Column(
+                  children: [
+                    for (final n in content.news.take(3)) NewsCard(item: n),
+                  ],
+                ),
               ),
               if (content.videos.isNotEmpty) ...[
                 const _SectionTitle('Trailers'),
@@ -55,13 +62,20 @@ class HomeScreen extends ConsumerWidget {
                     scrollDirection: Axis.horizontal,
                     padding: AppSpacing.paddingHorizontalMd,
                     itemCount: content.videos.length,
-                    separatorBuilder: (_, _) => const SizedBox(width: AppSpacing.sm),
-                    itemBuilder: (_, i) => VideoCard(video: content.videos[i], width: 280),
+                    separatorBuilder: (_, _) =>
+                        const SizedBox(width: AppSpacing.sm),
+                    itemBuilder: (_, i) =>
+                        VideoCard(video: content.videos[i], width: 280),
                   ),
                 ),
               ],
               Padding(
-                padding: const EdgeInsets.fromLTRB(AppSpacing.md, AppSpacing.lg, AppSpacing.md, 0),
+                padding: const EdgeInsets.fromLTRB(
+                  AppSpacing.md,
+                  AppSpacing.lg,
+                  AppSpacing.md,
+                  0,
+                ),
                 child: Text(
                   '${AppConstants.disclaimer}\nConteúdo atualizado em ${formatDateTime(content.updatedAt)}.',
                   style: AppTypography.bodySmall,
@@ -115,27 +129,47 @@ class _HeroState extends State<_Hero> {
                 gradient: const LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
-                  colors: [Color(0xFF3A0F4F), AppColors.surface, Color(0xFF07303A)],
+                  colors: [
+                    Color(0xFF3A0F4F),
+                    AppColors.surface,
+                    Color(0xFF07303A),
+                  ],
                 ),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('GTA 6 CHEGA EM',
-                      style: AppTypography.labelSmall.copyWith(color: AppColors.secondary, letterSpacing: 2)),
+                  Text(
+                    'GTA 6 CHEGA EM',
+                    style: AppTypography.labelSmall.copyWith(
+                      color: AppColors.secondary,
+                      letterSpacing: 2,
+                    ),
+                  ),
                   const SizedBox(height: AppSpacing.xs),
-                  Text(formatDate(content.releaseDate), style: AppTypography.displayMedium),
+                  Text(
+                    formatDate(content.releaseDate),
+                    style: AppTypography.displayMedium,
+                  ),
                   const SizedBox(height: AppSpacing.md),
                   Countdown(target: content.releaseDate),
                   const SizedBox(height: AppSpacing.md),
                   Row(
                     children: [
                       Expanded(
-                        child: Text(content.platforms.join(' · '),
-                            style: AppTypography.bodySmall.copyWith(color: AppColors.textSecondary)),
+                        child: Text(
+                          content.platforms.join(' · '),
+                          style: AppTypography.bodySmall.copyWith(
+                            color: AppColors.textSecondary,
+                          ),
+                        ),
                       ),
-                      Text(AppConstants.appName,
-                          style: AppTypography.labelSmall.copyWith(color: AppColors.primary)),
+                      Text(
+                        AppConstants.appName,
+                        style: AppTypography.labelSmall.copyWith(
+                          color: AppColors.primary,
+                        ),
+                      ),
                     ],
                   ),
                 ],
@@ -188,7 +222,10 @@ class _CountdownState extends State<Countdown> {
     final left = widget.target.difference(widget.now());
     if (left.isNegative) {
       _timer?.cancel();
-      return Text('Já disponível! Bom jogo.', style: AppTypography.titleLarge.copyWith(color: AppColors.success));
+      return Text(
+        'Já disponível! Bom jogo.',
+        style: AppTypography.titleLarge.copyWith(color: AppColors.success),
+      );
     }
     final parts = [
       (left.inDays, 'dias'),
@@ -210,8 +247,12 @@ class _CountdownState extends State<Countdown> {
               ),
               child: Column(
                 children: [
-                  Text(value.toString().padLeft(2, '0'),
-                      style: AppTypography.displayMedium.copyWith(color: AppColors.primary)),
+                  Text(
+                    value.toString().padLeft(2, '0'),
+                    style: AppTypography.displayMedium.copyWith(
+                      color: AppColors.primary,
+                    ),
+                  ),
                   Text(label, style: AppTypography.labelSmall),
                 ],
               ),
@@ -230,7 +271,10 @@ class _ChecklistCard extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final done = ref.watch(checklistProvider);
-    final ids = {for (final g in content.checklist) for (final i in g.items) i.id};
+    final ids = {
+      for (final g in content.checklist)
+        for (final i in g.items) i.id,
+    };
     final total = ids.length;
     if (total == 0) return const SizedBox.shrink();
     final count = ids.where(done.contains).length;
@@ -255,7 +299,10 @@ class _ChecklistCard extends ConsumerWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text('Seu checklist', style: AppTypography.titleMedium),
-                Text('$count de $total concluídos', style: AppTypography.bodySmall),
+                Text(
+                  '$count de $total concluídos',
+                  style: AppTypography.bodySmall,
+                ),
               ],
             ),
           ),
@@ -275,7 +322,12 @@ class _SectionTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(AppSpacing.md, AppSpacing.lg, AppSpacing.sm, AppSpacing.sm),
+      padding: const EdgeInsets.fromLTRB(
+        AppSpacing.md,
+        AppSpacing.lg,
+        AppSpacing.sm,
+        AppSpacing.sm,
+      ),
       child: Row(
         children: [
           Expanded(child: Text(title, style: AppTypography.titleLarge)),

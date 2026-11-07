@@ -4,8 +4,8 @@ import '../core/constants/app_constants.dart';
 import 'router/app_router.dart';
 import 'theme/app_theme.dart';
 
-class ViceGuideApp extends StatelessWidget {
-  const ViceGuideApp({super.key});
+class LeonidaHubApp extends StatelessWidget {
+  const LeonidaHubApp({super.key});
 
   @override
   Widget build(BuildContext context) {

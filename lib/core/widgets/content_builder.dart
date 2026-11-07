@@ -14,7 +14,9 @@ class ContentBuilder extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return ref.watch(contentProvider).when(
+    return ref
+        .watch(contentProvider)
+        .when(
           data: (c) => builder(context, c),
           loading: () => const AppLoadingState(),
           error: (_, _) => AppEmptyState(

@@ -1,10 +1,12 @@
 /// Modelos do arquivo assets/content/content.json (mesmo formato do arquivo remoto).
 library;
 
-DateTime _date(Object? v) => DateTime.tryParse('${v ?? ''}')?.toLocal() ?? DateTime(2000);
+DateTime _date(Object? v) =>
+    DateTime.tryParse('${v ?? ''}')?.toLocal() ?? DateTime(2000);
 String _str(Object? v) => v?.toString() ?? '';
-List<Map<String, dynamic>> _list(Object? v) =>
-    (v as List<dynamic>? ?? const []).whereType<Map<String, dynamic>>().toList();
+List<Map<String, dynamic>> _list(Object? v) => (v as List<dynamic>? ?? const [])
+    .whereType<Map<String, dynamic>>()
+    .toList();
 
 class AppContent {
   final int version;
@@ -40,10 +42,14 @@ class AppContent {
       updatedAt: _date(json['updatedAt']),
       // Meia-noite local do dia de lançamento.
       releaseDate: DateTime(release.year, release.month, release.day),
-      platforms: (json['platforms'] as List<dynamic>? ?? const []).map(_str).toList(),
+      platforms: (json['platforms'] as List<dynamic>? ?? const [])
+          .map(_str)
+          .toList(),
       news: news,
       videos: _list(json['videos']).map(VideoItem.fromJson).toList(),
-      characters: _list(json['characters']).map(CharacterItem.fromJson).toList(),
+      characters: _list(json['characters'])
+          .map(CharacterItem.fromJson)
+          .toList(),
       places: _list(json['places']).map(PlaceItem.fromJson).toList(),
       facts: _list(json['facts']).map(FactItem.fromJson).toList(),
       checklist: _list(json['checklist']).map(ChecklistGroup.fromJson).toList(),
@@ -68,14 +74,14 @@ class NewsItem {
   });
 
   factory NewsItem.fromJson(Map<String, dynamic> j) => NewsItem(
-        id: _str(j['id']),
-        title: _str(j['title']),
-        summary: _str(j['summary']),
-        source: _str(j['source']),
-        url: _str(j['url']),
-        tag: _str(j['tag']),
-        date: _date(j['date']),
-      );
+    id: _str(j['id']),
+    title: _str(j['title']),
+    summary: _str(j['summary']),
+    source: _str(j['source']),
+    url: _str(j['url']),
+    tag: _str(j['tag']),
+    date: _date(j['date']),
+  );
 }
 
 class VideoItem {
@@ -93,15 +99,16 @@ class VideoItem {
   });
 
   factory VideoItem.fromJson(Map<String, dynamic> j) => VideoItem(
-        id: _str(j['id']),
-        title: _str(j['title']),
-        channel: _str(j['channel']),
-        youtubeId: _str(j['youtubeId']),
-        date: DateTime.tryParse(_str(j['date']))?.toLocal(),
-      );
+    id: _str(j['id']),
+    title: _str(j['title']),
+    channel: _str(j['channel']),
+    youtubeId: _str(j['youtubeId']),
+    date: DateTime.tryParse(_str(j['date']))?.toLocal(),
+  );
 
   String get url => 'https://www.youtube.com/watch?v=$youtubeId';
-  String get thumbnailUrl => 'https://img.youtube.com/vi/$youtubeId/hqdefault.jpg';
+  String get thumbnailUrl =>
+      'https://img.youtube.com/vi/$youtubeId/hqdefault.jpg';
 }
 
 class CharacterItem {
@@ -115,11 +122,11 @@ class CharacterItem {
   });
 
   factory CharacterItem.fromJson(Map<String, dynamic> j) => CharacterItem(
-        id: _str(j['id']),
-        name: _str(j['name']),
-        role: _str(j['role']),
-        description: _str(j['description']),
-      );
+    id: _str(j['id']),
+    name: _str(j['name']),
+    role: _str(j['role']),
+    description: _str(j['description']),
+  );
 
   String get initials => name
       .split(' ')
@@ -132,13 +139,17 @@ class CharacterItem {
 class PlaceItem {
   final String id, name, description;
 
-  const PlaceItem({required this.id, required this.name, required this.description});
+  const PlaceItem({
+    required this.id,
+    required this.name,
+    required this.description,
+  });
 
   factory PlaceItem.fromJson(Map<String, dynamic> j) => PlaceItem(
-        id: _str(j['id']),
-        name: _str(j['name']),
-        description: _str(j['description']),
-      );
+    id: _str(j['id']),
+    name: _str(j['name']),
+    description: _str(j['description']),
+  );
 }
 
 class FactItem {
@@ -162,21 +173,32 @@ class ChecklistGroup {
   });
 
   factory ChecklistGroup.fromJson(Map<String, dynamic> j) => ChecklistGroup(
-        id: _str(j['id']),
-        title: _str(j['title']),
-        description: _str(j['description']),
-        items: _list(j['items']).map(ChecklistItem.fromJson).toList(),
-      );
+    id: _str(j['id']),
+    title: _str(j['title']),
+    description: _str(j['description']),
+    items: _list(j['items']).map(ChecklistItem.fromJson).toList(),
+  );
 }
 
 class ChecklistItem {
   final String id, title, note;
 
-  const ChecklistItem({required this.id, required this.title, required this.note});
+  /// Link opcional (ex.: produto na Amazon, com ID de afiliado) e o texto do botão.
+  final String link, linkLabel;
+
+  const ChecklistItem({
+    required this.id,
+    required this.title,
+    required this.note,
+    this.link = '',
+    this.linkLabel = '',
+  });
 
   factory ChecklistItem.fromJson(Map<String, dynamic> j) => ChecklistItem(
-        id: _str(j['id']),
-        title: _str(j['title']),
-        note: _str(j['note']),
-      );
+    id: _str(j['id']),
+    title: _str(j['title']),
+    note: _str(j['note']),
+    link: _str(j['link']),
+    linkLabel: _str(j['linkLabel']),
+  );
 }

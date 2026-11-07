@@ -11,7 +11,7 @@
 - **Ainda dá para trocar o nome:** `AppConstants.appName`, `AndroidManifest.xml`, `ios/Runner/Info.plist`.
 
 ## 2026-11-07 Conteúdo via JSON no GitHub
-- **Decisão:** um `content.json` num repo **público** (`carlospinellowork/vice-guide-content`); o app baixa ao abrir e guarda cópia; sem internet usa o embutido.
+- **Decisão:** um `content.json` num repo **público** (`carlospinellowork/leonida-hub-content`); o app baixa ao abrir e guarda cópia; sem internet usa o embutido.
 - **Por quê:** grátis, sem servidor, e permite atualizar notícias e checklist sem nova revisão das lojas.
 
 ## 2026-11-07 Memória em docs/ no repositório
@@ -22,12 +22,20 @@
 - **Saiu:** screenshots oficiais espelhados do rockstarintel.com (marca), rádios de internet com streams HTTP de terceiros (fora do foco e licença incerta), player do YouTube embutido (abrir no YouTube basta) e os agentes/skill `new-feature` que mandavam criar dados especulativos.
 - Imagens geradas por IA continuam fora, como você já tinha decidido.
 
-## 2026-11-07 Nome: Vice Guide (não Neon Guide)
-- **Decisão do Carlos:** o app se chama **Vice Guide**. Pacote `com.viceguide.app` (Android e iOS), trocado antes da primeira publicação porque depois não muda mais.
-- **Risco anotado:** "Vice City" é marca da Take-Two; "Vice" sozinho é palavra comum. Manter "guia não oficial" no título da loja e nunca usar "Vice City" no nome nem no ícone.
+## 2026-11-07 Nome: Vice Guide (não Neon Guide) — substituída abaixo
+- **Decisão do Carlos:** o app se chamaria **Vice Guide**, pacote `com.viceguide.app`.
 
 ## 2026-11-07 Conteúdo 100% automático
 - **Pedido do Carlos:** não atualizar notícias e vídeos à mão.
 - **Decisão:** robô em Python (`content-bot/`) rodando no GitHub Actions a cada 30 min. Lê o Google Notícias em pt-BR (só títulos com GTA 6/VI, com fonte e link, etiqueta "Rumor" para vazamentos) e os feeds dos canais do YouTube (Rockstar, Rockstar Brasil, IGN Brasil, Flow, Cellbit, BRKsEDU), mantém histórico de 60 dias e publica o `content.json`. Sem IA paga, sem servidor, custo zero.
 - **À mão (raro):** `base.json`: data, personagens, lugares, perguntas, checklist, e notícias e vídeos fixados.
 - Os builds do app rodam o robô antes de compilar, então quem instala já vê o conteúdo do dia.
+
+## 2026-11-07 Nome final: Leonida Hub
+- **Contexto:** o Carlos sugeriu "Vice Rock Guide". Recomendei não usar: "Vice" + "Rock" lembra Vice City + Rockstar e cai na política de falsa identidade do Google Play.
+- **Decisão do Carlos:** **Leonida Hub** (Leonida é o estado do jogo). Pacote `com.leonidahub.app` (Android e iOS), repositório de conteúdo `leonida-hub-content`.
+- **Regras:** "guia não oficial" no título da loja; nunca "GTA", "Rockstar" nem "Vice City" no nome ou no ícone.
+
+## 2026-11-07 Monetização
+- **Decisão do Carlos ("deixar tudo pronto"):** AdMob (banner fixo + tela cheia com limite de frequência) com consentimento LGPD/GDPR (UMP); compra única "Remover anúncios"; links de afiliado da Amazon no checklist, com aviso.
+- IDs de teste do Google até ele criar as contas; os IDs reais ficam todos em `lib/core/constants/monetization.dart`.

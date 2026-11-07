@@ -1,12 +1,21 @@
 {
-  "version": 202611072242,
-  "updatedAt": "2026-11-07T22:42:25Z",
+  "version": 202611072316,
+  "updatedAt": "2026-11-07T23:16:39Z",
   "releaseDate": "2026-11-19",
   "platforms": [
     "PlayStation 5",
     "Xbox Series X|S"
   ],
   "news": [
+    {
+      "id": "n-06fb625c4900",
+      "title": "GTA 6 tem 89% de chance de GOTY no Game Awards, segundo pesquisa",
+      "summary": "",
+      "source": "einerd.com",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQaDdpUVA0NE14NkdQNnBpSEtiX3NacGtZbE4tdmppdnlNS0Z4T2liTkxHVU4yS2xERU1TaFkzaWNmN2tYMGpIdEdYcFV3bU81bGRiOEU0VmluamVJdXk5MUZSVkQ1SVhpSHpfay0zR0RJdFNHdndPNVg2Z0c3Ri1xNnN3V1ptdw?oc=5",
+      "date": "2026-11-07T22:45:16Z",
+      "tag": "Notícia"
+    },
     {
       "id": "n-edf5b7d943b5",
       "title": "O tempo de jogo de GTA 6 vai ser tão grande quanto o download e o mapa do game",
@@ -717,15 +726,6 @@
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5KYmRQQ2lGR3BDZjlzbXZyV0puMlZta004RzFRTThVb0ZlTFF2akJEX2xOZkxzVnV4aldnVU96VFRfT1lPSjNGZWFsd01UYUJPbVc3bk9GUlV5QUFGMTdRLWtFQUVrdms?oc=5",
       "date": "2026-11-04T20:18:46Z",
       "tag": "Notícia"
-    },
-    {
-      "id": "n-44a642aa571a",
-      "title": "GTA 6 tem data para pré-download; veja quando baixar no PS5 e Xbox",
-      "summary": "",
-      "source": "Fast Company Brasil",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQWGkxcExTaGNlTTYzOENoWERkeFZqM3FrdXl6N0pRbWtPS1VJdFk3R09hOFBYckExQU1JNGtnWTNSUWJVTHNEOXVCZGFHV1RJNXhjNTZSMDdpcFJtZ2NHSVJia0t6bm82V045Zk93LWRTSmVyMkY4SG5FYmxwNTFPRnY3S3ZPSDRmcVJzNUJUa2t1RU1rY2FZ?oc=5",
-      "date": "2026-11-04T18:44:47Z",
-      "tag": "Lançamento"
     }
   ],
   "videos": [
@@ -742,6 +742,22 @@
       "channel": "Cortes do Flow Games",
       "youtubeId": "efuMkJl6hg4",
       "date": "2026-11-07T18:15:39Z"
+    },
+    {
+      "id": "yt-07AalOCQmjQ",
+      "title": "FLOW GAMES REAGE: NOVAS IMAGENS e GAMEPLAY de GTA 6!! #FGN",
+      "channel": "Cortes do Flow Games",
+      "youtubeId": "07AalOCQmjQ",
+      "date": "2026-10-31T23:16:39Z",
+      "approx": true
+    },
+    {
+      "id": "yt-CoBoIgBSPjo",
+      "title": "VAZOU o TAMANHO ABSURDO de GTA 6!! #FGN",
+      "channel": "Cortes do Flow Games",
+      "youtubeId": "CoBoIgBSPjo",
+      "date": "2026-10-31T23:16:39Z",
+      "approx": true
     },
     {
       "id": "yt-mt_y7DUrfcY",
@@ -779,6 +795,14 @@
       "date": "2026-09-16T14:45:38Z"
     },
     {
+      "id": "yt-cQ41GMFLGKc",
+      "title": "GTA 6 na Netflix: Uma prova ESCANCARADA de GANÂNCIA da Rockstar",
+      "channel": "Cortes do BRKsEDU",
+      "youtubeId": "cQ41GMFLGKc",
+      "date": "2026-09-08T23:16:39Z",
+      "approx": true
+    },
+    {
       "id": "yt-Xzxv75FjMJk",
       "title": "Grand Theft Auto VI: An Extended Look — Now Playing",
       "channel": "Rockstar Games",
@@ -807,6 +831,14 @@
       "date": "2026-08-27"
     },
     {
+      "id": "yt-tcPrzUDgO-o",
+      "title": "GTA 6 ONLINE vai DEMORAR para LANÇAR? BRKsEDU comenta!",
+      "channel": "Cortes do BRKsEDU",
+      "youtubeId": "tcPrzUDgO-o",
+      "date": "2026-08-09T23:16:39Z",
+      "approx": true
+    },
+    {
       "id": "yt-f-prPijSTLo",
       "title": "Grand Theft Auto VI: Um Olhar Estendido, disponível em 27 de agosto",
       "channel": "Rockstar Games Brasil",
@@ -819,6 +851,22 @@
       "channel": "Rockstar Games",
       "youtubeId": "qq76pQsI1iw",
       "date": "2026-08-06T12:00:25Z"
+    },
+    {
+      "id": "yt-2laXuYGvRN0",
+      "title": "Versão Ultimate de GTA 6 é a REAL VERSÃO do jogo? BRKsEDU comenta!",
+      "channel": "Cortes do BRKsEDU",
+      "youtubeId": "2laXuYGvRN0",
+      "date": "2026-07-10T23:16:39Z",
+      "approx": true
+    },
+    {
+      "id": "yt-yZsPEJtLLAk",
+      "title": "GTA 6: Que tipo de REVOLUÇÃO podemos esperar no game? BRKsEDU comenta!",
+      "channel": "Cortes do BRKsEDU",
+      "youtubeId": "yZsPEJtLLAk",
+      "date": "2026-07-10T23:16:39Z",
+      "approx": true
     },
     {
       "id": "yt-1_mms8G8Cbc",
@@ -1001,11 +1049,15 @@
         },
         {
           "id": "prep-buy",
-          "title": "Escolher a edição e garantir o jogo"
+          "title": "Escolher a edição e garantir o jogo",
+          "link": "https://www.amazon.com.br/s?k=gta+6",
+          "linkLabel": "Ver edições na Amazon"
         },
         {
           "id": "prep-space",
-          "title": "Liberar espaço no console"
+          "title": "Liberar espaço no console",
+          "link": "https://www.amazon.com.br/s?k=ssd+nvme+ps5",
+          "linkLabel": "Ver SSDs para o console"
         },
         {
           "id": "prep-preload",
@@ -1014,6 +1066,12 @@
         {
           "id": "prep-update",
           "title": "Atualizar o console e o controle"
+        },
+        {
+          "id": "prep-controller",
+          "title": "Deixar o controle carregado (ou ter um reserva)",
+          "link": "https://www.amazon.com.br/s?k=controle+dualsense",
+          "linkLabel": "Ver controles"
         },
         {
           "id": "prep-dayoff",

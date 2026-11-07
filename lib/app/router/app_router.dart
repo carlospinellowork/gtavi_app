@@ -12,18 +12,39 @@ final appRouter = GoRouter(
   initialLocation: '/inicio',
   routes: [
     StatefulShellRoute.indexedStack(
-      builder: (context, state, shell) => MainShellScreen(navigationShell: shell),
+      builder: (context, state, shell) =>
+          MainShellScreen(navigationShell: shell),
       branches: [
-        StatefulShellBranch(routes: [GoRoute(path: '/inicio', builder: (_, _) => const HomeScreen())]),
-        StatefulShellBranch(routes: [GoRoute(path: '/noticias', builder: (_, _) => const NewsScreen())]),
-        StatefulShellBranch(routes: [GoRoute(path: '/guia', builder: (_, _) => const GuideScreen())]),
-        StatefulShellBranch(routes: [GoRoute(path: '/checklist', builder: (_, _) => const ChecklistScreen())]),
+        StatefulShellBranch(
+          routes: [
+            GoRoute(path: '/inicio', builder: (_, _) => const HomeScreen()),
+          ],
+        ),
+        StatefulShellBranch(
+          routes: [
+            GoRoute(path: '/noticias', builder: (_, _) => const NewsScreen()),
+          ],
+        ),
+        StatefulShellBranch(
+          routes: [
+            GoRoute(path: '/guia', builder: (_, _) => const GuideScreen()),
+          ],
+        ),
+        StatefulShellBranch(
+          routes: [
+            GoRoute(
+              path: '/checklist',
+              builder: (_, _) => const ChecklistScreen(),
+            ),
+          ],
+        ),
       ],
     ),
     GoRoute(path: '/sobre', builder: (_, _) => const AboutScreen()),
     GoRoute(
       path: '/video/:id',
-      builder: (_, state) => VideoPlayerScreen(youtubeId: state.pathParameters['id'] ?? ''),
+      builder: (_, state) =>
+          VideoPlayerScreen(youtubeId: state.pathParameters['id'] ?? ''),
     ),
   ],
 );

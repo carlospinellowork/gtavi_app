@@ -235,11 +235,15 @@
         },
         {
           "id": "prep-buy",
-          "title": "Escolher a edição e garantir o jogo"
+          "title": "Escolher a edição e garantir o jogo",
+          "link": "https://www.amazon.com.br/s?k=gta+6",
+          "linkLabel": "Ver edições na Amazon"
         },
         {
           "id": "prep-space",
-          "title": "Liberar espaço no console"
+          "title": "Liberar espaço no console",
+          "link": "https://www.amazon.com.br/s?k=ssd+nvme+ps5",
+          "linkLabel": "Ver SSDs para o console"
         },
         {
           "id": "prep-preload",
@@ -248,6 +252,12 @@
         {
           "id": "prep-update",
           "title": "Atualizar o console e o controle"
+        },
+        {
+          "id": "prep-controller",
+          "title": "Deixar o controle carregado (ou ter um reserva)",
+          "link": "https://www.amazon.com.br/s?k=controle+dualsense",
+          "linkLabel": "Ver controles"
         },
         {
           "id": "prep-dayoff",

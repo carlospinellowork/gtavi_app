@@ -1,5 +1,5 @@
 # Roda o robô a cada 30 min e publica o content.json que o app baixa.
-# Este arquivo vai na raiz do repositório PÚBLICO vice-guide-content.
+# Este arquivo vai na raiz do repositório PÚBLICO leonida-hub-content.
 name: Atualizar conteúdo
 
 on:
@@ -31,7 +31,7 @@ jobs:
       - name: Publicar se mudou
         run: |
           if git diff --quiet -- content.json; then echo "sem mudanças"; exit 0; fi
-          git config user.name "vice-guide-bot"
+          git config user.name "leonida-hub-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add content.json
           git commit -m "conteúdo: atualização automática"

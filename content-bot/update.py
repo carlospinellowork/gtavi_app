@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Robô de conteúdo do Vice Guide.
+"""Robô de conteúdo do Leonida Hub.
 
 Monta o content.json que o app baixa:
   base.json      -> parte fixa (data, personagens, lugares, perguntas, checklist,
@@ -28,7 +28,7 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-UA = "ViceGuideContentBot/1.0 (+https://github.com)"
+UA = "LeonidaHubContentBot/1.0 (+https://github.com)"
 ATOM = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015"}
 
 # Ordem importa: a primeira regra que bater define a etiqueta.
@@ -130,8 +130,50 @@ def parse_youtube_feed(xml_text: str, keywords: list[str]) -> list[dict]:
     return out
 
 
-def fetch(url: str) -> str:
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "pt-BR,pt;q=0.9"})
+# Página pedida em pt-BR (títulos originais, sem tradução automática): "há 3 semanas".
+_AGO = re.compile(r"h[áa]\s+(\d+)\s+(segundo|minuto|hora|dia|semana|m[eê]s|meses|ano)")
+_UNIT = {"segundo": 1 / 86400, "minuto": 1 / 1440, "hora": 1 / 24, "dia": 1, "semana": 7,
+         "mes": 30, "mês": 30, "meses": 30, "ano": 365}
+
+
+def parse_channel_page(html_text: str, keywords: list[str], channel: str, *, now: datetime) -> list[dict]:
+    """Plano B quando o feed RSS do YouTube cai: lê a página /videos do canal.
+
+    A página só diz "há 3 semanas"; a data vira aproximada (campo approx=True) e
+    nunca substitui uma data exata que o feed já tenha dado.
+    """
+    m = re.search(r"var ytInitialData = (\{.*?\});</script>", html_text, re.S)
+    if not m:
+        return []
+    found: list[dict] = []
+
+    def walk(o):
+        if isinstance(o, dict):
+            lv = o.get("lockupViewModel")
+            if isinstance(lv, dict) and lv.get("contentType") == "LOCKUP_CONTENT_TYPE_VIDEO":
+                found.append(lv)
+            for v in o.values():
+                walk(v)
+        elif isinstance(o, list):
+            for v in o:
+                walk(v)
+
+    walk(json.loads(m.group(1)))
+    out = []
+    for lv in found:
+        vid = lv.get("contentId", "")
+        md = lv.get("metadata", {}).get("lockupMetadataViewModel", {})
+        title = html.unescape(md.get("title", {}).get("content", "")).strip()
+        if len(vid) != 11 or not is_relevant(title, keywords):
+            continue
+        ago = _AGO.search(json.dumps(md.get("metadata", {}), ensure_ascii=False))
+        date = iso(now - timedelta(days=int(ago.group(1)) * _UNIT[ago.group(2)])) if ago else ""
+        out.append({"id": f"yt-{vid}", "title": title, "channel": channel, "youtubeId": vid, "date": date, "approx": True})
+    return out
+
+
+def fetch(url: str, lang: str = "pt-BR,pt;q=0.9") -> str:
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": lang})
     with urllib.request.urlopen(req, timeout=20) as res:
         return res.read().decode("utf-8", errors="replace")
 
@@ -170,6 +212,9 @@ def merge_news(pinned: list[dict], fresh: list[dict], previous: list[dict], *, n
 def merge_videos(pinned: list[dict], fresh: list[dict], previous: list[dict], *, max_items: int) -> list[dict]:
     by_vid: dict[str, dict] = {}
     for v in previous + fresh:
+        old = by_vid.get(v["youtubeId"])
+        if old is not None and not old.get("approx") and v.get("approx"):
+            continue  # data exata do feed vale mais que a aproximada da página
         by_vid[v["youtubeId"]] = v
     for v in pinned:
         by_vid[v["youtubeId"]] = v
@@ -229,8 +274,14 @@ def main(argv: list[str] | None = None) -> int:
         for ch in sources.get("youtubeChannels", []):
             try:
                 videos += parse_youtube_feed(fetch(f"https://www.youtube.com/feeds/videos.xml?channel_id={ch['id']}"), keywords)
+                continue
             except Exception as e:
-                errors.append(f"youtube {ch['name']}: {e}")
+                errors.append(f"youtube feed {ch['name']}: {e} (tentando a página do canal)")
+            try:
+                page = fetch(f"https://www.youtube.com/channel/{ch['id']}/videos?hl=pt-BR&gl=BR")
+                videos += parse_channel_page(page, keywords, ch["name"], now=now)
+            except Exception as e:
+                errors.append(f"youtube página {ch['name']}: {e}")
 
     content = build(base, sources, previous, news, videos, now=now)
     for e in errors:

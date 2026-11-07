@@ -23,7 +23,10 @@ class NewsScreen extends ConsumerWidget {
             indicatorColor: AppColors.primary,
             labelColor: AppColors.primary,
             unselectedLabelColor: AppColors.textMuted,
-            tabs: [Tab(text: 'Notícias'), Tab(text: 'Vídeos')],
+            tabs: [
+              Tab(text: 'Notícias'),
+              Tab(text: 'Vídeos'),
+            ],
           ),
         ),
         body: ContentBuilder(
@@ -37,7 +40,8 @@ class NewsScreen extends ConsumerWidget {
               ListView.separated(
                 padding: AppSpacing.paddingMd,
                 itemCount: content.videos.length,
-                separatorBuilder: (_, _) => const SizedBox(height: AppSpacing.md),
+                separatorBuilder: (_, _) =>
+                    const SizedBox(height: AppSpacing.md),
                 itemBuilder: (_, i) => VideoCard(video: content.videos[i]),
               ),
             ],
@@ -67,8 +71,11 @@ class _NewsListState extends State<_NewsList> {
     for (final n in widget.news) {
       if (n.tag.isNotEmpty) counts[n.tag] = (counts[n.tag] ?? 0) + 1;
     }
-    final tags = counts.keys.toList()..sort((a, b) => counts[b]!.compareTo(counts[a]!));
-    final visible = _tag == null ? widget.news : widget.news.where((n) => n.tag == _tag).toList();
+    final tags = counts.keys.toList()
+      ..sort((a, b) => counts[b]!.compareTo(counts[a]!));
+    final visible = _tag == null
+        ? widget.news
+        : widget.news.where((n) => n.tag == _tag).toList();
 
     return ListView(
       padding: AppSpacing.paddingMd,
@@ -87,7 +94,9 @@ class _NewsListState extends State<_NewsList> {
                     selectedColor: AppColors.primary.withAlpha(60),
                     showCheckmark: false,
                     labelStyle: TextStyle(
-                      color: _tag == t ? AppColors.textPrimary : AppColors.textSecondary,
+                      color: _tag == t
+                          ? AppColors.textPrimary
+                          : AppColors.textSecondary,
                       fontWeight: _tag == t ? FontWeight.w700 : FontWeight.w500,
                     ),
                     side: const BorderSide(color: AppColors.surfaceBorder),
@@ -98,7 +107,10 @@ class _NewsListState extends State<_NewsList> {
         ),
         const SizedBox(height: AppSpacing.md),
         if (visible.isEmpty)
-          const AppEmptyState(title: 'Sem notícias', message: 'Volte mais tarde.')
+          const AppEmptyState(
+            title: 'Sem notícias',
+            message: 'Volte mais tarde.',
+          )
         else
           for (final n in visible) NewsCard(item: n),
       ],

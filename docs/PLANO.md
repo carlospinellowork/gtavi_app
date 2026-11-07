@@ -4,13 +4,19 @@
 - Reformulação: de 25 telas inventadas para 4 abas com conteúdo verificado (ver `DECISOES.md`).
 - Conteúdo remoto com cache offline; contagem regressiva; checklist salvo no aparelho; tela Sobre com aviso e política de privacidade.
 
+## Feito em 07/11 (tarde)
+- Conteúdo 100% automático (`content-bot/`), com plano B quando o feed do YouTube cai (lê a página do canal).
+- Vídeos tocam dentro do app.
+- Nome **Leonida Hub**, pacote `com.leonidahub.app`.
+- Monetização pronta com IDs de TESTE: banner, tela cheia ao sair de vídeo (no máximo 1 a cada 3 min), consentimento LGPD/GDPR, "Remover anúncios" (compra única) e afiliados da Amazon no checklist.
+
 ## Próximos passos (em ordem)
-1. **Contas** (o Carlos decide): Google Play US$ 25 (uma vez); Apple US$ 99/ano.
-   - Conta **pessoal nova** no Play: precisa de teste fechado com **12 testadores por 14 dias seguidos** antes de publicar. Começando já, publica por volta de 22–25/11, ainda no começo do jogo.
-   - Conta de **organização** (exige CNPJ e D-U-N-S) não tem essa regra.
-   - Apple: dá para começar só com Android e fazer o iOS depois.
-2. Criar o repo público `vice-guide-content` (ver `CONTEUDO.md`).
-3. Ícone próprio (néon, sem logo do GTA) e prints para a loja.
-4. Assinatura do Android (upload keystore) e build `appbundle` (.aab) no CI. A Play não aceita APK.
-5. Ficha da loja: título "Vice Guide: guia não oficial", descrição com o aviso de app de fã.
-6. **Depois de 19/11, onde está o dinheiro:** checklist de missões e colecionáveis reais, guias. Anúncios (AdMob) só quando houver uso; talvez "remover anúncios" pago.
+1. **Google Play Console** (US$ 25, uma vez): criar a conta; começar já o teste fechado (12 testadores × 14 dias).
+2. **AdMob** (grátis): criar o app "Leonida Hub" e 2 blocos de anúncio (banner adaptativo e intersticial), para Android e iOS. Trocar os IDs em `lib/core/constants/monetization.dart`, no `AndroidManifest.xml` e no `Info.plist`. Em "Privacidade e mensagens", criar a mensagem de consentimento (GDPR) — sem ela o formulário não aparece.
+3. **Produto "Remover anúncios"** no Play Console: Monetizar → Produtos → Produtos no app, ID `remover_anuncios`, compra única (sugestão R$ 9,90). Só funciona depois que um build estiver no teste fechado.
+4. **Amazon Associados** (grátis): cadastrar e colocar o ID (ex.: `leonidahub-20`) em `Monetization.amazonTag`.
+5. Criar o repo público `leonida-hub-content` (ver `CONTEUDO.md`); política de privacidade lá, citando anúncios e ID de publicidade.
+6. Ícone próprio, prints da loja, build `.aab` assinado no CI (a Play não aceita APK).
+7. Ficha da loja: "Leonida Hub: guia não oficial", marcar "Contém anúncios", preencher "Segurança dos dados" (ID de publicidade coletado pelo AdMob).
+8. **Apple** (US$ 99/ano) depois do Android dar sinal de vida.
+9. **Depois de 19/11**: checklist de missões e colecionáveis reais.

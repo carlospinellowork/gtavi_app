@@ -1,4 +1,4 @@
-package com.viceguide.app
+package com.leonidahub.app
 
 import io.flutter.embedding.android.FlutterActivity
 
