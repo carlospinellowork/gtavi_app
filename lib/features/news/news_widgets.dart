@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../app/theme/app_colors.dart';
 import '../../app/theme/app_spacing.dart';
@@ -68,7 +69,7 @@ class VideoCard extends StatelessWidget {
       width: width,
       child: GlassCard(
         padding: EdgeInsets.zero,
-        onTap: () => openLink(context, video.url),
+        onTap: () => context.push('/video/${video.youtubeId}'),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

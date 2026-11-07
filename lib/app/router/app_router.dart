@@ -6,6 +6,7 @@ import '../../features/guide/guide_screen.dart';
 import '../../features/home/home_screen.dart';
 import '../../features/news/news_screen.dart';
 import '../../features/shell/main_shell_screen.dart';
+import '../../features/videos/video_player_screen.dart';
 
 final appRouter = GoRouter(
   initialLocation: '/inicio',
@@ -20,5 +21,9 @@ final appRouter = GoRouter(
       ],
     ),
     GoRoute(path: '/sobre', builder: (_, _) => const AboutScreen()),
+    GoRoute(
+      path: '/video/:id',
+      builder: (_, state) => VideoPlayerScreen(youtubeId: state.pathParameters['id'] ?? ''),
+    ),
   ],
 );
