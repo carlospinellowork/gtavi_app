@@ -26,15 +26,18 @@ class NewsCard extends StatelessWidget {
         children: [
           Row(
             children: [
-              if (item.tag.isNotEmpty) AppBadge(label: item.tag),
+              if (item.tag.isNotEmpty && item.tag != 'Notícia')
+                AppBadge(label: item.tag, color: item.tag == 'Rumor' ? AppColors.warning : AppColors.primary),
               const Spacer(),
               Text(formatDate(item.date), style: AppTypography.bodySmall),
             ],
           ),
           const SizedBox(height: AppSpacing.sm),
           Text(item.title, style: AppTypography.titleMedium),
-          const SizedBox(height: AppSpacing.xs),
-          Text(item.summary, style: AppTypography.bodyMedium),
+          if (item.summary.isNotEmpty) ...[
+            const SizedBox(height: AppSpacing.xs),
+            Text(item.summary, style: AppTypography.bodyMedium),
+          ],
           const SizedBox(height: AppSpacing.sm),
           Row(
             children: [

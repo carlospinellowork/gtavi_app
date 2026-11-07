@@ -1,19 +1,22 @@
 # Como atualizar o conteúdo
 
-O app lê `content.json` de `https://raw.githubusercontent.com/carlospinellowork/neon-guide-content/main/content.json`.
+O app lê `content.json` de `https://raw.githubusercontent.com/carlospinellowork/vice-guide-content/main/content.json`.
 
-## Montar uma vez
-1. Criar no GitHub o repositório **público** `neon-guide-content`.
-2. Copiar `assets/content/content.json` deste repo para a raiz dele.
-3. Criar ali um `PRIVACY.md` (modelo abaixo). A loja exige link de política de privacidade.
+## Automático (robô)
+Notícias e vídeos se atualizam sozinhos. O robô (`content-bot/update.py`) roda no GitHub Actions a cada 30 min:
+- **Notícias:** Google Notícias pt-BR, só títulos que citam GTA 6/VI, com fonte e link. Vazamentos recebem a etiqueta "Rumor". Ficam 60 dias, no máximo 80.
+- **Vídeos:** feeds dos canais em `content-bot/sources.json` (Rockstar, Rockstar Brasil, IGN Brasil, Flow, Cellbit, BRKsEDU), só vídeos que citam o jogo. Reenvio com o mesmo título aparece uma vez.
+- Só publica quando muda; `version` vira data e hora (AAAAMMDDhhmm).
+- Testes sem internet: `cd content-bot && python3 -m unittest -v`. Rodar na mão: `python3 update.py --out ../assets/content/content.json`.
 
-## Cada atualização
-1. Editar o `content.json` (no próprio site do GitHub dá).
-2. **Aumentar `version`** (1 → 2 → 3...). O app ignora arquivo remoto com versão menor que a que já tem.
-3. Atualizar `updatedAt`.
-4. De vez em quando, copiar o arquivo para `assets/content/content.json` aqui, para quem instala sem internet já ver o conteúdo novo.
+**À mão (raro):** `content-bot/base.json` (data, personagens, lugares, perguntas, checklist, notícias e vídeos fixados) e `sources.json` (adicionar canal, bloquear fonte em `blockedSources`).
 
-O GitHub leva até ~5 min para servir a versão nova. O app busca ao abrir e quando se puxa a tela para baixo.
+## Montar uma vez (o Carlos)
+1. Criar no GitHub o repositório **público** e **vazio** `vice-guide-content`.
+2. O Claude envia para lá o conteúdo de `content-bot/` (robô + workflow `.github/workflows/update-content.yml`) e um `PRIVACY.md`.
+3. Em Settings → Actions → General: "Read and write permissions".
+
+Enquanto isso não existe, o app usa o conteúdo embutido, que os builds do CI atualizam rodando o robô antes de compilar.
 
 ## Campos
 - `news[]`: `id`, `title`, `summary`, `source`, `url`, `date` (AAAA-MM-DD), `tag`. **Sempre com fonte real.**
@@ -27,4 +30,4 @@ O GitHub leva até ~5 min para servir a versão nova. O app busca ao abrir e qua
 - Depois de 19/11: grupos de checklist com missões e colecionáveis reais.
 
 ## Modelo de PRIVACY.md
-> O Neon Guide não pede cadastro e não coleta dados pessoais. O progresso do checklist fica salvo só no seu aparelho. O app baixa um arquivo de conteúdo do GitHub, que pode registrar o endereço IP da requisição, como qualquer site. Contato: <seu e-mail>.
+> O Vice Guide não pede cadastro e não coleta dados pessoais. O progresso do checklist fica salvo só no seu aparelho. O app baixa um arquivo de conteúdo do GitHub, que pode registrar o endereço IP da requisição, como qualquer site. Contato: <seu e-mail>.

@@ -1,4 +1,4 @@
-# Neon Guide (repo gtavi_app)
+# Vice Guide (repo gtavi_app)
 
 App Flutter de fã, **não oficial**, para o GTA 6 (lançamento 19/11/2026). Conversa e textos em pt-BR.
 
@@ -16,7 +16,7 @@ App Flutter de fã, **não oficial**, para o GTA 6 (lançamento 19/11/2026). Con
 - **Nenhuma imagem gerada por IA** e nenhum screenshot oficial espelhado (risco de marca). Visual = tema, degradês e ícones.
 
 ## Arquitetura
-- Conteúdo = `assets/content/content.json` (embutido) + mesmo arquivo remoto em `AppConstants.contentUrl` (repo público). Ver `docs/CONTEUDO.md`.
+- Conteúdo = `assets/content/content.json` (embutido) + mesmo arquivo remoto em `AppConstants.contentUrl` (repo público). Gerado pelo robô `content-bot/` (Python, sem dependências; testes: `python3 -m unittest` dentro da pasta). Notícias e vídeos nunca à mão. Ver `docs/CONTEUDO.md`.
 - `lib/features/content/` modelos e repositório (cache → embutido → remoto); `lib/app/providers.dart` (Riverpod).
 - Compartilhar (`lib/core/services/share_service.dart`, share_plus): card da contagem vira imagem; notícia vira texto com link. É o motor de divulgação grátis.
 - Abas: Início (contagem regressiva), Notícias (+ vídeos), Guia (essencial, personagens, lugares), Checklist. Tela Sobre (`/sobre`).

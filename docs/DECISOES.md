@@ -11,7 +11,7 @@
 - **Ainda dá para trocar o nome:** `AppConstants.appName`, `AndroidManifest.xml`, `ios/Runner/Info.plist`.
 
 ## 2026-11-07 Conteúdo via JSON no GitHub
-- **Decisão:** um `content.json` num repo **público** (`carlospinellowork/neon-guide-content`); o app baixa ao abrir e guarda cópia; sem internet usa o embutido.
+- **Decisão:** um `content.json` num repo **público** (`carlospinellowork/vice-guide-content`); o app baixa ao abrir e guarda cópia; sem internet usa o embutido.
 - **Por quê:** grátis, sem servidor, e permite atualizar notícias e checklist sem nova revisão das lojas.
 
 ## 2026-11-07 Memória em docs/ no repositório
@@ -21,3 +21,13 @@
 - **Ficou:** vídeos verificados via oEmbed (Extended Look, trailer BR, reações de criadores) e o compartilhamento (card de contagem como imagem, notícias como texto).
 - **Saiu:** screenshots oficiais espelhados do rockstarintel.com (marca), rádios de internet com streams HTTP de terceiros (fora do foco e licença incerta), player do YouTube embutido (abrir no YouTube basta) e os agentes/skill `new-feature` que mandavam criar dados especulativos.
 - Imagens geradas por IA continuam fora, como você já tinha decidido.
+
+## 2026-11-07 Nome: Vice Guide (não Neon Guide)
+- **Decisão do Carlos:** o app se chama **Vice Guide**. Pacote `com.viceguide.app` (Android e iOS), trocado antes da primeira publicação porque depois não muda mais.
+- **Risco anotado:** "Vice City" é marca da Take-Two; "Vice" sozinho é palavra comum. Manter "guia não oficial" no título da loja e nunca usar "Vice City" no nome nem no ícone.
+
+## 2026-11-07 Conteúdo 100% automático
+- **Pedido do Carlos:** não atualizar notícias e vídeos à mão.
+- **Decisão:** robô em Python (`content-bot/`) rodando no GitHub Actions a cada 30 min. Lê o Google Notícias em pt-BR (só títulos com GTA 6/VI, com fonte e link, etiqueta "Rumor" para vazamentos) e os feeds dos canais do YouTube (Rockstar, Rockstar Brasil, IGN Brasil, Flow, Cellbit, BRKsEDU), mantém histórico de 60 dias e publica o `content.json`. Sem IA paga, sem servidor, custo zero.
+- **À mão (raro):** `base.json`: data, personagens, lugares, perguntas, checklist, e notícias e vídeos fixados.
+- Os builds do app rodam o robô antes de compilar, então quem instala já vê o conteúdo do dia.

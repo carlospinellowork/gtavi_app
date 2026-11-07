@@ -1,3 +1,4 @@
+import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -14,10 +15,18 @@ final contentRepositoryProvider = Provider<ContentRepository>((ref) {
 });
 
 /// Conteúdo: mostra o local na hora e troca pelo remoto quando chegar.
+/// Busca de novo ao abrir, ao puxar a tela e ao voltar para o app (no máximo a cada 10 min).
 class ContentNotifier extends AsyncNotifier<AppContent> {
+  DateTime? _lastFetch;
+
   @override
   Future<AppContent> build() async {
     final repo = ref.watch(contentRepositoryProvider);
+    final listener = AppLifecycleListener(onResume: () {
+      final last = _lastFetch;
+      if (last == null || DateTime.now().difference(last) > const Duration(minutes: 10)) refresh();
+    });
+    ref.onDispose(listener.dispose);
     final local = await repo.loadLocal();
     Future.microtask(() => refresh(current: local));
     return local;
@@ -26,6 +35,7 @@ class ContentNotifier extends AsyncNotifier<AppContent> {
   Future<void> refresh({AppContent? current}) async {
     final base = current ?? state.valueOrNull;
     if (base == null) return;
+    _lastFetch = DateTime.now();
     final remote = await ref.read(contentRepositoryProvider).fetchRemote(base);
     if (remote != null) state = AsyncData(remote);
   }

@@ -4,8 +4,8 @@ import '../core/constants/app_constants.dart';
 import 'router/app_router.dart';
 import 'theme/app_theme.dart';
 
-class NeonGuideApp extends StatelessWidget {
-  const NeonGuideApp({super.key});
+class ViceGuideApp extends StatelessWidget {
+  const ViceGuideApp({super.key});
 
   @override
   Widget build(BuildContext context) {

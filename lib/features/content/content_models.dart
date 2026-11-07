@@ -1,7 +1,7 @@
 /// Modelos do arquivo assets/content/content.json (mesmo formato do arquivo remoto).
 library;
 
-DateTime _date(Object? v) => DateTime.tryParse('${v ?? ''}') ?? DateTime(2000);
+DateTime _date(Object? v) => DateTime.tryParse('${v ?? ''}')?.toLocal() ?? DateTime(2000);
 String _str(Object? v) => v?.toString() ?? '';
 List<Map<String, dynamic>> _list(Object? v) =>
     (v as List<dynamic>? ?? const []).whereType<Map<String, dynamic>>().toList();
@@ -97,7 +97,7 @@ class VideoItem {
         title: _str(j['title']),
         channel: _str(j['channel']),
         youtubeId: _str(j['youtubeId']),
-        date: DateTime.tryParse(_str(j['date'])),
+        date: DateTime.tryParse(_str(j['date']))?.toLocal(),
       );
 
   String get url => 'https://www.youtube.com/watch?v=$youtubeId';

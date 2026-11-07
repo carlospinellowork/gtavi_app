@@ -21,6 +21,9 @@ jobs:
           channel: 'stable'
           cache: true
 
+      - name: Atualizar conteúdo embutido (robô)
+        run: python3 content-bot/update.py --out assets/content/content.json || echo "robô falhou; segue com o conteúdo do repo"
+
       - name: Install dependencies
         run: flutter pub get
 
@@ -32,11 +35,11 @@ jobs:
         run: |
           mkdir -p Payload
           mv build/ios/iphoneos/Runner.app Payload/
-          zip -r neon_guide.ipa Payload
+          zip -r vice_guide.ipa Payload
 
       - name: Upload IPA Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: neon_guide_ios
-          path: neon_guide.ipa
+          name: vice_guide_ios
+          path: vice_guide.ipa
           retention-days: 14

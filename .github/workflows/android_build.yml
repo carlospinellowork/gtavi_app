@@ -28,6 +28,9 @@ jobs:
       - name: Make Gradlew Executable
         run: chmod +x android/gradlew || true
 
+      - name: Atualizar conteúdo embutido (robô)
+        run: python3 content-bot/update.py --out assets/content/content.json || echo "robô falhou; segue com o conteúdo do repo"
+
       - name: Install Dependencies
         run: flutter pub get
 
@@ -40,5 +43,5 @@ jobs:
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: neon_guide_android
+          name: vice_guide_android
           path: build/app/outputs/flutter-apk/app-release.apk

@@ -1,4 +1,4 @@
-package com.gtavi.companion.gtavi_app
+package com.viceguide.app
 
 import io.flutter.embedding.android.FlutterActivity
 

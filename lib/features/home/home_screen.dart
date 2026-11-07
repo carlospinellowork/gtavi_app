@@ -63,7 +63,7 @@ class HomeScreen extends ConsumerWidget {
               Padding(
                 padding: const EdgeInsets.fromLTRB(AppSpacing.md, AppSpacing.lg, AppSpacing.md, 0),
                 child: Text(
-                  '${AppConstants.disclaimer}\nConteúdo atualizado em ${formatDate(content.updatedAt)}.',
+                  '${AppConstants.disclaimer}\nConteúdo atualizado em ${formatDateTime(content.updatedAt)}.',
                   style: AppTypography.bodySmall,
                   textAlign: TextAlign.center,
                 ),

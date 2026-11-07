@@ -18,6 +18,7 @@ void main() {
     expect(c.videos.every((v) => v.youtubeId.length == 11), isTrue);
     expect(c.characters, isNotEmpty);
     expect(c.checklistTotal, greaterThan(0));
+    expect(c.version, greaterThan(2)); // gerado pelo robô (AAAAMMDDhhmm)
     // notícias da mais nova para a mais antiga
     for (var i = 1; i < c.news.length; i++) {
       expect(c.news[i - 1].date.isBefore(c.news[i].date), isFalse);
@@ -28,13 +29,14 @@ void main() {
   });
 
   test('cache mais novo vence o embutido; cache antigo ou quebrado é ignorado', () async {
-    final newer = (jsonDecode(bundledRaw) as Map<String, dynamic>)..['version'] = 99;
+    final bundledVersion = AppContent.fromJson(jsonDecode(bundledRaw) as Map<String, dynamic>).version;
+    final newer = (jsonDecode(bundledRaw) as Map<String, dynamic>)..['version'] = bundledVersion + 1;
     SharedPreferences.setMockInitialValues({AppConstants.keyContentCache: jsonEncode(newer)});
     var repo = ContentRepository(prefs: await SharedPreferences.getInstance(), loadBundled: () async => bundledRaw);
-    expect((await repo.loadLocal()).version, 99);
+    expect((await repo.loadLocal()).version, bundledVersion + 1);
 
     SharedPreferences.setMockInitialValues({AppConstants.keyContentCache: '{quebrado'});
     repo = ContentRepository(prefs: await SharedPreferences.getInstance(), loadBundled: () async => bundledRaw);
-    expect((await repo.loadLocal()).version, AppContent.fromJson(jsonDecode(bundledRaw) as Map<String, dynamic>).version);
+    expect((await repo.loadLocal()).version, bundledVersion);
   });
 }

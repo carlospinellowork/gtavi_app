@@ -6,6 +6,7 @@ import '../../app/theme/app_colors.dart';
 import '../../app/theme/app_spacing.dart';
 import '../../core/widgets/app_empty_state.dart';
 import '../../core/widgets/content_builder.dart';
+import '../content/content_models.dart';
 import 'news_widgets.dart';
 
 class NewsScreen extends ConsumerWidget {
@@ -31,15 +32,7 @@ class NewsScreen extends ConsumerWidget {
               RefreshIndicator(
                 color: AppColors.primary,
                 onRefresh: () => ref.read(contentProvider.notifier).refresh(),
-                child: content.news.isEmpty
-                    ? ListView(children: const [
-                        SizedBox(height: 120),
-                        AppEmptyState(title: 'Sem notícias', message: 'Volte mais tarde.'),
-                      ])
-                    : ListView(
-                        padding: AppSpacing.paddingMd,
-                        children: [for (final n in content.news) NewsCard(item: n)],
-                      ),
+                child: _NewsList(news: content.news),
               ),
               ListView.separated(
                 padding: AppSpacing.paddingMd,
@@ -51,6 +44,64 @@ class NewsScreen extends ConsumerWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+/// Lista com filtro por etiqueta (Lançamento, Trailer, Rumor...).
+class _NewsList extends StatefulWidget {
+  final List<NewsItem> news;
+
+  const _NewsList({required this.news});
+
+  @override
+  State<_NewsList> createState() => _NewsListState();
+}
+
+class _NewsListState extends State<_NewsList> {
+  String? _tag;
+
+  @override
+  Widget build(BuildContext context) {
+    final counts = <String, int>{};
+    for (final n in widget.news) {
+      if (n.tag.isNotEmpty) counts[n.tag] = (counts[n.tag] ?? 0) + 1;
+    }
+    final tags = counts.keys.toList()..sort((a, b) => counts[b]!.compareTo(counts[a]!));
+    final visible = _tag == null ? widget.news : widget.news.where((n) => n.tag == _tag).toList();
+
+    return ListView(
+      padding: AppSpacing.paddingMd,
+      children: [
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              for (final t in <String?>[null, ...tags])
+                Padding(
+                  padding: const EdgeInsets.only(right: AppSpacing.sm),
+                  child: ChoiceChip(
+                    label: Text(t ?? 'Todas'),
+                    selected: _tag == t,
+                    onSelected: (_) => setState(() => _tag = t),
+                    selectedColor: AppColors.primary.withAlpha(60),
+                    showCheckmark: false,
+                    labelStyle: TextStyle(
+                      color: _tag == t ? AppColors.textPrimary : AppColors.textSecondary,
+                      fontWeight: _tag == t ? FontWeight.w700 : FontWeight.w500,
+                    ),
+                    side: const BorderSide(color: AppColors.surfaceBorder),
+                  ),
+                ),
+            ],
+          ),
+        ),
+        const SizedBox(height: AppSpacing.md),
+        if (visible.isEmpty)
+          const AppEmptyState(title: 'Sem notícias', message: 'Volte mais tarde.')
+        else
+          for (final n in visible) NewsCard(item: n),
+      ],
     );
   }
 }
