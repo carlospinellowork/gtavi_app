@@ -1,6 +1,6 @@
 {
-  "version": 202611080349,
-  "updatedAt": "2026-11-08T03:49:03Z",
+  "version": 202611081057,
+  "updatedAt": "2026-11-08T10:57:54Z",
   "releaseDate": "2026-11-19",
   "platforms": [
     "PlayStation 5",
@@ -23,6 +23,15 @@
       "source": "einerd.com",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQaDdpUVA0NE14NkdQNnBpSEtiX3NacGtZbE4tdmppdnlNS0Z4T2liTkxHVU4yS2xERU1TaFkzaWNmN2tYMGpIdEdYcFV3bU81bGRiOEU0VmluamVJdXk5MUZSVkQ1SVhpSHpfay0zR0RJdFNHdndPNVg2Z0c3Ri1xNnN3V1ptdw?oc=5",
       "date": "2026-11-07T22:45:16Z",
+      "tag": "Notícia"
+    },
+    {
+      "id": "n-2cc0035582fe",
+      "title": "GTA 6 tem caixa revelada em fotos; veja a capa e o que vem dentro",
+      "summary": "",
+      "source": "Game Overdrive",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAyc1dxbmVSZDNLVnhyNFpzLTRoZGJ3S05Bcm1IMFl4X1dtdGlNck8zWEFpVmRHZlFkeFNRamNUSzZ4dmpVTGhfQXB1NFd6RnpWUEJ3RUlXa2tCT2JHTlV4MUlmOEktTlQ5b19RVEdJSDFVVzAwRlE?oc=5",
+      "date": "2026-11-07T13:42:27Z",
       "tag": "Notícia"
     },
     {
@@ -152,6 +161,15 @@
       "tag": "Gameplay"
     },
     {
+      "id": "n-9ba657644370",
+      "title": "Vai jogar GTA 6? Faça estes 12 ajustes no seu console antes de 19 de novembro",
+      "summary": "",
+      "source": "Game Overdrive",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBBSVNhdjlCUUNDZm9uN0gxYzlpM3BsbnBQamxsSzQzc2ZIbjlFVDJVbDdYbDU4MndXVWpmeXp3TV9lN29DcmtJSDM5d283eTlNRnN4dnVxaml6ZEp1Y00ya3ZkdnFwa0k0ZFI2d1RzZEZBcU93dXpjTldR?oc=5",
+      "date": "2026-11-06T20:53:52Z",
+      "tag": "Notícia"
+    },
+    {
       "id": "n-de379e972f4b",
       "title": "Miami Heat lança uniforme de GTA 6 em parceria com Travis Scott e Nike; veja imagens",
       "summary": "",
@@ -186,6 +204,15 @@
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcnhQeEdueE5FMlp6alR2MnlQUUIyWHFRc21YVEdNOHR1M3UwZTVFZ0tvQmZnTEJoRmhnRURBalVya3FMbEIzTzdyQnhpbkNWRFgzbmotbmV4Z1RNVFJ0MkdHT3YyMkE2NlFVLTBTUngxeHA5WkdCSlhEOXFPWU5sdk1EY0pGVEk0U1JLX3BxZ0N1ZXVCOVdKZ1VwdDRYZlJlSzhBMTRRaHc?oc=5",
       "date": "2026-11-06T19:32:00Z",
       "tag": "Notícia"
+    },
+    {
+      "id": "n-222468dcafb2",
+      "title": "GTA 6 pode chegar antes ao PC por medo de IA, diz ex-Rockstar",
+      "summary": "",
+      "source": "Game Overdrive",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNV3NFQm5uSTNvNEVyWkk5b1lBa0tmYkktdk05RFRMNFltT0VaQUV2SnNNNUVhbjB3QVZKMUxlZ083d3dDS3NvYnI1OW9pQ0Fad3AwTGprQmxjU3RYZ2VWcFgyMmlnNFNlR3RLNTk3MVhkTkdNdk00RmFxemFNQ0FwYg?oc=5",
+      "date": "2026-11-06T19:29:22Z",
+      "tag": "Lançamento"
     },
     {
       "id": "n-304c0f6221f2",
@@ -476,6 +503,15 @@
       "tag": "Lançamento"
     },
     {
+      "id": "n-3d9b964e9957",
+      "title": "CEO da Take-Two comenta sobre adiamentos de GTA VI: “Decisões difíceis”",
+      "summary": "",
+      "source": "O Vício",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVGRqZ1FoRUxIclR4SXI5Q09XbVpGVHdIaXJUUFU3RTZIRjdGNlJTZDFrV2U4Y2NXeWEwTEVjcG9STUp0OHpsRWlJSDhpSFBCcVNmRjl3RllNT0VWMHNvdjViWWJpcUFPY1NWT3BfdThEcFkyZndOZGtfZ05vWk5MbFZscnlMMUhzQUEtajV5NS14ZXQ4YkHSAZsBQVVfeXFMTk9LT2hpdi1wMG00MDhZV3paTDA0NWJmNEI5amFDeGQ1UGp0UEl4UllBRnc0LUNkV2dZMHBYeWVnTVJJMTZ1TUplY1hNbUpxRkZnZ1h5VjBxUFdfRHJiSW03UDdHUW1oVDJ0bHE2WVl4STNTY0I3a1NsYjJHLXpORnFSZDV5M3hMSFZrNW1seXl1WXZieTFkaWVMU0U?oc=5",
+      "date": "2026-11-05T19:41:22Z",
+      "tag": "Notícia"
+    },
+    {
       "id": "n-d94ad523cb25",
       "title": "GTA 6 ganha quase 40 novas imagens a duas semanas do lançamento",
       "summary": "",
@@ -491,6 +527,15 @@
       "source": "Diário do Grande ABC",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPckpObUZWNEd3THpMZEluYl9BeDdvMkFkWEFKTUFicXU1TmhBMTAtcHRLRDJIbl84X0hha0F4RkFnczZaWFNmNUtzTUJBa2IxOXpKOTJyUk5sOC13VC1OS19jOTg3SmRSdkZpQTdKNW9fNFZwcC1rb2Z6RURWR2dfN2hfM1Nid3hfS2lGaGRVX0NUVU9oTWhieHBqdnAzTlNhc05ldjFB?oc=5",
       "date": "2026-11-05T19:00:00Z",
+      "tag": "Preço"
+    },
+    {
+      "id": "n-a52717d0d3f2",
+      "title": "GTA 6 nem chegou às lojas e já pode ter movimentado mais de R$ 4 bilhões; entenda de onde vem a estimativa",
+      "summary": "",
+      "source": "Folha Vitória",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQa2hSQzJOS1hmUG1JSmxzQ05Fc3VjN0NVQ3FaLUJTZTd1bEFyMVVJUURDYUJiS2ZQSlE1d09tVTlRcEJ6aTFnUFgxWUlrOGgwaktISWNRTTR0a0YzQ3ZNb09FOGFBMGIzcUQzYTFZZWN4Mjd3WFhlYWFQS3NNblRFOFZkOHZvMWNtSVhpVHh1S1AtNWJvaHpQNi1aN0JGdjh2T00zSUptVWlqT1QwWi03NmpyTURYLTBUN2ZnYWxCZW5BQ19Rb19relRWLWFRMkszdXY0X1pWN3YwaEU?oc=5",
+      "date": "2026-11-05T18:10:08Z",
       "tag": "Preço"
     },
     {
@@ -510,6 +555,15 @@
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMFpGU2NFbEl3SlhTOEZtMXFrdThxcUdWakFjNVh6U0Z5amUtTmZTVDFmS242Vi1pdjRfWHVyTy1hN1p0eEJ4RnE4ZU5ROVh0Y0VkM2NaaVlmSTY4eFdGNlRQcEstUThndmV1cXBKR1U0Y1dGZEFqVThacGlTRVpldA?oc=5",
       "date": "2026-11-05T17:43:26Z",
       "tag": "Preço"
+    },
+    {
+      "id": "n-9e7831940c11",
+      "title": "GTA VI: CEO da Take-Two fala sobre o orçamento do jogo, estratégia da empresa e critica pressa por prazos na indústria",
+      "summary": "",
+      "source": "GameBlast",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPWTlDZGY0QzVBRWQzTU1wV0lhTEd5ejJ4b24yQVR0a1dyTjF6d2l4aWplRWI2VF9kTVFFVnpLRjg1TkFjQVBEVV9hS0tFdXQyVVRhOXBxaXlLeS10a25xaTVaYkJMelJXWncwQUtPcGpnR2JuYW1oTEcwYkgtVDBsSnRETjJ2S1NDTnlKV1czY3IxdkN6MXhnYm5BWDJwaHdHR3NKS2VScVA5dzAzNnd0eWVXT01JY0lEVE1iUmZ1WDVvUWl4cEUwRlVxdGtBYlF2MTFYSWEwUEZJY28?oc=5",
+      "date": "2026-11-05T17:42:42Z",
+      "tag": "Notícia"
     },
     {
       "id": "n-ff43433c256d",
@@ -584,22 +638,13 @@
       "tag": "Gameplay"
     },
     {
-      "id": "n-de71dd3ee8f1",
-      "title": "GTA 6 | Modo online deve chegar em 2027, diz banco americano",
+      "id": "n-c697110daa66",
+      "title": "GTA 6 | Rockstar criou um estúdio inteiro para desenvolver NPCs",
       "summary": "",
       "source": "Omelete",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNcGFlalpsTUNOSExIOG9GRXpPbmRlSWtVR2dsbHdyQ3NwZ3BRWTFxUndtNXpxTGVsVmcyYUZxY1pRcUt6ejJUZ3lfYTVpT1ltZ0hqOGNkVzZCVkE2cWJjc1JOTURMN2JWZW4xYTFMVDRrR3laS1ZSWEtDLUNJejlVd3RLWEdBVThUMGFvMkJEOGgzY0Nj?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOT3pEQTVrY2hKTnNWQ0tZbEhzSEFHaXdwbkVNcC1mQXJrMHpJb0N4SjBIb1NEaWl3YWpOYlNkeVhPTVR0ajZqdjhEZkc3TUx2NzNKR0pES1VsNmotS0JicHpkTUp2dUtBMVRnWE45eDRBNWNrdEJsS3VJRi1NTEZGeGg2b1hLMlNyTEJhbXEyQ1dKT0U?oc=5",
       "date": "2026-11-05T15:15:00Z",
-      "tag": "Lançamento"
-    },
-    {
-      "id": "n-abff0adb9643",
-      "title": "GTA 6 | Trilha sonora original chega em dezembro; escute nova faixa \"Pusher\"",
-      "summary": "",
-      "source": "Omelete",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNWUtaSDdJd3YwLW1PelBieVhFVzZjMGNLYXJnZ2dmZjlmRHVBSXpQUHRBRW45YXFGSU1tUERuamd3MUFxTThueGZxUlVuRXEyUHpSZjJSMUJId0lQZDlFZU5NaXNwQl9yT09VZkhtT3dENTFTcXo0RTRhZTlYS2pnZHIxcTVZQndwNWRrX252X19pVEVQODFScUU5TWM2c01kTDZxTXVCcw?oc=5",
-      "date": "2026-11-05T15:15:00Z",
-      "tag": "Lançamento"
+      "tag": "Notícia"
     },
     {
       "id": "n-2724b834ff28",
@@ -681,51 +726,6 @@
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNckYyQjVBNWx5UW5GZmVVNzgtOW81aVlWbWEtZjVXR29qc0d4SEp4TThTWFd6Rl9jRmVIc2RjZ1BUZWhreTJTaVBhZi1BR0xaYTZNRVdsVEdXMHpORG5Ib2dzSF9waS1OS2FyWDBhVFY3VkVGbTFxRWRFaEt6TjFfRzFaMGlNN05PYkx2eE96MVBRTG12MWYtd3ZSZw?oc=5",
       "date": "2026-11-05T10:51:36Z",
       "tag": "Notícia"
-    },
-    {
-      "id": "n-5694cef0ed88",
-      "title": "GTA 6 arrecada mais de US$ 750 milhões em pré-vendas duas semanas antes da data de lançamento",
-      "summary": "",
-      "source": "IGN Brasil",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQTkl2V2RibVVHUVNFTThvYjEzenBjejlKVzE5Vmc5bnY3TWZhYVZQZmdvMFFCRi1lSFE4eWx4bC1FSkFqWXhzNHFscmZFamdHMElNZF9VYWU2OXVOTERVQlBVdHdfZlVBa0FwSkh4Z0o5NGJKMEZOaFNNTFQ0cGpBVHZOZXk2OWlvTGJmMjNDRVJNd2ZsNi1ub2JPSWpwZF9JZ1Z4azNkb1RYS1drZmNoaE1ObzFtclcxR2lxTjRwOERNVFBZSWJGbjhnUVR1RFVjcnZBdA?oc=5",
-      "date": "2026-11-05T10:04:49Z",
-      "tag": "Preço"
-    },
-    {
-      "id": "n-4e397ed11664",
-      "title": "'GTA VI' teria arrecadado US$ 751 milhões apenas com pré-vendas",
-      "summary": "",
-      "source": "Hypebeast",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNUlrVFZkUWhtWXkwcFdqckxUYnAwUkZnU0pQNXZ1dDBuTlVfRER2RmgzaGFSZG1MZEpWQWt2aXpoVFlXRlotcVFCLUxzcW84djhObHhqUHlaaDZjLWV5eU9Yc2xnYkxpeUNhZVFIWUY4S1BGaDlCWG0xRW41RHFRem9FblkwMHlaZ013aEg4emVjcVJVVmlBZnd5dUNQLWRBWi1BRHp3YUowWnViZTNDTXdURzFCTW8?oc=5",
-      "date": "2026-11-05T09:19:54Z",
-      "tag": "Preço"
-    },
-    {
-      "id": "n-9f5caeaae08c",
-      "title": "GTA 6 Já Arrecadou US$ 750 Milhões em Pré-venda Mesmo com Aumento de Preço",
-      "summary": "",
-      "source": "Forbes Brasil",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQXzNLZGVaV2hxWVMybWNTd1MzVFR0X0ZpNVdjVkxLTVZlX0h6VG1UVUJSUVRCdWp4VFc0aDRrem1ycm80am0tWmdUWFVOOXROZ3NEblRwQl9SQldGdE1tMkdjRUFZT3l2cUVRMkJHNlVJaHpvX2dhQkUtT2w2ZnlINzB0akpFMnpfdGRHWWsweU15LXNuWjl1Qk1XVnhILXRKc2JkbjNqVXo1SC0weVA3Nmczb3BXR2s?oc=5",
-      "date": "2026-11-05T08:05:00Z",
-      "tag": "Preço"
-    },
-    {
-      "id": "n-3fffc8aa9a0d",
-      "title": "Sony pode ter vazado novidades do GTA 6",
-      "summary": "",
-      "source": "Terra",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQTXd2RTFXaldPZjBfUmN5U0xibVJ3MklWckk5U0hMSVlQMFBDc2E2UW5aamlaM28xUllpcXFCaGF1ZzZLV085YXQ3NlNiVG16RjFYNk5WNG5kWjBNR3RaQnRoRTdMS0lvZVZaOXNSdDR0WW9Fa1V5aXk2RGxwM08wM3VWV2tFWUZ0TlpydEtocVZDRnBwQTFxb1Nlc1h4dzZ5VmYza01mcTJtdjJpWkFzdHM3b2JYdw?oc=5",
-      "date": "2026-11-05T03:21:00Z",
-      "tag": "Rumor"
-    },
-    {
-      "id": "n-a722fff36a50",
-      "title": "GTA 6 já teria arrecadado mais de R$ 4 bilhões antes do lançamento",
-      "summary": "",
-      "source": "Terra",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPeXhSMUsyZUowNE50UklJMExZZ1NidmxFQUxIdENNdUF1UHJrY1hydGotZEs2QkdsRjE2SzNidVdLVVNwOXlBM2JueGNMRUZUV3E0NVNXbHlieHAtekFVdWM0NVU0SDFCSzNZaEdCX0pvWmdVb2pvalJYYS1IM2QwNzdocDBsMWFMdjJ2YkNKSlJpN3lKTVN6SVNyMDZnRl85SXlBU1VoUW1PZVhXX0N6Tm9UNmV6QkVWUTVLYThrM3h3QkVEdDlKeVRhbXlRa2gwTGgtbkRLTzc?oc=5",
-      "date": "2026-11-05T03:11:00Z",
-      "tag": "Preço"
     }
   ],
   "videos": [
