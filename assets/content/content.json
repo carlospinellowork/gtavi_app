@@ -1,12 +1,21 @@
 {
-  "version": 202611072331,
-  "updatedAt": "2026-11-07T23:31:49Z",
+  "version": 202611080349,
+  "updatedAt": "2026-11-08T03:49:03Z",
   "releaseDate": "2026-11-19",
   "platforms": [
     "PlayStation 5",
     "Xbox Series X|S"
   ],
   "news": [
+    {
+      "id": "n-7fb789991558",
+      "title": "Ex-desenvolvedor da Rockstar diz que GTA VI pode ser pirateado para PC pela IA",
+      "summary": "",
+      "source": "O Vício",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSDkzWmFEbnE1Mjg3TXJxeWVCeFR5N3lPYzhOa3QyVXg1eTFvSmplOEE2V0Q2cnZUZ0lqRHlEVUFZa2F6QWFJcDJpcUJnT1c1MTN3cTFFUzd3WE1zNERkUm5kNXFUdHhfMU9mQkFsczJhYTVDTF9VSjdrUzVPNm5QZDBfOGpjY00taDc1U1VPN201enlMRVQtbjFNSDdxT2FEeDBr0gGoAUFVX3lxTFBSOE4xbk5admlxZTEtc1JpTjV2b3VWRjRteEJCaGdtT2xDanBhU21DTkFVX2tqOGNldFZjYS1vdFNycDA3cTVYVklwZ01LazRVNWE2XzU5bDVhWmMxRXdaMnhSRmFmSFpHOHlfYU12M1N5ZkE3NXVnc0IwYmNyWHotdDI4MWliNTUzdnNBQTUwc3F4T1RvUlkyNmx6NGZ6bXdzbURiTDVLeQ?oc=5",
+      "date": "2026-11-08T01:54:29Z",
+      "tag": "Notícia"
+    },
     {
       "id": "n-06fb625c4900",
       "title": "GTA 6 tem 89% de chance de GOTY no Game Awards, segundo pesquisa",
@@ -348,6 +357,15 @@
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE00UFBQNXBORUd5d0QtdzdkTm8wV3pDOEdfM21iRjhuU2ZVM3dRR0huTk1lU0JKdkFhWGVzOTlmSUd0aFVsREF4R28xdnV6eHhVSnRXaTZnTExoWFEwYm1teWJR?oc=5",
       "date": "2026-11-06T11:32:28Z",
       "tag": "Preço"
+    },
+    {
+      "id": "n-098715452229",
+      "title": "Edições físicas de GTA 6 começam a chegar às lojas antes do lançamento; saiba mais",
+      "summary": "",
+      "source": "Omelete",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQejRUaTN4SzBhVHZCQkRvdHFzR2RPQ0ZnNVUxVWZBVVdMVmtxTFVJNWdkN1BvUzN4Q2xmTUFTREhsU3BQend0OGxqWEE5TmlGQVBKOTE3OVVjNmRIOTBnQ2FuVmw4YkY3alg2ZVFpa2dBMTdqMnVPRDdmdFpLeVhuT3h3UWozZjI5RTluOFpRazVENkhLNXVz?oc=5",
+      "date": "2026-11-06T08:00:00Z",
+      "tag": "Lançamento"
     },
     {
       "id": "n-63e80ba0da9b",
@@ -708,24 +726,6 @@
       "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPeXhSMUsyZUowNE50UklJMExZZ1NidmxFQUxIdENNdUF1UHJrY1hydGotZEs2QkdsRjE2SzNidVdLVVNwOXlBM2JueGNMRUZUV3E0NVNXbHlieHAtekFVdWM0NVU0SDFCSzNZaEdCX0pvWmdVb2pvalJYYS1IM2QwNzdocDBsMWFMdjJ2YkNKSlJpN3lKTVN6SVNyMDZnRl85SXlBU1VoUW1PZVhXX0N6Tm9UNmV6QkVWUTVLYThrM3h3QkVEdDlKeVRhbXlRa2gwTGgtbkRLTzc?oc=5",
       "date": "2026-11-05T03:11:00Z",
       "tag": "Preço"
-    },
-    {
-      "id": "n-b42084481554",
-      "title": "Compra antecipada não garante download automático de GTA 6",
-      "summary": "",
-      "source": "Drops de Jogos",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZnQ3THduLUJzS3hOa0ktRTBOc2lKX3ZnWDRGZzZUbktmS0FHY09fWDNmUkVpUXRoejI5czZrVEhialoyVTNWY0VveTlEQ0kwUTJFU0tWUHNUcW00ZHhNWmd0MjdpOWhrOE5PU3p5QnpnNmIzX1B6TG1paTc2NHFLOFV2b195M1ZVVW5sQ01ySHVzUXVLV0xTWm96NjRtd0NmQ0xOZ2NNLUo4V2toTFh3?oc=5",
-      "date": "2026-11-05T00:08:27Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-9e76e55cc9eb",
-      "title": "Quantos GB tem o GTA 6? Confira o tamanho do jogo e quando baixar",
-      "summary": "",
-      "source": "Quero Bolsa",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5KYmRQQ2lGR3BDZjlzbXZyV0puMlZta004RzFRTThVb0ZlTFF2akJEX2xOZkxzVnV4aldnVU96VFRfT1lPSjNGZWFsd01UYUJPbVc3bk9GUlV5QUFGMTdRLWtFQUVrdms?oc=5",
-      "date": "2026-11-04T20:18:46Z",
-      "tag": "Notícia"
     }
   ],
   "videos": [
@@ -745,18 +745,18 @@
     },
     {
       "id": "yt-07AalOCQmjQ",
-      "title": "NOVAS IMAGENS de GTA 6 REVELAM DETALHES INCRÍVEIS do jogo!! #FGN",
+      "title": "FLOW GAMES REAGE: NOVAS IMAGENS e GAMEPLAY de GTA 6!! #FGN",
       "channel": "Cortes do Flow Games",
       "youtubeId": "07AalOCQmjQ",
-      "date": "2026-10-31T23:31:49Z",
+      "date": "2026-11-01T03:49:03Z",
       "approx": true
     },
     {
       "id": "yt-CoBoIgBSPjo",
-      "title": "GTA 6 vai PESAR MAIS de 200GB?! Vazou o TAMANHO ABSURDO do JOGO!! #FGN",
+      "title": "VAZOU o TAMANHO ABSURDO de GTA 6!! #FGN",
       "channel": "Cortes do Flow Games",
       "youtubeId": "CoBoIgBSPjo",
-      "date": "2026-10-31T23:31:49Z",
+      "date": "2026-11-01T03:49:03Z",
       "approx": true
     },
     {
@@ -799,7 +799,7 @@
       "title": "GTA 6 na Netflix: Uma prova ESCANCARADA de GANÂNCIA da Rockstar",
       "channel": "Cortes do BRKsEDU",
       "youtubeId": "cQ41GMFLGKc",
-      "date": "2026-09-08T23:31:49Z",
+      "date": "2026-09-09T03:49:03Z",
       "approx": true
     },
     {
@@ -835,7 +835,7 @@
       "title": "GTA 6 ONLINE vai DEMORAR para LANÇAR? BRKsEDU comenta!",
       "channel": "Cortes do BRKsEDU",
       "youtubeId": "tcPrzUDgO-o",
-      "date": "2026-08-09T23:31:49Z",
+      "date": "2026-08-10T03:49:03Z",
       "approx": true
     },
     {
@@ -857,7 +857,7 @@
       "title": "Versão Ultimate de GTA 6 é a REAL VERSÃO do jogo? BRKsEDU comenta!",
       "channel": "Cortes do BRKsEDU",
       "youtubeId": "2laXuYGvRN0",
-      "date": "2026-07-10T23:31:49Z",
+      "date": "2026-07-11T03:49:03Z",
       "approx": true
     },
     {
@@ -865,7 +865,7 @@
       "title": "GTA 6: Que tipo de REVOLUÇÃO podemos esperar no game? BRKsEDU comenta!",
       "channel": "Cortes do BRKsEDU",
       "youtubeId": "yZsPEJtLLAk",
-      "date": "2026-07-10T23:31:49Z",
+      "date": "2026-07-11T03:49:03Z",
       "approx": true
     },
     {
