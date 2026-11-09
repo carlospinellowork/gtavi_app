@@ -1,12 +1,21 @@
 {
-  "version": 202611090030,
-  "updatedAt": "2026-11-09T00:30:21Z",
+  "version": 202611090732,
+  "updatedAt": "2026-11-09T07:32:00Z",
   "releaseDate": "2026-11-19",
   "platforms": [
     "PlayStation 5",
     "Xbox Series X|S"
   ],
   "news": [
+    {
+      "id": "n-70ef634e4823",
+      "title": "Como evitar spoilers de GTA 6: termos para silenciar e guia de proteção na internet",
+      "summary": "",
+      "source": "O Vício",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNWEdpZVRFOUVEdzhPNm9ESjVaNzJUUWk3VmxpN21ScnllLXkwWGRLTWtKa3dfWE5zRmtkSTdqRzlkVW53c0JETDVBMW0wX1BLSDdGVFBaUkVUZ1NlYTFYemE2LVZVWnFyTTVNOUdHc3dIYjJuRXZ2d1Q3cHFscnliZWo5a19kRVU1Z1hiOS1UZzJIdUFBR0ZZc0UtcjdrN3JmYzRteHpMcVHSAa4BQVVfeXFMUFdxclQ0N3Q4ODBxbFNTNTdWQmlTTGRGT2hrZERnWGp1UFo3SFFUb01lMk1FZ0F5SENpVWVOZTVKMlo0c2l1clR0RXJ6QnlKa3dwcHI3TDFZM3pjdWhmNzhfdVR1QzdaYVl1dl9OQ2Z2bUx2NDd2Q0s4dzJrdkN3VWhyLVlZclFlakRoR1RDMjlOcm9PTXg0REEzRzRIY2NSTmQtRkxiUXVVYjRSeF9n?oc=5",
+      "date": "2026-11-09T00:38:41Z",
+      "tag": "Notícia"
+    },
     {
       "id": "n-89664afc2842",
       "title": "Rockstar removerá vídeos com spoilers de GTA 6 mesmo após o lançamento do jogo",
@@ -132,6 +141,15 @@
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOVkhzLV9fdU1MOW9OT0xkcV9ya2dWb2x2M1doZlpqekpaR0k0WUhtQzE1TzNxdzlxcElQUDhiWVAwbVZwSEUzZ1otZnNsWTVVY3RQaDkyMzEyWDFXMmNqeEN2S1RTQzBiY3Y0V05pR0dYQjBwWl9qMVVPM0lxcTczSktqWUY3MHpRRlVNSTUwNF8tSjZqQUZj?oc=5",
       "date": "2026-11-07T08:03:55Z",
       "tag": "Gameplay"
+    },
+    {
+      "id": "n-3484f1ec781b",
+      "title": "GTA VI terá 55 conquistas, afirma dataminer",
+      "summary": "",
+      "source": "GameBlast",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxONDgzVVlrQzVXeVRaSWVUbkRnYTBzY2RsNVZoZkliNHZxZ0NibWlybS14aGlXZ3lISktwWEdqUmlNX2VfV2JPd3JZcWRTd3d4ZmJIbGlwcDhQQUl0ZEpaM3FPajE4ZUotbFNQanQtWVdEeC10Q05lcTA1aEktbE9USkpVTWx0OUkwdDJOUA?oc=5",
+      "date": "2026-11-07T08:00:00Z",
+      "tag": "Lançamento"
     },
     {
       "id": "n-0b73d38da2c3",
@@ -348,6 +366,15 @@
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPOHMwWjNjaU5CVEZqeTRwYVh5aG9HMGVzMlc3N0hkbS1DTmNPT2FZTUlZT2dlbHVObGVkel8wbjRvSzhRdGw4N21kWUdwbXIwVjEwZXRfZktEZzQ5OHVqTE00SWdBTkJNT1hNSHMwZ2hId0UyRy0wRnR6a0tvZExDbElmR0Fib3JPY1ZhLUZWckYtT2d5XzZkUDV2SmwyVWhiWGY1eWJpVnhNTUJW0gG0AUFVX3lxTFBBOXNNYW5PMXdhbXExa0ZWOXEzb1R4TlJJNmJSU0Qta1dOeUp2ZzB6TERWNnpnb1BzQ0h2SGFsM1dCSk9wS3pFUl85NHJGQWFCYVE5Zm9xX05XUmdad2lHSVlkaUVGeEVWb3lCOHNOeVFVYjZUVnpMVkZxZTJKU21Yb3VGbDk2bGJyb1REQ3RwLTZpR2hfZktKUW85Mjl0N0cyLWEwSUJmZGJYODhZU0djOFZLbQ?oc=5",
       "date": "2026-11-06T15:44:16Z",
       "tag": "Lançamento"
+    },
+    {
+      "id": "n-0840a10d004f",
+      "title": "GTA 6 ganha 37 novas imagens oficiais e gráficos impressionam; veja",
+      "summary": "",
+      "source": "TechTudo",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOcUVVNkF3UUFWRE52Y2tRd0dCNTh1SUJZZU1OaXh0SnBYc1V2eEprZm9HN2pNVEdYU1l6MWg0OHBpRmxheHlGUVVCS2ZRQU9aZEcwQzFBcnMwczNYVWVCSWxFZVBSTXg2UFBvdEtybFpzaml4YlhrZXdNM1NSVXF6MXRhSy1tQ0t6RnVXbFU0bk5ZRGw2c2J2ZmQ0cTNycy1PR1gwdUFNbEl3blZxdjFJaE5oYzZ6V0hoc2dWZGhReFhNMDTSAdIBQVVfeXFMUHNLdUwwZHRuWktoOGlnT0M1N3lTYTFpa3g3eGxKeVNXUjdUUDc2aXRVNG5UeXpDWDBhNThMYUFDcDVIZFIxRlU3d21LMzdFSXhua1BEZTVoMlFZUDlpUU5FTkowUExPSWc5VGFqX1hNVmNKV1RsaVNOYkRJcWJjcndNUEhBUHVETldqamY1ZnRTblVXVWZ2V3FPRFRvNG9EeUxKTEc1TFowbWdqdUdRSjAxRGMwRmRCNTVWSmhWSlZkUHdaYkNSMEhCSHhsakdyQ25R?oc=5",
+      "date": "2026-11-06T15:36:44Z",
+      "tag": "Notícia"
     },
     {
       "id": "n-f890de57b639",
@@ -699,33 +726,6 @@
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNd3FGT3dzQWJLNFJFdkR5VlM0cTk5ZDJxckhmcEhwZzk1aTU1LWsydEZucXYtUy1uXzEySEZ4MzV5Y25vTVptNlpIdllnUGwzc1lZdnByVGRDUmhlWEMyWUd2a2FiaVpTWWdEZjM1aEZqY1FsNkRWcU9lcHhEWFM2N0ln?oc=5",
       "date": "2026-11-05T15:54:50Z",
       "tag": "Notícia"
-    },
-    {
-      "id": "n-cfc5e09872b8",
-      "title": "Slideshow: Novas imagens de GTA 6",
-      "summary": "",
-      "source": "IGN Brasil",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1pc3FwVXdqU2RZOTY4dWg1cjhESzJPVEU0UTVHVDNteUpVc0FRcDJOd0RkQ2QycWF5a2pMNGxUcXdBeTZqWGFnd3E0MDJMTHpzdHpjYW5XSXY1Tjl2WllTbzcySHIzODEyR2RiS0FkTVdVMDZjdzFwMHlxUmo?oc=5",
-      "date": "2026-11-05T15:51:39Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-4a5c4e9e2ef3",
-      "title": "GTA 6: PlayStation pode ter vazado as melhorias do jogo exclusivas do PS5 Pro",
-      "summary": "",
-      "source": "TudoCelular.com",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQMEpzVVBwYkItdEtfTkZvdkwzZWE5bWo1NGI3Yks5UkJ0NVVwa3pXWjFHck92eFdQejZORHRPM25PZGhYY0dwSmJpbm9VWlBfc051Vl8xcnRJZzFBNm9Uc1pJVEdCLUNKS0wwMm83eTVmR2VNdEVuaEUxYTJjdDZsOFZ2SVJ1VGZtdVlsTGFudmJWYy1DMmo0NFQteHJFQ0U5ZGFVXw?oc=5",
-      "date": "2026-11-05T15:49:12Z",
-      "tag": "Rumor"
-    },
-    {
-      "id": "n-03d6dfa41948",
-      "title": "GTA 6: todas as novas fotos reveladas pela Rockstar hoje (5)",
-      "summary": "",
-      "source": "Game Overdrive",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQeVVodGI2dm9CUm4wOEtDQzBqN2RtbTJ2ZUV2dnU2RFhUYzNhYzZ1alotTmhWRmctQ0RSRWloTFFjUEoxU21QaE40aUZGRHV4WHpDZHd6MzY3dFdRUl9zSEc4dERHaG1IT1NRS0drQlN6dFVHeG44aTZnenJ4Vk9nS01JSWFJM0ZkMU1HWA?oc=5",
-      "date": "2026-11-05T15:41:31Z",
-      "tag": "Notícia"
     }
   ],
   "videos": [
@@ -799,7 +799,7 @@
       "title": "GTA 6 na Netflix: Uma prova ESCANCARADA de GANÂNCIA da Rockstar",
       "channel": "Cortes do BRKsEDU",
       "youtubeId": "cQ41GMFLGKc",
-      "date": "2026-09-10T00:30:21Z",
+      "date": "2026-09-10T07:32:00Z",
       "approx": true
     },
     {
@@ -849,7 +849,7 @@
       "title": "GTA 6 ONLINE vai DEMORAR para LANÇAR? BRKsEDU comenta!",
       "channel": "Cortes do BRKsEDU",
       "youtubeId": "tcPrzUDgO-o",
-      "date": "2026-07-12T00:30:21Z",
+      "date": "2026-07-12T07:32:00Z",
       "approx": true
     },
     {
@@ -857,7 +857,7 @@
       "title": "Versão Ultimate de GTA 6 é a REAL VERSÃO do jogo? BRKsEDU comenta!",
       "channel": "Cortes do BRKsEDU",
       "youtubeId": "2laXuYGvRN0",
-      "date": "2026-07-12T00:30:21Z",
+      "date": "2026-07-12T07:32:00Z",
       "approx": true
     },
     {
@@ -865,7 +865,7 @@
       "title": "GTA 6: Que tipo de REVOLUÇÃO podemos esperar no game? BRKsEDU comenta!",
       "channel": "Cortes do BRKsEDU",
       "youtubeId": "yZsPEJtLLAk",
-      "date": "2026-07-12T00:30:21Z",
+      "date": "2026-07-12T07:32:00Z",
       "approx": true
     },
     {
