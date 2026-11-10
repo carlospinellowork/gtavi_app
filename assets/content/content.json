@@ -1,6 +1,6 @@
 {
-  "version": 202611100142,
-  "updatedAt": "2026-11-10T01:42:16Z",
+  "version": 202611100903,
+  "updatedAt": "2026-11-10T09:03:51Z",
   "releaseDate": "2026-11-19",
   "platforms": [
     "PlayStation 5",
@@ -8,12 +8,57 @@
   ],
   "news": [
     {
+      "id": "n-b35df482e898",
+      "title": "Pré-download de GTA VI é liberado para PS5 e Xbox; saiba como baixar",
+      "summary": "",
+      "source": "Rádio Itatiaia",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNN3ZNQ3Y2cFlVNlF4Zk91X2VMNHZoeUlDV19LUEN5VjZZeHZ0MUFWZFdJUHNSN2ZXZ1Zfajc4Y3JzcVEwMFpWZmozWlBsNDVBYTc0eU00bjJnTVkzOWxGQ29MNVFYWGdhU0lpeE81M1dJZVRrdVVlT3Z4WFlFb2Yyd0JUazZMdFRSWGZRNjBoRGxvaHlJUWU1bFAwQlotZHdJSmMyTg?oc=5",
+      "date": "2026-11-10T03:01:42Z",
+      "tag": "Lançamento"
+    },
+    {
+      "id": "n-b991a244dff2",
+      "title": "Rockstar finaliza desenvolvimento de GTA 6 dias antes do lançamento",
+      "summary": "",
+      "source": "Terra",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNN2ZhNDRzTzBTMHdCQXdsZllVUGVpYkFnZi1vWnNaVXlFWHVzUHY2UjVlMEFhc0FrTlNFemh3UG9JaW5sN2JMOURjdHZrc0x5TEtMbjY5S2xpakt4WEQzQkFkTTlQT2k1Qy1kSXJMTktla0FKWFRueF96dHk1Y3VHcGJaY1FOcmJaR3lZQVp6cnhISUhYQ0tjdzMtY1NWM2dOOXlNMUpYY1dVdTAtMW9hT0JRbDU2Nm1pOUVWNUxoZUEzQWhYaE1fV3lLdjNvVlY2MVh0d184RzNLZDQ?oc=5",
+      "date": "2026-11-10T02:40:00Z",
+      "tag": "Lançamento"
+    },
+    {
+      "id": "n-7e5be0b0f249",
+      "title": "GTA 6 chega em 10 dias: 5 jogos parecidos para entrar no clima de Vice City",
+      "summary": "",
+      "source": "Salada de Cinema",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUFhiNDh1QU55MHJpVVBadUk1VTJWbkdwdjZXZEJLRk1mdWRfVE14OWcxU1ZFLU13UW9DNTVLMzR5TkcyOXplNTZYc3lDV2NQX0VMVF9WWnVXSEROLXVkbkNvSU1XUDRBbkhxZ0Y2bmN0T015MGZOYk9HTlplbk96WnRqUFhpYnBKMVJ1NG5mekJfRnVzZDVkTEJ3M1E1dkJsaFFNQ0hNQkw?oc=5",
+      "date": "2026-11-10T01:44:28Z",
+      "tag": "Lançamento"
+    },
+    {
       "id": "n-e1c350d150e4",
       "title": "GTA VI: Cardi B e Travis Scott vão se apresentar em festival",
       "summary": "",
       "source": "Billboard Brasil",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9LU3ZqNjlpc24xQnNtNDJIV25fQ0VMRFZBdy1wTUNSdHZGakU5eS1PeUhKOThJZWhwYldXbzNEWXJ3eWJ5V3R1UzdaLXVwNUNUbjhmSU1aSnk5dHBYQW9QLWRNOVl5T0FJX09WWldyMHlNNG5OVXFJ?oc=5",
       "date": "2026-11-10T00:20:00Z",
+      "tag": "Notícia"
+    },
+    {
+      "id": "n-6f7f88f113a9",
+      "title": "Cardi B e Travis Scott são atrações de festival de ‘GTA VI’ em Miami",
+      "summary": "",
+      "source": "Billboard Brasil",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9LU3ZqNjlpc24xQnNtNDJIV25fQ0VMRFZBdy1wTUNSdHZGakU5eS1PeUhKOThJZWhwYldXbzNEWXJ3eWJ5V3R1UzdaLXVwNUNUbjhmSU1aSnk5dHBYQW9QLWRNOVl5T0FJX09WWldyMHlNNG5OVXFJ?oc=5",
+      "date": "2026-11-10T00:20:00Z",
+      "tag": "Notícia"
+    },
+    {
+      "id": "n-da403dc1e485",
+      "title": "GTA 6 pode exigir cerca de 80 horas para concluir a história principal, segundo declaração atribuída a um executivo da Rockstar North.",
+      "summary": "",
+      "source": "www.portalviu.com.br",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQQThhMWpfYXB5UmFyRjk3Zktzc2xiZ05TbDZRSFpocDdOZmVEZDIybWxpaEIwV2U1YlZDRnY1YlR4aHg1TmNLUUNFb2dCLTRPckUxdFF0cUtUMmx0Tmo4REFFS2x2Y0VqemxSa0xIRE1Yczg4LVA5Zi1VWXpIYXd4MVA2T3JMSjNwUE9qaFlqZTR0aWVJVzhLZXhwMDQ5OGRlRkF2MHZTTFZMNmNuRjdEZS1MZEUwMGRJUklnNE1RMHlJQVJ3Mk1MSjZXc0o2UnNfNWp6YXZVdDdTS0RTeXVGdy1LSUJXQQ?oc=5",
+      "date": "2026-11-10T00:12:40Z",
       "tag": "Notícia"
     },
     {
@@ -359,6 +404,15 @@
       "tag": "Notícia"
     },
     {
+      "id": "n-bb08dc89adcf",
+      "title": "Rockstar anuncia festival de música ao vivo de GTA 6 com Travis Scott, Cardi B, Justice e outros artistas",
+      "summary": "",
+      "source": "IGN Brasil",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxON3FEeE53RGduenpFdl9YbkJLYU13UlR1RnpSWTl6UWloNTRrRmRoa004TU83ZWNhWGY5dmZOOThybVFuaHVzdnNjN0FIRTNiM3VuNnFfYjZ5bjZqUmVzY2prSmVBUG51d0h1UXZtRXhZem1VdlNGalU3dHE3cDdodWhYYThJUVpNS0NPU2VUZkpFSEpQLVYwUEFnZjdyNjB6Y2hKRER0blg0dGd0bEhfeUJJV3IzTmtXOXgyZHRQa01hNktTTl9xVXIyc0YwdWJvTzBBTTR4QjJCX0pDWXlR?oc=5",
+      "date": "2026-11-09T15:14:58Z",
+      "tag": "Gameplay"
+    },
+    {
       "id": "n-2c0fd63fd592",
       "title": "Jogos para jogar enquanto o GTA VI não chega",
       "summary": "",
@@ -429,6 +483,15 @@
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdXFoa1AyMi11YkF1TnZ4ZlBWUGJ3TjkzZ3N1Wk5US1lpQndkX1V1VmdfZlE0X2pMT1lTdHN2M1kxWEFESGRuWEJnSlBua25IRnRYbWZES0UxeDYyTTdBU2I0U0daV052ZVZRbk12YnBHYTFVamh4ejhpYjNIa3hic2ZINTBLT05rWkNPOTIxZ2NNQjd0TGJRNTVWYS1aSDA?oc=5",
       "date": "2026-11-09T14:17:13Z",
       "tag": "Lançamento"
+    },
+    {
+      "id": "n-0dd378f552e3",
+      "title": "GTA 6 pode ter campanha de até 80 horas, segundo executivo da Rockstar",
+      "summary": "",
+      "source": "www.portalviu.com.br",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVFBjN1NzYy1uRy1yREVCQ04xeU1kd25PZTlfaHN6ek82NXRtYzRZclA1eWI3bUJxbFFkc3FpQlNoZm1RMnowUGVfemxXM1hxUFZjRFlxYUpKVno0S29vR0NJV1FhbW1mZ3NHNUp6T3BHb0g4a1h6cl9ObDRoWFlOUkZDRVUxZlEycFAyYjk0bjhDak5JSkJXM1ZPQkRQSUdXNGZPcHhn?oc=5",
+      "date": "2026-11-09T13:52:48Z",
+      "tag": "Notícia"
     },
     {
       "id": "n-369abc182a23",
@@ -663,79 +726,15 @@
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOVkhzLV9fdU1MOW9OT0xkcV9ya2dWb2x2M1doZlpqekpaR0k0WUhtQzE1TzNxdzlxcElQUDhiWVAwbVZwSEUzZ1otZnNsWTVVY3RQaDkyMzEyWDFXMmNqeEN2S1RTQzBiY3Y0V05pR0dYQjBwWl9qMVVPM0lxcTczSktqWUY3MHpRRlVNSTUwNF8tSjZqQUZj?oc=5",
       "date": "2026-11-07T08:03:55Z",
       "tag": "Gameplay"
-    },
-    {
-      "id": "n-3484f1ec781b",
-      "title": "GTA VI terá 55 conquistas, afirma dataminer",
-      "summary": "",
-      "source": "GameBlast",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxONDgzVVlrQzVXeVRaSWVUbkRnYTBzY2RsNVZoZkliNHZxZ0NibWlybS14aGlXZ3lISktwWEdqUmlNX2VfV2JPd3JZcWRTd3d4ZmJIbGlwcDhQQUl0ZEpaM3FPajE4ZUotbFNQanQtWVdEeC10Q05lcTA1aEktbE9USkpVTWx0OUkwdDJOUA?oc=5",
-      "date": "2026-11-07T08:00:00Z",
-      "tag": "Lançamento"
-    },
-    {
-      "id": "n-0b73d38da2c3",
-      "title": "GTA 6 aparece com 225 GB no Xbox e versão do Japão tem tamanho diferente",
-      "summary": "",
-      "source": "Game Overdrive",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9xdkZWc1IzV3pNcU1fWEFycjI3YkdBemk2SUwtYldaZG4xMVZJM1FqR0NpM2c1TmNFRFA1VWJMLUFXVy1fZExyRmJHU3hiSWlYVUhPZnlWS190eGZKbHlYYnMzWVVTOWY4Mi1CRw?oc=5",
-      "date": "2026-11-07T02:51:00Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-2026-11-preload",
-      "title": "Pré-download começa em 10 de novembro",
-      "summary": "Quem já comprou poderá baixar o jogo antes do lançamento, a partir de 10/11, para jogar assim que liberar em 19/11.",
-      "source": "Technobaboy",
-      "url": "https://www.technobaboy.com/2026/11/07/gta-vi-hits-ps5-on-november-19-pre-load-starts-nov-10/",
-      "date": "2026-11-07",
-      "tag": "Lançamento"
-    },
-    {
-      "id": "n-5c8022043a45",
-      "title": "GTA 6 | Alemães podem tirar folga para jogar no lançamento, mas com um porém",
-      "summary": "",
-      "source": "Omelete",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxONVE0NWt0dkF4Njk2SnQ3Zy1jMjNoMGhJNU5OQW92al8xMVdvRUZCellYVWU1enlNS1F4RWstQlB3V3E4LURvbjRGbTFfdFZ1TGt2TUZxeWpSb3BONFdMYlU0eGc3MkpfUFd5eW5lMjFxell5M2xxZEQzQTRwWXNhUmZXV0JEZDM4cUdOSGF5Rmo0elo2Y0ZB?oc=5",
-      "date": "2026-11-06T23:15:00Z",
-      "tag": "Lançamento"
-    },
-    {
-      "id": "n-3283bcb0e483",
-      "title": "GTA 6 invade a NBA: Miami Heat terá uniforme especial e arena transformada em Vice City",
-      "summary": "",
-      "source": "O Tempo",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNM0dRQlRkbWFkSl9kZXFUSHl3ZnQ3cWZYWkVuX1dHc2JvU2ptSlpYMHZQN3laRWNlckZ5S3cwX2pYZ0RQcEhhWmUtNlBITURWdXRYQ29FNTJjaDFWcE5OaVBVYVlNQVU5YzF5TGFwS0JBekFIcWZRUGEwS1JJNGxoLTEwWGxybmlEdjdXZ2lEZEZReWtZVlUtTFJYWHEtXzhER2NKQUNCM2RwUHhBTWJTZ3RKS0RqendjbWxkbzZCOHREenlKSjFCZlJXTS1icGpWX1ExQ2FWR04?oc=5",
-      "date": "2026-11-06T23:07:16Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-6c29da1f6f8e",
-      "title": "GTA 6, Zelda Ocarina of Time e mais lançamentos de jogos em novembro",
-      "summary": "",
-      "source": "Canaltech",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB6NXZkbWk5VlNObE9iYkRZekh1Yk02SUFVNHVuVjVBVFlaUkZUY3Z1UFFVOTZabDV3cV93THRRRmlJWXFNcElJQXgtNG9YNWhiY1A4VERxV082UnJ0dXdGYUJTUnV5WHpFQXFaSEdKWlpZUEgxQjlZXw?oc=5",
-      "date": "2026-11-06T23:00:00Z",
-      "tag": "Lançamento"
-    },
-    {
-      "id": "n-b9cccf56959e",
-      "title": "Pré-download de GTA 6 começa na próxima semana: veja o que fazer antes",
-      "summary": "",
-      "source": "Canaltech",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPT0xIMGlYSXpEVTktdU5sd3FDalBrS3JIU0dTV3QzT1FxOVZSaU8yaDc0LVZUeVpnTmdDUlZVY1ZOVVU2aURUWmtoZm1helpIQVo5ZndOMFJQekYxb0Fkc2FtRjVRbVpzOHVKd3V3UXk4eV82UWFhVUNmcUtXVURncXBka1FxS3BkZ0lnRENCeHduT0xoeTkwTGt2cmtGN0YtbzNr?oc=5",
-      "date": "2026-11-06T22:30:00Z",
-      "tag": "Lançamento"
     }
   ],
   "videos": [
     {
       "id": "yt-jkQGIUnnwX8",
-      "title": "O que NINGUÉM VIU nas ÚLTIMAS IMAGENS de GTA 6!! #FGN",
+      "title": "TUDO o que as ÚLTIMAS IMAGENS de GTA 6 ESCONDIAM!! #FGN",
       "channel": "Cortes do Flow Games",
       "youtubeId": "jkQGIUnnwX8",
-      "date": "2026-11-09T19:42:16Z",
-      "approx": true
+      "date": "2026-11-09T19:00:30Z"
     },
     {
       "id": "yt-jaKA-UEU_BQ",
