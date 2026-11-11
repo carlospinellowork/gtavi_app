@@ -1,12 +1,39 @@
 {
-  "version": 202611110204,
-  "updatedAt": "2026-11-11T02:04:35Z",
+  "version": 202611110940,
+  "updatedAt": "2026-11-11T09:40:41Z",
   "releaseDate": "2026-11-19",
   "platforms": [
     "PlayStation 5",
     "Xbox Series X|S"
   ],
   "news": [
+    {
+      "id": "n-f6805b325c16",
+      "title": "Quando GTA 6 será lançado? Veja os grandes números do jogo mais aguardado do ano",
+      "summary": "",
+      "source": "Valor Econômico",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPWlhkMnFJMDdkd20xM01nVUNzdzJJU2JURVNfR0ZKd3B6QjVELThFZzFIYm9Ec2JjV09vbjZRVEJjUklKdzlFNDBhUGllWUk1cElKeHlIb3Z3VDhFZlJpanl3T0Y4d2FLZE9pUGVFVl9GNXA0UXlQNmR3eVhFYXFsaXpRa1pGeC1wU1MwTmpoT0FONlVBV0g4UEVVS2hxZE9xTTYyUUVtX3gySFh2T2YyNU43ZWZ6TDZja2RyTVQzNU1rNF9jOURqcktvclNpTW81S3dLbnJtUVJ5amJ4dTlBedIB7wFBVV95cUxOaThUZjVxdkdFTWl3WnZobDI2N2pfMkx3RWZScXNvbndabjZBei1nUHdxajdkbU10RVlhRjM1SDcxSkVZR3lLenlmUkZmOWwwck1DSlI4VWg5d0dIYlBnV01VUEF3VGpJM0hyLUo2dnRCYlNpU3JINFBoTGg4TTl6SkZ5UmdRUEZKblRMdEhJa3FEWGlEYXZ2WU9BSVFOUnZKcl9uRmdRaTV3TE01YzV3Y3RZUU04dkt0cjJHVmhsSFZCWDhPcUlJbWd0NEkzUEtVazRhSFhseVRfcEhvS1U0dFYwMF9KY0VhR0tpN2UwOA?oc=5",
+      "date": "2026-11-11T09:00:00Z",
+      "tag": "Notícia"
+    },
+    {
+      "id": "n-19c8c1f8ff9c",
+      "title": "Lançamento do GTA VI: gigante de tecnologia dará um dia de folga para jogar videogame",
+      "summary": "",
+      "source": "InfoMoney",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNcW1sQkZGTzFNdXNMbkxfVXdxN1Q3UjZVQVYyRHRwd2dnMXNRbTZ6elFQcURiZDh2UnV6b1dXc29wVldrOVVmQ0V5UG1QSDgyX0t5TW9Jd0VCTjBxQzhpQ3NGWHdlTXV0X0htemVteWZrMW1NWjYwV2pjSVp6T1doWENCTWhPNEZIeVVuUXdIdGVHVzEwbkwyVmlZUU02YWprQ3BOQWFZQlg2MkV2Z1VUeFNTaWtKbXlKR1VHWXJ1MzRpWFlzWUJqOFZR0gHPAUFVX3lxTE91RTRYWnJianl3S1dHVXRXVS1sNXpRUG9SbWh6RDVJWUtEQUNwSzZlYWhpTVJINUhiMDBPdDNkVVZwRU1aUHVKcWl1LWNjcVMzbUxvVjVkY0ZTX0hFbHJQZjF2bFFRakNOcUNhVGUyRDIwdTlIMWM0MHdtNG9UMDg1d0RfSzh1ai0xZmxFa3puQjgwcDVNUEQtR1ZvREtkbjFuTENKQlpTeVlZYmUyNkJDcW5maXZfNklIb2xNd2JxSVo0Z00zNFlHZGhnbzdPSQ?oc=5",
+      "date": "2026-11-11T08:00:00Z",
+      "tag": "Lançamento"
+    },
+    {
+      "id": "n-47ada04ab2e9",
+      "title": "GTA 6 Xbox: jogo vai rodar no Xbox One, Series S e Xbox Series X?",
+      "summary": "",
+      "source": "Notícias ao Minuto Brasil",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPcnYzZlFET2pVdzM3R3E1eUdqZ21KV2M2cEVUQ2JDMVNEcFEyUkRwSDRrVDc2bFkzMmN3TldOQUpwa3puM2hSNDlyNEVobk5FN25fVlg5dWhLMk5xdlkzbkNWTVFhNVA1SkMyeGZXVzhyM2w4WDdUejBVTjJiR3RJZUpnUTFZckVqSTBqRWU0dGlpdDlacUFpVmJWcWFUTUM2dGQwOEVTZnVEQXA2WjBuZw?oc=5",
+      "date": "2026-11-11T06:31:01Z",
+      "tag": "Notícia"
+    },
     {
       "id": "n-d2533af3a3d4",
       "title": "GTA 6 terá meta de 30 FPS em todos os consoles, e PS5 Pro ganha ray tracing nas sombras",
@@ -62,12 +89,30 @@
       "tag": "Notícia"
     },
     {
+      "id": "n-d8af9af1578a",
+      "title": "GTA 6 está fazendo tanto sucesso na pré-venda que está atrapalhando outros jogos da Take-Two",
+      "summary": "",
+      "source": "Estadão",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOb3libjZQUExPUl8zellSNC01X1BndlFkR2ZxdWpIY2lqeVFZQThpZU01SDVxM0t3bkRHcE8xUlZQaWN6c01SX2pQdjhreWhKNzl5eHduaTlRcE5FUFZEa25tbHNvNU04VDVIQVNOQW9kQmlBc1RGczV6aEdXR3pSWG1OeW5CUnpOb05LVGwtTDVELTJ6OXBMUlVYeU44RENMdDhyWkNQaFJPanoyRmRtY1g2Y2JSTmZKaXN0bmpqbTdDRm1LUUhuWC01OHA3WWpf0gHWAUFVX3lxTE1nQmM5QXl1eF9wQ2NqZlRLVlRoTmRfRmktR2NFNjZEWVdnSTRPSWFIeUlfZ1Ria0FGX0xETGdKa2RKRU9GNTI5TnI1UWRfOFJwUGVDVHlYY0w2MkUwcEJfY0JfUjRuYWZOMm9LWFU3SXN3R2c5aXN3d0hDbVhzNkhlaGF0Y3M2WVVHQ0NTYnZKVlppZGZNbm1VMTJIU2pJWUpGTl9yQkNzQ19FaXVCUG8zdjBEX1lZS09zYk1vLUpfWFduVXdUUG94SkhXVFgtejhPN0xTMlE?oc=5",
+      "date": "2026-11-10T23:15:00Z",
+      "tag": "Preço"
+    },
+    {
       "id": "n-d23d59d06096",
       "title": "GTA 6 tem a maior pré-venda da história da PlayStation Store e Microsoft Store",
       "summary": "",
       "source": "Folha PE",
       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcDVlSTg5Z0RCQVVxVm9YaExmXzQ3dlo4S0RJUUxuRl9JdjZmX2lKNjkwUWRNQjZxb25WQWNNWXpaTzA4S0RYT3lSb18tV1AxbFAzYXpRa0I4QllMcHQ4eDVDbnQ1MWxKZmo2cEt0TE8wLW0tN1NsbFZubTNucVMtTjlYaV9TbEZpZkpSUjEzaTNRcUhDWEdJTkowbV9SNU1ob3VBY0sxUklOZ3JqZ1J4d0FpMG9Rdm9UQW10cXAxTVU1REpmdkRLZ1J5dUdTWkdXbGlGWWQ0S2oxUQ?oc=5",
       "date": "2026-11-10T22:48:00Z",
+      "tag": "Preço"
+    },
+    {
+      "id": "n-6391b1360daa",
+      "title": "Onde o 'GTA 6' é mais barato? Veja ranking de preços do game por país",
+      "summary": "",
+      "source": "UOL",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMl9JTWJUeXJmZlFVRmFkZkNfZ3NDeG5rNWRpcm9TZ3BIT2daUTJyUGYxTFpwYWl0c0JjX1ZHN0d2WnFxMEk1MWlzSTZtU1laMEpCYjlGcEJpQktHMXJPYmZlYTUxX2wtd0t3QlA3bWFoek1iY2hSelBjU1hYUFl4QUttXzJVZVVUcjIzLTJmZWRVT1VZd2FHeVo4blpxUTBidnRHYzc5TzN0RUxVM3BtZl8zN0JvVU9LaV9oRXJFcXM1eUU4MWlfRA?oc=5",
+      "date": "2026-11-10T22:31:47Z",
       "tag": "Preço"
     },
     {
@@ -681,51 +726,6 @@
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQWjJkODNsb2NNWWUzUGlGMjB2VUZqY3BUM2h6ZGNyTjMwZXdVaTVZemN4MTBENXQ0Y19RekdndGJWenNqV0trQnJQNHRwY0N5UUJTbnhudjJEQ0NjbHBXbDZ0MlkxYS1aVkZRSUg1bXpfRFdZb2lvQTRocmdoaV83Tm1JMnJjZ1dVRlRiM2FyQQ?oc=5",
       "date": "2026-11-10T12:34:50Z",
       "tag": "Notícia"
-    },
-    {
-      "id": "n-1a5c8641bd49",
-      "title": "GTA VI impulsiona ações da Take-Two antes do lançamento previsto para 19 de novembro",
-      "summary": "",
-      "source": "ADVFN",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZ2dEUXAtMXZfaEw4QUVKNll5ZnpMcW9sUFdjdEozZ1BkdDU3aW9SZm14VkVXMHZzelV2aF91TDFkNlhSVkxER2twdU5DTV95M2VCZDNJYXRoRUJTenhxTHVJU2ZVNGs4R0Vra1ZXX1pNcHVpRGxfN1FzSTVycEhDREV1MVVFNjhWZGF4d3NXS3c2c19qcVdpZTEyQ3R1UQ?oc=5",
-      "date": "2026-11-10T12:17:48Z",
-      "tag": "Lançamento"
-    },
-    {
-      "id": "n-6be5e71b6303",
-      "title": "GTA 6 já pode ser baixado no Brasil? Veja como baixar e tamanho",
-      "summary": "",
-      "source": "tmc.com.br",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA5Qm8yVHM1S21ZQzNJQm5IR3d1VDROSlJMY0dhamJvejdUcm1yejFIaXR2ZGN0dFpLMUdDemtxbzdBRDE0WUcxbWEyTVNOX2RCbzRvVVVUMUlEMTVjdnlnUGRKc0dXMmU4aGJQNno2YXB6V1Q2WHNnd3dfVXVzbG8?oc=5",
-      "date": "2026-11-10T12:08:56Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-64f9df3db5cc",
-      "title": "GTA 6: 10 motivos que podem transformar o jogo em um fenômeno mundial – de novo",
-      "summary": "",
-      "source": "Quero Bolsa",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBTS0czTTVSSmFQa2NieGVudzBXUm1yeUhhNnZzcHNTbjFOcFdZTzNTTzIzUDl0SVRURkw4Rm5BcGVsMmtWTnA5UUpESlZwWUQtMVM2N0xseDdXZWZsT2h1WldqNWFfODVJa28ydnlZT2VFdXc?oc=5",
-      "date": "2026-11-10T11:29:34Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-3a18628da7c2",
-      "title": "Estreia de GTA 6 pode render até R$ 19 bilhões para a Take-Two Interactive",
-      "summary": "",
-      "source": "Adrenaline",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTzRMcUhzOU5RbTZaWHg0bDJqVXhRTzI3dHEwYjI5eXBoSTZrMGNadjVEaEhBODVFUmsxT3ROYm5WNDdqRVZxM3hUcG81YUJwd2VVdzJvT3F4M1U5eFlYQ3dWOVFIeHR6emhydWFoeE5GQXNSTGcwU3hiSGEtS1kxTW1LSzMtMzZvUHB3djlvSmY4VHRzVlJsS3ktSGpFYVBGb2M0MVh6Tk5xMEFQSWVF?oc=5",
-      "date": "2026-11-10T11:04:00Z",
-      "tag": "Preço"
-    },
-    {
-      "id": "n-011e6ecdd09f",
-      "title": "GTA 6: Grotti Cheetah vira supercarro de luxo no mundo real, mas o preço é assustador",
-      "summary": "",
-      "source": "TudoCelular.com",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZWI5WWNXRjJnZTFOQUw2MnY3ZDZBOEhYUE1wcWxZa0lrWk5CdGVCRDJTX3k0NHdPeU5sNWtGNW9ZQXdUcnJWWUVFM0JPZnNLVC1rWlpYbWlfdXpvVml5ZUJTZFVnelpuQkc5bzdkNVNIMVJUS1VQNmJDU09WNFl6cm9Iek5DTU1oVGpvdVFQSmpEVUY0a18wS3ZmS0FQMVJ2eEYtVVZFbGZDa1U?oc=5",
-      "date": "2026-11-10T10:52:17Z",
-      "tag": "Preço"
     }
   ],
   "videos": [
