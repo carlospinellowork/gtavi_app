@@ -1,6 +1,6 @@
 {
-  "version": 202611111738,
-  "updatedAt": "2026-11-11T17:38:11Z",
+  "version": 202611112355,
+  "updatedAt": "2026-11-11T23:55:35Z",
   "releaseDate": "2026-11-19",
   "platforms": [
     "PlayStation 5",
@@ -8,12 +8,129 @@
   ],
   "news": [
     {
+      "id": "n-c8c58c354643",
+      "title": "'GTA 6' supera 'Cyberpunk 2077' e bate recorde de pré-vendas nas lojas digitais",
+      "summary": "",
+      "source": "Folha de S.Paulo",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPZ2tEZ2s3ekp4bUFpUVBLZmNzeWhPUThNNjcwVzg2YjZPWUltNklINVlnS1E2aTZVV1hGZHROXzdFd0dKY2hvX2NjeEctd1BQbjlWeFczUmJfcndVNElsRUk0dkhYRkhyT3p2YU1zeEtJaUZSU0ZPVnZ6SVJfLXcxeVdXdzBTZmlGVU5tYmlINnkzdElXRmJNT3d2R19nYkpJemU4RUpJdURUZ0xuOVlTeVhMRmpvUXZEcUpRNFBYT3Zncmp1OWpJag?oc=5",
+      "date": "2026-11-11T21:30:00Z",
+      "tag": "Preço"
+    },
+    {
+      "id": "n-751ba5be25b1",
+      "title": "Efeito GTA 6? Logitech cria dia de folga para funcionários jogarem videogame",
+      "summary": "",
+      "source": "Estadão",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcVlKY1o2TENIcExsWVRwOTFYYWxBUExSQVZmeTBZUzZpLXBPMU8zeFFQYXdjVEhHcGJsOEctcGo5SUE0VWJfRVEzdk5ELUJjQnYyMzdKRWVyVDVTZlpFQlljMWhjMEszdkh1dGpGaTl0akhDdDJiWDR5S3hhdDNib3UyTEQtTUpIWVd3TWsxNlR6WThZSFViQWV3MWlyenF4QTZ1Q3B1alp6MGdyNXI1azRrNFJnMWh6MnBz0gHAAUFVX3lxTFBmWC1ubTZQbjQ2RFJzZEVVOXhZS3J5MTJwb3dZajlUNHF1U1cxYmY0bnZTcjFHX3UtQU5CNHdjMlNyQkhXeDJLelVDQVRSb3N1bkxMYm9UWWY5TzVWMy1sanRvM1pUNk9sUXFYWWhTeVk0cXhTOU5zd0pzWnpsRUp4WGJGbUVQcWFTWXRKeUU4QXlMU1NVNFNjQ25Xd3YwcWoxQzh3bU43MElaX3d5LWk1QjhqUHlVd09SdU54UGdxUw?oc=5",
+      "date": "2026-11-11T21:15:00Z",
+      "tag": "Notícia"
+    },
+    {
+      "id": "n-71aed53645f7",
+      "title": "Amazon oferece GTA 6 de graça em compras de Smart TVs",
+      "summary": "",
+      "source": "Times Brasil | CNBC",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOWlduZmp3M0s5OTl3ankzVUN6UUVaNkJiQ29BbUpaXzk0dVU5bTllLXB0UzRzRHNCdnk1ZWVTUWhlejFOT3p2X3NqS01fZmRHWGF4THBSWEJnelZCVlVuMEppOGVkSjJNdGZuOWVIeWRtQmxuV2l3Qk5PMk9pbFVsMHVNMkl0Q1RYeUFfeQ?oc=5",
+      "date": "2026-11-11T21:00:00Z",
+      "tag": "Notícia"
+    },
+    {
+      "id": "n-0033ad3942eb",
+      "title": "GTA 6: Logitech dá folga a 7 mil funcionários para jogar",
+      "summary": "",
+      "source": "Exame",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE02cWtUY24zay1Kc1FMYldfa2F3WlNPN0ZpeFFDVG1HMUdCMmx3NWVzUHNFVGpqTDROZzY4c082MFlNVnBlZzlnVndBeXZKUVF6eGRZR0p0YzlqbXNyRThhUGdiLVZ4LTdvRkdYSllEb2cza1pQUnBkZQ?oc=5",
+      "date": "2026-11-11T20:38:10Z",
+      "tag": "Notícia"
+    },
+    {
+      "id": "n-25b92e7eee10",
+      "title": "PS5 alcança 100 milhões de unidades vendidas antes do lançamento de GTA 6",
+      "summary": "",
+      "source": "Estadão",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZTNJbGs3eHl1Q01DVzNNQWxBal9idjVEYnM5VXZJcWZ3bnBycE1qRWZsOEZhZGY4M284NEluQm53QUQyN21Mb0hiTENvZFpHOVNrdGFSYVFwOWlEWWFxbXhJVHhWNWxhd1U1MjNwT2x5TVNRZ0cyRVk4VndvS0U1OFd6YV82djJ1UWVoQlRGUmJxX29pWXhTTkZ4aU04cmowek0zd18zQlQwM2owclRFTGQ5VnR0NGfSAbwBQVVfeXFMTlg4VkpRa0tpd29DaExyaUhpZ3phNDkwQ09hRThsQUd0NGNTSTlkTTA3QWtCZmxsSEdzb0FZanpjOEx2eThlTllBM1cxZ2pTaDRRWnF3U3M1YnFXTDk5a3ZqTGVYdm5CZFhTZXhlc3NaRzNJTzc4dndaUWVkX1ZaQ05vR3E2MkR6Y2FYSHhvWnpBa3VjUm5tckVhVDI2aTNGUk1ZeWM3cVFrc09yTmxReDl5VW9Od1BZMjlYOFQ?oc=5",
+      "date": "2026-11-11T19:45:00Z",
+      "tag": "Preço"
+    },
+    {
+      "id": "n-651d558c89a0",
+      "title": "GTA 6 | Logitech dará folga para funcionários jogarem o game",
+      "summary": "",
+      "source": "Omelete",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPRnZLeVNxRUVTLTFHVHNSZU1zNWVlNTVKQTQxd2JsQ0RsbVowMTJlaDhVamlaSm9HS05ScV9SYjFNMURmNWt1dFFhTnpMVEt5VW16NjF0TURMR0phTjl3OG9JUzNTdUhCcGMzbFYtM2hEcDhIVE1zQS1PZ21wQ2hlbE9uMGhKZXFBX1l5Smx1R3k0U3prM0E?oc=5",
+      "date": "2026-11-11T19:15:00Z",
+      "tag": "Notícia"
+    },
+    {
+      "id": "n-33eb9c310394",
+      "title": "Pré-venda de GTA 6 supera US$ 1 bilhão; veja números no PS5 e XBOX",
+      "summary": "",
+      "source": "Canaltech",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOSUFURHFTZkF4emt2NDRXNnNWbEhpdXZjUmgyZm42RVpnZy1YM0k3NmlVa3ZzSWNzalA3ODNvbVhDUW02aEd0b1BSTFVWSVdoWDBWV2lDQ2JQVDgxaURBeXFzSmVzbUxzTEtfMl8wbDk5VzRiS1NsYlFCUThGcHE0bjlYa0thWHpsLWtvazhsSlhSR3hhQTFIWWhMTkk?oc=5",
+      "date": "2026-11-11T19:13:06Z",
+      "tag": "Preço"
+    },
+    {
+      "id": "n-f9ca8651aac0",
+      "title": "Lançamento de GTA 6 deve abrir novas oportunidades para streamers",
+      "summary": "",
+      "source": "Terra",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQaTM0UFJUYTZyY3ZjRlg4ZDZLdzFSY21mMXJKZmQ4ay00empfclZTbXdWdDlSQ0x5MzJCRGl1WkthQ194VjUzMTNpVThtdWNmVnFxci1Tdmhtb1A5c2FzNkxMUDFqbjVGLU5jbWVnemNaUDEyNU5Ka2dUbWdHbU94ejA1aHdLajFkLUppYzcyM2d5XzIxNkJmdVd3WlNqcmtwOEtjeUpNM0phUW5IYk9GVzdrcHVsdFh1blhUN1VaaFFCdVBCcllreFZnTmY1cms0aWlPS2JFNVdtMWRSSjR4OVdSZ0JMeURkendQUDlOVkM2ZUVFOE1vVm5n?oc=5",
+      "date": "2026-11-11T18:39:00Z",
+      "tag": "Lançamento"
+    },
+    {
+      "id": "n-158110ebfa2e",
+      "title": "GTA 6 | Pesquisas sobre o game no Brasil dobraram em 24 horas",
+      "summary": "",
+      "source": "Omelete",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZ2M5ODgxYzNUVURObnBkVG5HcXpyR1JWLVFnRkM2TjF4UjhCRk91NXFfTU4yRWd4bWJqTUdyTUVEUlR3Q3gtR0NDcE9fUVlPLVV5OUNsN0ZGUDI4RDFmSlJKZGs4enNRcmdWd3hLeWE3WWJIRFUydDFYeXNZZ1lxN2RiZmpleHIzcmpoZ0MtZXBkNWlDVm1N?oc=5",
+      "date": "2026-11-11T18:16:00Z",
+      "tag": "Notícia"
+    },
+    {
+      "id": "n-ef73bbf6478f",
+      "title": "Escute ‘Blood In Your Eyes’, novo single de Tove Lo para ‘GTA 6’",
+      "summary": "",
+      "source": "Rolling Stone Brasil",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQdHFLeUZQNmZGMXRra2dORGFmUWRHeGh0VTcxd0hhaGFOSkgxd09VeF93LThZMDduYU5lRGd4dDZlYzloNXBOMnNrYUdfTEd1T1g4bFV5c011emNQNXQ4TGs0OW1zTXBRU0paTUlEWUlGbXM1N2VuZGlJQVViS0pZdjVJUkxHNURtdnJpS2dDUzFBYndSUEh3cG10S1ZHdms?oc=5",
+      "date": "2026-11-11T18:05:13Z",
+      "tag": "Notícia"
+    },
+    {
+      "id": "n-17342b382a6e",
+      "title": "GTA 6 derruba recorde de reservas no PlayStation e no Xbox; veja quem perdeu o posto",
+      "summary": "",
+      "source": "Mundo Livre FM",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQNmFua1p2WXNETnI3S0cyMTBhYVVCQ2RLVjJOdkx4Ul9STHhJSzlXa0VLXzdsdkVRZTJaRzZnMUVOeEpFMUtxYVVFeXRfV3dDaFc0NGgyWTktWW5iZE5EQnk2V1RRMDAtaHdDanNIdGY1WWxKN1BHU2tjMkJ1d2prNkVia2ZkMEt3ZklJOHgwLWFYTFNINDNCLVZGc1BhLWg3NnJaUXZabjRSSUpNWVJYcXpULVlORDdI?oc=5",
+      "date": "2026-11-11T17:29:30Z",
+      "tag": "Notícia"
+    },
+    {
       "id": "n-395ac76b34a1",
       "title": "Cópias físicas de GTA 6 com código na caixa e pôster começam a ser entregues",
       "summary": "",
       "source": "Estadão",
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOd1V0TXBlY0V6eC1lWHV4UDR5MHZwNjMxZ1EteDdkTzduV3R5Mk9NdnhaRF93U01KZWFlZ2VCNThOYjJCVlRmeDFkRHlTZFJPYUNuMUVPU1hIUFpKRHBBSXRJeDZIdE92MWpkTi1fZTBXaVdkTU5ESGVFQ1FkOXBWWXdaMnlZWGgzQUdPTGplckI5UXJGd0N1YXJ3MHlyR0pUaWV2dE9vM1hXMGtHdXlSNnU3dEtkWnU0T2hB0gHAAUFVX3lxTE8wYUlxaG83VEphcXpKNFFWQVp2cmI5UHJoQUlNNTdfdklfREgyNVBTX1FnNm03bGlleGNXTjNEeC1yZ01TRzVvTXc5ZUJ2dkEtQm1Sa0NUaTJjeVFHam9RVndwLXlJT3RpWFVWT0NiSm5VbjFTazI2Q0dDb21sdlhkMW5vMWtxWU1ZdXNjcld0dnJBNW1lR0Qtb3dqSFZCa3ZJbWV4b1c0SFVaeDFRWjVjNGtwdDBwektlT1VnNU9Ldw?oc=5",
       "date": "2026-11-11T17:15:00Z",
+      "tag": "Notícia"
+    },
+    {
+      "id": "n-8589da8ffa69",
+      "title": "GTA 6 quebra recorde de mais pré-vendas em todos os tempos no PlayStation e Xbox",
+      "summary": "",
+      "source": "Canaltech",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVXNsZ3RFNGEzdGZGSzNBcHdYOEV4QXd2ODZNMEtQQ21rWFlRamFXT1dxM09hOWRQTVlETlQzODd1Wk1NTnZFXzZ2WEozUmRtcEUzOVRmT3RLUUxfdFliN0VnUm5BdGRGVFlTQ0dSR0pSYWkzc1cwdXB4VlhHa0RNejkxY21MT2xpNEtpcVZCckEzazQ4ZlNEOWxuRGZXbjRSbU5oX04yNUFOaGluc0ZTakxn?oc=5",
+      "date": "2026-11-11T17:09:00Z",
+      "tag": "Preço"
+    },
+    {
+      "id": "n-a01be26f9e69",
+      "title": "GTA 6 no Xbox One? Veja quais consoles vão rodar o jogo",
+      "summary": "",
+      "source": "tmc.com.br",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNOHBPRERacDVxbTlPckI2eDlJT0VXVVIwU1JJaGtqY1BfMVRtNVV5U3U1bWEzeTVQZnN0bHNOd0dRWnMtVlZsWWFLaFRtZThZZ2NRQVdSenJHR0E2WE1RaXpBVzlsUmxfbGF0ekU0TkttOGIxS184RWdSZjJVaThXSkNzQTNUaXNKcEE?oc=5",
+      "date": "2026-11-11T16:53:49Z",
       "tag": "Notícia"
     },
     {
@@ -26,21 +143,21 @@
       "tag": "Notícia"
     },
     {
+      "id": "n-e611f9309ad3",
+      "title": "GTA 6 rodará no Xbox One por meio do Xbox Cloud Gaming, confirma Microsoft",
+      "summary": "",
+      "source": "Estadão",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQ1FjaVg1LVR0bFZ2VnJpcmkxdWwwY0ZYMEhCWW1iVW1ZRWx4eUMwcnNtUVZOOS1MS1Z6RFdNTm92b09XTmZ6OUpfWTJwRkhUdUJSY0Zaa2NGOVQ1a1FLV0Fhd2c0VnY5ZGQ0eGRPblFWdXJlbW14bWJ2b2VUeWl6Z2hjVW5iQnhyenpuV0ZDemg0WlhBSTRfRFpKUFE0eTBHSHIwSFBPaExmMlVVVXVscDJyRWEyNGfSAbwBQVVfeXFMT2hCTFQyd2tLWmpqajhXTVRWc3pFamhNemFHM1FaQzVkM0MtSkZtemwzZENOaXZSWUZfSU9JVHFsX0V6b00yeEs5U2pLRm1YUUVDZGt1TlBHclZ4OFl4XzdpQlhNSUtfNXhGdUFzVk02b1RkMklrSUZHZ2xhaDhrTm12dkpFaDROTlcxQVhhNEdJYUZ0QW1kSFVKREQzSmVJdm16a3VhaUFkZVVVTkdOSzFsc2ZMRzNic2ttUEY?oc=5",
+      "date": "2026-11-11T16:15:00Z",
+      "tag": "Notícia"
+    },
+    {
       "id": "n-77e8ad68a2af",
       "title": "GTA VI vem aí! Saiba quais são todos os jogos da franquia da Rockstar",
       "summary": "",
       "source": "Rádio Itatiaia",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQ1hrWXBYZEU1MERVaHB0THl1NzJNMHl1ZjNMY1dBUTlJVkFrVDZ5ZWJraXJ5NnBaMnpOUFVRX25KcmxnblM5WElaN1FuTjZNRjFYaHRJdlR2VlpSVHdkeTFYdmxLQXU0Z0puLS16QXBmemN4SzlRTF9PYXlQN3RKOV9LcWxDT042S0EzTmRRaEhCRnMyZWhKSUFibDlfQXlBd3NCS1p3?oc=5",
       "date": "2026-11-11T16:05:00Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-029c494a554c",
-      "title": "Entenda o novo 'GTA 6' e por que a saga virou fenômeno apesar das polêmicas",
-      "summary": "",
-      "source": "A Gazeta",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQYWxHS3c1WERoZVhKQktjdnAxYTE5YXBzUHA2SHZxdVlINHFfNHUydHJLYkprLU02enA0b0Rxa190ejc5WVMyNU4wYTU4MjdEVEpVQnpCMG1ya1NoclhTazZBejZoMTNVdlc5aHBGWkRWWDhoRkVMdG5DbUJNNHc1X3puMjNlTm10SG5DT3J1NXprX0xHZFVBcG5GbUtJRlk2RGF0YjNJN3l4Yms5S1BKZEdqMDJqZHM?oc=5",
-      "date": "2026-11-11T15:24:00Z",
       "tag": "Notícia"
     },
     {
@@ -78,6 +195,15 @@
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVnFQM1lnODRlaXJlUWJhQTN3djBHV3ZyWERneWJ2Y21uM1pCUFN1NWlYWFgzSG9nOTJOR25ieS1qS2ZZTk9ldG5PQzRiOEZ5c0RzbUtNbXkwZDlUVHVwT0ZKbDhvNVlkT21lR1VwYlRmLWRtbkxzUk1WV0FpX2hCZFhzYXBsNXhGR1hmNkp2Ri1INzBwX042NTlQWGhXcHZG?oc=5",
       "date": "2026-11-11T13:48:15Z",
       "tag": "Preço"
+    },
+    {
+      "id": "n-2d9299563346",
+      "title": "GTA 6",
+      "summary": "",
+      "source": "Omelete",
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5rTHNPQjd4di1GS2ppN0Z4bnZPT2Q2TGZCZXNZb01JUmJOdGFQWmhDNEw4QzRtaXpOZmFNUkdDY3pCUHQ3U2Jn?oc=5",
+      "date": "2026-11-11T13:44:01Z",
+      "tag": "Notícia"
     },
     {
       "id": "n-822e5d024ae0",
@@ -132,6 +258,15 @@
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOQ3FHMnM2R0Z3OHB5VzJnMzRJSHlxZmI4bExsRFdpQmdoZ1RjRF9IRkJRWFVXQnFERjJGRUsyUUFQTkxMcDAxMXprM1JPR3V3U19Dc1JTVm96bGFsSy1UeXNRNFlXcVBFLTBpM2hWdFV4enJqQjNZWm92a051eW9qdHR3?oc=5",
       "date": "2026-11-11T11:17:29Z",
       "tag": "Notícia"
+    },
+    {
+      "id": "n-8a6ce951fffc",
+      "title": "Logitech dá folga a funcionários para jogar GTA 6 no lançamento",
+      "summary": "",
+      "source": "Canaltech",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSWo5OWdWaFprUDNNbWQ1MUg3QkZUY2JrZlp1andOekNROHBueDBYMEZSVGtWQUVYRXo1NkN4UmhINDlXaVVEWjdnVXhCc2JKcjFTd0lDdVVGQkJmVGxnY3ZILVJTRWxUaERIVk1PQ3EzR29sdktNQzhJS20xZnhiTXo5OTlCSjZCMUFsQ0Foc210RFp3cmNGQ2pNTQ?oc=5",
+      "date": "2026-11-11T10:33:00Z",
+      "tag": "Lançamento"
     },
     {
       "id": "n-f6805b325c16",
@@ -206,6 +341,15 @@
       "tag": "Rumor"
     },
     {
+      "id": "n-ba9edc33ab94",
+      "title": "Pizza Hut transforma espera por GTA VI em game com recompensas para consumidores",
+      "summary": "",
+      "source": "Mundo do Marketing",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTXJETDM1aEVlYndBbl9Fb1M0QW4zWUNVd0tiSWQ1bU5kUWVRbFBOSzdKTzN2VjJxTzMzTmw5ZzRDdnBhdFRadVVYMGh2aXo2LWJpRlB5YlJTTnRLcDFIdFV3dko0SGNVOWNhSkxxWUFEQ0hGSm50d01Nd1hxaElXd2R3LVFnY3JnV0x2SllETWxUSUlubEt4X0NfM3JhNGloWjVtRzdWbHE5UlBlaWNaRFRn?oc=5",
+      "date": "2026-11-11T00:00:00Z",
+      "tag": "Notícia"
+    },
+    {
       "id": "n-41010fcc0ed0",
       "title": "GTA 6 | CEO da Take-Two diz que está pronto para pirataria e possíveis clones de IA",
       "summary": "",
@@ -240,6 +384,15 @@
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMl9JTWJUeXJmZlFVRmFkZkNfZ3NDeG5rNWRpcm9TZ3BIT2daUTJyUGYxTFpwYWl0c0JjX1ZHN0d2WnFxMEk1MWlzSTZtU1laMEpCYjlGcEJpQktHMXJPYmZlYTUxX2wtd0t3QlA3bWFoek1iY2hSelBjU1hYUFl4QUttXzJVZVVUcjIzLTJmZWRVT1VZd2FHeVo4blpxUTBidnRHYzc5TzN0RUxVM3BtZl8zN0JvVU9LaV9oRXJFcXM1eUU4MWlfRA?oc=5",
       "date": "2026-11-10T22:31:47Z",
       "tag": "Preço"
+    },
+    {
+      "id": "n-aa82ceebc21b",
+      "title": "GTA 6 ganha teaser inédito antes do lançamento",
+      "summary": "",
+      "source": "Alternativa Nerd",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOd055YS01S1M1dTZQTnVSSThxbVF5WUMtWDZTbFQ3UmVDbHhsdHpFY001Q0tmcmg4NXlfbUMyZFdEOWpNX1FoaUUzM2lFOENNdlVuczl4aktmOVlFMTI5VmVUNkcyLUNacE90UlBNUnAtNTY4WnlkbXJPREdZdDhFcHdicGxDN2RRWXBuQg?oc=5",
+      "date": "2026-11-10T22:30:16Z",
+      "tag": "Lançamento"
     },
     {
       "id": "n-9613825096b9",
@@ -384,6 +537,15 @@
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPS2FMMlZ5WXZHNlRuR3M5MFM0Y3U1bVpZTEg4Y3REMHAtQUtXTy1Kb1RxSFRsTjRvTWxYaEJPenFYamdIS1Q4Vm1fUjlTQ054ZU00UFpvYS1YZ19xS1lqMVg1Vkg4ZGo4dHVCaDVIaklrRFVKNzN1aUg2R2x3cjVMRmV0QUJtTU5aVXgzVmJ6aEJVallNS3lnY2VQZDhncHhaMkhrWDFkMkVJRUxX0gGyAUFVX3lxTE9XWXhDLTJsNW9XcG5VZk9haFRXSnFtZXhhbjAxZUcxMUxHVzYxc0k0UzVsNnp2cURiMmhvVFRZTGI2bEpKbWFJSG5SbFRZaE1HU3JTOWhUQWRCd2ZPa1J5Q3Bjbmt6dXdCbXBoWXZfbmxseFUwSFJrSGZmaXlheXp1SUo2VFBnVlZudU9rUFJhLVVwTEphRUNkNl9sSVJqUk1hTnNKbkdsY0plS0xsRl9ZS0E?oc=5",
       "date": "2026-11-10T19:15:00Z",
       "tag": "Preço"
+    },
+    {
+      "id": "n-1d26b7ec71d1",
+      "title": "O que é o pré-download do GTA 6? Já da para baixar o jogo?",
+      "summary": "",
+      "source": "Quero Bolsa",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9vZEJsRGtmRDVDMXkyY0hxNzV2azIzdm9POHpUVWNhWDVXWENTUWM4MzBsRFJnU0NCemNkcm94QUZfUy1KbUlxSFhHajNVeVY5RTdaZXJzQnVvbmliRmVXZGhxTnUwSjlkazBzZkJQeDc3Rzg?oc=5",
+      "date": "2026-11-10T19:12:18Z",
+      "tag": "Lançamento"
     },
     {
       "id": "n-5b1b7fadb9b6",
@@ -564,168 +726,6 @@
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOcEtaVVRJUnk0bDNSd29QeGVzYV9sUVlocHd5TlZQVjVfVkFFeFVtX2FtMktxOG5vQzB0ZVE1Q3RmSEs0LVlnY2dvQU40X1N2RTdGX0xpS3Z1TmF4Z3ZwLUsxcHAxVlB3dC1uSHM4N3ViX2Y5MElnUWJpOFJFM3FmNE15VG5aTDhKRERVc1BHTHl4bV9QRTRUU195ZFhFSzVCSkdNSk9yUTE3blBOTmhxcTVWaGZ2bUU4MjB5eU5YSy1MaU4wbVRmeg?oc=5",
       "date": "2026-11-10T16:26:01Z",
       "tag": "Lançamento"
-    },
-    {
-      "id": "n-64b4d7a73174",
-      "title": "XBOX One vira o console mais barato para jogar GTA 6, mas há um grande porém",
-      "summary": "",
-      "source": "Canaltech",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNeFpiU0s5dkExMmpXdTVmdm9LU053c2tqMkItX1d0NXdBd2dWaHhDcDZlZFdOX3lDUW0yamFuNVhnaVJqdEFraDVGOXlHbnZBUnVKcjNsMGh5QlBCZEw2TmM2andnSC01RHFPdnprWjV0VGE3SFJyU1N3TnNENExqWHUycGtSbVE0RTRQenBSa3pXcl8yZ1RsR1IyY09uNWViVG9RUTVMZlJPUlU?oc=5",
-      "date": "2026-11-10T16:22:13Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-79c7bd4db018",
-      "title": "GTA VI poderá ser jogado no Xbox One por meio da nuvem a partir do lançamento",
-      "summary": "",
-      "source": "O Vício",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOb1hBZXE0Y0VVODVDTnEwR0d5bnJ6RVlRUnJrWG9JMFRJM2lfQ1V6VVhjVkY3bHo2Rkd5bGNDTWNVRkJsdURiR3FiZUlrd3NqbElkZVljd3lXMEc3eFJteEJ1VEJkYTk1eTY0RktWTF83T09ITW5KSnVwLUJLX3c5NDlnV3NobTQ4VExXLUJPQjhwcGdwOTQwY0M1VWFVaF9wSXfSAacBQVVfeXFMT2R4OVZ3OGp2aDBkeTNhcHd6b0dxX3B4X2JKTi1zakNlMzc4aXZuNzNGUXBvd0kxRE5MM2VraEt3TTBXdDdfMy1YSXFoMF9LNExFT0FRR3NpQWZJQzl2a3dYRVQ3aEtZWVVMQV9qczRiVnk0UlZBRG90NEFvNGFUeDVFbDZqbTRudzZiMHlSU1ZVcUpwWjNFN3ZXZ1g1RWtSRlJXVVJVbDA?oc=5",
-      "date": "2026-11-10T16:15:38Z",
-      "tag": "Lançamento"
-    },
-    {
-      "id": "n-fc9d5291d7b1",
-      "title": "GTA 6 está pronto e download já está liberado no PS5 e Xbox Series X|S, diz CEO",
-      "summary": "",
-      "source": "Exame",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOdFVZcjFSWVJJNE5ZSG5KRy1iYmR0Z1FlOFV2UXlEWTVhSnZpNWhPYnF1cjh0ZW1NaVRoU2pwbHlaMTNTdUQtQ1FNUFZ0d0lQYnpzTHNkWG1DbUp3LXNZaHZuamZuakhwSFI4WS1pZHg1Y2JxWnphczNEUjRaa1g1M3NGNEVjUWw5VnV0YmVfX1cwaWplUmF4cndSeFFQV25PcVE?oc=5",
-      "date": "2026-11-10T16:12:14Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-5780f22293dc",
-      "title": "GTA 6 bate recorde de pré-vendas na loja do PlayStation",
-      "summary": "",
-      "source": "UOL",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObHhYLWFldngtSkd2UmFsbUFUc1M0aEFncFVwa0k3NlFFc0pMY1N0eGhoMVhUYk5rZV9NOVI5SE5SdldMUjlmVTYzZkk1MnE3akFuUG1OWjlZcTd0TVI0YzNwNHg2cjZnSjJHMzJnX0pRb2FlZHhRT05MSjZscHhNTlV2NXFPZ0tpNk0tLWNENE1yWWs1ajh0cVB6Z3NSNzY5QzlLYWdXeHQ3cVIwYnVj?oc=5",
-      "date": "2026-11-10T16:07:04Z",
-      "tag": "Preço"
-    },
-    {
-      "id": "n-79e442c5ca04",
-      "title": "GTA 6 teve maior pré-venda da história da PlayStation Store",
-      "summary": "",
-      "source": "Omelete",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMHFTRHZPc0NBaTZNaDMzd3FJaUtNd1RxQWhtM2xwRklGTU9OVk4xdUszWEtoN3lMMjNLS09CTDMyVU1xTWYtcGhJTXFXMjhRYkVVSlZ4cm5fQkRURUdscFJPNDluT2IzeWdrRzRNWXI5a1RLaTU2VXNWOXlaYkdNd1VUdm0zTWJzN2RqcWJqb2oweDdZaTI4?oc=5",
-      "date": "2026-11-10T16:01:00Z",
-      "tag": "Preço"
-    },
-    {
-      "id": "n-df3b96b616f2",
-      "title": "GTA VI: novo teaser trailer destaca Jason, Lucia e pré-download em Vice City",
-      "summary": "",
-      "source": "O Imparcial",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNbl80S1VndzBCUnJuTXZ5TGlySlRQOXNaVEhQNDIxVG1ueDdyZzh6RVdBSmlmcE5CRnY5OVQ3VkN4Ul9tMzZfSnBrbWV0NjJPSE5RSjRvRkJRcllnTW5lWGYxZEZkaTlLa2RjX2pCS2d1V3VramxIRkVvdjllQllSXzg3MGh4SDBRUHlrSUoyUkM0STRNczVTNjBQTGo2YnNHUGNNMXlzd3hzeTUwa0tLSkFyMzBsMGxydTBfNzFSbzl1Q1U1cWNuT0JOZ2tZaEE?oc=5",
-      "date": "2026-11-10T15:56:00Z",
-      "tag": "Trailer"
-    },
-    {
-      "id": "n-5109bb87a349",
-      "title": "GTA 6 ganha novo trailer com imagens inéditas; assista",
-      "summary": "",
-      "source": "tmc.com.br",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSnpZelBFUUNyOG8xS1BTZE5nM21zUWhTeXh0V2M5U19zelBfcDdRRlhoRmRzdWViUDJXMDNXbzRXcXBQRG9rUUJRMmQ1UndPMzJERGd6akV4clFIdlpESFVNNUU0SGJ6Q3c2Z0I0WVFaZ2F2bl9qNGgyMzVCR3NFUG91b2Q3cF9ZS09keUxocm0?oc=5",
-      "date": "2026-11-10T15:45:14Z",
-      "tag": "Trailer"
-    },
-    {
-      "id": "n-fe87ecbf2143",
-      "title": "Novo trailer de GTA 6 mostra equipe da SWAT e festa em barco; assista",
-      "summary": "",
-      "source": "UOL",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPV3ZNZzJKaGJTOElTeExETlNHQXBxMlpSR2VoQVNtT0ZqM1BHZFhENVhOdGNzLWRzY1pveVUxaWl0RXlwWEVHYnVjc2xnczBwOGc1MXlBaWVwNWFSdktNTU51Mm5ZdW0teEdlYjdDSWlpNHQxdkhpcjhDVEJGdm5JQVd6eUNnblNqNm9ndjVxVU5BcC1xODljdnZMZXVYdVk4RDd2SDNwN1ZBTjRwX1owaDhvdUJGdw?oc=5",
-      "date": "2026-11-10T15:40:21Z",
-      "tag": "Trailer"
-    },
-    {
-      "id": "n-9f5cb83dde8a",
-      "title": "GTA 6 vai ter alvo de 30 FPS em todos os consoles, confirma Rockstar",
-      "summary": "",
-      "source": "Adrenaline",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONTAzMFhmdVVTX0NvQUNyNHdTLUUzZnpmcHVJaklzbTRXMFdaNXRRajZNdVRMTFNSbnZ2cVdyYnJ5aTEtVVVxNDMzT1Vfb1ZRQmM2TlJRUHNab2hWcThwU1BFR056NXpKWWlEeGVPVjJuWkF0VkRXNkhIOUlvcDZnelBFNkNKUWJXWHFYNUREbWtIazZEZi1NbjVubWc2X3pGUlFYYmtrTQ?oc=5",
-      "date": "2026-11-10T15:37:00Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-7f2001b861bf",
-      "title": "Rockstar Games confirma que GTA 6 será jogável no Xbox One de um jeito diferenciado",
-      "summary": "",
-      "source": "IGN Brasil",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOYmVtaHgxamgteDYwYV9rc3I5ZURrckNwNWJCdUJ6SW5KTFQtVkU3TjBfNlZsY0ZWakVOX1NMMW1HRW5GREJyM3BaVlI0REE4Y2Y0aDFpVGItMW1VTVd2eVNzckJhYVJxWklKNXpYOHFvTUpaazltalkzemUxTnd4cnlqYWpJbFVpaHdQVzJPM24wRmFLT3kxYVB3VXExcTJuR1hRbS1CWmdWckxkV2hQazhka1pIU2xOQ0RlX2VwZ1NCN1FpTURMVA?oc=5",
-      "date": "2026-11-10T15:35:17Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-1e5fd6aa02e9",
-      "title": "GTA 6: Rockstar está monitorando tentativas de pirataria usando IA",
-      "summary": "",
-      "source": "TudoCelular.com",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUDEwQWVYVGpFZFptRUs1SE1HTnZUWE4zRDdnOFkyelFZSVhvcnIyZUdzbW9Lc3Z3TUptSkhGcVFqaVRuNFFZMzJwMXRaZTBzakptQTEyVVRTUE54UE5jZ3FjcUNCbVBvdUhoZVZ4VEZTWmJKTUJDYWdfWldSb3M0V3lNbFRiajZKY3FxREc5bzFUSVlfV1Njc192SDUzT2VrX204?oc=5",
-      "date": "2026-11-10T15:32:16Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-8ebc87157fea",
-      "title": "GTA 6 poderá ser jogado no Xbox One via Cloud Gaming",
-      "summary": "",
-      "source": "Terra",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQU2xmUzZwRXlOcTRpMVNfSDVCTERISjluTDBkMjVhdUxJczBLYkxSUEFuMmJMUFhjT21GdkJtWXB1YWJWSjRic3c2a1p4RUZHRmkwUUxjMVFCNnp2UDNWMWQ2cnoyUUs0TVVOTy1RRmd1NFBTLXZIaGUzNENFSTVJTWlLQjY4ZHpqY0dPR2J3a2gwMDB0bFJncDBVaF9XdTZyOHVHUGJ3dXdUMkNmUWlocS1Ld2dld3NYeU1sX2EwWENoUkIwNXFJa3FpcjZFTlRTTGV4UTc5VDhtNWN1TWx6VXY3aHZtN3It?oc=5",
-      "date": "2026-11-10T15:30:00Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-1b9cf155fa5b",
-      "title": "GTA 6 fez com que alguns jogadores adiassem a compra de novos jogos — incluindo NBA 2K27 da Take-Two, afirma Strauss Zelnick",
-      "summary": "",
-      "source": "IGN Brasil",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNTy1NU1ZDdWp3X3JsNUtVM1lCWXNtd21CS1pQV05ZTFdkYWhBWnBoV1BTRUNKYVBGUFpVOUFRUkdxSFhWX09sRVl2TzZLWWNBXzFDN2lvWjNKSGxjbWtqLVRMSWR6RGk3MERGMEx3MHl6NGRVaDl6Q3JDT2MzWkFJUmp5bTJCV1VJNDVFa2dveGh3UkthbWFTUUpzRjUydnlQd3R6aVd3ZTREc3R2elJBbm1UR1JUX3VtMjNyaTVBOXJ1VnhuVWtRbFhvR2kyV1dEcUN5TG1zTW5ZcGdwdFFR?oc=5",
-      "date": "2026-11-10T15:25:11Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-8424b9556a4b",
-      "title": "Take‑Two CEO diz que experiência em PC e console de GTA 6 é praticamente igual",
-      "summary": "",
-      "source": "Espaço do Povo",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBwWEc2QktSc0RnZjhRa3NGVmRFVnV3R3lvSlhMbG5wQ0txazQtc3JKT1FEdXppNnd1UFJwYlNrNnV3OHk2RnZydU9FVUFFZXdXNmdPcVRIbW8zYU5ZZWN1MWNTdS1zbGw3QlRLTTQtamhmN3lreEJ0OEx3?oc=5",
-      "date": "2026-11-10T15:22:55Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-c9d1d474b896",
-      "title": "Amazon oferece GTA 6 de graça na compra de Smart TVs elegíveis! Confira os modelos",
-      "summary": "",
-      "source": "Estadão",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNeHB1dU04QzNscndpT1lyR0c5cGZaODdpTEYyekp3cWFIX2VhT0g4Y2pUdUF5NTQya3puWm1TOXlfRDFGTktHYWRYOS1SQ3g4ZEhGeE8yLXNoUENES0RubFNCQzVONkxzVzlteFZyTlBURlVUMDZUYWVMdGZsNlZVRG1lVENGUUEzaHZoemR3eU1LVURVcDk1WnNfcUVWWDJtOElhOVBYWVl5M2FmdjVrYWM3azFWdklLUno2VWRIQUdvQdIBxwFBVV95cUxPUUpUdTZIMmxxMGJxTkZVVGFhNE5yaFNaWEFxMmR6RDIyLW5WUXM3SjNNLTJ6eTgzeFpNNkc5RGhiQkcyRElBeF9aNXVkb0NSd2hYaFp1aXBfdno3VmV2dEdDTFNsRVFhYnctb21uc3dYWkJzTjMzOE9lMHhxR0NqOXpCUERjcFlXVHZYU0VLVDVSU2w0dHhNdS1heXpaQm1jYnBZMVdzdmFzODctX1V5VllCdVJGb29GeXhkSTY5cElra1lETzlr?oc=5",
-      "date": "2026-11-10T15:15:00Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-fd30e1b61bf1",
-      "title": "GTA 6 já pode ser baixado no PS5 e XBOX: Rockstar divulga trailer a 9 dias do lançamento",
-      "summary": "",
-      "source": "TudoCelular.com",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNTTgtOXNkWm1QZmROa21IQ0kzQlN5bTJkVm13LWplUGlQeGZvM3NqQUlCLTByc1pjSjZzNjc4T1JoYjhpYzlxNmppTmhKWktvaVNmNVpyYnNqa0ZnMENwNHUtWFBaSlN1VFB1V29nM29ZZmMyTVNBNkV4UExzYk83Z1VLU3hNR2t3NlRPUzBWSVBlZVpRa2lIeHhXSE13dVBiMDhWSV9BR1FCUVY0?oc=5",
-      "date": "2026-11-10T15:12:17Z",
-      "tag": "Trailer"
-    },
-    {
-      "id": "n-99984c3ac5f6",
-      "title": "GTA 6 ganha novo teaser; assista",
-      "summary": "",
-      "source": "Omelete",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFB5cmw3cnR0TjRyRGI1cXU4NVBlZy00UDh3WW9aVTBrTFA5bl9TR2NPbWlLRkNWdHBGaGdqaGlRUEgyNGRfYzM4c09rZDAzaTdhNkxxMjlaRE5LYllSRlRFalpTYVlYZ3lienpuVWZkb0Z1Zw?oc=5",
-      "date": "2026-11-10T15:08:00Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-f9fa6651b07c",
-      "title": "GTA 6 roda em 30 fps em todos os consoles e terá melhorias visuais no PS5 Pro",
-      "summary": "",
-      "source": "Terra",
-      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPQUxkUHZVdVV0NkZkeEVtaUFwS3ZKUWJlOGxxZjhqWW5McEpPX2Y3Y3A5amxHeUw3TmFvUUplS0o3ek5Db3lHbmw2MnB0Y29vMXZOOUVlVFRkN3hHY2k1Z21zZHdEUjFyZDd3Ymc1QnNWdkJfT1FIdE5EeHNSNmF2QWMyaGZGcURGYVlTYVJqb2RSOVlqV3k1MXFrVDVnZ1ZwOFhUMWRLTUptc0VTcVpqaEVlWWptLXQ2TThQTk9zek85V2p5WmV0MVk0WEk3X05aWFlUY18wMDRrRG5tczh3VEo1N3doTWY0dEV3dDRUcms2ajU3Unk2akNXQ01rTGdyN0dFVUZlN2pYdw?oc=5",
-      "date": "2026-11-10T14:46:00Z",
-      "tag": "Notícia"
     }
   ],
   "videos": [
