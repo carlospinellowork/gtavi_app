@@ -1,12 +1,39 @@
 {
-  "version": 202611112355,
-  "updatedAt": "2026-11-11T23:55:35Z",
+  "version": 202611120526,
+  "updatedAt": "2026-11-12T05:26:44Z",
   "releaseDate": "2026-11-19",
   "platforms": [
     "PlayStation 5",
     "Xbox Series X|S"
   ],
   "news": [
+    {
+      "id": "n-f72b8784b956",
+      "title": "GTA 6: novo clipe de gameplay surge e impressiona pelo nível de realismo",
+      "summary": "",
+      "source": "TudoCelular.com",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPSklPaHVhUHQxdTdtaWIxS3YwWGNSZWF5QW9scjlGUG5GRndGa1FtcXpFWVRORjd4RE9sRHNhT0NZM1ZoOXR3TUQyS0FfM2JVUklubkpISURTRF9TVTFqN2dHZUthcXNlT0VJdDNIRVJ1TDVLR2NHMF8xOEthb25XQ29zb28wRmpXdk9nb19VSGpTX193cVF2SVZ0X3lOZjZmelNhVUVNNGk?oc=5",
+      "date": "2026-11-12T03:22:43Z",
+      "tag": "Gameplay"
+    },
+    {
+      "id": "n-06eb3d301b89",
+      "title": "GTA 6 já supera US$ 1 bilhão em receita uma semana antes do lançamento",
+      "summary": "",
+      "source": "Times Brasil | CNBC",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOckZLaU15T0NrWTRRekJQbzJmVlBaWEV2aWViMjNLQVhCSDJnNG5lRDRuSHNmLWlkaGFMbTVoR2FyenJoMG9YR3E3eUdvWnEyQTNvVnE0aGxqNDdweUktcWZxZDA4VTFTWEJoc1ZuRmEyd0ozM3FSbUN0ZjQ3czh3b1RLRVdGMjJXOHNGSUFOb09aYnRuWWdJZ1ZtUG1rYVBnY2ktUjNwR0hhUzVYUzdjSjB3?oc=5",
+      "date": "2026-11-12T01:35:00Z",
+      "tag": "Preço"
+    },
+    {
+      "id": "n-8644a4b25f92",
+      "title": "GTA 6 bate recorde de pré-vendas e coloca indústria dos games no radar político brasileiro",
+      "summary": "",
+      "source": "Transmissão Política",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPckZqXzVHOFBFNFZwdXBoNndqeWFLOS1GR2VoNU1sR0lpMTVWdk9JaDhPcTBSWkoxUmFYM3hzMGF3YTVwa1ZsakhGYVkyYW1mRDhESGhONVBRY2FQcFZBOVBMY1A3NnJxcXpQZmxwN3g4aVNpemFjSkhuMEJHYzdPVXNWOFg4WEVjb2NUTnhlWTdTR3VIdHNscDI2SERLdG5RN0M0bQ?oc=5",
+      "date": "2026-11-11T22:32:00Z",
+      "tag": "Preço"
+    },
     {
       "id": "n-c8c58c354643",
       "title": "'GTA 6' supera 'Cyberpunk 2077' e bate recorde de pré-vendas nas lojas digitais",
@@ -24,6 +51,15 @@
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcVlKY1o2TENIcExsWVRwOTFYYWxBUExSQVZmeTBZUzZpLXBPMU8zeFFQYXdjVEhHcGJsOEctcGo5SUE0VWJfRVEzdk5ELUJjQnYyMzdKRWVyVDVTZlpFQlljMWhjMEszdkh1dGpGaTl0akhDdDJiWDR5S3hhdDNib3UyTEQtTUpIWVd3TWsxNlR6WThZSFViQWV3MWlyenF4QTZ1Q3B1alp6MGdyNXI1azRrNFJnMWh6MnBz0gHAAUFVX3lxTFBmWC1ubTZQbjQ2RFJzZEVVOXhZS3J5MTJwb3dZajlUNHF1U1cxYmY0bnZTcjFHX3UtQU5CNHdjMlNyQkhXeDJLelVDQVRSb3N1bkxMYm9UWWY5TzVWMy1sanRvM1pUNk9sUXFYWWhTeVk0cXhTOU5zd0pzWnpsRUp4WGJGbUVQcWFTWXRKeUU4QXlMU1NVNFNjQ25Xd3YwcWoxQzh3bU43MElaX3d5LWk1QjhqUHlVd09SdU54UGdxUw?oc=5",
       "date": "2026-11-11T21:15:00Z",
       "tag": "Notícia"
+    },
+    {
+      "id": "n-b7cf1c539535",
+      "title": "GTA 6 supera US$ 1 bilhão de cópias vendidas na pré-venda e quebra recordes",
+      "summary": "",
+      "source": "TechTudo",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOak1Zb0tUQmtZa29PVnRNYXFNZ3JRTTJaTzBfX0gwZWlLNlNfcmJicEs5NjFpS1NMNkJVS0JkM2xSYlZfb1BDekxIbTByM2FLYnJ0M040R1U5REFDTTQ2eUVITjV0SkJlQ3NVQlUtMmpqY2F0QWdRTGZFMkpuR1BUeWRPZlZsbkxYRDBvRm9ZM05OQWNLenFKME94cVhzdmp0NnlYa2xsSmpyMWlHVkVMVUppYXBqbUJXbTlNVkVsZTFkS1liajdsazJTb3VBUdIB3AFBVV95cUxQOVd4MGVXWGZtRC1GMURDZjFuODJRS2k1T21WQzBBWWRUSkhRSEZseXhWenBfUF9tT2hiQkhsek5JVVc0NXlvWFplZ0plV0lrYmR4MGpNRmhtaHdScjh0VEVqek1BaG5EZFVxaFJ4ZXBLT2l3b010Q09iZGZ5dUVGS2RMS1h1Zm1ISWk3WDBvZGZiQmN5S3VkOGxwMHQ4MmY5c1pKNEgtSGdJSGo1U2R2Zkk5SVJ1aHg5VjFWZ3pXanlqNXNIV0xzcmdQTFFMWWNlMHB1TzdIaUZ4SGFw?oc=5",
+      "date": "2026-11-11T21:11:53Z",
+      "tag": "Preço"
     },
     {
       "id": "n-71aed53645f7",
@@ -179,6 +215,15 @@
       "tag": "Notícia"
     },
     {
+      "id": "n-02f18ebe42c5",
+      "title": "GTA 6 quebrou recordes de pré-venda no PlayStation e no Xbox",
+      "summary": "",
+      "source": "Adrenaline",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcFhILUd2M2tKOXUySWF0S0h5WFZVaEY0VkhKR2daRXJOZGVqT3QwbTRGUEpTWDh1dTJjeS03Uk0waXhjOC1jM0diME5VMW1JdlNYZ3dXWWd1bG9wcFBjdXV6OG8yU3JQX2NYYUJLTXNmb0pqN2tYNUpuUEF3SU91WHdxbDRTN0hxOUc4WmVROWZUcVB6NVAtcUVHVFJ2QQ?oc=5",
+      "date": "2026-11-11T14:22:00Z",
+      "tag": "Preço"
+    },
+    {
       "id": "n-775eaa5f9ab1",
       "title": "GTA 6 terá do pop ao metal: confira a lista completa de rádios e músicas do jogo",
       "summary": "",
@@ -249,6 +294,15 @@
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9SREpfMGpwcnlDTzNtZFVjUjdjUEVhZmNodW1Rb3VqTlVLQTR1UTNDazRQM3FZZDJZc0JVR2ExZDJub29qY18yT1BaYzVsMFFhb01oZldQUGVWNW9rYnFFUDJULU9OVU5kd0MxdEtB?oc=5",
       "date": "2026-11-11T12:51:44Z",
       "tag": "Notícia"
+    },
+    {
+      "id": "n-98bb09ae14f2",
+      "title": "GTA 6 surpreende até a Take-Two com pré-vendas muito acima das expectativas",
+      "summary": "",
+      "source": "GameHall",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOQ1o2UjBOV2RhdVZITkRBcjl1bW4wak1aQTA0aTExczE1Ymtrc1JmUnJlTVJUUHc0U2YtT0JISWtzMDBhdzZmUG5PejBrN3JuYUZQTG1HQmZmYzUzUjZUNW9Id29RdDZvS1BvTjdGWWs2MVAtVUk5MGxVck9WUVc5VnVnMU5LQ1pBamNaZnF6Rk5pb01CUnI1cjdJQTFPUTJVb0HSAaoBQVVfeXFMTVY2dFdRNS15aUd5SldYLXBxYk9SdmgxbkJ0cVJ1MlZseGR3cU5Db1l1UFpTeExKOV9YZENOdG42NkJFQUNrQm5EQlk3WndYRzhCUzltSElzNTJsMnRzNlllLVJuM0R1RFhYQkI3aVE1cW8xQWktSkl4VXFNZVJiQmlfWW8wQUhFd1Rfcmh0UmpTV0ZBbElSbjQ0QzVZR3hJTTkzei1lX0MySlE?oc=5",
+      "date": "2026-11-11T12:23:35Z",
+      "tag": "Preço"
     },
     {
       "id": "n-d18b2aba9cef",
@@ -672,60 +726,6 @@
       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQeVplemVHMW5GMW91UkpQSm11U2J1Zjg5SkQxNGMxQ29ydXVsak0zYlE5d2hoT2tkU2NrVmZBT0UxdVI2Zy1ETjVLcldQc0h6XzRpamx4UDFoYVo0UnhUUzFUblc1MWs2OFV6TDA0UEJPY0dXMXZKc25EdWV3NXJaOEZGMGtmeklxS2ZKQ2MtdEJIM1lmUG1nMDFENnExWGtscXAta2VaRXhzQnAtQzRHQm9oalRkckZLV3F4aGFjNVVfVXBsUnBTd0tKTWhxVEppejhCUUFCbXItd9IB6AFBVV95cUxNR0R0TU5JVFQ2cWlCV0JxTU5zQmc3RlBVcEpnbV9vRFJsdktjclp4TmctcEQ4ejhHNzJ5bkoyMHBQVG9XcGRqUE00ZGlPMmpmTFR6dUlCZENUR2huX2ZKUVZRcF9BRVZWaVN4U0ItMWRJREJlaW9jQnpWUTFBem9rRElsc0pyeWNQR0Eyb1c2VUszcjBlY2hSM1V2Tzc5Q2xfVEJZc1FreUdnNkNTN3MzX0JNM0owRmpYTHRPV3dlUHMwNHo0VjZYWjd2ZXlXZzhITjJfb1RZSDBRUUhkd1dPWXZQN001TG5M?oc=5",
       "date": "2026-11-10T17:17:21Z",
       "tag": "Preço"
-    },
-    {
-      "id": "n-edac6894b4d6",
-      "title": "GTA VI registra a maior pré-venda da história na PlayStation Store e Xbox Store",
-      "summary": "",
-      "source": "O Vício",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPb284cExUMFo5U1lxM1E4b0RDVUF2YXZUalI1WTJqUXBjMy1DQ1NuMk9rbTRkNHBUQzkzMWJvU29wWFhpZkp4TTFObS1oNjdTcnlTbzJqZXdCVzNWRENNR1JkbEhxSXBDWWUtSDhGUElTNUNXdS1FS05iRU9FcFFoWmdzbk1GMTVSUDhIOEhnbGUyZGN2RElsVktmMkswOE52Q0NtQdIBqgFBVV95cUxOX2R0RmhGekd0RzkzVUxINUpqNGZIN3JRcER5ZzZwNnEwMzhISTJ5WVV1WUltc0hRTTJvTFFsQWlqbWo0TmRmbWIyWE1hSkdMTHliRmQ3aG1LZmYyanZpVFotYUZsbXlSb0ZZaGZWX1RENG9MMEVwLThTNlJzdm5NY0dieTBRdzl3bWdmUmxVVGROamdoN2VUZnRTUjhsdWhkOWpkY3pOSUxUUQ?oc=5",
-      "date": "2026-11-10T17:09:12Z",
-      "tag": "Preço"
-    },
-    {
-      "id": "n-03c0a8b38281",
-      "title": "GTA 6 é o jogo com mais pré-vendas da história da PlayStation Store e da Microsoft Store",
-      "summary": "",
-      "source": "IGN Brasil",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOejFfTUh5Si16MTdBd0JDUFY1QXJ4OGNLRzlhNVlldUkyd3FhMVVkdTkxRmVMcDVEeE01eXBSSjlGbWhBWjJ3WEFlOEdyUnZqdHdZRm53aXBySjdwaEhvb3k2RmxaRVBtT0FaaG5EMlYzWXRhaFc5eVNxNXRrZVBGNzVBZ2FvaDRZN290b2hxdGsxQXNjR0Y4UUJDazd5d29fZW1QVEJYUWdkMFVVbGJubkNIMmR5Y0xmWjJYamJHbURsU0dDRzRFN1FJUmxHRTg?oc=5",
-      "date": "2026-11-10T17:00:11Z",
-      "tag": "Preço"
-    },
-    {
-      "id": "n-308eec5325de",
-      "title": "GTA 6 no Xbox pode ter Dolby Vision e Atmos, indica caixa vazada; veja diferenças para o PS5",
-      "summary": "",
-      "source": "O Tempo",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOMzV6Y0hGa0g0b0EtX2RGeVo0aERzYWJ2dFc5Y3JEMDBQbWg0N0NqWXFwY2xOd3RjOWM0LXBsdWlQR1NCS3luTnJaMy1PYjZ2MHpfcGhTTXV5LVhqVldtMFlTRV9vbEtOeHJiSDlHc1AyU0VDS0lYUXl0ejhfVmZ6YWdFNVJjYzhKOGtoa0VzTlNDVUVJd2NvVl9MT21xbFRmMnE3TUFYMzgyd3R0NEJiTkhaeEM4VWJuRVNBUTU2d1RnMmJNV3p1bmZ4TmlyWS0yUmdqRXFZRlNzVjhzQnh3?oc=5",
-      "date": "2026-11-10T16:47:59Z",
-      "tag": "Rumor"
-    },
-    {
-      "id": "n-add5559ef9f2",
-      "title": "GTA VI bate recorde de pré-vendas no PlayStation e no Xbox",
-      "summary": "",
-      "source": "Rede 98",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUmY0RFN0eUxlbFU3WVFrU0xxazZLT1ZGcUFta2VlNjg5alh0OWQ1bHgzb2JEWFFocGhsWVdwd1M4d3ljNzFKSXVmLWVPRUkyNk9kLXlmdkJlWXN5YUZuS1lVRFVyLXVKMDE5MzJ2M0NQZU8zSlhjTXNDVTZIaVphYnZkTjlqSldQZEFZTVF2b2RUOGRGN3d3?oc=5",
-      "date": "2026-11-10T16:41:00Z",
-      "tag": "Preço"
-    },
-    {
-      "id": "n-ebeccb502287",
-      "title": "GTA 6 libera no Brasil duas horas antes dos Estados Unidos",
-      "summary": "",
-      "source": "Jornal de Brasília",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPT3dqT2U5TUxlazVQRkhWd0VoRElCUE5Ub2J6cWRJUWN0eElLT1c4VlFycHVIQ2ZJMlJqWGVRM1lkWnFRVU1kQ1FRLXZ6UVVwZ2RmaWRuTzB2ZnJLckxmdnpNaUY2WTlQTk12dFdYWm9UUHdxTnJyRnJBTEZFVGdrTUw4SzA0Z1B1SF9nejMtNjVWRFp6c0FFLUVnV0JENjV6V3J5djJuUzR1SGRPMGpRS2VDNWUwT2hMdUVv?oc=5",
-      "date": "2026-11-10T16:30:00Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-e9d09dd2663c",
-      "title": "Novo teaser de GTA 6 mostra Jason e Lucia e confirma pré-download do jogo",
-      "summary": "",
-      "source": "O Tempo",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOcEtaVVRJUnk0bDNSd29QeGVzYV9sUVlocHd5TlZQVjVfVkFFeFVtX2FtMktxOG5vQzB0ZVE1Q3RmSEs0LVlnY2dvQU40X1N2RTdGX0xpS3Z1TmF4Z3ZwLUsxcHAxVlB3dC1uSHM4N3ViX2Y5MElnUWJpOFJFM3FmNE15VG5aTDhKRERVc1BHTHl4bV9QRTRUU195ZFhFSzVCSkdNSk9yUTE3blBOTmhxcTVWaGZ2bUU4MjB5eU5YSy1MaU4wbVRmeg?oc=5",
-      "date": "2026-11-10T16:26:01Z",
-      "tag": "Lançamento"
     }
   ],
   "videos": [
@@ -790,7 +790,7 @@
       "title": "NOVAS IMAGENS de GTA 6 REVELAM DETALHES INCRÍVEIS do jogo!! #FGN",
       "channel": "Cortes do Flow Games",
       "youtubeId": "07AalOCQmjQ",
-      "date": "2026-11-01T01:42:16Z",
+      "date": "2026-11-01T05:26:44Z",
       "approx": true
     },
     {
@@ -798,7 +798,7 @@
       "title": "GTA 6 vai PESAR MAIS de 200GB?! Vazou o TAMANHO ABSURDO do JOGO!! #FGN",
       "channel": "Cortes do Flow Games",
       "youtubeId": "CoBoIgBSPjo",
-      "date": "2026-11-01T01:42:16Z",
+      "date": "2026-11-01T05:26:44Z",
       "approx": true
     },
     {
@@ -841,7 +841,7 @@
       "title": "GTA 6 na Netflix: Uma prova ESCANCARADA de GANÂNCIA da Rockstar",
       "channel": "Cortes do BRKsEDU",
       "youtubeId": "cQ41GMFLGKc",
-      "date": "2026-09-11T01:42:16Z",
+      "date": "2026-09-13T05:26:44Z",
       "approx": true
     },
     {
@@ -891,7 +891,7 @@
       "title": "GTA 6 ONLINE vai DEMORAR para LANÇAR? BRKsEDU comenta!",
       "channel": "Cortes do BRKsEDU",
       "youtubeId": "tcPrzUDgO-o",
-      "date": "2026-07-13T01:42:16Z",
+      "date": "2026-07-15T05:26:44Z",
       "approx": true
     },
     {
@@ -899,7 +899,7 @@
       "title": "Versão Ultimate de GTA 6 é a REAL VERSÃO do jogo? BRKsEDU comenta!",
       "channel": "Cortes do BRKsEDU",
       "youtubeId": "2laXuYGvRN0",
-      "date": "2026-07-13T01:42:16Z",
+      "date": "2026-07-15T05:26:44Z",
       "approx": true
     },
     {
@@ -907,7 +907,7 @@
       "title": "GTA 6: Que tipo de REVOLUÇÃO podemos esperar no game? BRKsEDU comenta!",
       "channel": "Cortes do BRKsEDU",
       "youtubeId": "yZsPEJtLLAk",
-      "date": "2026-07-13T01:42:16Z",
+      "date": "2026-07-15T05:26:44Z",
       "approx": true
     },
     {
