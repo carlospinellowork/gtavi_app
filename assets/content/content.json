@@ -1,12 +1,39 @@
 {
-  "version": 202611130159,
-  "updatedAt": "2026-11-13T01:59:57Z",
+  "version": 202611130922,
+  "updatedAt": "2026-11-13T09:22:18Z",
   "releaseDate": "2026-11-19",
   "platforms": [
     "PlayStation 5",
     "Xbox Series X|S"
   ],
   "news": [
+    {
+      "id": "n-6aba13b3aecd",
+      "title": "Strauss Zelnick: Sucesso de GTA 6 na pré-venda afeta outros jogos da Take-Two",
+      "summary": "",
+      "source": "Estadão",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPSzBXeGt1WWxkOWhSSzJJSVpLbVZfVHQ3U1NUU2laTllUZkR1NDBZcXJrVnI0U0Zuc214M0dQaWNrOXhHX1I1YW5iV01tcWxub0c0WGpjR1dSUU10UlF3VWUySHVVTk53YnlPYkVBdlNxOXJBN0dqR25DNlVHeHo5M2VYYUdDTzUySHFWc20ydXhzU3cyX0VLYUQxd1NNQ0U4RnF6UVBQOTZfc0V0eWJsTTgzRE5BbU81VmpseC1GMUJUSEEydHI4SERjVlNEQUpabHNFa2UzaFhLTkE?oc=5",
+      "date": "2026-11-13T03:23:32Z",
+      "tag": "Preço"
+    },
+    {
+      "id": "n-9b2f242ecefa",
+      "title": "GTA VI chega após meio século de crescimento da indústria dos videogames",
+      "summary": "",
+      "source": "Diário Causa Operária",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdzVsdWk1QUpnNDZIUzI1RS10Yko0UjQ1VkxRR21JdnNqY2pJeTc4OU9zck4zUFp1V29kMHJwYkJlV200bkdLcGxfblYycWV2MTJEVDhBTnZNbUVZcFFOZEtrS2w2VE5KYUxmckRiUXdUbmNGVk5EbFI3eUxYeE5sRUtMZ2R4ek1yWHkwbkdEUzlRUkNLQXo2YmNISktwN3pXNmZHWEIwOVRncWM?oc=5",
+      "date": "2026-11-13T03:00:00Z",
+      "tag": "Lançamento"
+    },
+    {
+      "id": "n-6ac89c86dae8",
+      "title": "Oferta | Códigos grátis de GTA 6 Ultimate Edition disponíveis via Kick",
+      "summary": "",
+      "source": "Notebookcheck.info",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWVJnS3V5TWJwdm9ZeG9wM0F2dzZ1VjFGZGEtTVlvY2ZXNkl3TU9Rb29DWEIwcTRrVFJYWm9DZ3A3d0pIdWpOcXc1aWU3Z3k5Yjg0ZTlyNDV2QkhMY2tzMzUyVVN5aGd0YzJaWEZpZzg2WmV0NFYta3pUMDlIRUloeC1hVVhMdERKcl96MlVHdVVkU1lZNWV2b285THkyT3l4emhfZHQ3VmV0TDQ?oc=5",
+      "date": "2026-11-12T23:34:00Z",
+      "tag": "Notícia"
+    },
     {
       "id": "n-8fcb75375490",
       "title": "GTA 6 teria ultrapassado a marca de US$ 1 bilhão em pré-vendas, segundo relatório",
@@ -132,6 +159,15 @@
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQSDNiSG1HREwzbHVqV21lakExWGRjRnVBR04tNkt1MkpZcmRCeHVpbDYxeGV5azk3dlUtYjlZVVRmSmRHdW1vLUVXV3k2alNxZms4bDhLRWl5WGtJV1JnVmxsM0VnREl6aUU5Y2d5dUl1MUxWbmZuU295bGg1R0dWaHJuTUJnWVVJN2Q4NFNDNmk1WjlHQ19NN3pMUUo5SU9nMDFxMWFLbnUybWZIVjZMMTMzVktZaVFSM3R4OUJaX3fSAcYBQVVfeXFMT2tySDdQOGpBRElzME9SbHNlZjctWVh2cUNjRDVHdmJKbV9ZU2x0MFFtNWhxREhmWlplMlVIQ2ZWY0dMMWhRWXR5RDdDVlh3R2hjamRTRlhsMGYyTG9nVG4xZHZJa3RIMzJjMkpqZjBhSzVySjk5eUk2MTNYcERIWE9lYWd6aXh0MldVSGp5WWNCdzBfaHhmcWs3dE8xOEJVQnNnLUVzNml4eFlMdlBkRVNLWVp4YTFGMGxLMTVacWs4QnFySVFB?oc=5",
       "date": "2026-11-12T16:36:49Z",
       "tag": "Preço"
+    },
+    {
+      "id": "n-01c69bdac882",
+      "title": "Hollywood teme que GTA 6 esvazie cinemas e derrube audiência de séries",
+      "summary": "",
+      "source": "Canaltech",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQS3NaVXpKdFdjWEpzZjRUSExnbVA0b0p1VEpadkVsU1ZMeEdJS19NR3ZkZFJNRDhndmdKZEtESXNqaGZzNExuM0hxVEFTMDROZjUzemRRM3pJdUN3WGxLcGNzTUNacEJ2ZFcxRmVuZDlVRVUwZVVwZDVuRzRwWDRpc1h4NWhHQy1Tb3p1ampEajAycXFDU3pJWTRES2tNN1dFaFlOTWsxMGg3dEVaaG9IOQ?oc=5",
+      "date": "2026-11-12T16:03:00Z",
+      "tag": "Notícia"
     },
     {
       "id": "n-51acf973022f",
@@ -284,6 +320,15 @@
       "source": "Times Brasil | CNBC",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOckZLaU15T0NrWTRRekJQbzJmVlBaWEV2aWViMjNLQVhCSDJnNG5lRDRuSHNmLWlkaGFMbTVoR2FyenJoMG9YR3E3eUdvWnEyQTNvVnE0aGxqNDdweUktcWZxZDA4VTFTWEJoc1ZuRmEyd0ozM3FSbUN0ZjQ3czh3b1RLRVdGMjJXOHNGSUFOb09aYnRuWWdJZ1ZtUG1rYVBnY2ktUjNwR0hhUzVYUzdjSjB3?oc=5",
       "date": "2026-11-12T01:35:00Z",
+      "tag": "Preço"
+    },
+    {
+      "id": "n-f2e1833f7447",
+      "title": "GTA 6 atinge US$ 1 bilhão em pré-vendas; veja os números",
+      "summary": "",
+      "source": "Última Ficha",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPWGtNOHRTcDJuRVdCWUlqYl9HQ1BCZEFISjc1VFJoeVdKenNUWGViM3JXcDRCQnMtWWxnTF8tckUtMTB1WmxwQVVUUnl0M3Bfbm1SOVBIZUZxQTRuZnM4d0RRdzM3dFM5WlFIaHFRYmwzdlFpNUg1UkxVUWtNaUQxVUdMdU50eVhtblZ3ZWcwRTVRUQ?oc=5",
+      "date": "2026-11-12T00:26:33Z",
       "tag": "Preço"
     },
     {
@@ -681,51 +726,6 @@
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMXc0NEFwZjZndG1ER29JMTdLOFM4R09QVnoxbkhlU3NtLVppZXR4Wi1paUNkZkZsU0VVSmVScHpqOWFTV1pkN01veldUY1MtLXlYUkY5NG9UUkhMM01LbkJzYzZXTUFpcEJXdUZGOU1BOVdBYmZQQVUwc3VqNFltQzdiemY2aWZxTjBCZW1FbnI2VGpsY3lGLWlmWktOU0RHUFNBOEExNHJEaUwtZ1dTOUNYUGVPM0tGdXFJ?oc=5",
       "date": "2026-11-11T00:09:28Z",
       "tag": "Notícia"
-    },
-    {
-      "id": "n-b7ba1c8bf480",
-      "title": "Hoje no TecMundo (10): Polícia Civil de SP sofre suposto ataque hacker, GTA 6 tem novidades e mais",
-      "summary": "",
-      "source": "Estadão",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPY05uSERaTkROQ0VoWi1QWEFvWm94dnZOZ0drclZuUDc5YTZXc0M3RmpjSVBFcVlxX2ozMnZwUnVpem9FTTFmaURmUzRZOWh1bThpeDh4Mnk1WTVRM0xCTERSZFhYVGJyY3VPOW1kZUoxWWFBZG5LYXFoWDBaUzh2cERlS3JGV0N0Wnl1NlZKX0ItTlNULVE1bWJ4eEFhVC0xV1V4LU1YMFZMN2c3T041d0xqd0hWQTMtUl9ZVDVjdzBMYU9DQ1JSeUZibmJBNE43WDJrS090UDTSAd4BQVVfeXFMUEY0ZGlqXzktOGJzTjRFWktjbnA2WHB2TEdZREtlTkpqS01EWnk0c1hzTjRkSHdWczN0Ml9sb3psZmNZQ1V1UDN2SERSM0t4QU5KdFJXTGQ5dU5KdXZGNkdEajBGOUlWdm5PTVg1RVozUTBYaUFRQ2MzdTJMcHdQQzVRRGNaTHZXb3p5REVnTk5XdThKUWJTQjZONFJ4VlR1Tmd3a0NCeEtYVnQ4TkY1OG1aMTN4X3JRS1ROTmRRWHJoQUpmRkhnc3RQSm8xdkFpNGNOb09rMEl6QmhsZE9B?oc=5",
-      "date": "2026-11-11T00:03:00Z",
-      "tag": "Rumor"
-    },
-    {
-      "id": "n-ba9edc33ab94",
-      "title": "Pizza Hut transforma espera por GTA VI em game com recompensas para consumidores",
-      "summary": "",
-      "source": "Mundo do Marketing",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTXJETDM1aEVlYndBbl9Fb1M0QW4zWUNVd0tiSWQ1bU5kUWVRbFBOSzdKTzN2VjJxTzMzTmw5ZzRDdnBhdFRadVVYMGh2aXo2LWJpRlB5YlJTTnRLcDFIdFV3dko0SGNVOWNhSkxxWUFEQ0hGSm50d01Nd1hxaElXd2R3LVFnY3JnV0x2SllETWxUSUlubEt4X0NfM3JhNGloWjVtRzdWbHE5UlBlaWNaRFRn?oc=5",
-      "date": "2026-11-11T00:00:00Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-41010fcc0ed0",
-      "title": "GTA 6 | CEO da Take-Two diz que está pronto para pirataria e possíveis clones de IA",
-      "summary": "",
-      "source": "Omelete",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdFo3V3A4ZkVzejlROTNkeWJydHJpTkppdDZKcG5GdmNZME9PTWo5a1V4SmFoUkF2WllkbUJKRGZSRlJJTS14XzBuWmlRRnZ5RWRKOU16d0U3TXpMcUQ4MVNWUEhOdkFWVnJsaUlWNHJkVV9tbXlIaDYwdlZYU2Vka3p3bzFBeXdkUVJiNHdfb3luVi1QaUVzYkZfN0E?oc=5",
-      "date": "2026-11-10T23:39:00Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-d8af9af1578a",
-      "title": "GTA 6 está fazendo tanto sucesso na pré-venda que está atrapalhando outros jogos da Take-Two",
-      "summary": "",
-      "source": "Estadão",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOb3libjZQUExPUl8zellSNC01X1BndlFkR2ZxdWpIY2lqeVFZQThpZU01SDVxM0t3bkRHcE8xUlZQaWN6c01SX2pQdjhreWhKNzl5eHduaTlRcE5FUFZEa25tbHNvNU04VDVIQVNOQW9kQmlBc1RGczV6aEdXR3pSWG1OeW5CUnpOb05LVGwtTDVELTJ6OXBMUlVYeU44RENMdDhyWkNQaFJPanoyRmRtY1g2Y2JSTmZKaXN0bmpqbTdDRm1LUUhuWC01OHA3WWpf0gHWAUFVX3lxTE1nQmM5QXl1eF9wQ2NqZlRLVlRoTmRfRmktR2NFNjZEWVdnSTRPSWFIeUlfZ1Ria0FGX0xETGdKa2RKRU9GNTI5TnI1UWRfOFJwUGVDVHlYY0w2MkUwcEJfY0JfUjRuYWZOMm9LWFU3SXN3R2c5aXN3d0hDbVhzNkhlaGF0Y3M2WVVHQ0NTYnZKVlppZGZNbm1VMTJIU2pJWUpGTl9yQkNzQ19FaXVCUG8zdjBEX1lZS09zYk1vLUpfWFduVXdUUG94SkhXVFgtejhPN0xTMlE?oc=5",
-      "date": "2026-11-10T23:15:00Z",
-      "tag": "Preço"
-    },
-    {
-      "id": "n-d23d59d06096",
-      "title": "GTA 6 tem a maior pré-venda da história da PlayStation Store e Microsoft Store",
-      "summary": "",
-      "source": "Folha PE",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcDVlSTg5Z0RCQVVxVm9YaExmXzQ3dlo4S0RJUUxuRl9JdjZmX2lKNjkwUWRNQjZxb25WQWNNWXpaTzA4S0RYT3lSb18tV1AxbFAzYXpRa0I4QllMcHQ4eDVDbnQ1MWxKZmo2cEt0TE8wLW0tN1NsbFZubTNucVMtTjlYaV9TbEZpZkpSUjEzaTNRcUhDWEdJTkowbV9SNU1ob3VBY0sxUklOZ3JqZ1J4d0FpMG9Rdm9UQW10cXAxTVU1REpmdkRLZ1J5dUdTWkdXbGlGWWQ0S2oxUQ?oc=5",
-      "date": "2026-11-10T22:48:00Z",
-      "tag": "Preço"
     }
   ],
   "videos": [
