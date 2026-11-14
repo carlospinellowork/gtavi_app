@@ -1,6 +1,6 @@
 {
-  "version": 202611141618,
-  "updatedAt": "2026-11-14T16:18:31Z",
+  "version": 202611142051,
+  "updatedAt": "2026-11-14T20:51:04Z",
   "releaseDate": "2026-11-19",
   "platforms": [
     "PlayStation 5",
@@ -8,12 +8,84 @@
   ],
   "news": [
     {
+      "id": "n-a4ebfa3c58e4",
+      "title": "GTA 6 é tão grande que até indústria do cinema e TV sentirão o impacto do lançamento",
+      "summary": "",
+      "source": "Estadão",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPSzZ6OF83Qzd0cVdfeXdXYmFkTDdCekhiUkJUQWEyc2tjRjFVRXVpemZUSUhkUWEtYU4xMmtQSk0xUFpoTThnVTFnV21QZS1WblVqN25zNTNMM29IcWxMS05NOGtEUkJaVnE2OGN6eGlHQWpFVEpUNUUyRnRzbEJydV94S0NhVHV3MVVHNVE4OU5qM3pNcFc1MURPWG5XVDlFYkRCbnhER0gtMXFrOVNhYU51LVM5SkFaRjlxTUZFODgwbEhSU0HSAcsBQVVfeXFMUEVNTzZLU3MyajhGYmJoc2lpYTFBeHJWdmhzX1VBekJmUUNpQTFPdU5GUWRIeDZrVlRSSm56Z28ybGpxNExvajRQSmdyd2VsU0RDQWlOQTQ2MDM3bDBkRUMxblkzWVZVb0NfNFpNM1NzakNpdzlKeTFBQ2NVaEpQcUFIczdtVUtXT0pBdXNid0Vtd01SOThEVWlIMExwc3hMWFptdTZRLXBrSlp6RmRZWHVQR0F2TkZmRDZOR1M1cGtQSkVUQWUtdE0weDA?oc=5",
+      "date": "2026-11-14T20:15:00Z",
+      "tag": "Lançamento"
+    },
+    {
+      "id": "n-944a7277f276",
+      "title": "Como o lançamento de GTA VI pode transformar games, streaming e até folgas no trabalho - Times Brasil | CNBC",
+      "summary": "",
+      "source": "Times Brasil | CNBC",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOZ0MzeWFUSjZnNFBtanQyQnNGemF5aUNrLVVIcVRJSVlyUmp0c0pLaE1IR3czT0VlaUEtcFEyeEt3bUhlX2dKdkpfTHk3Wkl6U292T3M2OFl5MEY0SEdDVHJTZXBPR2VhNVZhTTNXZ1pGaF9GOU9kUlAtSEVyT2Z5VV9sRXBieGxtdWdVRGlVaFhreXNoemoxVDhUQ3VWTWdoN2paMm1RV1M5U3NuTjg0bVdMcUhDeHRlcVdxTUI2ZkxFVkhqbEhqUFo0YkdzV1RPVExUTlkxQnpOWEZRcURxZ29TbHlpZmhuNG01TU41d2g2VzhWSzhsMnFn?oc=5",
+      "date": "2026-11-14T17:32:00Z",
+      "tag": "Lançamento"
+    },
+    {
+      "id": "n-780da40df450",
+      "title": "Trailer de Macca and Friends revela série de TV fictícia para o lançamento de GTA 6",
+      "summary": "",
+      "source": "Espaço do Povo",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE15eUFrT2xkWHNpLXdVam1DSFhFSk9fdWtPZ093TWIwQXhuYW93blczWmhwbFpRZmNHQkFwUmNaNW5hR3pKN0l5SjJ5YlhCRmZSbUlNMFhlZkJHQnpET3ZHVXZ6RXVsTnEzSjk4?oc=5",
+      "date": "2026-11-14T16:44:44Z",
+      "tag": "Trailer"
+    },
+    {
+      "id": "n-576709b9ec4d",
+      "title": "Lan house em Cuiabá prepara sala temática para lançamento de GTA 6",
+      "summary": "",
+      "source": "Gazeta Digital",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOZlNJeUM4NEtGaWlPZ2VMV1BlZWlSeUgyVXdueDEyaW5EQlloTUZldXNraU9vellLQWlFNko1VFJtS1JvT3dsaUhZVkpETlJiQk1YWlZXT2x0WWdEaktWVWRMenhYb3F2eDVIeEFJZlgzMktFUkp3Tk8zdHhvN2tUZHctR1hhQi1EaXNWQVhqUE5faWRFa3Z2QWVCdmJwMi1NMHhTM1pNc2N6OTdqYV9iNFdLa1M1LXpjYmtrNXo3YVRVdw?oc=5",
+      "date": "2026-11-14T16:40:00Z",
+      "tag": "Lançamento"
+    },
+    {
+      "id": "n-3b52175324c2",
+      "title": "GTA 6 | Pré-download do jogo foi evento mais movimentado da história de provedora de internet",
+      "summary": "",
+      "source": "Omelete",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPbFpqWGtGZ1BPdUhPY05PV2VjQnVaX1MyLS1zZDFuc0VtVHRaUVZIX2ZFTE01TTBwRzg1cm5uTTROcFJJaUdBVVE3WEtLQUl1Yklsb3VOY2liTWxtY3FheERkeW1lYUZNWWtkT3R3MWNrVk9hRWFNNzhsLVZZYk1fVg?oc=5",
+      "date": "2026-11-14T16:32:00Z",
+      "tag": "Lançamento"
+    },
+    {
+      "id": "n-32dab18c4f9b",
+      "title": "GTA 6 pode arrecadar mais dinheiro antes de ser lançado do que a maior produção da Marvel em toda a sua história",
+      "summary": "",
+      "source": "Terra",
+      "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxPZ012d2taS0F5bUl4Y2J5NFJWYUNjSHNFc0xMc1hQTlBlMzVnOGRxcVlYZDJfcHZKQmt1c0k1U1VwZ201emZ5MVN0M2d6SzRFWWdmcDROUWtrUWlsd3Bfb0FTXy05Mm9aS1dtYjgwT3g2aDhVZTN6V0hTVWRqT1oyczBPLWZjNDlHREppdGVUaUoxbDZQMHJjbktpWVhnbUxxMEY1SE1mdG1pWWRpVjduNkt5S2NtY05BaHNWZXNxWVdsOFgxUGQxN080dUJ6LWRWLVBua1pndXFNYUJnN2diaDdXaWFnQ1MtdFg5c0lMUXVlSF9seHJaQVI0NjBRUWZOX0p5MDZfYU0wNEtPNUpYMmVrcXB4UTFlRUh0TmRsajg3aFI1TUI2OXJWLU8?oc=5",
+      "date": "2026-11-14T16:13:00Z",
+      "tag": "Notícia"
+    },
+    {
+      "id": "n-7346f2affa63",
+      "title": "GTA 6: Por que nem os criadores de 'Grand Theft Auto' puderam jogar 'o maior lançamento da história dos games'",
+      "summary": "",
+      "source": "BBC",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1ZanBmY1NnMDBTcDhmU1kwS1BOeUNxb29naW8zNGJnWVBzSWVqNGRmVFVORHhPaEhxR1ptcDk2YWg2Wlc5T3VsRnhpQmRuMXhvWUJHVDU3UkVmMGpZaEJUZ0JfONIBaEFVX3lxTFBFSlBpRGExcVlyNWRFRm5QNTR5TUZtMUZTWkJmdmZIREZCR3FlaE8wRWRQX3AydVJVd1VFS1AwWmxtczJXb2lheFhmZGFFS3JJczRhR3dMWFdlYnZEdS1Td2cxeFN0R20w?oc=5",
+      "date": "2026-11-14T16:07:20Z",
+      "tag": "Lançamento"
+    },
+    {
       "id": "n-36eb4c8c99ca",
       "title": "Por que nem os criadores de 'Grand Theft Auto' puderam jogar 'GTA 6', o maior lançamento da história dos games",
       "summary": "",
       "source": "Terra",
       "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOMi05TnNMdHVUUjhUd3BkWmxyRzJiNlpjQlhQd0dmb1hQSzdlV2d3eEZMeEY3Vm1ENEZMSkViaVFwcVZ1a2NQQlAtRkt6M01nZUE3NVlUeEU3cGxaS3VJN1lGZTMwZGNXckRRenRSVU9MajU2VHZWWlctT0M4cHZ4TlJOM211WlFBaEhpeFQ2elhxX0lHZzRXV0NER0FRblBYQ1VfOXl1M2dpYVdOZUVwQ3N4eFdIMVRzdjFfYTREVUF4OFZKOUlXOElZRkVGR01WV2hXQm5RUFh0eHJ5VVFkR2R3VGZYaTlWeEVCWTE5Rmw4ZlFTOHNoaDRaa0h6R05Hdy10SHhkM0JpQnYzLUE?oc=5",
       "date": "2026-11-14T16:05:00Z",
+      "tag": "Lançamento"
+    },
+    {
+      "id": "n-c91b5bec87a3",
+      "title": "No clima de GTA 6: 10 filmes e séries para assistir antes do lançamento do jogo da Rockstar",
+      "summary": "",
+      "source": "TudoCelular.com",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNa3g4MHREZFFBVV8wSmRfTG5UR08zb2VGREdndGtQNE9qTnVqanhrNDF0R19JaDY0WHBsU1pfU3pQbnFrTnhWZExzajB5MENpRExKQll5aHhtSkh5Rjl5TUhMMVF1MUlrcGFKNGpwWUc3b0hWTHI1d3p0WWM3NWNvZFRyLTBrSElFMmxaM3FsbkxXQUpqNHJwRmxqNlpUdGp6WU9fajN0Mk8?oc=5",
+      "date": "2026-11-14T15:03:40Z",
       "tag": "Lançamento"
     },
     {
@@ -141,6 +213,15 @@
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNVlZvOEJtUFNxcWM4N3JKY2twME5iUVJ2RzV5RnhLOGFKOVRSU3FMX0plVlRLMF96M3FSUkpwZmlabEVCVVpMTzZUQWFEMWcyeHVqNk1QTGRjaWdRWHU0Q1V6QTk1MFhhU2hPQllUUFBPODV4cGFwWVE4VENBQTJHVzRiYw?oc=5",
       "date": "2026-11-13T20:12:41Z",
       "tag": "Notícia"
+    },
+    {
+      "id": "n-fcd68e30a80b",
+      "title": "Mapa de GTA 6 presente na edição de colecionador vaza na internet",
+      "summary": "",
+      "source": "Adrenaline",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUmVkUm5ZTTV5dEdLbF9pTnFmdHJyanhOdEd0M082cVhmcnhocHlBdkxLcmRFUmtnSnNHSlNzRUk5RnlKZTRLMEtSNEFBZEpNRWZrYzJCWnlOdlB4eGhGTk5BUUl6ajloWmdNelNJS2VJajhQZy1KOW53cWtpUWtzZlFGMTVucDdndlRsWXJkQktsSTZWNWRlUkh0OHIxb0d3MkFpaA?oc=5",
+      "date": "2026-11-13T19:59:00Z",
+      "tag": "Rumor"
     },
     {
       "id": "n-0d743e87d66d",
@@ -645,90 +726,37 @@
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQS3NaVXpKdFdjWEpzZjRUSExnbVA0b0p1VEpadkVsU1ZMeEdJS19NR3ZkZFJNRDhndmdKZEtESXNqaGZzNExuM0hxVEFTMDROZjUzemRRM3pJdUN3WGxLcGNzTUNacEJ2ZFcxRmVuZDlVRVUwZVVwZDVuRzRwWDRpc1h4NWhHQy1Tb3p1ampEajAycXFDU3pJWTRES2tNN1dFaFlOTWsxMGg3dEVaaG9IOQ?oc=5",
       "date": "2026-11-12T16:03:00Z",
       "tag": "Notícia"
-    },
-    {
-      "id": "n-51acf973022f",
-      "title": "TIM leva GTA VI à Black Friday em oferta “indecente” com PlayStation 5",
-      "summary": "",
-      "source": "Drops de Jogos",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPMVZzMnUyaWhoaXR2QzN6R245X2c5TlJTMVZaY1ktWmIwc29hOEtndldtOE1VR0kwMFJvUjcxX19yelN2UW1jU3NFcVVBNXprREMwckRWR04zQnBQZzZGMXY0VmhPc1J3UzNDTkk1QUtlZm4wSjNqd0hlNEp5MkZGWVpndy1qSGFHYmxreWIzTU9uYTZ2ZWR1RTNtS0l3Tktkbm5uUlA1TWMxSE04V3VEUTBuTkFvTmhOWUVzUQ?oc=5",
-      "date": "2026-11-12T15:43:46Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-e625fc9b3232",
-      "title": "Mapa de GTA 6 aparece em vitrine na Inglaterra e revela novos lugares de Leonida",
-      "summary": "",
-      "source": "Mix FM",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1BLVJnRnhQRzR3eVdyTnh6cGhpNllvNUNGcEVsV1hsdnJYdk5YT0VQcnR3Vm1WVktyRzhKTmVxNmt6SjhWaG83Z0dCVEFOQmRfb0dZUmVNTFppM1lWcGNQNWxQamFmck1CbU5v?oc=5",
-      "date": "2026-11-12T15:32:31Z",
-      "tag": "Gameplay"
-    },
-    {
-      "id": "n-7236b6096546",
-      "title": "GTA VI pode participar do The Game Awards 2026?",
-      "summary": "",
-      "source": "Rádio Itatiaia",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWkFoNEZxMGM1bnRid0tMeGg5a3JNM1JkYWMzdUhZX3hQaWpYd1VRQkp5UmFqMGFwc0lScWQ3YkQ2b29WWlE1dWF5dFRsUWQwOGVBV2RBci1fNmhOazE2MFBDZFNYRUFoUldTZkN4ZDNVVHc0Z0xPNHBOWUwxNVBBbkFIY1Vud0Rv?oc=5",
-      "date": "2026-11-12T15:25:17Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-06fcacf435db",
-      "title": "GTA 6: as curiosidades e números estrondosos do jogo mais caro da história",
-      "summary": "",
-      "source": "VEJA",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcXhjdUtCeVBfenNGMF96aFdjZFdYdnpEaTIzVlJ6aEszcldyRWJkQ2xiY2RBV0lvR0Q5anJWSHI2MmFtdW12ZWxBQXdaV1NjMUhQdG9oaFdTUjhYNS1ONlc4T1MwRmdHODZncnpjOVRwUVpQRFQ3QXBxWjc2em1rLW5UTGNBOGFWUnZrckYyc3pqUmdjcnZLVzhCMFFwX21aWGtySzdyNlByUVZBUFAwWQ?oc=5",
-      "date": "2026-11-12T15:22:00Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-fbc8de5f259f",
-      "title": "Quanto custa GTA 6 pelo mundo? Veja a diferença de preços entre países",
-      "summary": "",
-      "source": "Fast Company Brasil",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcHBDc2RMRXJxMUFLMmhrUnpuUTh6djFDZDlma0x2WkE1MmhjWHVNdUpuRldZUGs0S085SGROOWFmbTZ2Yi1YR0F5czlReG80bGJhbjcyeFBfdFJiNDBZQ2tyQ3huZ1pqN1g1UERkajczY2NsMXF5dzhIb1Q2X3J3NHotZEs4M0Z0Q2xiRnJJVU16LXRlcndHYWE3a2lYNWZKcVQ0?oc=5",
-      "date": "2026-11-12T15:16:44Z",
-      "tag": "Preço"
-    },
-    {
-      "id": "n-cfbe01dc12d5",
-      "title": "Real ou videogame? Novo vídeo de GTA 6 confunde fãs com realismo absurdo de Miami",
-      "summary": "",
-      "source": "Canaltech",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWnd3cnVUZzhqY3VpUVRPaFdKZE1vb29CTnMtLVFZNFAwX2JnMWlvRjFZbHZ4d252VjdoLW5rQ2xnT0k4TWtIMWw1WTZnbkZwQmN0eGtpMHpLT3U4YUJmb1VPMHJnQ1dGNVZKTm5QcU41cEF1VE9pZTl3WURPc0NuMGJsSmp0MFE5cTlDMkx2MUNweHB2aGhLTUdReE1zVFFPY04wejFnbFZZdkRQSEMxdEN3?oc=5",
-      "date": "2026-11-12T15:12:00Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-c86ddfd291ad",
-      "title": "GTA 6 vai ter dublagem em português? Entenda a decisão da Rockstar",
-      "summary": "",
-      "source": "Quero Bolsa",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA1a2hLejdLcUpxakxqLTdWZ3VIc0R3WjlLa1lkT1ppOGg0bkY5dE5yQ2RBRTQyam1FRGRJaW5kU0JxUkdYc3pwN3o3OU5rTnFUblRWMlNHVkhxRFVQYnFPQXhPMHQ4WlZtVHg0azFUazBHQU1TbEVmVA?oc=5",
-      "date": "2026-11-12T14:45:55Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-b241e09c6381",
-      "title": "É preciso jogar GTA V para começar GTA VI? Entenda a conexão entre jogos da franquia",
-      "summary": "",
-      "source": "Rádio Itatiaia",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNN1VSZHNtdjdQV25oTE56V0l0TU5Kd3k3UkxmaVpSLVlSWEJ6SGpZQjdZbEZGdnoxM0J1NUJTOHRYYnFlVmNiQ3Q4YTNuZWlVanNkWFE4WXVSd05WWjBiNG5oTV9tRC1CbnlLZS1TMTlmSFdaUXgxVEdObnhKSHNjVXhRZGZ5eko3am4xckZFN2RhY013bDZSM0JacllvQVJoZWNVcUdBUEFxRlZTRG0zbUxHd1V3NHFlN2c?oc=5",
-      "date": "2026-11-12T14:42:20Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-71e505e3ae8d",
-      "title": "Funcionários da Rockstar começam a votar sindicalização antes da chegada de GTA 6; entenda",
-      "summary": "",
-      "source": "Estadão",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOS29FOS16QnN3SThweC01S3ViemQzbTlOQXJPNW9ocDVnUnpkSXV2dHRrcFp5emVGZkkwQ1M0NjYzOGVfTlJ5dkFxWjI4Y2gxVGM0c2k3QmctajVhTUliakQ0MUJjNmpMZW1fTGRPWHZUWnlfaWxLN241RTlNejBRSjZ5STJSVkF2NUN1angxUlRqSTJHbjltcVJFU2E2Q0RwR3laNFcwM0Q5eEFsa3NnelNaUVFBOTZjTktNanYtUTVDNmdDa29reXNqT0JlQdIB0wFBVV95cUxPeHNLaXBqd2VrNFlZVFB3TTR4cjVPZmt3S1U5LUhXVDB3OTF3WU9vNFdrcFAzZFdDWEQ3Z00wZWdqT0RtcGl1RC1Bc0hfVm04cFJzazhSeEk4ajJlLXgwVnFLZGx3WjRha2NMYW54UU5GTlkwVmV1STZ6ajByMDdfY1hQTXg0SFV1dXNrUG04Q2NhRXBMQkVZb3VRSS1Qc3E3Z2N5RkttV0pZLXdyTDJETnZwQjhmZ3hYTU9VUmFpdVRXc1lDVzc1a2dSV0RBcE5OenFv?oc=5",
-      "date": "2026-11-12T14:15:00Z",
-      "tag": "Lançamento"
     }
   ],
   "videos": [
+    {
+      "id": "yt-L-AOV0RRyOg",
+      "title": "FLOW GAMES REAGE: FILMARAM com o CELULAR dentro do GTA 6!! #FGN",
+      "channel": "Cortes do Flow Games",
+      "youtubeId": "L-AOV0RRyOg",
+      "date": "2026-11-14T18:30:03Z"
+    },
+    {
+      "id": "yt-uscfEC2HaTg",
+      "title": "GTA 6 BATE RECORDE HISTÓRICO e fatura MAIS de 1 BILHÃO na PRÉ-VENDA!! #FGN",
+      "channel": "Cortes do Flow Games",
+      "youtubeId": "uscfEC2HaTg",
+      "date": "2026-11-14T17:30:01Z"
+    },
+    {
+      "id": "yt-iLd0Uo0eTyk",
+      "title": "GTA 6 vai RODAR MELHOR no PS5 PRO?! SONY LANÇA VÍDEO!! #FGN",
+      "channel": "Cortes do Flow Games",
+      "youtubeId": "iLd0Uo0eTyk",
+      "date": "2026-11-14T17:00:02Z"
+    },
+    {
+      "id": "yt-lFiekcG45ds",
+      "title": "DAVY fica MALUCO no UNBOXING da MÍDIA FISÍCA de GTA 6!! #FGN",
+      "channel": "Cortes do Flow Games",
+      "youtubeId": "lFiekcG45ds",
+      "date": "2026-11-14T16:30:26Z"
+    },
     {
       "id": "yt-JTQa7TeioHY",
       "title": "Os novos ícones de GTA 6 contam MUITO MAIS do que você pensa saber - Operação GTA #12",
