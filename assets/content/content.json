@@ -1,12 +1,48 @@
 {
-  "version": 202611151453,
-  "updatedAt": "2026-11-15T14:53:57Z",
+  "version": 202611152004,
+  "updatedAt": "2026-11-15T20:04:28Z",
   "releaseDate": "2026-11-19",
   "platforms": [
     "PlayStation 5",
     "Xbox Series X|S"
   ],
   "news": [
+    {
+      "id": "n-0697f7fce5b9",
+      "title": "Trilha oficial de GTA 6 inclui faixas inéditas de Keith Richards, Justice e outros artistas",
+      "summary": "",
+      "source": "Espaço do Povo",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1PdUFTMzduaHh1clZxUjFsLUtkZHk0Q3QtdC1QWjZLZTNWY2xYYlhBbDVYeXpFZlBJWWE2cFAxOFRlX3ZmTU5tY3UzdXhJd2FTSm9TbVJqTXMtQlM2ZTFYTUlEOA?oc=5",
+      "date": "2026-11-15T16:46:30Z",
+      "tag": "Gameplay"
+    },
+    {
+      "id": "n-ff7fa2be6335",
+      "title": "Que horas GTA 6 será lançado no Brasil e onde jogar? Confira guia com tudo sobre",
+      "summary": "",
+      "source": "Estadão",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNN0xlSEZqM18wOURfWEljekt0VW9xOTY5WGYtMTVIOVc3UWV5MDE4eXpnSUUxZXdvYXNjT3NGUkl5V2p5b0diZ0diLWw2YjhSYkRRTXh2cVcwazhxQS1tMjJzS1BpeG5rZDJFWUJZRGZ2cVRBUDhGWFk2d1Z1aUtwOGdfRHVRZjU0VV9KTEFXYzJoTmY3SlVwSlFzTENWZi12S21CZlBIQ1pIckdRMllLUk15N09wWEVhSDdrRGI4TdIBxAFBVV95cUxQVkVqS1pvVkdUa2NkYjRVa0oxc2cxOUc3U0YwZjRZQXZnU1ZfazJDQWNiTU1DOEgzUnZlakZ5bE9SN2E4NFBQY2VESl81ZTlmaG0yOGRqbkdYbXhTTlBOZEV6clR0VXk1YV9taFZSc1ViVHZGV2RQRHBzNzNqQVpPMmt6eXVROFF3amNUbXZqbFN1SzUtWTAyakhwSms2WmM1dXkwYnM3Y0VXdEN6ZXJTVVp2VFJ4SHBjM0RJUnhyeHd1X3Zv?oc=5",
+      "date": "2026-11-15T16:15:00Z",
+      "tag": "Notícia"
+    },
+    {
+      "id": "n-abc694bcb036",
+      "title": "'GTA VI: The Album': Lana Del Rey, Dua Lipa e Zara Larsson contribuem com novas músicas",
+      "summary": "",
+      "source": "Rolling Stone Brasil",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOT29zYl90RTF1RTJDRTZrOTIyaUlZazBCa1BvcmlteFBscVBaTjIzZzVJRzJmMGI4TXJ2cElVbHprbWpKb0ZOajBrTjdtdjJLLUo4SkZ3b1U2N2VvdHJwUXdpTEc1MzJQX2ZRMEU5VGNWdFQwVGh6bENONVVGZnZ5S1ZyWWMwODNoaW9ETXZBS1FuSGFNV2g0MjFnbll2dHVSdlpPd3ZFYUxySkF1dzlJa3NZT2VMLVZDOHc?oc=5",
+      "date": "2026-11-15T15:33:46Z",
+      "tag": "Gameplay"
+    },
+    {
+      "id": "n-4c4d5dcab623",
+      "title": "Treze anos de espera: por que GTA 6 virou um fenômeno que une três gerações",
+      "summary": "",
+      "source": "InfoMoney",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQa2FWRWgxVWJ0VUNCb0FzTVlJWHJrbTZjTzdOcm1ydy1aRV9iTDBzTXdsNHpKR09Qdnd1SVlQNGRzdGFMempldWVLNGJabTNWalJKQktOWEQ0Vk1HZWc5UTl5U3ZYa0hoWGlMUEJtaTJkeGcxX0hsdG1zMFlqQ0xKQUdwS053aUJYbnpGbUp3SWNoVXFUOHItR2lFekFXRU43ZHBZRWNfMmZaenhkR2Y2OTJlSmlQY1g3aUVqStIBwgFBVV95cUxQNFNLWXd0ME9nR0RnNkJtWGRWb3U2ZjltTXgtaEZUU0VEQ2MxLUkya1VOOW1sTlNfcU9IeGp2TThDZURXQWJHYjVMVFNvOTdQYmNLRjNwM19zcW05a05fN1hjNWI3OW1MSDhZbVFRckUxYVVMcVU0LXRBUjVHdUVkS1JOZmtTT0R5MVBLWlZtRmtqUk15U2ZTNUdGNjBac0FnOThsUXU1S2ZCWGl5SXN2YXlCV1JPZkh1TG84dGRJblNxQQ?oc=5",
+      "date": "2026-11-15T15:03:36Z",
+      "tag": "Notícia"
+    },
     {
       "id": "n-40e8c5f41e71",
       "title": "Trilha sonora do álbum de GTA 6 vaza na internet, revelando suas 34 músicas",
@@ -143,6 +179,15 @@
       "tag": "Trailer"
     },
     {
+      "id": "n-956d508e99d3",
+      "title": "Brasileiro compra edição física de GTA 6, mas recebe uma caixa de lápis de cor",
+      "summary": "",
+      "source": "Hardware.com.br",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOWWotSmdCM0tuaVU4T2plcnJYUnNubVpLOERMZzYzbmI2OUNNbFJyMlR1Q1lwdFlWTkR0RHFTRmN2bl9FenlZdVBNVnQyWV9uZ1ZBU1kzSkE2SWs0TURYRXkzeVNnMTZoNnRJSXVtU3E0dW5lVjc3X3BWNFViX2N6RWs5RWZaWVRlRlBUcmtR?oc=5",
+      "date": "2026-11-14T16:41:00Z",
+      "tag": "Preço"
+    },
+    {
       "id": "n-576709b9ec4d",
       "title": "Lan house em Cuiabá prepara sala temática para lançamento de GTA 6",
       "summary": "",
@@ -167,6 +212,15 @@
       "source": "Terra",
       "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxPZ012d2taS0F5bUl4Y2J5NFJWYUNjSHNFc0xMc1hQTlBlMzVnOGRxcVlYZDJfcHZKQmt1c0k1U1VwZ201emZ5MVN0M2d6SzRFWWdmcDROUWtrUWlsd3Bfb0FTXy05Mm9aS1dtYjgwT3g2aDhVZTN6V0hTVWRqT1oyczBPLWZjNDlHREppdGVUaUoxbDZQMHJjbktpWVhnbUxxMEY1SE1mdG1pWWRpVjduNkt5S2NtY05BaHNWZXNxWVdsOFgxUGQxN080dUJ6LWRWLVBua1pndXFNYUJnN2diaDdXaWFnQ1MtdFg5c0lMUXVlSF9seHJaQVI0NjBRUWZOX0p5MDZfYU0wNEtPNUpYMmVrcXB4UTFlRUh0TmRsajg3aFI1TUI2OXJWLU8?oc=5",
       "date": "2026-11-14T16:13:00Z",
+      "tag": "Notícia"
+    },
+    {
+      "id": "n-fa05e1069b76",
+      "title": "GTA 6: série animada está disponível dentro de jogo",
+      "summary": "",
+      "source": "tmc.com.br",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNUVNDcXlNZ2N6cUNhNG9nZEJtVmtIWTdNN2V5b1owNkR1NHdwUWhzYmVBUzg0cXRNWjRzN1FHRGdrUkNLR1k2ODNNQ3NSYU54N0hHb0MtcDFnQUdJeFVzeXcwTlk0WExVcFVuWHZWWVhENzNyajhLdE5mdXVORzQyM2ZxTi1CRXVJWERn?oc=5",
+      "date": "2026-11-14T16:08:32Z",
       "tag": "Notícia"
     },
     {
@@ -239,6 +293,15 @@
       "source": "Fast Company Brasil",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPYWJnQzhEMXVfelI0ZUhvOU5GcnM0ZjhSZ0FXMzBFOFNFSlZaT2ZIX055eGVzbkRiZE5IdDBTVGFOM3pCTXlIUFA4Yjh5WHM4Sl9oWmtFamFLd1FOeEhzSWl3OXllY3dENWpnejBGenNBSkZrMVBTbHVBekROM0VKV0lMTkc1RTAzZXNiX2ZWSTF4YmF0YzgtYjg3S09PM0tkdnc?oc=5",
       "date": "2026-11-14T09:02:06Z",
+      "tag": "Notícia"
+    },
+    {
+      "id": "n-cf0c9bac072b",
+      "title": "Algumas caixas físicas de GTA 6 estão sem códigos, e a Rockstar recusa-se a ajudar",
+      "summary": "",
+      "source": "Notebookcheck.info",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPazd5WUpTZFQzY0k1VUZVNGxUcF9qZ2oyVjJIaXdFX1Q3QS0tbmxjWHlQYzh2ZHZ3dDVBaE5hbC1hbnhJTERRMUlfbFFVT3RPeS1QbWo0UDhHbWxaZzVuZi1WN1NXaHdXV3NJdHZkVVZJYS0yR0pvaGhjVDhsRWZEN0w0akJISHluZnVMOVVWdWswWkhKcmJLTENUb20tY1RVRk5BSEcxOGtja3l3RGJHRHJaU1lTTlphZXVhRFV3TVRyZ19tN1E?oc=5",
+      "date": "2026-11-14T08:55:00Z",
       "tag": "Notícia"
     },
     {
@@ -539,6 +602,15 @@
       "tag": "Lançamento"
     },
     {
+      "id": "n-4fe1a0c60f1b",
+      "title": "GTA VI chega na véspera do feriado e Coxinhas Bady cria combo para quem vai virar a noite",
+      "summary": "",
+      "source": "Gazeta da Semana",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOWmVsRnIzblBfVS1jQ3RGa0hVMTZ2OEFpaU5TVDF0Z292aVJMLV9vRmgwUVZjcVdIZ09haVBiaVJfR2pQSnJUOHZNWHUxR0lsSEpVbUV6TVR5Ulg5MlBibF9yR3BiRlpQUDJYcGdYQVlMaV9GckdDWkc4eVBSSWhiZnM0RDBwN1FfckpRcXMzT0dLSWVkeWdjZnZSeFpkeFM0TTFJT0U3YkJPUnNBMVlFNDI0NzFMeGc5V2F1WENFMHk4WVdvcmRBTUR6QWw2Zlk?oc=5",
+      "date": "2026-11-13T13:44:12Z",
+      "tag": "Lançamento"
+    },
+    {
       "id": "n-0773f53070df",
       "title": "GTA 6: criador de desbloqueio do PS5 vê cópia pirata distante e manda fãs comprarem o jogo",
       "summary": "",
@@ -654,78 +726,6 @@
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMmYzOUlIQ0NURm0ydnBuOG0tcXd3SUUwNXNzWTl1QkY3MVhCNFJwaDZMMzdCR1ltc3RUZFNuVVJvcXFJRk1iVW9BNmFfd1VwX2ZPdXUtTEM2dTlGVnVIUWRXMFZBUmNiLVNEMUpsOTdUNmUzZzM4MjkwQW9RSFF4dlNEb1NiUWZWT1pPR0Vqcm43MUh0WExwR1Mxc0d0M0Q4S3UzX2ZTRGo5elpxRklrSkpwRXpJYlhGVk5zcVY3Ui1OOHY3bU0yWVVB?oc=5",
       "date": "2026-11-13T00:31:15Z",
       "tag": "Preço"
-    },
-    {
-      "id": "n-6ac89c86dae8",
-      "title": "Oferta | Códigos grátis de GTA 6 Ultimate Edition disponíveis via Kick",
-      "summary": "",
-      "source": "Notebookcheck.info",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWVJnS3V5TWJwdm9ZeG9wM0F2dzZ1VjFGZGEtTVlvY2ZXNkl3TU9Rb29DWEIwcTRrVFJYWm9DZ3A3d0pIdWpOcXc1aWU3Z3k5Yjg0ZTlyNDV2QkhMY2tzMzUyVVN5aGd0YzJaWEZpZzg2WmV0NFYta3pUMDlIRUloeC1hVVhMdERKcl96MlVHdVVkU1lZNWV2b285THkyT3l4emhfZHQ3VmV0TDQ?oc=5",
-      "date": "2026-11-12T23:34:00Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-8fcb75375490",
-      "title": "GTA 6 teria ultrapassado a marca de US$ 1 bilhão em pré-vendas, segundo relatório",
-      "summary": "",
-      "source": "Estadão",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNWkxRcXBjVU9leTd6eFFIbmZYQll5ZmV1bWd2cVFudUx3OGI0cGFXWDVZWmFnYWxTeExQdzdLeFZuWE0xUDNFS0ljcUZLOWl1U00td2VNLWROWE1zb3I3MU1EOE5rRUJyVW4xdUFvYUNwZUhLSy1UQnNKcnRPdHBVSl8xRDVkVUdINlY3Z29zM2ppNUl0RVZITGViZklFX1Roc291ZC05WklXcEpJeHBhR2YtdE45bHExSE1PTmlhNNIBxAFBVV95cUxNalJPbnc4Qms0ZDBPMlZyejZLRDZ6NXdaaHZDRkdLZ0laLVhydklkZUdSYkxQNi1CQm1YZEplamxhb1RFbjZhOGpQTmhUdGlwaGJNZVZuMU1NQXoxdklhMUdFcXlfcG1zVHRnU0hiX29iRVJrMk9FUndRWUJrYkJZVWZjQkZCWHRXRHhVaUVIdG1DTVFpR05EcTc3aGJWdnlQd2pFRjlQM1hJVjc5MUZDMldtOFpFVV9xVzhSWjItN25ZU0Yy?oc=5",
-      "date": "2026-11-12T23:12:00Z",
-      "tag": "Preço"
-    },
-    {
-      "id": "n-ea3cd54dd635",
-      "title": "GTA VI: lançamento do videogame de US$ 1 bilhão promete dominar o mundo do entretenimento e superar o épico do cinema 'Odisseia'",
-      "summary": "",
-      "source": "O GLOBO",
-      "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxQN0ZLTVZWcHJ6SXZaRmRNSlBxWF9CZnE5OWlfUmJMMFBvSGdGREJPdnd0bjBpa3RiSlNOejR0NG1xQVA1R01UeWpONmtwNTlOc0tkdjdDYTIxRnNEQ3JjbGNGRFFtR3dGMlZaQ0tNQXhFSnVjem5YWVdPclFyWWxQdzVlYnE5RU45YzE1ZjZFVUdRMTVHdnB1OHJfQ1kwMHgtTWRZZUxiaUtEMHVMRnhTRDVGZWptcnVhR0o3MGZXNnB3VkNOMlJOMVpkVzB2Yl9ReU55emxZLTVfWmFqbkk4UXpDT2hSblgxbDBNYkp1TUtPTjdnYS10QU9jMkU4czJtN3MxdGZLQ3FvR3NaVWJBTUNyV2lEdkFsUTUyaVFmc9IBrgJBVV95cUxPYU5KZjlKbE1RSkU1bWlORm1DVGR0OXY5YVI2Z1B0TVlfQ09ySlpORll4TWJRZTB3b1B3c3I5YlJZdy1qUTM3aE5qZjFENXBMWWRZX0ZReWFOOTIzNk1BYzFwVUdZWlk2SU1tb0xIX24yTnljVFZOZ3BfTnR0ZVktcXltOXhpeUF2c1R5QkUyb09WR2VDWHlabXJtaEszMDZnSnJXRGhNNmo3S29fX2hySUxyT1g1OW4weVdpbHlYUFlIRlNtT01VYzBkb1NpWDRjbGF5WFRycGxtSmFhOU1lVlZIWGt2Qkw2cU5ZQ045RGxobWxtTjRHU1VLNDV4LWpfS1VqZ2ZZaXFXU1MzUWczZUQ3Wlo2VzVfaVFNWm1yUkxlQUQ1R1RJR0lQUmNoZw?oc=5",
-      "date": "2026-11-12T22:52:48Z",
-      "tag": "Preço"
-    },
-    {
-      "id": "n-3c79f5c686ab",
-      "title": "Gamer brasileira é selecionada para o lançamento mundial de GTA 6",
-      "summary": "",
-      "source": "VEJA SÃO PAULO",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNREc5SUZJd1V6UXNNSmJMNno1dDc2WS0wbEdtQWhwVzlSbTVheE94aDZ2cFhGSjlpcTVLQ3RCNFhsT194cV9sUmN1cjJwSDJLTXlEeUU5X0NMSVJYWlBCc0hPb0xJYWFsSXpOZkVhTFVyeGZQeDk0czhzQmNGVDhyQmhQR2ZmRU1Hb1A3MDFzZ3dlR1RoaGpsY3EzMUZMWDRlOEJieFhDeFBVV1NWOEw2LUtmcU1HdmRObElyVA?oc=5",
-      "date": "2026-11-12T21:35:08Z",
-      "tag": "Lançamento"
-    },
-    {
-      "id": "n-2e5e4ff6f8fd",
-      "title": "GTA 6 poderá rodar no Xbox One sem instalação por meio da nuvem",
-      "summary": "",
-      "source": "Bem Paraná",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQYWpRTzRBWVptYmVVeTA3ZFlzUFRkSURwQ3l6ZXMwR0I5X0Y3WE5pRFI4OVcwVklPZWRBSFY2eDFVYWxiZTg4RG1HcEtqQVRMSzVxSmtZaHFCUG5MVlFyYUNxWTk2QktrVkVReXkyU2wyYVI4dU5qaGRmUjNneHlxUlRSTERGNFRFa19iS21EZmV5bXBRQWNjMFdkUzFRYTdIekQtNGdlcTZOUWhxTkNNWjVvN2tOVDl6Y0HSAb8BQVVfeXFMTlh5U2ptN05sZWNqelFkclBSQTB4SktHakVlYU1kTXZDTjBlOE81MFJrdlZxRVhOdXJMLXBfdldielZKbGpWQTFXVXB2OUdVZEotVzJmdkFnSmYtVDJVckJnYWhNME8xLXRFcWJIZjhTM0dRNldfZkFKdm9SS1hfUVhzejlscU5rQnJZVmpfdEFBSW1TanVNR2oxR2RTVU9keEpORlNmbkJVdzk4b0VRazBpVUd5NFZBX1hVWXNXNlk?oc=5",
-      "date": "2026-11-12T20:56:00Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-d0ff30f08b1f",
-      "title": "GTA 6: fãs confundem novos vídeos de gameplay do game com a vida real",
-      "summary": "",
-      "source": "Tenho Mais Discos Que Amigos",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPY3NaNjMtY0VsOFNvN0FoeGVpaC1MZFAtU2VUR1kxakxfTWNhZURyMVctZDZzb0JwblFPQVFXZ2ZVMGMxR2lWQUNWX2VRSlRUZUdaNTRIcDZ3cWtQYll5aHdYbjdRMC1DRmJUc0hDNlJfb3UwdTd1VjhyajZObzF2eXkxSHhSd3dYUmFaRg?oc=5",
-      "date": "2026-11-12T20:20:44Z",
-      "tag": "Gameplay"
-    },
-    {
-      "id": "n-c3041213d56c",
-      "title": "GTA 6: fãs confundem novos vídeos do game com a vida real",
-      "summary": "",
-      "source": "Tenho Mais Discos Que Amigos",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPY3NaNjMtY0VsOFNvN0FoeGVpaC1MZFAtU2VUR1kxakxfTWNhZURyMVctZDZzb0JwblFPQVFXZ2ZVMGMxR2lWQUNWX2VRSlRUZUdaNTRIcDZ3cWtQYll5aHdYbjdRMC1DRmJUc0hDNlJfb3UwdTd1VjhyajZObzF2eXkxSHhSd3dYUmFaRg?oc=5",
-      "date": "2026-11-12T20:20:44Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-7cc85b612b92",
-      "title": "Vídeo hiperrealista de GTA 6 mostra ruas de Vice City e viraliza nas redes sociais",
-      "summary": "",
-      "source": "Estadão",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVnBqMVYxVko3ZGplWHc3dXRKTVJhV2xYRmV1WHhkU0JYckFvYXZGeFYxNGhqaGE3VVR2WTNFaHIyTHFtUlVMYk9UWXkwS0ktS1o2ZmEyZnBNMmhLb2EtaFRJVW1kQmc3WVFIX3VjMXkxdTQ4VDB3a2Z3eGFpUV9DZnlfc2wtR0JIYjBzWXBhMmtJVi0zN3JRMmpySlJwQUdHcVo5YnNCUFpBVlVtQW02VHZpVC03dlRodzFyX2c0SEF2bXPSAcgBQVVfeXFMT2NXWHpubVY5amJWdkxDMXRIc21SMGw0VHladE14SWxwSU9BVzAxX2ZiTXhwR0V2aWZka2VaSDdIeVpZRkxUeElwZjBCSzlmNWgxd1pCbl9lNW9OWU1GY1QxUWtval9hbGtOcE1ZUXo0VFZWcjJZT2JIZ3E3U1lZbm82VWdBWFVaWXdNT1gwSkhxYTlkUVBoSENXR016WUFnMjBsUE9xaUVEektRY3h1c1U5Y3Y5cXl0NDdlTHZmV2xQNW9XV0pOdkM?oc=5",
-      "date": "2026-11-12T20:15:00Z",
-      "tag": "Notícia"
     }
   ],
   "videos": [
