@@ -1,6 +1,6 @@
 {
-  "version": 202611150725,
-  "updatedAt": "2026-11-15T07:25:30Z",
+  "version": 202611151453,
+  "updatedAt": "2026-11-15T14:53:57Z",
   "releaseDate": "2026-11-19",
   "platforms": [
     "PlayStation 5",
@@ -8,13 +8,49 @@
   ],
   "news": [
     {
-      "id": "n-e6dfa052b1f7",
-      "title": "Xbox Store lista nova edição de pré-venda de GTA 6 por $2000, e preço causa espanto",
+      "id": "n-40e8c5f41e71",
+      "title": "Trilha sonora do álbum de GTA 6 vaza na internet, revelando suas 34 músicas",
       "summary": "",
-      "source": "Notebookcheck.info",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQajFRLWNGSnEwNlhQeHc2aXJlanpMYlBrbmxROU1md3B6cDg5X1dLeEhPYXFMQWU1TmZwdFYtSkRvYmNlb05wY25DaEdZNk9hUnVrWm9LRk44QWVDaTM3bXlvV05kMVZWeHlYc2pMaDlndnBqSXpVaF9zZENYQXhXOF8tYXpsY3VRUmdDQ25SaUFxcVZyd3N2VkF3ekV5ZUQxeEhBOGJBc1Qwa2E1M1dMLXMxMllaelQ3SVpJSlJOdHY4VW9XQkE?oc=5",
-      "date": "2026-11-15T03:07:16Z",
-      "tag": "Preço"
+      "source": "Adrenaline",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOT0phbG92SmMydmYyam01WG1mc2xRZVFXTFp2cktpbWZ2SThUSmVGN21zLU1mZGptNGlhczdTdUhIeWtjT2xKWjduSkJIemZ2ZlBDOE5OYlNVMTJTWDNJY1lpV1ltemUyX2I1d0pFY2JCSWxYOWVPNHI0RTVqcWtEdVBXcC1RN3ZDckMwSDJ3dTJORjRBM0ZtQnZ1SmNWaWJvdWRxLVJ1dGNQVUxpN3ItZg?oc=5",
+      "date": "2026-11-15T13:12:00Z",
+      "tag": "Rumor"
+    },
+    {
+      "id": "n-fe75253f16f7",
+      "title": "Será que GTA 6 marcará o fim desta geração de consoles?",
+      "summary": "",
+      "source": "IGN Brasil",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWnhKQTUtb2VYQ0hZVkF3Mzc5eTM1RThURUJiWTRRZGFGZ19DbmtHaTRKTXBab0l1S1FjZ2U5bFR5c2xnQzA1NHdXalV5WXpKczJlWl9xRkNpWWY2YTk4NS1kTmk3eVBWaXEwZmktNE9Cc0pzTTRrUEZnOWJTSTRpcmpCMjZIYXdfTXpNRC13RTdndUVKUXlKOHRBb0Y5cDhuVkE?oc=5",
+      "date": "2026-11-15T13:04:56Z",
+      "tag": "Notícia"
+    },
+    {
+      "id": "n-67c227b173a2",
+      "title": "Ansiedade nas alturas: os efeitos inusitados do lançamento de GTA 6 no mundo corporativo",
+      "summary": "",
+      "source": "Valor Econômico",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNd2h4SzA5UFozZ0NTSTZmYjUtYnpvM2J1bzE2RXh2N3haako1S29UYzNpWFA5R1ByeGpqbm05YjRvTG5WRWp6VVNnOWUtci1ZbmVWc2lSZUNWeG94YjR2dVlJSUd5Q29Ib0NNX3YzaXh6TlFQY2wzTVV0cFNKcFE3bjNUMDBJbnF1dE1Qa3Zydm9TMHlYSzV4d2szZGxnT05kYi1IcVBMR2s2VzRBTUxDNGlyWkE1NU1xYzduX05vZGFtUEF5MWVJYzVGRVE4aFVON0hOYU1EeXl3S0tMVkNZUHVYd2FSYUtCeVkw0gH6AUFVX3lxTFBHbWNMWTRjYmM3S0tJMGlOaUVxUDAwVC1MT1NEcXNfRllOSnVIbjR6SWk1c1VsV1MyV1FnS2duRG01WEFrMFkwamwzcjZ4b29TdDM2Tm5CYlVmQU9GV3ZQQ1NPTXk5ZHBVZlNock1JTkRmSHFGY29XRFZBZjlHTkVyUmt6ZjNabzZvVDRPLW8yRlFvbnI5MGZxYkliNER3MFhvWnR1dk1DcEpXSW9uaVpjVmduT0IzRW4taC1OZ0ZDU29NMklBNzQxNXhKeGs4T3FWaTE0MjJ3Zzg1V3RnN3JsOHhELWQxWFgxQ0piUkNaS3NJSEZaX0U4eXc?oc=5",
+      "date": "2026-11-15T11:00:01Z",
+      "tag": "Lançamento"
+    },
+    {
+      "id": "n-af7ae52d7147",
+      "title": "Ele trocou Hollywood por uma empresa sem receita. Hoje, comanda a dona do GTA VI",
+      "summary": "",
+      "source": "Bloomberg Línea Brasil",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPY3JoTzU3bHBRNXdiNXNRWHpESTdUWUhuX2pCT296RTcxVU10TTJXRkFBOWh5QVlYOVJMWkMtX1RfQkdyVmxfeEVzMkRxdXc1MEVGekI0V3VHcmJxcEZQbmlLRkhSNE1SZHllLW0tczJBYWk0LUFYWDhXNFcyRkRZWFR3ODFHdm1QYzg5bWpxYzQxZEV3Vml2c0VxbTN0d25Dd0Q4U05tclZpaFh5WUxxQjZOYUFzMkE5dXgySlIwUdIB0wFBVV95cUxPbW9QOXZfMXdCMGxwblFiSHRmdHVmaVEyQVpaZ3VfTE1BNkI0SDE0UkFoQXdwYVJPR0hJa2k2MGVodjFHSzFCcUtST0I4eC1oZVUtdVZLU2FpY2tEY2pTb2tja2YtOGFXRXJBYnFHcDMwZDhISzEwa1NFdlNNRFlOWHZyb3RQZ0ZKMldhU3ZnNndjbmlJTUh4SC1ZbTVrSDNoV1JjY1NzS3A2TFl2SnBNMFZDLWU5TnBkTzdaQ2ZUU3lka3dDdEdVekRhbXBldlNFNlcw?oc=5",
+      "date": "2026-11-15T10:36:02Z",
+      "tag": "Notícia"
+    },
+    {
+      "id": "n-60f0de17c3bc",
+      "title": "Rockstar Transforma Miami em Vice City e Confunde Jogadores com Vídeo de GTA 6",
+      "summary": "",
+      "source": "Forbes Brasil",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZ0ZoSzlPOUJDY3d1bzlrTkJWUng0bVFhMHJhZzZMTEdHYTVOaGE4b0VjU0tSc09vTi1ka2Zfa3hyVTdDVzBrZUF6NHk4Z2NPMGFsM2oxeVFpMlNEbGl2YzlQXzQ3NklRbEFSX3VIVy15aFZybE1xWnB1U2JfVnJHS28tQkRFNnRQOHRxRnQyV2ZQQTU3eWRWa0pHVUxRQ0Z4dG9ncjIwS09xVnVQUm5ueF9ZOTFNRWNHS2piU2tB?oc=5",
+      "date": "2026-11-15T08:03:00Z",
+      "tag": "Notícia"
     },
     {
       "id": "n-1f04ff113773",
@@ -24,6 +60,15 @@
       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOemR6bTVkUnVOYW56YlhyYU4wZmk4aGVRNGZLNTYzb09NYTNSbjJHZWJldURJN21ncXYxancxTktXWVBGbkVlMHFULXJobFhnbFVzZ1hFSVlFVlFkWEswUG1JYmt2bS1HRkNUZGdQRU5paGM5NUV0bldHakdQZ2R1MGdSbGtmZktob3lyeUQwdHN2eUd3RGNLeHJiT1MtRTlNWUJTQ0Z0b2tmdC15WGdiNGdTaGZBUHRYMUg1Q3V2aWJ1ZWtEdlVRMVRUajBZVWdpQzdfaXhJWQ?oc=5",
       "date": "2026-11-15T01:00:00Z",
       "tag": "Notícia"
+    },
+    {
+      "id": "n-e6dfa052b1f7",
+      "title": "Xbox Store lista nova edição de pré-venda de GTA 6 por $2000, e preço causa espanto",
+      "summary": "",
+      "source": "Notebookcheck.info",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQajFRLWNGSnEwNlhQeHc2aXJlanpMYlBrbmxROU1md3B6cDg5X1dLeEhPYXFMQWU1TmZwdFYtSkRvYmNlb05wY25DaEdZNk9hUnVrWm9LRk44QWVDaTM3bXlvV05kMVZWeHlYc2pMaDlndnBqSXpVaF9zZENYQXhXOF8tYXpsY3VRUmdDQ25SaUFxcVZyd3N2VkF3ekV5ZUQxeEhBOGJBc1Qwa2E1M1dMLXMxMllaelQ3SVpJSlJOdHY4VW9XQkE?oc=5",
+      "date": "2026-11-14T23:14:00Z",
+      "tag": "Preço"
     },
     {
       "id": "n-ed5f7c549180",
@@ -681,51 +726,6 @@
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVnBqMVYxVko3ZGplWHc3dXRKTVJhV2xYRmV1WHhkU0JYckFvYXZGeFYxNGhqaGE3VVR2WTNFaHIyTHFtUlVMYk9UWXkwS0ktS1o2ZmEyZnBNMmhLb2EtaFRJVW1kQmc3WVFIX3VjMXkxdTQ4VDB3a2Z3eGFpUV9DZnlfc2wtR0JIYjBzWXBhMmtJVi0zN3JRMmpySlJwQUdHcVo5YnNCUFpBVlVtQW02VHZpVC03dlRodzFyX2c0SEF2bXPSAcgBQVVfeXFMT2NXWHpubVY5amJWdkxDMXRIc21SMGw0VHladE14SWxwSU9BVzAxX2ZiTXhwR0V2aWZka2VaSDdIeVpZRkxUeElwZjBCSzlmNWgxd1pCbl9lNW9OWU1GY1QxUWtval9hbGtOcE1ZUXo0VFZWcjJZT2JIZ3E3U1lZbm82VWdBWFVaWXdNT1gwSkhxYTlkUVBoSENXR016WUFnMjBsUE9xaUVEektRY3h1c1U5Y3Y5cXl0NDdlTHZmV2xQNW9XV0pOdkM?oc=5",
       "date": "2026-11-12T20:15:00Z",
       "tag": "Notícia"
-    },
-    {
-      "id": "n-817b8aed728b",
-      "title": "GTA 6 bate recorde histórico antes do lançamento",
-      "summary": "",
-      "source": "Metrópoles",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVHROT1ROcjg4V1ZvR2ZDcnluOTBaeDY5M25NZWEtdXlVajZZRUpvRlNDYUVHNU1XZzNEN2xsNTcwNjV3THBIdVJqeWFXTUwxVEc1cWxVdmJ5ZnJDa3RLSmtpRFE4QnM3NjR0d3hWeFFWV3pDcmxjbkZ6WUdEenJvcXlFa0kxOUxDR1Bzd3ctVU1tbnQxMVd1ZUItRGNld0hlaGc?oc=5",
-      "date": "2026-11-12T19:30:00Z",
-      "tag": "Lançamento"
-    },
-    {
-      "id": "n-d8af9af1578a",
-      "title": "GTA 6 está fazendo tanto sucesso na pré-venda que está atrapalhando outros jogos da Take-Two",
-      "summary": "",
-      "source": "Estadão",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOb3libjZQUExPUl8zellSNC01X1BndlFkR2ZxdWpIY2lqeVFZQThpZU01SDVxM0t3bkRHcE8xUlZQaWN6c01SX2pQdjhreWhKNzl5eHduaTlRcE5FUFZEa25tbHNvNU04VDVIQVNOQW9kQmlBc1RGczV6aEdXR3pSWG1OeW5CUnpOb05LVGwtTDVELTJ6OXBMUlVYeU44RENMdDhyWkNQaFJPanoyRmRtY1g2Y2JSTmZKaXN0bmpqbTdDRm1LUUhuWC01OHA3WWpf0gHWAUFVX3lxTE1nQmM5QXl1eF9wQ2NqZlRLVlRoTmRfRmktR2NFNjZEWVdnSTRPSWFIeUlfZ1Ria0FGX0xETGdKa2RKRU9GNTI5TnI1UWRfOFJwUGVDVHlYY0w2MkUwcEJfY0JfUjRuYWZOMm9LWFU3SXN3R2c5aXN3d0hDbVhzNkhlaGF0Y3M2WVVHQ0NTYnZKVlppZGZNbm1VMTJIU2pJWUpGTl9yQkNzQ19FaXVCUG8zdjBEX1lZS09zYk1vLUpfWFduVXdUUG94SkhXVFgtejhPN0xTMlE?oc=5",
-      "date": "2026-11-12T19:25:26Z",
-      "tag": "Preço"
-    },
-    {
-      "id": "n-7f7ffb222b02",
-      "title": "GTA 6 faz faturamento de produtos temáticos no e-commerce disparar 319%",
-      "summary": "",
-      "source": "Omelete",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNWWRtZzFWZ2U5LUJkYnQ0M3VIVFFBYUU1WjNZdzByWUVkSE40bkpDaE80STNKYmZCb0VxLWQ1UWgxa0doVER3SndKYVdOV1FNSHlxNF96dVBDMGxDbVZiTzdpd2oyYXp2TnhPSnlOODBqUVU0dU8xczREaUN1UzZ4SENZNjZiN2pvMzEwTEtVQU1YWnNScFF3Sy01Q1M?oc=5",
-      "date": "2026-11-12T19:16:00Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-c4ed4570a263",
-      "title": "Cada dia mais perto: Rockstar divulga mais um vídeo de GTA 6 que esbanja os gráficos absurdos do game",
-      "summary": "",
-      "source": "IGN Brasil",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPUEotUThvVG5PSkNaa2RxX25MQ1hWUXBtSU5PcllCRjNJQVVKNi1XekY5SHhtN0JzU04xbnRFbmNITHFBVGxaQi1yM3c3M0RtT0phY0l2aXBwWktRdVlSWFlkX2d4SjQySmJ5Y1ZKYnlpTXU2cDdwTnRjWDRBYzI0SHdaUzZUSlRxUGJ2S3lWVnV1cDM4aW5ONkNIYy1QY3djWUdLRlkteHd5UGRzMWlfaGdwYlFROUtzVjJ4YmNJREQxY19ISVZ0VDY3TTZUTmw1YWsyVDFTM2dLOXBkajlv?oc=5",
-      "date": "2026-11-12T18:52:22Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-95bba2c9baa6",
-      "title": "Quais consoles vão rodar GTA 6? Veja plataformas confirmadas para o lançamento",
-      "summary": "",
-      "source": "Canaltech",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbHlJSUpqUlItUUs2eS1GbEkwRXdCQjhGQUNPX180MFBKVzdnNVJZLTVNNnQ4Sm5ITnVWVkJKOFRYTnktcTcyT09jTzAzc2N3QWFKT1g3dm9ISjM1TzRXazdnSm1ybkYtR2hOc2owSFJUa0t3c2JxWG51dTNGNHRIQ0l4V2hhOVpoOHZwU0FFWGtVY3Y3YnkxeEpsVTNCSFpYMEFLS0R1djMtcnVzSGc?oc=5",
-      "date": "2026-11-12T18:30:30Z",
-      "tag": "Lançamento"
     }
   ],
   "videos": [
@@ -752,7 +752,7 @@
     },
     {
       "id": "yt-lFiekcG45ds",
-      "title": "DAVY fica MALUCO no UNBOXING da MÍDIA FISÍCA de GTA 6!! #FGN",
+      "title": "FIZEMOS UNBOXING da MÍDIA FÍSICA de GTA 6 e o DAVY ficou PUTO!! #FGN",
       "channel": "Cortes do Flow Games",
       "youtubeId": "lFiekcG45ds",
       "date": "2026-11-14T16:30:26Z"
