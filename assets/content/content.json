@@ -1,12 +1,30 @@
 {
-  "version": 202611150036,
-  "updatedAt": "2026-11-15T00:36:19Z",
+  "version": 202611150725,
+  "updatedAt": "2026-11-15T07:25:30Z",
   "releaseDate": "2026-11-19",
   "platforms": [
     "PlayStation 5",
     "Xbox Series X|S"
   ],
   "news": [
+    {
+      "id": "n-e6dfa052b1f7",
+      "title": "Xbox Store lista nova edição de pré-venda de GTA 6 por $2000, e preço causa espanto",
+      "summary": "",
+      "source": "Notebookcheck.info",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQajFRLWNGSnEwNlhQeHc2aXJlanpMYlBrbmxROU1md3B6cDg5X1dLeEhPYXFMQWU1TmZwdFYtSkRvYmNlb05wY25DaEdZNk9hUnVrWm9LRk44QWVDaTM3bXlvV05kMVZWeHlYc2pMaDlndnBqSXpVaF9zZENYQXhXOF8tYXpsY3VRUmdDQ25SaUFxcVZyd3N2VkF3ekV5ZUQxeEhBOGJBc1Qwa2E1M1dMLXMxMllaelQ3SVpJSlJOdHY4VW9XQkE?oc=5",
+      "date": "2026-11-15T03:07:16Z",
+      "tag": "Preço"
+    },
+    {
+      "id": "n-1f04ff113773",
+      "title": "GTA 6: como o novo jogo pode transformar o mercado de games e a aposta bilionária da Take-Two",
+      "summary": "",
+      "source": "Times Brasil | CNBC",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOemR6bTVkUnVOYW56YlhyYU4wZmk4aGVRNGZLNTYzb09NYTNSbjJHZWJldURJN21ncXYxancxTktXWVBGbkVlMHFULXJobFhnbFVzZ1hFSVlFVlFkWEswUG1JYmt2bS1HRkNUZGdQRU5paGM5NUV0bldHakdQZ2R1MGdSbGtmZktob3lyeUQwdHN2eUd3RGNLeHJiT1MtRTlNWUJTQ0Z0b2tmdC15WGdiNGdTaGZBUHRYMUg1Q3V2aWJ1ZWtEdlVRMVRUajBZVWdpQzdfaXhJWQ?oc=5",
+      "date": "2026-11-15T01:00:00Z",
+      "tag": "Notícia"
+    },
     {
       "id": "n-ed5f7c549180",
       "title": "‘GTA 6’: veja a trilha sonora com Dua Lipa, Travis Scott e Jennie",
@@ -15,6 +33,15 @@
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9TZTBCSlh3aV9RNlM2MV9mR0xYTDc0VXNtdG44WEdVMGVqZlBlUXFpTmQtYmRJMHRqcGhCckl4ZEZDaTRJaS0tWUZuTGU5emllQXdXMWtnZzFpVXRDWldQZHdNeFJiYU9zTXZ0akhYcDE2Ui1TcUpHTWF4Z21Tdm8?oc=5",
       "date": "2026-11-14T22:33:57Z",
       "tag": "Gameplay"
+    },
+    {
+      "id": "n-ed16bac623c4",
+      "title": "LIBERADO! GTA VI RECEBE ATUALIZAÇÃO SURPRESA NO XBOX E FSR 4.1 APARECE!",
+      "summary": "",
+      "source": "Xboxers",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPaEpxb1EtTXRpaHN0TUM3N2hhZDNsU01JOHIyeEN5RGh1dEE1YWQzSjBTZW5wWEd4SFZMNF9JVTBfdlpNUmljUk9IRFcyeVYyMzVjM3pvWDl5aU1mcFo0T0dlUHdNUl9ZcTktX1k0dXN5ZDluVE83MTBIRVljWDIxbFg3WERXeTVhaTRaOFZSQllZcU5KYVF1Tg?oc=5",
+      "date": "2026-11-14T22:01:11Z",
+      "tag": "Notícia"
     },
     {
       "id": "n-054505ddfa93",
@@ -699,33 +726,6 @@
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbHlJSUpqUlItUUs2eS1GbEkwRXdCQjhGQUNPX180MFBKVzdnNVJZLTVNNnQ4Sm5ITnVWVkJKOFRYTnktcTcyT09jTzAzc2N3QWFKT1g3dm9ISjM1TzRXazdnSm1ybkYtR2hOc2owSFJUa0t3c2JxWG51dTNGNHRIQ0l4V2hhOVpoOHZwU0FFWGtVY3Y3YnkxeEpsVTNCSFpYMEFLS0R1djMtcnVzSGc?oc=5",
       "date": "2026-11-12T18:30:30Z",
       "tag": "Lançamento"
-    },
-    {
-      "id": "n-396f868f0da3",
-      "title": "GTA 6 | Que horas jogo será lançado no Brasil?",
-      "summary": "",
-      "source": "Omelete",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQN0lLRGNiUml2c0huNHhGb2lSZ1dxZ2hSbERhMXJVamFNb09QU0RCODJDcjdKU1Y3OXZWNFZLTGNhLUs2bUJRLW5wTjhZb29WVDQ3Vkx3eDdJRTMya0pWZUt3bmJ5em5iak1tYUpacTlySzcwNVR2SXpJT3ZlRGZGSEt3?oc=5",
-      "date": "2026-11-12T18:06:00Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-aa2d52bd1710",
-      "title": "GTA 6 terá transmissão de 24 horas no YouTube para o lançamento",
-      "summary": "",
-      "source": "Adrenaline",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYnRGWmk2QW5nc0JBbXRRdHByeWYwck1zekFxN3M4UFNURHpqTmJ0UkZ2c3pxOWNqWTdPQlVFOFQxY1UwRFJocVZiSFFCVjFwWlhuZGFTRmE2V3RIUXNZdlBwX2NweEpwLXFTVVE5ZFhQblpkOHZaelBZVUVRRXQwTk1TWU5iNVZrbGU5MFRmT3kzR3dXSFMwcmp4MkdIZlZPNkE?oc=5",
-      "date": "2026-11-12T17:52:00Z",
-      "tag": "Lançamento"
-    },
-    {
-      "id": "n-47f031007301",
-      "title": "Empresa dá folga remunerada para funcionários jogarem GTA 6",
-      "summary": "",
-      "source": "SINDPD",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBtcEM5akJWUGZlazRIdlBFMlEwZDB0Ml9kOHNaNXEtWTd2MGJHTl93NFlja1BITVdKc0VMaGpaSGxtdzlMNFZnOUZrUDZJOU1CZ0NKR0VoSDNjVzN0TW95WnNMUVRZVE1xWWJEVV9NclFldw?oc=5",
-      "date": "2026-11-12T17:25:47Z",
-      "tag": "Notícia"
     }
   ],
   "videos": [
@@ -883,7 +883,7 @@
       "title": "GTA 6 na Netflix: Uma prova ESCANCARADA de GANÂNCIA da Rockstar",
       "channel": "Cortes do BRKsEDU",
       "youtubeId": "cQ41GMFLGKc",
-      "date": "2026-09-16T00:36:19Z",
+      "date": "2026-09-16T07:25:30Z",
       "approx": true
     },
     {
@@ -933,7 +933,7 @@
       "title": "GTA 6 ONLINE vai DEMORAR para LANÇAR? BRKsEDU comenta!",
       "channel": "Cortes do BRKsEDU",
       "youtubeId": "tcPrzUDgO-o",
-      "date": "2026-07-18T00:36:19Z",
+      "date": "2026-07-18T07:25:30Z",
       "approx": true
     },
     {
@@ -941,7 +941,7 @@
       "title": "Versão Ultimate de GTA 6 é a REAL VERSÃO do jogo? BRKsEDU comenta!",
       "channel": "Cortes do BRKsEDU",
       "youtubeId": "2laXuYGvRN0",
-      "date": "2026-07-18T00:36:19Z",
+      "date": "2026-07-18T07:25:30Z",
       "approx": true
     },
     {
@@ -949,7 +949,7 @@
       "title": "GTA 6: Que tipo de REVOLUÇÃO podemos esperar no game? BRKsEDU comenta!",
       "channel": "Cortes do BRKsEDU",
       "youtubeId": "yZsPEJtLLAk",
-      "date": "2026-07-18T00:36:19Z",
+      "date": "2026-07-18T07:25:30Z",
       "approx": true
     },
     {
