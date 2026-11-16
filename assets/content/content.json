@@ -1,12 +1,66 @@
 {
-  "version": 202611160006,
-  "updatedAt": "2026-11-16T00:06:49Z",
+  "version": 202611160658,
+  "updatedAt": "2026-11-16T06:58:54Z",
   "releaseDate": "2026-11-19",
   "platforms": [
     "PlayStation 5",
     "Xbox Series X|S"
   ],
   "news": [
+    {
+      "id": "n-e35331eb130c",
+      "title": "Quando será lançado GTA VI? Veja data e horário de estreia do novo jogo",
+      "summary": "",
+      "source": "G1",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNV2NobjlucGtoYmJvd1d3TkJFZVVKbTZoWU9Femsya0pDZEpua3RjOWhXSTBjWFRvNUpXRzdabjFLbnk3X0p2R3hRQ2g3SlVTQ3BqcFp1T1QzZVV3WTJSbW5XTE5VQnhPQmwtNEtyYndCdm96MGRFa0hTM051SGh0SVBxbFpqVlM3Qy1POEtNcFrSAZ8BQVVfeXFMTV9KS1l2VUZjcThUVHBZRmdHdU9wZ1I2NGdWN2xqY3FjdXNVcDNyTnlRa0hrZ3Rjb3Vvd19rMjRSWFRCTmxWQWlUZ29idlR0ZnVNVUhOUUZMUFJjMW5hejQ1cXN5U0VYZHdCa1pnbXNSd1JBd3NHWVRFMkJMTnFPQy1DWDVibEdEQkFudC11OXE3TUx0QWlaVE9TSWJoUDZF?oc=5",
+      "date": "2026-11-16T03:00:00Z",
+      "tag": "Lançamento"
+    },
+    {
+      "id": "n-ba9e1a749c9d",
+      "title": "GTA 6, Spirit Crossing e Motocross The Game: veja os games que chegam na semana",
+      "summary": "",
+      "source": "A Crítica de Campo Grande",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTUtUdnZjTzg3RTRoR2pCQ2NqR3ZTNTNTRmJsZ1V1Vm9CakVZYnVXUGJqdGNoZ0pNYlMxZWFnZU5zSG9MV1JrT1ZLZEVSMVpocVgxT1N3dHRDYktIbDNiTDhkanFQYUNRT25ydjBFMkhybXZoOTV0cTJHdnpSLVRrZ1ZOWlpINTEyRThQWDNLRTlSbDB6NWJlaA?oc=5",
+      "date": "2026-11-16T02:00:00Z",
+      "tag": "Lançamento"
+    },
+    {
+      "id": "n-e67be7f8f6b8",
+      "title": "GTA 6 se torna o jogo mais comprado em pré-vendas da história",
+      "summary": "",
+      "source": "tmc.com.br",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWlBTdnREUzI0MjJyWmpfRmNFaVpfMjNMYmV0Z3djTlZ0MnNWbnNSTHFkeG5iRGJ6dWpjQ3FCLUxnY3FacE9uU0lrZlFxS3FBalAxaHZBbE5qcFRkX1llZzVDV29QWmVMM3FrcDFzR29GcjYySzlZWXZvT1NNQklodjFYMlhZbTVfdXhoS296UkVjR1dpRS1MYVJpY3M?oc=5",
+      "date": "2026-11-16T00:29:54Z",
+      "tag": "Preço"
+    },
+    {
+      "id": "n-bda628b5c25a",
+      "title": "Carro do protagonista de GTA 6 é cópia de BMW com motor ligado a Nelson Piquet",
+      "summary": "",
+      "source": "AutoPapo",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVHp3dHJ4dFBkS2l5cTZxTDJhaHNadnotZmZGUUlmTkV4V2ZTQkYwamNLNjZJeG42a3hFRW9BZ0dBWGtGQk11M2NfUGFJSnZMcHNiLVBhWjllZDIybE5iNkdqS0RxZDFORjh0ckVrZXVXVFpxSk9rdnVSUWgtYjN1Ui0wMjE0dUtsYkFuaXVvRUlJXzI2UWFsbDFVM3JBX2VSWWxLYjhkVkUwNTVIcnRSSA?oc=5",
+      "date": "2026-11-16T00:00:00Z",
+      "tag": "Gameplay"
+    },
+    {
+      "id": "n-0ce9661a5b8a",
+      "title": "GTA VI é o primeiro Grand Theft Auto criado para incentivar a empatia, diz a Rockstar, mas também não vai punir os jogadores caóticos",
+      "summary": "",
+      "source": "Notebookcheck.info",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOS29zSk0tSnpRVUNXLU9tR0pSbXByVjU4ZXpxazhZT1FYQmhRakVpc3JwWjA0c1dZTFoyMDdiV2QtSFNscktTMVVjUUF4Wlk1RER5c1VCcTRTVU1ScVV6VTZFUm9neWJ2VTAyTGFIVnpYVFFaVTlzOHlWa0hFeE9ZM013Um9oOGlHcEhLck0ybmlxSnozbXZybVZ6ekRjcVFsdkdBd2ZEMmsxNVBEUVFyQ212RHhLVlgxTmlDaENjTms3eG9naXRMM3pDTDZQbVl4cFhaMHVGT2tuUHM0bUNGY3BlQnFJeWZ0ckFZT1RrWHpkRDBVcDBlX3lfeTd2RG1WMkpvSjhRel8?oc=5",
+      "date": "2026-11-15T23:16:00Z",
+      "tag": "Notícia"
+    },
+    {
+      "id": "n-c4bb77916119",
+      "title": "Vazamento diz que a história de GTA 6 leva 50 horas para ser concluída e o troféu de platina no PS5 exige 200 horas",
+      "summary": "",
+      "source": "Notebookcheck.info",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPd1hVZlBNVVJ6Vy1pZ3JNa0o3UklXLV9ERjNrOXNRMFBmLXpkRmV2MkttQWhqMFFaZ0doVHN3dmgwY1dHMHlOSkRkc2xncWV6QlBnamhqWk1mcWNoVzBfZGdIMHpMY3J3UXhnUEJUZHZLTzNKblYzUkNaQ1J3R3pDNUsxSXlDZG5OQnp4M0kzRVFXWVhwZGI2c3BPOUZzWjZFLXF4ODFHZi1uOGtmS25ycWJCUzYzVFNWSnFoT0F6aXRFWG5NXzVNNzc5dDNZMmtXSHlmNUc1RE5zMXNib2FxVzF5bVV1MWwzMFp5Mk5nbjJuams?oc=5",
+      "date": "2026-11-15T23:16:00Z",
+      "tag": "Rumor"
+    },
     {
       "id": "n-fe2c15c8a8a3",
       "title": "GTA 6 e mais! Veja os lançamentos de games da semana",
@@ -44,6 +98,15 @@
       "tag": "Notícia"
     },
     {
+      "id": "n-5a52455a5c43",
+      "title": "Quanto tempo dura GTA 6? Jogo pode exigir até 200 horas para completar tudo",
+      "summary": "",
+      "source": "Hardware.com.br",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9uaDBNTlptNDgwMXZDOXBSVDdhdUd6OUVQemVSbEpPQlNOa21Rd1ZhNE5yNlFBRzNOTmdSSV8tN2JXQkE1emZGclVRaUxJRWpqSTRJNmJpNENlb05ObXlTRTJlMkc1RnRpeTBNNmNaMA?oc=5",
+      "date": "2026-11-15T17:40:07Z",
+      "tag": "Notícia"
+    },
+    {
       "id": "n-0697f7fce5b9",
       "title": "Trilha oficial de GTA 6 inclui faixas inéditas de Keith Richards, Justice e outros artistas",
       "summary": "",
@@ -77,6 +140,15 @@
       "source": "InfoMoney",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQa2FWRWgxVWJ0VUNCb0FzTVlJWHJrbTZjTzdOcm1ydy1aRV9iTDBzTXdsNHpKR09Qdnd1SVlQNGRzdGFMempldWVLNGJabTNWalJKQktOWEQ0Vk1HZWc5UTl5U3ZYa0hoWGlMUEJtaTJkeGcxX0hsdG1zMFlqQ0xKQUdwS053aUJYbnpGbUp3SWNoVXFUOHItR2lFekFXRU43ZHBZRWNfMmZaenhkR2Y2OTJlSmlQY1g3aUVqStIBwgFBVV95cUxQNFNLWXd0ME9nR0RnNkJtWGRWb3U2ZjltTXgtaEZUU0VEQ2MxLUkya1VOOW1sTlNfcU9IeGp2TThDZURXQWJHYjVMVFNvOTdQYmNLRjNwM19zcW05a05fN1hjNWI3OW1MSDhZbVFRckUxYVVMcVU0LXRBUjVHdUVkS1JOZmtTT0R5MVBLWlZtRmtqUk15U2ZTNUdGNjBac0FnOThsUXU1S2ZCWGl5SXN2YXlCV1JPZkh1TG84dGRJblNxQQ?oc=5",
       "date": "2026-11-15T15:03:36Z",
+      "tag": "Notícia"
+    },
+    {
+      "id": "n-8babef8e995a",
+      "title": "Take-Two diz que IA ameaça criatividade de GTA VI",
+      "summary": "",
+      "source": "Arkade",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNSnd2RWx1R3c3VDRnNGp5eTE2RDB2cDJfZ08zMWNpeF9SbkhwblgzYzRfR2FtSU92eHVRWmhLaHIzX2RxeS1SWmJ6NE1KdUJkNEdHOFBkbnpGVjNCbEFKa3M2bVptdTB0Q3dyRXBHVUk5clN5b3B3Z1l0RWdSS2FhSDZlcmpnZ2JkRE9uQkpqX3I1SGozdXczcHdlWXhwc3ZacGNiRFQzTHVjcWFOUC1HMENMWHpDV01VSU5HejdyZm1XUHlvY285V2VfMzlMMFNT?oc=5",
+      "date": "2026-11-15T15:00:00Z",
       "tag": "Notícia"
     },
     {
@@ -584,6 +656,15 @@
       "tag": "Notícia"
     },
     {
+      "id": "n-07c955505765",
+      "title": "Amazon dá GTA 6 de graça na compra de Smart TVs Hisense selecionadas",
+      "summary": "",
+      "source": "IGN Brasil",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNc3pqU21KLVFWMnJheGotTTdPVUhtNWhpb1YtOFhXZ3VDbGxBZjZVMDlpSGUyQ3pjdmhVVTQwSXU4ZmttSllOOFRRSlhpeC1zTHJLcW5hczJlald4Z0NRdEVUR2V3LXVlRHp2TmJtQ1RYZVJfRmdYdUJDenRnalk2VjNVOXNKUDJOVmhGMWE0VUIzYS1FZ3ZaUkFrWmswT2pGM2dzWjhnTQ?oc=5",
+      "date": "2026-11-13T16:40:47Z",
+      "tag": "Notícia"
+    },
+    {
       "id": "n-9e530a9a70ea",
       "title": "GTA VI: 20 coisas que queremos testar assim que o jogo for lançado",
       "summary": "",
@@ -629,6 +710,15 @@
       "tag": "Lançamento"
     },
     {
+      "id": "n-6ae03f162565",
+      "title": "GTA 6: Empresa dará folga a 7 mil funcionários no lançamento",
+      "summary": "",
+      "source": "tmc.com.br",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQRkpzaWNPMld4cW1mUlY0X3FRUFhEdDI5eEdaVXdtS29yMHF5bENWQ1lkVE5ZelgwcmJHVURyLTJjVU85all3LTBDRHJVZkszcWRDREN1ODYtUWRlTjNCUEo4RkxWNS1CSHBMUlBwd0h2ODc4NDRsRmRLRGc0Z1NtaVRiMXd4VFV5WlRmZzZmdw?oc=5",
+      "date": "2026-11-13T16:19:14Z",
+      "tag": "Lançamento"
+    },
+    {
       "id": "n-18495b4da2de",
       "title": "#Hashtag: Pré-venda, pré-load e pré-surto: Internet entra em contagem regressiva para 'GTA 6'; veja memes",
       "summary": "",
@@ -636,96 +726,6 @@
       "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOWjQ1NmFjMFVEanZINzBJRDRfVGF5OEtiTEFCMTRoTkNzQU16eTctcEIwMEVhX21XTS11T05tbV9NbjhPSEdHNHhBVm9OR0ZuVy1waU4tdnJEOS03WGUwOGRSMm9EeWtfWGg1X0pENm1YLTlPMXM2anF3Wm80WUVXTURZV29EelQ2NWlVVlJKVXRvdHFxeU5sMS1HeWFtVDFzamttVjU2UmUwbnF4WEpTTlNTdFZ3cUltcDhVQ2ZNUnRLcXQ3NVJOYWx6VWJGSkZDbk9OVmZTM2lvY2c4MWJ0el9B?oc=5",
       "date": "2026-11-13T16:15:00Z",
       "tag": "Preço"
-    },
-    {
-      "id": "n-a8f28029f98c",
-      "title": "GTA 6: Skorpion é convidado pela Rockstar para lançamento em Miami",
-      "summary": "",
-      "source": "Pichau Arena",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQVkxORkNzYTNzbkdyU3BvTUtsYm15THFIRG52M1dKMlhfclFBSS1MYWRuUFpDOElRREdmMlZ6RXNIakFUd2Z1SUEzY3FFemRRU2pGY3RTT2FuTFhyLWZlN05tbG1CWHA2VEJkaloyUm1ZTWZHNGRibUZ0eEx6YklRSG9pMA?oc=5",
-      "date": "2026-11-13T14:51:08Z",
-      "tag": "Lançamento"
-    },
-    {
-      "id": "n-98e16525d241",
-      "title": "Rockstar muda formato de GTA 6 e versão física terá apenas código de download",
-      "summary": "",
-      "source": "Diário da Manhã",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOTzhYOVNKaFZhVVBQeXVHUzFBby1GZUItMmd6R2QxVkQ2UERSVXNUcGZoOWNfbVRBTTVlVkhrVUxkb1NYUFdyU3Q1NlUyTHRCUzdHZkRfZFViNUVWR282cm9SbzFJeWRQRFRFMTNZLTlVQVZFbGttRG9HVjJfUVlva24yRzJKZ2JORE1PRmpDQm1UU09KR2VEQUQtOVpVUTY3N096dnJWdVpqb0FvRmdJNloxem9SQQ?oc=5",
-      "date": "2026-11-13T14:27:00Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-3fde5d9c030a",
-      "title": "Faculdade de Salvador vai disponibilizar PlayStation 5 para alunos jogarem GTA VI no lançamento",
-      "summary": "",
-      "source": "Jornal Correio",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNeU9MMW00UUxjSHlkQzQ1V29lVlNpZC1SMjNNQlRLaFV5Ym03MXpMQWVJa21zTzVoVVJJVEo4bHQ0YjZvOEhJX0xrQmZnMHVRQ2p4eEgtSTE5WFc1amEyYldSVVF4ZW5lQzNDbzZDeWxFemlOTHdNbXZvN1p5VDVpZ3JvSHhVdml3MlpUMmhQbEdUcS1XcUlPZG5lbHFKZVZwTFRRLTVUSkM2cFVQUHZua3g2RHpvWDlBdGRUdkdJTTVEbWhLRFEweXQzM09aYXlZVWJOREZnOEdlemNvZlE?oc=5",
-      "date": "2026-11-13T13:53:25Z",
-      "tag": "Lançamento"
-    },
-    {
-      "id": "n-4fe1a0c60f1b",
-      "title": "GTA VI chega na véspera do feriado e Coxinhas Bady cria combo para quem vai virar a noite",
-      "summary": "",
-      "source": "Gazeta da Semana",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOWmVsRnIzblBfVS1jQ3RGa0hVMTZ2OEFpaU5TVDF0Z292aVJMLV9vRmgwUVZjcVdIZ09haVBiaVJfR2pQSnJUOHZNWHUxR0lsSEpVbUV6TVR5Ulg5MlBibF9yR3BiRlpQUDJYcGdYQVlMaV9GckdDWkc4eVBSSWhiZnM0RDBwN1FfckpRcXMzT0dLSWVkeWdjZnZSeFpkeFM0TTFJT0U3YkJPUnNBMVlFNDI0NzFMeGc5V2F1WENFMHk4WVdvcmRBTUR6QWw2Zlk?oc=5",
-      "date": "2026-11-13T13:44:12Z",
-      "tag": "Lançamento"
-    },
-    {
-      "id": "n-0773f53070df",
-      "title": "GTA 6: criador de desbloqueio do PS5 vê cópia pirata distante e manda fãs comprarem o jogo",
-      "summary": "",
-      "source": "TudoCelular.com",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQb0hCbUtfNld5UGcwMFA5NEI2ODlUX0dfaVZhOGFRckcyeWZvLWRzZ3VxUTNneGoxNG93M1hCd0hQc25LTkxsX0N2S2IyRFdmOXNfYzctVWVwWHZBeXFScnl0Slh0dmFPUjJRRzN1bEhOM3UtMlpwVVhNZFhwczljSUttMmg4d2VsUjhzOXB2bFJVZ0dkTl9xaTM5d0JTVGF0eGI5QWxFeGV2dw?oc=5",
-      "date": "2026-11-13T13:40:57Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-f27ec60eceb4",
-      "title": "GTA 6 terá versão física sem disco e exigirá 212 GB no PS5",
-      "summary": "",
-      "source": "Metrópoles",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPMzZraDItVHRhTEF6NU96aWZ6NEdtNmp4S2d5SXViYV94Zl9kQm55ZTg5bGlhdUhyVFN5U3NTYVhPNHdDdG1oSnVaYzR5WUlPeV9hSnZVdU5qb19QM0RGS1RlamxyY3pFamtBTVphUWRtQlUyOTFXV0RnTlJkeXVxLTN2cnQwcUhFZUVpd1FPa1pwMDFxNVQ1bjNwb2tUNHlvaV91alZ1Sk9wSUthUUNV?oc=5",
-      "date": "2026-11-13T13:20:00Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-7edcb5d3e40b",
-      "title": "GTA 6: novo vídeo viraliza e impressiona pela semelhança com a Miami real",
-      "summary": "",
-      "source": "VEJA",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWFRnOGVkeXFsUXJ4TnpISi1xaVNDazFKLVYySWM1cm8tRDNsZ2ZrTnhlZ1NJUDY5QV9QdndxVEQ0S3ByNEJCS0FhRWhnQzdQUVNJbUcwdUtHbFFUaXMyZmQtb0drX09KLVFsdjRsbkw0Z3UxQ3JFMDR6bFg4ZndHVjJlS2VybFFCUGItX2FDd1JtdUZTeGFsYWhwXzZUMjJKRTV4TWhfQU1TS3lnRlkw?oc=5",
-      "date": "2026-11-13T13:09:42Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-a38641de9426",
-      "title": "IA no GTA 6 pode transformar NPCs em pessoas reais",
-      "summary": "",
-      "source": "TV Guararapes",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNEJONmk2YUNMU0pDUGg2WEFtQ3VzQXNjdW9lelBCd0VxbHZCekdKTGFTZ1FEbC1oM2RQZm5paGQ2eDVGMTRpb3JTaW56X3dING90RUdwS1FCVy1kbWVzeHRUUEJFSWp4SGVlZmFuVDZJVkdyN3MwamNVenNadnNFR2VLdkZJc0trVnFkbzN2ZEptQVVNaHdmOEpVMGcyeE45RzVGMDJ2U2Z2V0tGY0E?oc=5",
-      "date": "2026-11-13T12:58:00Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-d47ba4bfc844",
-      "title": "GTA 6: vídeo da Bloomberg deixa escapar previsão de lançamento do modo online",
-      "summary": "",
-      "source": "TudoCelular.com",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNZW56UzhSYURsbFIxdWlGYzhJSnlDUDFQaHo4VUhELW1hVThLcURZVm01bWtZQXF6TnFGQmV5dDdYYTY2VkFnMlRYaUoxdi16Z21fZ014aWp3ay1TYmtGMmVwc0s5b2U5UHBfa0JHRFBNcUVSQldRcU10MlkySkJuWWJ6WXJ6N3NwT3dSZXd2NmNBZDFSeGVEbThlX25Zbml6aE5teXQyWXBlZw?oc=5",
-      "date": "2026-11-13T12:27:44Z",
-      "tag": "Lançamento"
-    },
-    {
-      "id": "n-bf74f83fff8c",
-      "title": "Magalu e KaBuM! dão \"colher de chá\" para funcionários jogarem GTA 6 no lançamento",
-      "summary": "",
-      "source": "Canaltech",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOcVhtczNjTlV6NVctVVN6UjBIaE42V1NnWGhJLXUwdDdvTUtRWDRKdmlRdE96bUJWanZMZFRKTUZZSE5jUmpKaExjeTczeXBaX1FIeW9DU1V0S09kS294dldOeWppZmtNUFkwcHNCdEdSb3pLY01SNmZpbTMyeWFxV0pfOHBfSHU0NHlyNXR4OVhYWWRfVjRoaDV1UVQzSFhFbm1GMHB0T0dLTEg2bDNZ?oc=5",
-      "date": "2026-11-13T12:01:56Z",
-      "tag": "Lançamento"
     }
   ],
   "videos": [
@@ -876,7 +876,7 @@
       "title": "GTA 6 na Netflix: Uma prova ESCANCARADA de GANÂNCIA da Rockstar",
       "channel": "Cortes do BRKsEDU",
       "youtubeId": "cQ41GMFLGKc",
-      "date": "2026-09-17T00:06:49Z",
+      "date": "2026-09-17T06:58:54Z",
       "approx": true
     },
     {
@@ -933,7 +933,7 @@
       "title": "GTA 6 ONLINE vai DEMORAR para LANÇAR? BRKsEDU comenta!",
       "channel": "Cortes do BRKsEDU",
       "youtubeId": "tcPrzUDgO-o",
-      "date": "2026-07-19T00:06:49Z",
+      "date": "2026-07-19T06:58:54Z",
       "approx": true
     },
     {
@@ -941,7 +941,7 @@
       "title": "Versão Ultimate de GTA 6 é a REAL VERSÃO do jogo? BRKsEDU comenta!",
       "channel": "Cortes do BRKsEDU",
       "youtubeId": "2laXuYGvRN0",
-      "date": "2026-07-19T00:06:49Z",
+      "date": "2026-07-19T06:58:54Z",
       "approx": true
     },
     {
@@ -949,7 +949,7 @@
       "title": "GTA 6: Que tipo de REVOLUÇÃO podemos esperar no game? BRKsEDU comenta!",
       "channel": "Cortes do BRKsEDU",
       "youtubeId": "yZsPEJtLLAk",
-      "date": "2026-07-19T00:06:49Z",
+      "date": "2026-07-19T06:58:54Z",
       "approx": true
     },
     {
