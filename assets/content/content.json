@@ -1,12 +1,48 @@
 {
-  "version": 202611210902,
-  "updatedAt": "2026-11-21T09:02:35Z",
+  "version": 202611211653,
+  "updatedAt": "2026-11-21T16:53:06Z",
   "releaseDate": "2026-11-19",
   "platforms": [
     "PlayStation 5",
     "Xbox Series X|S"
   ],
   "news": [
+    {
+      "id": "n-9fadb3da0db2",
+      "title": "“GTA 6” bate recorde e se torna o maior lançamento da história",
+      "summary": "",
+      "source": "CNN Brasil",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNM0tQaFotS0RMOWRyWFc4NVhaNjduUHFuekFSWVFSa093OXJyb2lIR1JQQVZ5RDhvdC1La01BSWxYbUY3aERvRENXUlA0bng5cEwwd0U2ZnNIRTUzVGNIVWFSdTYzQ2d2My1nTlE5cUtfeGdzb3NLLVp6UklEbnNGbVNTV0pQQTJZNTVCWjR1QmZyYkg4Y2NiV1V3?oc=5",
+      "date": "2026-11-21T15:02:42Z",
+      "tag": "Lançamento"
+    },
+    {
+      "id": "n-de051667129c",
+      "title": "GTA VI Gera US$ 1,84 Bilhão e Atrai Netflix, BMW e Grandes Marcas",
+      "summary": "",
+      "source": "Forbes Brasil",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcko0YTdROW5CTEZnZVFidWNud1A4S1JWUHk0M3ZDOXk1NHlDNjFYbmFMd3lQSHBQbDNianJIeUttYjlrWjNNT25oOTVabXNDc0RBYk5LTXJHSmFicXN0eHQzSlhpaGVDMXdVb19acWp6YXZzMVZWZXFaMEJjcmtKRHFKTlRKdTFnRGhac2x1OEtROHJSY3RJbVp3b0h0T1RMSnFGa3JwOA?oc=5",
+      "date": "2026-11-21T13:42:31Z",
+      "tag": "Preço"
+    },
+    {
+      "id": "n-e10306640e94",
+      "title": "GTA 6 sofre ‘review bombing’ no Metacritic, mas recebe avaliações positivas de compradores",
+      "summary": "",
+      "source": "Estadão",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQSjVKZURaMUFNTUtmNHBpVzRndmlVZ2VwbXl6UDFMbTdVRnRXTmJaSXRraTRiY3lJSzRXLXF1dV9vMGc0VDYycUMzUm5kZVRVWUlRSlI1VkNLZ1hkTFJFS1ZocWd2Uk03MGFlbnphV2Q4NWtNMTROdE45QjdtU2FxcXBVRmlralNSSmkwS1hEeWFwQXBZb0RVOXo2bUFycF81TE5JNS1MQ3RoaVl2UVdYekJmWTJFcG9kWGJZTUVtUnYyeWcyeVFOYUFn0gHPAUFVX3lxTFB4Y3Eya1BkQjh3bnFvWm1qX1U3OFJHV0RDTFF3NzBnbl9XZVNyMGVoZHh5bXBQWWpaeU1vZWdCbWxUSS1JVGEzNWk0OEtLNk9KX3dnYzN2ampmMFVjYnR5Z3BfZ1doSDRMTTNqOWJ1aWFTbGlTZHRIYjROeWl5TkYyOVBpaklCekdSdlBXekdQS3lxd2p2aDlDakJid2N3MUVPNzI4WHpSUmZ5T0F5NnNhSGJpUWJjdGwtdEdNSG1FQTlUTjdQalVWWVNlTjY1QQ?oc=5",
+      "date": "2026-11-21T13:33:00Z",
+      "tag": "Notícia"
+    },
+    {
+      "id": "n-9d3c1160bdff",
+      "title": "Erika Hilton aparece em transmissão ao vivo jogando GTA VI",
+      "summary": "",
+      "source": "Congresso em Foco",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOY1ZNWWFZb2tYd19xWUhocV9tM2RqWEhBYTE1NWxoZE5mY0JoRDdfREJSelYwM1h6cVRWNGxLSnY0LURGZ2hQTkpuTWdCQ3RMbEl0Rmt5Z0pkZFJ3c0t6MVVLSm9wSlk3M2lLOG9fRjNReG9DSElOUkdlNXV1Q1Npdm90VnY1bW15d180dkM1aWVRMVp1d1o0ZzZEVjktX0F4WkpYaUtQbXltZzhV?oc=5",
+      "date": "2026-11-21T13:05:18Z",
+      "tag": "Gameplay"
+    },
     {
       "id": "n-4b7ddd18c1b9",
       "title": "GTA 6: O Que Significam as Estrelas e os Ícones Vermelhos do Nível de Procurado",
@@ -690,45 +726,44 @@
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMHBEN0c4SVQwcG5zeTlkTUdJcy16ZUlzdFNHYUpTbE1jTlBMLU03M1EzckVJMXQyUFVNRS0tSHNpQ0hUdVNXeXRPWklGcXZPLW1rMkF1UnJrTnpDNmtzQTJaTGZzYktISUR3X3RlNzhaTnF3bGxhMjJDYmdpNldVeGxoYnByVmRnU0FXLUhleHJXOWZacDV3?oc=5",
       "date": "2026-11-19T20:01:50Z",
       "tag": "Preço"
-    },
-    {
-      "id": "n-ac3a76f637d6",
-      "title": "GTA 6 tem 170 espécies de animais espalhadas pelo mapa; veja quais já foram reveladas",
-      "summary": "",
-      "source": "Exame",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRFltaXNoWEZVN3ZOZlN0dVluSnBrWDJjbjRadm55a1YtWHNoVlNwQjRYbDdvNFJfSUVOemtIcVVNSDVIdDJOeXNPOVhjLUhXel84QVNnb1J5YlRVSC1iZExycDVJYmRTVVotODBRajF0aDhjV2EtZ3pfQlVnYkVNZHNTM0xpQWxhR1VsLVQtc09paVJjZHFrLWk0N2V1OWs4dFI2Qml3ejRONXc?oc=5",
-      "date": "2026-11-19T20:01:37Z",
-      "tag": "Gameplay"
-    },
-    {
-      "id": "n-52cbf5a34469",
-      "title": "Mod coloca DLSS 5 e Frame Gen em GTA 6 pelo PS5 Remote Play",
-      "summary": "",
-      "source": "Estadão",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSXN0UHZVNk50M0ptalMwWmViVGtPM3hoUU9mRnctenVRMGpyRDdXVmEyNjNxMWhlYUVPRnA0OWNucldaQjRCMzhCWWpGaFUycjBPbUpSMi1fLWxjZEtVemRYNXNta1pfWVViZ0JZb0NsMlQ3WFE1OVBpbndxRlh6MUgtVDdvZVZuc09QcEluSkwzU25WQ0NuZU1saThndnY4VE1YZ9IBqgFBVV95cUxNTGxRdTNhRjhDYndqdnNUdF9HZ2NOVVJWaUJYaUFEdHBMWHZEMVJxYzgzdk9FbFpfVWFmdzd6MlVfd2ROWmt4WGNfcXBLN1ByLXdHYlU4Tk92NW9ReGR0VEE0TnFwRHh3VHFuVUFsQXpBb3cyOXVlUHFXdGRHZnNZSDhyREFiaUJfLWQtU2JHTjFJQzRHSUhIQmdZUC16RHB2R2NxRFBmWE01Zw?oc=5",
-      "date": "2026-11-19T19:45:00Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-5dc8e8ba3722",
-      "title": "GTA VI chega às lojas e ações da Take-Two recuam; entenda o movimento",
-      "summary": "",
-      "source": "InvestNews",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1neVZ0YW9zakpwazdpanlFajFUSzJtOXQtTjJWRzRpM19tcldWcW16LU5KVTNmTUQ5eXFDOW9SMmktRjlIcUVBOGlHTWdSNEFfaUM5Y2JRZEpNUl9HQy1iWDhZMHNJUEpHTEtRWVFJcW51dWZMd1dtRtIBfkFVX3lxTE91ZEVTZ0hFMHdkSjdMamJxV0wxcF94Y2p6dmpaUlZSMEJPUFNuSjBTMzA4a0RseHM1bFU4YTJqNTYtXy1QcUZtbkFCeGs0UG5RMUVZUjR1ZkpBb2EzSHVaTndqdWgwSjB6T0g1V0dhMUJKa1JsN0IyeWFXeW9tdw?oc=5",
-      "date": "2026-11-19T19:42:14Z",
-      "tag": "Lançamento"
-    },
-    {
-      "id": "n-715b0b0406a4",
-      "title": "Qual é o preço de GTA 6 no Brasil? Veja valores para PS5 e Xbox",
-      "summary": "",
-      "source": "Exame",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPaTUtUTBnQlBIdTl0SlR0UGFKMnU3aW9fUDNUQmhrRnhucGVkUjZpZmdVUmRRX2tsTFZYTkFGNU9ueER2bW5OZTlrOGtRSldqdUpiaWdqRzhiaHRxRUMyOHBkQmNJM2ttT0RpcS1zWk0xa3J1alQ2d1NZUFJYMGtRRUdyc09aNFk4RVB6dS1R?oc=5",
-      "date": "2026-11-19T19:31:03Z",
-      "tag": "Preço"
     }
   ],
   "videos": [
+    {
+      "id": "yt-Z4w43XD7rsI",
+      "title": "GTA 6 SUPERA ZELDA e se TORNA o MAIOR JOGO da HISTÓRIA do METACRITIC?! #FGN",
+      "channel": "Cortes do Flow Games",
+      "youtubeId": "Z4w43XD7rsI",
+      "date": "2026-11-21T16:45:39Z"
+    },
+    {
+      "id": "yt-JFFrhVE1-Pk",
+      "title": "eu perdi meu save de 16 HORAS de GTA 6",
+      "channel": "Cellbit Lives",
+      "youtubeId": "JFFrhVE1-Pk",
+      "date": "2026-11-21T16:30:52Z"
+    },
+    {
+      "id": "yt-gJBqR28kBQk",
+      "title": "GTA 6 ARRECADA quase 4 BILHÕES no PRIMEIRO DIA e quebra RECORDE HISTÓRICO!! #FGN",
+      "channel": "Cortes do Flow Games",
+      "youtubeId": "gJBqR28kBQk",
+      "date": "2026-11-21T16:25:36Z"
+    },
+    {
+      "id": "yt-ADxIdlKkprw",
+      "title": "GTA 6 CHEGOU e a INDÚSTRIA dos GAMES ESTÁ EM CHOQUE!! #FGN",
+      "channel": "Cortes do Flow Games",
+      "youtubeId": "ADxIdlKkprw",
+      "date": "2026-11-21T15:47:50Z"
+    },
+    {
+      "id": "yt-sQk34d56xXk",
+      "title": "gameplay média do cellbit em gta 6",
+      "channel": "Cellbit Lives",
+      "youtubeId": "sQk34d56xXk",
+      "date": "2026-11-21T15:30:47Z"
+    },
     {
       "id": "yt-JGKAEYlcDWA",
       "title": "CELLBIT JOGANDO AINDA MAIS GTA 6",
@@ -973,41 +1008,6 @@
       "channel": "Cortes do Flow Games",
       "youtubeId": "349frRQxxUQ",
       "date": "2026-11-18T19:23:21Z"
-    },
-    {
-      "id": "yt-9EQE5XUBZcw",
-      "title": "TEREMOS CÓDIGO de TRAPAÇA em GTA 6? MICALI RESPONDE!! #flowgames",
-      "channel": "Cortes do Flow Games",
-      "youtubeId": "9EQE5XUBZcw",
-      "date": "2026-11-18T19:05:33Z"
-    },
-    {
-      "id": "yt-yogEY54M0-o",
-      "title": "Jogamos MAIS DE 100 horas de GTA 6...essas são as DICAS ESSENCIAIS que temos pra você!",
-      "channel": "IGN Brasil",
-      "youtubeId": "yogEY54M0-o",
-      "date": "2026-11-18T19:05:06Z"
-    },
-    {
-      "id": "yt-BzJIVduY9Nw",
-      "title": "CONHECENDO a LOJA de ARMAS e o CELULAR do GTA 6!! #flowgames",
-      "channel": "Cortes do Flow Games",
-      "youtubeId": "BzJIVduY9Nw",
-      "date": "2026-11-18T18:11:39Z"
-    },
-    {
-      "id": "yt-GO39ptndFvk",
-      "title": "as PRIMEIRAS IMPRESSÕES do Cellbit sobre GTA 6",
-      "channel": "Cellbit Lives",
-      "youtubeId": "GO39ptndFvk",
-      "date": "2026-11-18T16:30:41Z"
-    },
-    {
-      "id": "yt-xHnd2zlPOZs",
-      "title": "EXPLORANDO a CASA do JASON no GTA 6!! #flowgames",
-      "channel": "Cortes do Flow Games",
-      "youtubeId": "xHnd2zlPOZs",
-      "date": "2026-11-18T16:22:50Z"
     }
   ],
   "characters": [
