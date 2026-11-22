@@ -1,6 +1,6 @@
 {
-  "version": 202611212158,
-  "updatedAt": "2026-11-21T21:58:18Z",
+  "version": 202611220156,
+  "updatedAt": "2026-11-22T01:56:59Z",
   "releaseDate": "2026-11-19",
   "platforms": [
     "PlayStation 5",
@@ -80,6 +80,15 @@
       "tag": "Notícia"
     },
     {
+      "id": "n-f3fa3676f6d3",
+      "title": "GTA 6: O MEDO DE FICAR DE FORA",
+      "summary": "",
+      "source": "Autoentusiastas",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9NdXpBMXpPWXV6UEIzU3RLcVkzMkFUaERJRDR5LW5iR0tCcXFjQjNaS201S2JSMmJJUnVPV1BzNkltUlA4bmhoNnFhVldzU1hJMkdrRzJCcmMyVF9KenVOc2RIREtVQWdWSnd2WVV4SlpYMG9CYThNag?oc=5",
+      "date": "2026-11-21T18:30:42Z",
+      "tag": "Notícia"
+    },
+    {
       "id": "n-cfecb1665d0c",
       "title": "Como ativar a direção automática em GTA 6? Veja o tutorial",
       "summary": "",
@@ -123,6 +132,15 @@
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNM0tQaFotS0RMOWRyWFc4NVhaNjduUHFuekFSWVFSa093OXJyb2lIR1JQQVZ5RDhvdC1La01BSWxYbUY3aERvRENXUlA0bng5cEwwd0U2ZnNIRTUzVGNIVWFSdTYzQ2d2My1nTlE5cUtfeGdzb3NLLVp6UklEbnNGbVNTV0pQQTJZNTVCWjR1QmZyYkg4Y2NiV1V3?oc=5",
       "date": "2026-11-21T15:02:42Z",
       "tag": "Lançamento"
+    },
+    {
+      "id": "n-e7be56871a04",
+      "title": "GTA 6 arrecada US$ 3,79 bilhões no lançamento, que se tornou o maior da história do jogo",
+      "summary": "",
+      "source": "O Tempo",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPQ09iODV6ZEpyVVhQVE1sa0pQYkN0UTB4RmdWZEh4WG9rWG1XNm0tcVZSU1UzVFl1OUxQTVZWOG9KY3pXYnFCalJtMXBSMWgzcU9TeHp2SnpobW9lc1ZMRWtJbk10Z3BKZ1pZeWdYMTRxa3owNlVmaU50djJCY0haZ3poZU1vMXZBM2RtRXVMUXBHck9oNUZiYzRfdnFUTTAxd1J2UlpIOGF4LTZYMERMZlp0Mlpmc3gwNmNnN0Z2VlZiaVBKMDgyYmctQ0o?oc=5",
+      "date": "2026-11-21T14:50:07Z",
+      "tag": "Preço"
     },
     {
       "id": "n-62f07df2f9fb",
@@ -197,11 +215,29 @@
       "tag": "Preço"
     },
     {
+      "id": "n-bb311601b565",
+      "title": "GTA 6 usa C++? O que a resposta do Grok acerta e onde exagera",
+      "summary": "",
+      "source": "iMasters",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5vUDJBcU5BYXAxblc5OW5xVlhuR1YwMDExc2d4M0FjY3U4QlJfaUZ4Rnd2TkNfcTdzbkh4S09XODVSaTBiOUROdzBjVWwwT0sxbEhpMGp3?oc=5",
+      "date": "2026-11-21T11:00:36Z",
+      "tag": "Notícia"
+    },
+    {
       "id": "n-cf6b30d2f28f",
       "title": "GTA 6 FAZ MAIOR ESTREIA DA HISTÓRIA COM R$ 22 BILHÕES EM VENDAS",
       "summary": "",
       "source": "Bahia Econômica",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObktHMW5aaGRUaFBGUjNFLU42Z2hwQURKTU9naVd3U3F3QWMtRzA0eldnVEJnbUpfV0Y1T285WUxpYU0xWXdpREF0WDhQVDQ0cDlEMU9Uc1N4LXI0Y0xwa2I3THptZ0FkYUh4X3hib3VlLWNHXzZLNUg4SHVHaHVrYTRHdjFvMldpVjdOYk5YTnNXdU9NTjlkU00tQXJpU2Q2enJLZVo1NHQ0UHdsOWJRWkFfVUo?oc=5",
+      "date": "2026-11-21T11:00:00Z",
+      "tag": "Preço"
+    },
+    {
+      "id": "n-22c9a5e327bf",
+      "title": "GTA VI movimenta R$ 22,5 bilhões em um dia, valor superior ao PIB de países e próximo ao de estados brasileiros",
+      "summary": "",
+      "source": "Canal MyNews",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNZzBSYjI2eGVuN0VzUXpTNWJXMURPVHJybUg1Qlk2clBSQXRFQks3cklmOFI1ZU9FUG9nQlJwcW42OEJEWWpHTEEtMjBqcWhHWUFqWVA2c1pHbmpvcTB6MXN4ZXJPZmJHOFJCd1pnM045YTlzdk1hdFZESWV5MUFBTU14MEdSSklWS056aWFWUWlJU1lEUS1DUVh6U0NoUHVyaUtrdnJqenNpbGwyQkJJbFk5dEJUUlhGY3AweFVRNmIyRy1DSFR5Yjg5SjhHNFcyMkZDODF4SjdHUXJZSW9LOGpsVQ?oc=5",
       "date": "2026-11-21T11:00:00Z",
       "tag": "Preço"
     },
@@ -690,45 +726,16 @@
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNTWFleW9jUjljS0ljMXY2WTlUNHhzQlQyemdOa3VYRUZ0bTlTNWcyWGJCZ05IYmpocm9US3czekFsYXlHT0daRE5mVXM1WGhCWU1KOTF0bFp5ZzV3dDFNZ05rSnNaSkRZRDE4aWg5Sk5TNmQza2pDVnVVSGVRT2tQd1RWTmlRbExkdTBpUjBfOHVwMy1qT3EzekRvdEJOMDVHSlphWERtQQ?oc=5",
       "date": "2026-11-20T13:56:00Z",
       "tag": "Notícia"
-    },
-    {
-      "id": "n-534d7e3deaf3",
-      "title": "GTA 6 | Cerca de 2 milhões de jogadores fingiram morar na Nova Zelândia para jogar antes",
-      "summary": "",
-      "source": "Omelete",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPM3ZfQmNSX0Q3WDdLV29qWEU4MUlZVGx1VTF1bGJiUk5qSEVTVktoS0E1V09ncE5IMDZWYnhib3hzMkd5VnpvS2hKN2FFZUl3WkFGLU9LaXNfTmh3cHF3U1NRNnRCNlVpMDlrN3IyMXMtOXZqNi1Ja28xbTQyc0Y5dmtvZ01UQ0lU?oc=5",
-      "date": "2026-11-20T13:51:00Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-f8e773eb65d9",
-      "title": "GTA 6 tem quantas missões? Veja a lista completa de capítulos do jogo",
-      "summary": "",
-      "source": "Estadão",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPY1RfVnJtV3I3RnZ6d2hsNjBJOUpEeXlDcUxqVXc2WlBTc1VSbmlQenk5UVNOWTlBeGZuN2c0T3dpUG5Kb1FDM0szSUpucjlPUGtBU2piNlQ5al9QZ1Z0N2VJVzQtc01fc1l1S1MydFc1RXBuczJpV29aRFV6MjBNbmtRU1R0MzZESFJtUFc3MVR1LVZYUkRTNnVjemJ4di1WS0o4clQ1M0pMNHZkTVNRdtIBtgFBVV95cUxPQkNIYzZFQnZLLXlkVDYzQTJGUld1VVdXY3BfOGtBLUUwbE1LZmZYYzVtR1VoanlYVjZMMVdhOUVTYzgwVnJqZF9idUdTeEJhRlYyR2Vfdm9CLWdrOXNHWkdmZm0xbHdYajExak1oYXhCQ3dOQ0twTG5oNXhVWWh4bnlRTzZtNV9sTE1CbWNVQWhZeFFxcVRKemZkbFdPVjBGZGhRNmxDXzNaUjN3WUpCWXdxQ09JUQ?oc=5",
-      "date": "2026-11-20T13:15:00Z",
-      "tag": "Gameplay"
-    },
-    {
-      "id": "n-37ab02b8a677",
-      "title": "A expectativa em torno do lançamento do GTA VI pela Rockstar Games movimentou R$ 563 milhões em vendas de consoles de videogame no comércio eletrônico brasileiro entre 18 de outubro e 16 de novembro, um crescimento de 69% em relação ao mes",
-      "summary": "",
-      "source": "Instagram",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5pWVNKb2kxTEp1akFBeDJSeXBZZjE3cC1iZDN1WThJdnZVMFhGanZQS21VSUJvRXpRR2NEamx4cU9TZFZmZHNJeEN0eTBoWE8za1E?oc=5",
-      "date": "2026-11-20T10:28:09Z",
-      "tag": "Preço"
-    },
-    {
-      "id": "n-12d5e8718a8f",
-      "title": "Como jogar com a Lucia em GTA 6? Veja como desbloquear a protagonista",
-      "summary": "",
-      "source": "Estadão",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWU13UXdWdS1fcU9yV0FxUW1md0hIaWhPdndqTFNVbmphZG9EV05qNUstaVBxSzlIWWFiTkdqV0RPODZBekc5SmsteWVZN1EwaG5ScE8weHNCb3JHakk3X084VC1RYnpWMjBkMTkxaDMwQ056eVRQRTFvcEl1a3dQZ0E0SEtvM1VJVy1hLTYzOXFPTmJaTlBlMG0tUUozamFCSFFrT2o2QVNYcEZOSnV2NtIBtgFBVV95cUxQbm5UNm5wOWxiVEVyb1llejZ5UVNNQmo3V1Qwd2pnUjV3RG9QcGl0NnFqeUNOZVJpUnhyY0JWbEwyZFhqY0pYTk5kVFJaV0Y2ZWFWT0Y5WmtJZ0ZfdGluLU9RZXl0V2xydGxNaDNpa3NSWlZrdnBDZFN5ckQ1THh6SHNIUHFoUW4zYVlvZ0hDbUp6UE1FUnVWNURqZTJpZjg0NGZfMXdfQTVnQ0J4aVJYZFNDNUoxQQ?oc=5",
-      "date": "2026-11-20T09:15:00Z",
-      "tag": "Notícia"
     }
   ],
   "videos": [
+    {
+      "id": "yt-5BvcLXfqU84",
+      "title": "JOGOS MORTAIS no GTA 6",
+      "channel": "Cellbit Lives",
+      "youtubeId": "5BvcLXfqU84",
+      "date": "2026-11-21T23:15:41Z"
+    },
     {
       "id": "yt-tEgBhFyjTM4",
       "title": "COMO JOGAR GTA 6 em 1ª PESSOA e a 60 FPS!! #FGN",
@@ -1001,13 +1008,6 @@
       "channel": "IGN Brasil",
       "youtubeId": "yQ8R09HNOfk",
       "date": "2026-11-18T21:14:04Z"
-    },
-    {
-      "id": "yt-umiEQUx_ERI",
-      "title": "NOSSA PRIMEIRA CAÇA no GTA 6!! #flowgames",
-      "channel": "Cortes do Flow Games",
-      "youtubeId": "umiEQUx_ERI",
-      "date": "2026-11-18T20:50:23Z"
     }
   ],
   "characters": [
