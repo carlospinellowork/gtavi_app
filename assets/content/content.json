@@ -1,12 +1,30 @@
 {
-  "version": 202611242126,
-  "updatedAt": "2026-11-24T21:26:29Z",
+  "version": 202611250427,
+  "updatedAt": "2026-11-25T04:27:52Z",
   "releaseDate": "2026-11-19",
   "platforms": [
     "PlayStation 5",
     "Xbox Series X|S"
   ],
   "news": [
+    {
+      "id": "n-4c3674769196",
+      "title": "GTA 6 vira o maior lançamento da história do PlayStation, diz Sony",
+      "summary": "",
+      "source": "Exame",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPT2pSOHVkeW1MU0lkLUp5UDJzOEJOM0RxMDN2R3hobDBCdlNtOWxLUGpVZzJZZDMtWUxWT2FIMFViR0tOWHlkWWl2NkJ2ejI2c2kta2p6RWx0R2pJZ2k2cXFfbDM1Uko3NW1UY0FlWi0wS1lUaEppYVUxVjZMSkJza0pFUFJfUlNGV2Z5ODF4Z01nZw?oc=5",
+      "date": "2026-11-24T22:17:07Z",
+      "tag": "Lançamento"
+    },
+    {
+      "id": "n-7d6bc54224ae",
+      "title": "GTA VI: homens estão gastando 'milhares de dólares' com modelos de IA inspiradas na protagonista de game",
+      "summary": "",
+      "source": "Extra online",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxONzB1YjNsbjJHR1poZjhuQXNyXzlrSzJ1TXdpRkoxWVMybjhQVFVhUnYtazRpdVFXVXRlVy15UUt6eWN0VUZUQ1duRU93Z2RmNGVweGh1Z1pBaEs1eG5ZVE9zMHVvY2l1RnUtZ3Y3N0pFc2hmRWJ3ekNGTmhJR0RGYWU0UlhGZlE0NW9JeVh6WEd0QmVCMmU4Ymt2Q0FIcGhBX29YWW45a1ZoTnRpZFZab0dXXy1ZVkIzX0pydFhneUJMd080MnM4WXY5VFV4REg3bFBvblBoVWtVZWt1bVBScmlKaldmOTl3bVB3SURnUENBaWJsalV1ZNIBhwJBVV95cUxPZWVXUmxJeEFXTGVTaXNFLWdFUjZscms5UzhRZlpvLUdsV3A2VVR5RU1fbDNsQkp5T0VjS09RbE5xVkF6WnA2dkNCYTZIUk5pdkZBQXFQLVRJeTFMa0xJSU04QkR0LXVlS3dHWVFkYkY0d1RZazQ0bEZvRFZSS0J2QUlvcGNxTUlVdHU0ang0dGNjX1A2eHZDZWZNeFFJV0d4Z2pveW9MM3B5ZFRVVE0wVUdSNHlWNFlrR2V1STBIMFBVVndDUVVCT1RPbWdKOVJvT0dGSXJpbnJnUmlHcklGUkhSZXRfMjJEZnk5czNsRWNQU29YM3hUQlFWblBJWmdNSVNPcXJLUQ?oc=5",
+      "date": "2026-11-24T20:18:13Z",
+      "tag": "Notícia"
+    },
     {
       "id": "n-b2e8ccbaca5d",
       "title": "Como aumentar o foco, stamina e vida em GTA 6? Confira o guia",
@@ -23,6 +41,15 @@
       "source": "A Crítica de Campo Grande",
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWEg1SnNzN1dHdXhIcGktNzhiVEVNTTk0dUFYb0UwU2wwbzZpZFdZQ1IxT2d3RTd3Q1ZtTVhtOUlDc0NybnFydzg0LTV2elhZSUF5QTRVWnVUNUVoMGt0WUZ1Y0p2MGcwREExTHp5bkV4d3EwckVDY2lQWUIzcnFVcDc5bkpfY2k1Ujg3d3AteE14bUZDaGpLaHpNTmZhcV90RDUwSko4Qi0?oc=5",
       "date": "2026-11-24T19:45:00Z",
+      "tag": "Notícia"
+    },
+    {
+      "id": "n-af26c9deaf2f",
+      "title": "Um cristão pode jogar GTA VI? Realismo do jogo gera debate teológico",
+      "summary": "",
+      "source": "Gazeta do Povo",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSVNRaEoxY01kX0lsYVRYUHZOSHVDUHBneXBrWnh0M2tZOWk3T0ItZzFCa1ZSaTh3NlVJSWM3Y2M0d3dSVWd3alpkMXBVX09lWEZiMjFMODhMaXgtMWJHLXUtcmdpX2pCWUxpY2NRSUdNZ2JoWTRETVlXZXBoODdqQzBaelpKQ3dKaFBVYjJXaTgxVnAyRWJPR3ZYRkpVT19mcTZrQVRqUnpuQm8?oc=5",
+      "date": "2026-11-24T19:36:00Z",
       "tag": "Notícia"
     },
     {
@@ -60,6 +87,15 @@
       "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQOHFDcGJiUjBpcjNzQmRkaC0wOXNqcjZYenR0emQ0MDZPYVhNSktKR1hGdEVEM2lRNWc5NVpJblc0UFNLV2dIcTI1aHhVNTU2ZUtmYmFhTFhtOVZzMjFodmVBOUFCTVRoWGdwa1dRdHRnLURzbGxBTHBKQzRPRFU4RGZrTEhna2tGS01LM3VNalM1eWtBQW9Hc3ZyajNaYVhiTHM4Z0lzVXJKNzdsTkxKUkNzNzNvb3FITVNXRmp5M1p6a1lwdjc3bTBQX3FFUTV5RDV5VnNHeWpDOW8wWWZQVE530gHwAUFVX3lxTE1PWE9FVEh2N3E4RWg4WkxZMGF1dWJlRUJ5aUZJZWdwYnM3c2ZqTTJoQlZhRFl5WkdLRWluU3lOVnQtZ1pfN0kwbW9TcFV0U1JWaE5XSXMzUmxwYWVveEFPSnNxQjczOVRXblNTb0ducEo4RUhFbXB0YURKdURwYmE3eHIydjNmTVVqZERhSVVFTTlFWXBhQ2xkMFJjV1I0MEF3WTdjM01FOTZFeUxZWEJ3MTQ4d2pUTGJQaUpnNDFnM3hKWGhJSzNBZzBJZ0Z4Q1pDRENXWlZzSm40cXc1RXQ5dWJVdmFrRE1LcE5LNXl6Yw?oc=5",
       "date": "2026-11-24T18:46:02Z",
       "tag": "Gameplay"
+    },
+    {
+      "id": "n-a9d43fb542fa",
+      "title": "Dá para jogar GTA 6 no celular?",
+      "summary": "",
+      "source": "Quero Bolsa",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9jTzhyRTE4VFhmUXFfTW1pR3pHNXdmQTRFTGR6LXRsQnBQMTFXSmJ2TGdiM1hZckpPNF9BTGFoV2U1a0lGdEtfdURXX20wREpqTFQtMXZfQVhhby1oVWxCMmVoUGI1Z1ZsT3FYZE81YTdNUQ?oc=5",
+      "date": "2026-11-24T18:03:08Z",
+      "tag": "Notícia"
     },
     {
       "id": "n-3dbbce5e39a0",
@@ -690,42 +726,6 @@
       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNT28yWDhscFEtUmVxYUdLZG9sekdfdVQ2ZFdWVTlpMGlJTnVEY1JDblZxelVMRENqZTBPLTR3bXIwZ0dEd3d1UDN4QUR4ZDdhZzl6SVpuclJmMjRVWXZlMGpsVlA5SGdMMFJobFlSaDl1SDVISWE1M0tjSVA3Yi1CVFhjN2o5UG5qMFI5cENhYlFUTXZKalp2TDZqaXA0S21pTGszWkVtNmh1NFZseGwzNGZKbDFmLS11X2hlN3B3aEZocmk1eVV5TzVCQQ?oc=5",
       "date": "2026-11-23T15:27:00Z",
       "tag": "Lançamento"
-    },
-    {
-      "id": "n-dac46179890d",
-      "title": "GTA 6 | Atualização corrige problema do autosave",
-      "summary": "",
-      "source": "Omelete",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFB3T1l6MjhPWlZNWXRQSzBWQkN2RXk1U1d3VGRiUGtEbHZtNk1KZUNsM18zVlJ1OTE0YjVkVkFSZUZqZlluVXR3SGxlOWw4bS1hdnkzcy1qYVFXWm90WC00OHA0RHd2VjBhWjNaWS1kOGxhTEdRVHNLb2ZR?oc=5",
-      "date": "2026-11-23T14:56:00Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-1a128e229ac3",
-      "title": "De GTA V a GTA VI: O que mudou na política brasileira em 13 anos?",
-      "summary": "",
-      "source": "Congresso em Foco",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRXROODMwNHg4b0R2NHpBTnpHSXRXNUxYcEp3N05mUjJSblNEalJMNEZkVTBXMFJTUlg1YmxESFZnTDQwMGQ3MW5xb011dy1waE9Qa0tnbkhqblFhRmp2QmZxQlJEdGs2VGdYVGctaERYNGRQYkpZOWxzVzQ0cmpzaGFsZS1JOUdyTl93cW1vamR1MVlIdENRcVc5dS16SGY3NkwxNnRRUnE1TlpsZVZzaDdEUQ?oc=5",
-      "date": "2026-11-23T14:55:06Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-0d22c21b9c13",
-      "title": "GTA 6 recebe 1º atualização pós-lançamento; Rockstar faz mistério sobre patch",
-      "summary": "",
-      "source": "UOL",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxORTUzVjVGZEgyUlJNZEtPbGEzeExjTEdBb3pFNnpQM29seGJRcmxUaXY5ZEFVNE1jam9Pd1pWRGZqN2RvOWl5Y3FWRy1FS0NCYU1FQzd3cU80U3RrQXdDY2RkdVJLczNJUDRlZTFLQkQtaTNtYnQzUFBYb3N2RHBGRlRsWmlDdjdEejZkZDZ4QldnNEhTOEQyUTZ1TFFDWTFtNDFyNmZFZDZWclJjVFNsTE5QS1R4V0REbF9abTZrX05HMUVDSGRSdWotVQ?oc=5",
-      "date": "2026-11-23T14:21:05Z",
-      "tag": "Lançamento"
-    },
-    {
-      "id": "n-624ee1e15058",
-      "title": "Como escapar da polícia em GTA 6? Veja dicas e como funcionam as estrelas e níveis de procurado",
-      "summary": "",
-      "source": "Estadão",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPdlFEUVlLZkVlZXhqNWRnekdVdEVUd0t1NDc2RkMxTnpQWFVSUWxPNE1MQ1Q0YWUyOFRCYlJUck1ReVRIZGs3b3p4bnFvVzFneVl3a3VpOXFaUDZrb2w0MW5CRTdEX2pydmRNTEE5a0VRbWd1dm80bnNWMWliTEZGNGFOVS1kaGtZdWtiWGlYUmZkUjJpYkFDX1VxeW5fRklUR3RueHQ2QzNZNmZMa0kzNURPX2FjNmFtMy1RVE5iRnJEWl9sWXZvcUJQUnJZOGNUa2k00gHYAUFVX3lxTE43WWsyNmlER1pEWS1iT3JTQUU1Ry1LN3F5OU9uX1l0aUhELVZGLV8tSGhWR3hlQl82cTRpVVR1V1l2V25NWXk3dnp2UWRRbGZSUGViemNYejV5UTBQc29vNDBDWGpJQlBzZ01qVUNUZy03QTdjWWd3aS1JNjVpZ0F1SkgzNjdIaHdqd1dxT2otSGZCQm52by1DdGNWbS0wdk1xeldtT1VmRmQ3T0s5eDB5dGFnRWNvRS03RHVIU3gzYmFZUU1hcXk2Z3hDWG1GdGRIZ2dja2RNYQ?oc=5",
-      "date": "2026-11-23T13:17:00Z",
-      "tag": "Notícia"
     }
   ],
   "videos": [
@@ -734,7 +734,42 @@
       "title": "CELLBIT JOGANDO GTA 6 ATÉ NÃO PODER MAIS",
       "channel": "Cellbit Lives",
       "youtubeId": "41k67p7_XLA",
-      "date": "2026-11-24T20:15:08Z"
+      "date": "2026-11-25T03:51:43Z"
+    },
+    {
+      "id": "yt-2MVXtz8M_cI",
+      "title": "A GARAGEM de SUPER CARROS depois de ZERAR o GTA 6!! #flowgames",
+      "channel": "Cortes do Flow Games",
+      "youtubeId": "2MVXtz8M_cI",
+      "date": "2026-11-25T00:45:32Z"
+    },
+    {
+      "id": "yt-_BWPOMuW9ng",
+      "title": "ACHAMOS um BUG nas DOCAS do GTA 6!! #flowgames",
+      "channel": "Cortes do Flow Games",
+      "youtubeId": "_BWPOMuW9ng",
+      "date": "2026-11-24T23:00:53Z"
+    },
+    {
+      "id": "yt-QyrwUzN2GZU",
+      "title": "VISITANDO a ÚLTIMA CASA de JASON e LUCIA no GTA 6!! #flowgames",
+      "channel": "Cortes do Flow Games",
+      "youtubeId": "QyrwUzN2GZU",
+      "date": "2026-11-24T22:30:19Z"
+    },
+    {
+      "id": "yt-LZhpVNV0ce4",
+      "title": "Por que GTA 6 merece ser o GRANDE VENCEDOR do TGA 2026?! - Especial TGA",
+      "channel": "IGN Brasil",
+      "youtubeId": "LZhpVNV0ce4",
+      "date": "2026-11-24T21:31:12Z"
+    },
+    {
+      "id": "yt-HolyMj7YW0E",
+      "title": "GTA 6 descobriu o PONTO FRACO do cellbit",
+      "channel": "Cellbit Lives",
+      "youtubeId": "HolyMj7YW0E",
+      "date": "2026-11-24T21:30:56Z"
     },
     {
       "id": "yt-P-8yJEABkB0",
@@ -759,7 +794,7 @@
     },
     {
       "id": "yt-0ElMRhAXjTk",
-      "title": "ANÁLISE COMPARATIVA: O PS5 PRO FAZ DIFERENÇA NOS GRÁFICOS do GTA 6? #FGN",
+      "title": "FLOW GAMES REAGE: a COMPARAÇÃO de GRÁFICOS de GTA 6 nos CONSOLES!! #FGN",
       "channel": "Cortes do Flow Games",
       "youtubeId": "0ElMRhAXjTk",
       "date": "2026-11-24T14:30:10Z"
@@ -973,41 +1008,6 @@
       "channel": "IGN Brasil",
       "youtubeId": "Qxn9rOJ-QJw",
       "date": "2026-11-20T16:07:27Z"
-    },
-    {
-      "id": "yt-WnZMCL2J7LA",
-      "title": "a nova música da LANA DEL REY no gta 6",
-      "channel": "Cellbit Lives",
-      "youtubeId": "WnZMCL2J7LA",
-      "date": "2026-11-20T16:02:29Z"
-    },
-    {
-      "id": "yt-Nju1qrSOpD8",
-      "title": "CELLBIT JOGANDO MAIS GTA 6",
-      "channel": "Cellbit Lives",
-      "youtubeId": "Nju1qrSOpD8",
-      "date": "2026-11-20T07:16:00Z"
-    },
-    {
-      "id": "yt-B5KVRkYQg0E",
-      "title": "acho que eu baixei a versão errada do GTA VI",
-      "channel": "Cellbit Lives",
-      "youtubeId": "B5KVRkYQg0E",
-      "date": "2026-11-20T02:15:52Z"
-    },
-    {
-      "id": "yt-bH0z114unqE",
-      "title": "ONDE EU VIM PARAR? - GTA 6",
-      "channel": "Cellbit Lives",
-      "youtubeId": "bH0z114unqE",
-      "date": "2026-11-19T23:00:24Z"
-    },
-    {
-      "id": "yt-NanbHv83ipY",
-      "title": "As MELHORES dicas para você ficar RICO em GTA 6",
-      "channel": "IGN Brasil",
-      "youtubeId": "NanbHv83ipY",
-      "date": "2026-11-19T21:37:34Z"
     }
   ],
   "characters": [
