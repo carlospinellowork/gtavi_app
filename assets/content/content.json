@@ -1,12 +1,21 @@
 {
-  "version": 202611252326,
-  "updatedAt": "2026-11-25T23:26:57Z",
+  "version": 202611260518,
+  "updatedAt": "2026-11-26T05:18:01Z",
   "releaseDate": "2026-11-19",
   "platforms": [
     "PlayStation 5",
     "Xbox Series X|S"
   ],
   "news": [
+    {
+      "id": "n-52f5eb2e70f5",
+      "title": "Como usar viagem rápida em GTA 6? Aprenda a transitar por Leonida",
+      "summary": "",
+      "source": "Estadão",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZGtQdTVuSlpLVkdXZWNkYmp6WkZhdGFpRURRMnRUdXpIX2NmbHQxUFdDUkVhaHZFMTZ1Smh3SnNNeVF4SFhIMWhBNjliYWh6cjdxcnRQUDJxeWU4bGFGLXRaVFVOOVppREppd2pnZmJROTNEVVFUTTE2THFKZ1pEa1NKcjF2YmhIZE5GMnRIaUJ1RnJXbXZDaXBmVHJzR01PSTJRdzNPaTNUTmPSAbABQVVfeXFMUGNQNTV3RzhtazlmbENPa3NqWEE2bWQzdWVoU1l4eXhPSWVOWERsV182Z2JMQzBXMFdmcjRFd1hvTkllSVBvSFVrbVJoc1ZBS3hTelNhZ2V2N0wweEJCRjhqVGE0aHdBNlRKV0tMb3AzVFRlSnprWXNROFhVR0IxOG5wM1FETmwzZXZCbTVJT1dmVHR1cEtxMENtcFIxUHZwWS1fUG03ZVA4RTlUbW85YTA?oc=5",
+      "date": "2026-11-25T23:15:00Z",
+      "tag": "Notícia"
+    },
     {
       "id": "n-f8e12e374822",
       "title": "CO-OP #79 | GTA 6 e os indicados do The Game Awards",
@@ -377,6 +386,15 @@
       "tag": "Notícia"
     },
     {
+      "id": "n-329344cf63fb",
+      "title": "Usou Cheat: Hacker que vazou GTA VI é condenado a sete anos de prisão e liberado no mesmo dia",
+      "summary": "",
+      "source": "Cyber Security Brazil",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxON1AyMFJValZUUnZXWG0zMVc0NHhLSUtvb2xiTmRSMk5ndGFOY2xOdU1KNFpLczc3NnFWZkJBNjIzNHVya2NLWEpsMFBTc1FnMjBkeWNVd3djOFJKUDdQYVR2RDB1UzBzZ2F3eVM3ZndBTmpyYjcxM2ppN1Q3NmMxaE1FNWJRZWxEQkh5bkVITUFSQy04b2FnVmNBQ2p4b2xYYUlsc1h4WktUaFBPa1BqYnhqNmwtR1JfSWNpX1FIYkNtSXVBUFZBcm03SWgtWXQ0NFUzV1ZybXE?oc=5",
+      "date": "2026-11-25T00:56:00Z",
+      "tag": "Notícia"
+    },
+    {
       "id": "n-2d668a34ab68",
       "title": "Hoje no TecMundo (24): Jensen volta ao comando da Nvidia, GTA 6 recebe atualização e mais",
       "summary": "",
@@ -411,6 +429,15 @@
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbXVyWHhjT0lOVGU4Uk9WLUJvR2ZENXNnOG5FbENnZHZzNVpIWG9xM0dvNUl1R2FiV3IxYmNmcHJsbDhNd0tpWHFrYWk1T0xVS3JXMGoxQXJzMU5QOGF3cHExQjQwaWkzT2lQZ2gyMERQZkYtM3cxTFdPUDJiSndCVnY4bjdBckwtVlc4?oc=5",
       "date": "2026-11-24T21:40:14Z",
       "tag": "Gameplay"
+    },
+    {
+      "id": "n-b59c42a4b959",
+      "title": "Como conseguir o chapéu de Arthur Morgan em GTA 6? Veja onde encontrar o easter egg de RDR 2",
+      "summary": "",
+      "source": "Estadão",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNSUlOcUxoRTM5cm9IdEdnMU1vYl93N0pJcHIyZG9pTHZTd1l6X0ZBWmhfclNHZllkTjN6YmYzZ0Q1UGtsNFlzTWxwRmZXT3B2WDBMbEJacDRzR0JUT2lzNnFGallLVXhqeGRJT0Fnejc3U3JKXzk2U2Vnc0ktWDFBeWhrcmFlTTdIUXdMQmlXLXd1VS1ad0JwWDVOX1FnTFRxbEJIcHpCQXlHUVFWWkdtblBhOWdzT2hMSkEyX2VSdTBZeGxqTk5xX05fZVZIRnPSAdQBQVVfeXFMTUZXQTFlM0VONEVvYzNTdEpGaXZsbVJMWWI2NU1xOUVTSHVINTh6OGRzMUQxdkY2QUltQjhfVzJKdlhudUVCR2R2Y0d4UFBRZjZzLUcwdHFmdkZocF9kY3NsQlpBVzVTX0lNRW5WakJJN29pam5saVFKRjd1eGFENFhXS09TWDh0MkM0cW91Um8xOU9DU0R2bi14LVhjcUYxcUVYdnJlRnBvaGItckJVaFVrYkw4LUZraWpwdTRNcjR6cWpMQVZaSXRIZ3ZoSkpxT0NJMEM?oc=5",
+      "date": "2026-11-24T21:15:00Z",
+      "tag": "Notícia"
     },
     {
       "id": "n-e681ab0d8b24",
@@ -512,6 +539,15 @@
       "tag": "Notícia"
     },
     {
+      "id": "n-9b37bad809a1",
+      "title": "GTA 6: a maior campanha do ano sem vender espaço de mídia",
+      "summary": "",
+      "source": "Update or Die!",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQYXU5QS1hbVZfUkpmSFo3NkZEeUpwWVhIeGU4X1dYVmdGZ2hJMlNRVWh6QWdMVVhja2NuaVdTLUp3bHhfekVBTmRDTzFfYkI3WDFJOC1SX0swSU5HMjJTek9lNnZqXzNfRklIMy1tbFRidjZ5c1g5ZnhIOWtOMVBPc010XzRkMDhVOHZZdW5OUlUzWFI2ZGpyM254N05ob0l3T2thTQ?oc=5",
+      "date": "2026-11-24T18:01:28Z",
+      "tag": "Preço"
+    },
+    {
       "id": "n-63a32fe50947",
       "title": "Como jogar Grand Theft Auto VI pela nuvem e com Remote Play",
       "summary": "",
@@ -528,6 +564,15 @@
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPODZsRGpJVkVRSzZWVjJYR2dOc2UtYzRvblZqX09RdG9iVHhhMjBRQUM3NkgxX3RONUQzVHVxeVB4anlaTlg4dTZPTGRVbTZYMHN2STZUdVZVVWdLTDBpODRtMGs0eVZ2cnZUdzNZNFlBQW9LRllrS1ptUmNDRjctWmwtbzdnbzJkT2xKYzljVjNqY205RW9wbkNBeDRfNENiakRfU0hjMXlXUUM0OWJWT1plb9IBuAFBVV95cUxPdm9kTlRCTHFpNXh1YWdhMGd2QTVndy1fZnhlY0RCaVpNOUZFYldqVXRyQkVrU05yZUdWaVplUlFyVFVzeDhqZU1wSEZIcjF6S3FpWVVrS3NqVmJzMTl3ZzBRaElmUzY1Z2dOb2VoUG16RC1QSUc1TFBHcTlBSkFXMzFyWTh0ZVRoS2JrVmNXR084bUpQS050UlgxbGRVRnNIbndaakw5YWNwTXZ3Z0FoaVRIckhzY0lD?oc=5",
       "date": "2026-11-24T17:54:52Z",
       "tag": "Notícia"
+    },
+    {
+      "id": "n-d9887eafc724",
+      "title": "GTA 6 chega ao Spotify com mais de 20 playlists inspiradas nas rádios do game",
+      "summary": "",
+      "source": "Fast Company Brasil",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSlRmUzBONGpUZmZKc2pGOXRzZTlmTzQ0dDlPeWlSU2V5U2hiUlhsSjdLNThDVzZsbVRhNjYtaTVnRzFWanJ1dlB4dktoM25hQkhaZnlpYkxGTnB5c0ZidjlWU0cxRl9DZ2p0QWNBZ1JFR3dLLWt2SEs0cWJCbEpMSkNQSVNVajNsY3UwN2xISQ?oc=5",
+      "date": "2026-11-24T16:23:46Z",
+      "tag": "Lançamento"
     },
     {
       "id": "n-945c5ae9642f",
@@ -582,6 +627,15 @@
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNczZrVG41cURSR1diOGNsOEdTcnJuT2UyOVl6S1ZUUF8wSGhUaW1PUW81LTN6ekFoZ2VhOXV4R2NScUlkQTl6OXpDUUNGbF9xdVFZTXZzaFlRYkRpOHpXUEZZT1ZzRGVkNFpXRWxHQVlnTnpZbW5XUm10MElpVWg1T3gzSFJwWkpE?oc=5",
       "date": "2026-11-24T14:15:00Z",
       "tag": "Notícia"
+    },
+    {
+      "id": "n-c8d447c8a38f",
+      "title": "Hacker vaza suposto executável de GTA 6 para Xbox",
+      "summary": "",
+      "source": "Fenati",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5MRFRFN1NzUGRGbXpad1g4RXV2YjJGVUNINFRoSnpGTVc5T2xxbEZsckdQc0dEMjZGLWtPT3lGZ0hWb21DM2x4QjJWazFVdk5zTE5EYXBMeWtQQ1dTT3FYd2xrQVBKN1JfdHZKTUN0Qm5RRDRXYXphNEF2Sks?oc=5",
+      "date": "2026-11-24T14:02:57Z",
+      "tag": "Rumor"
     },
     {
       "id": "n-e282534b0132",
@@ -672,76 +726,22 @@
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOcGpGeG44aHFuT1h4NG1sbnd0ZExETkc0VGRFRW93SVpLWTdqSFlVaXhQRDdaM3dpUm9ReGZBOVlkTnFnUWJjd1F2d2J6azhKdUpjamwteGZhX3dGMHdWX0tCOF9IUEpxcHhXX1VKWDNsZ1dqRjd4bmt0dzJrbnJPRzlCbWI1ZjExV2pHS0NGUHRXdjJaTlFxWF9jVnlaN1JCQ3c?oc=5",
       "date": "2026-11-24T09:00:00Z",
       "tag": "Notícia"
-    },
-    {
-      "id": "n-d54f826d6a82",
-      "title": "Carlos Affonso Souza: Com roubos e fugas realistas, a fantasia de GTA 6 é viver um namoro estável",
-      "summary": "",
-      "source": "UOL",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNY2pWQjJjU3pZSnJ4WXVUZm9EY0RQX1RrbmxVTHJRalAxdGtHUkl0VFFFVXNHX3M0WXR5N3p0aWI2T1V0eXRNOFhURG9ERTljdUhsN2ZZZjJ4RzhESTF3TTkzQWNabDdFMVRWU1JYRzJmRnFLNXhKc1h2S09CWUg1ajhDUmdtQlVGMWpscGJfSlRwbGFxbDY0Sko5TlhwYWt5ajhYZUxZZmFhWHd0OHJjakIzaHg3cHNrdTBSNy1SajN5R3RQTzZ4X09ZMHkzdU45TjdEWFdUalBDT2JyMFcySkw1QQ?oc=5",
-      "date": "2026-11-24T08:30:00Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-59f4d79a3910",
-      "title": "Saiba Como Conseguir o Melhor Final em GTA 6",
-      "summary": "",
-      "source": "Forbes Brasil",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNLUZ4OWdsakZ4LTV3NV8ydkZhbXptY0VGMmxoYWZiNkM3cENwT0kzODNSVDZvWG50bDR6cEtxVHVNVkRtLWo5RWJfamRyNU9vRUlzV0Y3UmFlMHFEVy1aRk5JbkFYSTQ4RlY3ZGlLVEI3clpUNXRueVdRS3ZsZ0JSMVFtMl9QSjRlUWxsbUpSRWM?oc=5",
-      "date": "2026-11-24T08:04:00Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-aaf1effe0129",
-      "title": "Férias para jogar e 15 horas diante da tela: lançamento de GTA 6 vira evento entre gamers",
-      "summary": "",
-      "source": "G1",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNLVY1eDE2MmdlaFkxNlhDXzBDT2NrV01JTy1DekNHbFdKX0tWbno2S0hhNVlnU25PZFVlRGgyYzl5MEIzM3VHdklGYW5Dd0JXQmZSVDRoaXlVbGlrT3RLTTVHS2dsSkFkS2ozQXJva29vUkdoVE1CN3FfbjlUYlVaZTlJQ19Bc2FJMjFxUjEwQUtvZEJTMEhLRFJINHNxanJjLWoxOHdxSDBDcldrN01HbDk3Vlk2OHMySXNuQWJtZ09sZ0t4NmthVU90dGxfOHB1UGVpM3NoVVZaZWhRbnfSAewBQVVfeXFMTndHbGZUUHJCWlZvT1hjTExzbWctLUg1MWNHdnczZXNHVVdaOVpMMGpKbV91RUlvNHU3Q212VVV2YmRTZWlTSG9KZkhFUzdNdXRtOUhQdDRIYWtPb013cFlacnRvWGtGMEZmUEtDWjJDeXNWR09UTG55Y1V1MzdzcTJuWVRrdjJVT25JV20xdmpEb3ZJdzBmaGN2NWpDYjRtYUxqRjNxOVFkd19SZk15MG1KdmhsYVBVYk5nckxSTkxGN3h1NnNRRUdxdkVONlFlbE5ReUR5MDhhRXdYUmdqS2s2Vmo2NWxBSEdFVEY?oc=5",
-      "date": "2026-11-24T07:00:00Z",
-      "tag": "Lançamento"
-    },
-    {
-      "id": "n-a93576d724df",
-      "title": "GTA 6 começa a receber atualização de 603 MB por fases; veja o que se sabe",
-      "summary": "",
-      "source": "Exame",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNSTUyUVVwNElXc3pPMDNwNjluc3JfR2l0Q2s5SG9DcGIwLXNya1NrNmJ4bVZGUVFOcEwwX0xESGx4UzVuQXRuUFJ6ZzNUdGdGczlwcl92V2N3OGxDR1M2dGpDdF96RXliS3l6endfTXA1YlhQTk5JUlNuMEljSjJybUFiNDlmUmY0UEU4eVFnQm1SSDZTM3pMRUs4QWY?oc=5",
-      "date": "2026-11-24T00:46:43Z",
-      "tag": "Notícia"
-    },
-    {
-      "id": "n-9bd591985396",
-      "title": "GTA 6 | Hacker por trás do vazamento de 2022 é liberado; entenda",
-      "summary": "",
-      "source": "Omelete",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPWlFZWmN5cEpLV2tTR2dVc2trZ3prSkNRMmNDb0hSRXF6bVRmUGd0T0x5NHQ0LUtzcGxZYkdNWDBjMVRZVEhVb25ROUR1czRSaHdldFB1V0QtLXFDM1JYR3hYZFM4TzY0ckhXZ0hkT3hteWJybWtRcElRb09SZnl1MXQ4eVVvOHhHaGxDNzd2cHp5SGhGREE?oc=5",
-      "date": "2026-11-24T00:04:00Z",
-      "tag": "Rumor"
-    },
-    {
-      "id": "n-56c766c47a85",
-      "title": "Hoje no TecMundo (23): Jensen Huang voltou para a Nvidia, GTA 6 bate recorde e mais",
-      "summary": "",
-      "source": "Estadão",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNSVh3aDQ2UFhTUmhteHNwTTBmMWhQSW8xSy12cHZrdjlZOGxoZkVTRnpWRnljVHE1ZWVFUkVKN0c4R25fR19vaUUzQWlQNVFrekdJYzZnYTZyWEdpaDd6dnJpWWxFUnF6UzhqcFN1NE1MbmxBdGlTWU9FR2lWdlJnd1FRN1VvR05BUklMY0EwTTltUllCOXdxWHRTdmxSNXUwNzU4eXoteUt4Xy1YS0p6LU05Z2tURHBCOE84ZtIBwgFBVV95cUxNMEVCdzdFUnpFc0h5U0tqSkg2V1p5VmV2SWJVT2NWbzRMdFRfd1ByVGZkTFFkQ2lrNWRzLXd6LTVZakFZR3VQQmJRbzNRWE1QYlBJTjBUeUhJNVRRLTJudjB2R0pJLXlFbU95bFM4azB3TlphNlkyNXk0MkZwWDRxdTM5bl85eUpBaHl4c2Q4SktJT2tITzFwV0p1VE5uQkUyX1Q5d3Bfc3dQVFFkdElRWEVQc0VqZ0ZGemRUVHlzZ0hVdw?oc=5",
-      "date": "2026-11-24T00:00:00Z",
-      "tag": "Notícia"
     }
   ],
   "videos": [
+    {
+      "id": "yt-E1N6Ckzvbmg",
+      "title": "CELLBIT JOGANDO GTA 6 COMPLETAMENTE FORA DE CONTROLE",
+      "channel": "Cellbit Lives",
+      "youtubeId": "E1N6Ckzvbmg",
+      "date": "2026-11-26T03:37:10Z"
+    },
     {
       "id": "yt-WIyBv12T3xE",
       "title": "FIZEMOS o MELHOR EASTER EGG de GTA 6!! #flowgames",
       "channel": "Cortes do Flow Games",
       "youtubeId": "WIyBv12T3xE",
       "date": "2026-11-25T22:00:21Z"
-    },
-    {
-      "id": "yt-E1N6Ckzvbmg",
-      "title": "CELLBIT JOGANDO GTA 6 COMPLETAMENTE FORA DE CONTROLE",
-      "channel": "Cellbit Lives",
-      "youtubeId": "E1N6Ckzvbmg",
-      "date": "2026-11-25T20:19:39Z"
     },
     {
       "id": "yt-Bo2rxKn9RYg",
